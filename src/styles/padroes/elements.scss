@@ -1,0 +1,47 @@
+
+// $paddingButton: 10px 15px;
+// $borderRadiusButton: 50px;
+// $widthButton: 100%;
+
+// $borderRadiusCard: 7px;
+
+// $border: 1px solid $neutralLight;
+
+$boxShadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+
+
+$globalMarginMob: 20px;
+// $globalMarginTablet: 10%;
+// $globalMarginTablet: 12.5%;
+// $globalMarginDesk: "20px";
+
+@mixin fullscreen {
+  max-width: unset !important;
+  margin-inline: - $globalMarginMob;
+  // @media (min-width: 1008px) {
+  //   width: calc(100% + 4%) !important;
+  //   margin-inline: -3.7%;
+  // }
+}
+
+// @mixin btn {
+//   background-color: $Color2;
+//   border: 1px solid $Color2;
+//   &:hover {
+//     background-color: $btnHover;
+//   }
+//   &:active {
+//     background-color: $btnHover;
+//   }
+// }
+
+// @mixin btn2 {
+//   background-color: $white;
+//   border: 1px solid $Color2;
+//   &:hover {
+//     background-color: $btn2Hover;
+//   }
+//   &:active {
+//     background-color: $btn2Hover;
+//   }
+// }

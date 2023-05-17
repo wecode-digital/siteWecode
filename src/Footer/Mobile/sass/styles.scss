@@ -1,0 +1,197 @@
+@import "./../../../styles/padroes/padroes.scss";
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    // margin: $globalMarginMob;
+    &-form-bg {
+        padding: 2rem 16px 1.25rem;
+        position: relative;
+        background-color: $light-main-color;
+        overflow: hidden;
+        &-circle-1 {
+            position: absolute;
+            width: 467px;
+            height: 477px;
+            left: -101px;
+            top: -110.77px;
+            background: rgba(219, 255, 0, 0.2);
+            filter: blur(52px);
+        }
+        &-circle-2 {
+            position: absolute;
+            width: 330px;
+            height: 330px;
+            left: 181px;
+            top: -32.77px;
+
+            background: rgba(48, 230, 175, 0.2);
+            filter: blur(90px);
+        }
+        &-circle-3 {
+            position: absolute;
+            width: 309px;
+            height: 309px;
+            left: 157px;
+            top: 252.23px;
+
+            background: rgba(161, 48, 230, 0.4);
+            filter: blur(52px);
+        }
+        &-circle-4 {
+            position: absolute;
+            width: 330px;
+            height: 330px;
+            left: -90px;
+            top: 461px;
+
+            background: rgba(48, 230, 175, 0.3);
+            filter: blur(90px);
+        }
+    }
+    &-form-container {
+        padding: 1.5rem 20px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.7px);
+        -webkit-backdrop-filter: blur(6.7px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            @include padrao;
+            display: flex;
+            width: 100%;
+            background-color: $light-main-color;
+            color: $text-contrast;
+            border: none;
+            text-align: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 500;
+            padding-block: 0.75rem;
+            border-radius: 5px;
+            margin-top: 1.25rem;
+        }
+    }
+    .tag {
+        @include padrao;
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0.5rem 0.75rem;
+        border: solid 1px #ececec;
+        color: #8a8a8a;
+        background-color: #f7f7f7;
+        width: fit-content;
+        border-radius: 5px;
+        margin: 0;
+    }
+    .block-title {
+        @include padrao;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 1.1;
+        margin-block: 1.25rem 0.5rem;
+    }
+    .text-highlight {
+        @include padrao;
+        color: $light-main-color;
+        font-weight: 500;
+    }
+    .home-paragraph {
+        @include padrao;
+        font-size: 0.875rem;
+        text-align: center;
+        margin-block: 0 1.25rem;
+    }
+    form {
+        width: 100%;
+        label {
+            @include padrao;
+            display: flex;
+            flex-direction: column;
+            font-size: 0.875rem;
+            margin-top: 1.5rem;
+            &:first-child {
+                margin: 0;
+            }
+        }
+        input {
+            height: 32px;
+            @include padrao;
+            border: 1px solid white;
+            border-radius: 4px;
+            background-color: transparent;
+            margin-top: 0.625rem;
+            padding-inline: 14px;
+            color: #8a8a8a;
+            font-size: 0.75rem;
+            &:focus {
+                background-color: transparent;
+                border: 1px solid #0d98e6;
+                outline: none;
+            }
+        }
+        textarea {
+            @include padrao;
+            height: 119px;
+            max-width: 100%;
+            min-width: 100%;
+            border: 1px solid white;
+            border-radius: 4px;
+            background-color: transparent;
+            margin-top: 0.625rem;
+            padding-inline: 14px;
+            color: #8a8a8a;
+            font-size: 0.75rem;
+            box-sizing: border-box;
+            padding-top: 8px;
+        }
+    }
+    .footer-container-links{
+        padding: 20px;
+        background-color: $dark-main-color;
+        display: flex;
+        flex-direction: column;
+        >ul{
+            gap: 3rem;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            @include padrao;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #8a8a8a;
+            display: flex;
+            flex-direction: column;
+        }
+        .social-media{
+           display: flex;
+        gap: 20px;
+        }
+        li{
+            line-height: 1;
+
+            list-style: none;
+            >ul{
+                gap: .375rem;
+            }
+            a{
+
+            @include padrao;
+            font-size: .875rem;
+            font-weight: 300;
+            color: $text-contrast;
+            text-decoration: none;
+            
+            &:visited{
+            color: $text-contrast;
+
+            }
+        }
+
+        }
+    }
+}

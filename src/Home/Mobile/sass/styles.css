@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.home-container {
+  margin-inline: 20px; }
+  .home-container .block-title {
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #353A42;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.1; }
+  .home-container .text-highlight {
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #353A42;
+    color: #0D98E6;
+    font-weight: 500; }
+  .home-container .tag {
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #353A42;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border: solid 1px #ececec;
+    color: #8a8a8a;
+    background-color: #f7f7f7;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 0; }
+  .home-container .home-paragraph {
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #353A42;
+    font-size: 0.875rem; }
+    .home-container .home-paragraph i {
+      font-size: 1.25rem;
+      font-weight: 300; }
+  .home-container .light-background-quote {
+    max-width: unset !important;
+    margin-inline: -20px;
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #353A42;
+    font-style: italic;
+    background-color: #0D98E6;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #fff;
+    text-align: center; }
+    .home-container .light-background-quote strong {
+      font-weight: 500;
+      text-decoration: underline; }
+  .home-container .know-more-link {
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #353A42;
+    font-size: 1rem;
+    background: #0D98E6;
+    margin-inline: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 9px 14px;
+    border-radius: 8px;
+    color: #fff;
+    gap: 4px; }
+  .home-container .first-fold {
+    margin-top: 10vh; }
+    .home-container .first-fold .block-title {
+      text-align: center;
+      margin-block: 0 2rem; }
+  .home-container .our-clients {
+    margin-block: 2rem; }
+    .home-container .our-clients .block-title {
+      margin-block: 1.5rem 1rem; }
+  .home-container .client-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    row-gap: 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .home-container .client-list .block-title {
+      margin-block: 1.5rem 1rem; }
+    .home-container .client-list .client-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .home-container .client-list .client-wrapper div {
+        background-color: #f7f7f7;
+        border: solid 1px #ececec;
+        width: 100%;
+        height: 82px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .home-container .client-list .client-wrapper div:first-child {
+          border-radius: 5px 0 0 5px; }
+        .home-container .client-list .client-wrapper div:last-child {
+          border-radius: 0 5px 5px 0; }
+  .home-container .about-us {
+    margin-block: 2rem; }
+    .home-container .about-us .block-title {
+      margin-block: 1.5rem 1rem; }
+    .home-container .about-us .home-paragraph {
+      margin-block: 0 2rem; }
+  .home-container .differentials-slider .slick-list {
+    max-width: unset !important;
+    margin-inline: -20px;
+    padding-inline: 20px;
+    overflow-x: hidden;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .home-container .differentials-slider .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px; }
+  .home-container .differentials-slider .slick-slide {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .home-container .differentials-slider .slick-slide > div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      min-width: 0;
+      width: 100%;
+      padding-block: 10px;
+      height: 284px; }
+  .home-container .differentials-slider .differentials-card {
+    height: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 24px 10px;
+    background-color: white;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .home-container .differentials-slider .differentials-card-content {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .home-container .differentials-slider .differentials-card-title {
+      font-family: "Raleway", serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #353A42;
+      font-weight: 300;
+      font-size: 1rem;
+      text-align: center;
+      margin-block: 25px; }
+  .home-container .card-contrast-background {
+    max-width: unset !important;
+    margin-inline: -20px;
+    padding-inline: 20px;
+    background-color: #f5f5f7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .home-container .our-services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 32px;
+    margin-block: 2rem 0; }
+    .home-container .our-services-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      gap: 1rem;
+      border-radius: 10px;
+      -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1); }
+      .home-container .our-services-card-title {
+        font-family: "Raleway", serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #353A42;
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500; }
+      .home-container .our-services-card-text {
+        font-family: "Raleway", serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #353A42;
+        margin: 0;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 300; }
+  .home-container .methodology {
+    margin-block: 2rem; }
+    .home-container .methodology .tag {
+      margin-bottom: 4px; }
+    .home-container .methodology .block-title {
+      margin-block: 0;
+      text-align: center; }
+    .home-container .methodology .know-more-link {
+      margin-top: 20px; }
+    .home-container .methodology-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: white;
+      padding: 24px 16px;
+      gap: 20px;
+      border-radius: 10px;
+      -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1); }
+    .home-container .methodology-card {
+      padding: 32px 20px;
+      background-color: #f5f5f7;
+      border-radius: 10px; }
+      .home-container .methodology-card img {
+        width: 35% !important;
+        margin-inline: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 24px; }
+      .home-container .methodology-card-title {
+        font-family: "Raleway", serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #353A42;
+        margin-block: 0 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #8a8a8a;
+        text-transform: uppercase; }
+      .home-container .methodology-card-text {
+        font-family: "Raleway", serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #353A42;
+        margin: 0;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 400; }
+  .home-container .plataform {
+    margin-block: 2rem; }
+    .home-container .plataform .block-title {
+      margin-block: 1.5rem 2rem; }
+    .home-container .plataform .home-paragraph {
+      margin-block: 0 2rem; }
+    .home-container .plataform img {
+      margin-block: 0 2rem; }
