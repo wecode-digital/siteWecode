@@ -10,7 +10,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 20px;
-  background-color: #053766; }
+  background: #053766; }
   .menu-container .menu-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -45,15 +45,16 @@
     flex-direction: column;
     padding-block: 13% 25%;
     gap: 1.5rem; }
-    .menu-container .menu-body a {
+    .menu-container .menu-body .institutional-links {
       font-family: "Raleway", serif;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       line-height: 1.5;
-      color: #353A42;
+      color: #353a42;
       font-weight: 100;
       font-size: 2rem;
-      color: #fff; }
+      color: #fff;
+      text-decoration: none; }
   .menu-container .menu-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,20 +75,20 @@
       .menu-container .menu-footer .menu-address h5 {
         font-family: "Raleway", serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.5;
-        color: #353A42;
-        font-size: .75rem;
+        color: #353a42;
+        font-size: 0.75rem;
         font-weight: 500;
-        color: #8A8A8A;
-        margin-block: 0 .5rem; }
+        color: #8a8a8a;
+        margin-block: 0 0.5rem; }
       .menu-container .menu-footer .menu-address p {
         font-family: "Raleway", serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.5;
-        color: #353A42;
-        font-size: .875rem;
+        color: #353a42;
+        font-size: 0.875rem;
         color: #fff;
         margin-block: 0; }
     .menu-container .menu-footer .menu-social-media {
@@ -106,22 +107,22 @@
       .menu-container .menu-footer .menu-social-media h5 {
         font-family: "Raleway", serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.5;
-        color: #353A42;
-        font-size: .75rem;
+        color: #353a42;
+        font-size: 0.75rem;
         font-weight: 500;
-        color: #8A8A8A;
-        margin-block: 0 .5rem; }
+        color: #8a8a8a;
+        margin-block: 0 0.5rem; }
       .menu-container .menu-footer .menu-social-media a {
         font-family: "Raleway", serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.5;
-        color: #353A42;
-        font-size: .875rem;
+        color: #353a42;
+        font-size: 0.875rem;
         color: #fff;
-        gap: .5rem;
+        gap: 0.5rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;

@@ -4,43 +4,48 @@
   .home-container .block-title {
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    color: #353A42;
+    color: #353a42;
     font-weight: 300;
     font-size: 2rem;
     line-height: 1.1; }
+  .home-container .first-fold-text {
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #353a42;
+    text-align: center; }
   .home-container .text-highlight {
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    color: #353A42;
-    color: #0D98E6;
+    color: #353a42;
+    color: #0d98e6;
     font-weight: 500; }
   .home-container .tag {
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    color: #353A42;
+    color: #353a42;
     font-size: 0.75rem;
     font-weight: 500;
     padding: 0.5rem 0.75rem;
-    border: solid 1px #ececec;
+    border: none;
     color: #8a8a8a;
-    background-color: #f7f7f7;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    border-radius: 5px;
-    margin: 0; }
+    margin-inline: 20px; }
   .home-container .home-paragraph {
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    color: #353A42;
+    color: #353a42;
     font-size: 0.875rem; }
     .home-container .home-paragraph i {
       font-size: 1.25rem;
@@ -50,27 +55,28 @@
     margin-inline: -20px;
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    color: #353A42;
+    color: #353a42;
     font-style: italic;
-    background-color: #0D98E6;
+    background-color: #0d98e6;
     padding: 20px;
     font-size: 1.5rem;
     font-weight: 300;
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0; }
     .home-container .light-background-quote strong {
       font-weight: 500;
       text-decoration: underline; }
   .home-container .know-more-link {
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.5;
-    color: #353A42;
+    color: #353a42;
     font-size: 1rem;
-    background: #0D98E6;
+    background: #0d98e6;
     margin-inline: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -78,19 +84,29 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 9px 14px;
+    padding: 12px 14px;
     border-radius: 8px;
     color: #fff;
-    gap: 4px; }
+    gap: 4px;
+    text-decoration: none; }
   .home-container .first-fold {
-    margin-top: 10vh; }
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    padding-top: 10vh; }
     .home-container .first-fold .block-title {
       text-align: center;
       margin-block: 0 2rem; }
   .home-container .our-clients {
-    margin-block: 2rem; }
+    margin-top: 2rem;
+    padding: 20px 0 40px;
+    background: #f5f5f7;
+    max-width: unset !important;
+    margin-inline: -20px;
+    border-radius: 20px 20px 0 0; }
     .home-container .our-clients .block-title {
-      margin-block: 1.5rem 1rem; }
+      margin-block: 1.5rem 1rem;
+      margin-inline: 20px; }
   .home-container .client-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -109,7 +125,7 @@
       width: 100%; }
       .home-container .client-list .client-wrapper div {
         background-color: #f7f7f7;
-        border: solid 1px #ececec;
+        border: none;
         width: 100%;
         height: 82px;
         display: -webkit-box;
@@ -126,12 +142,29 @@
         .home-container .client-list .client-wrapper div:last-child {
           border-radius: 0 5px 5px 0; }
   .home-container .about-us {
-    margin-block: 2rem; }
+    background: #fff;
+    padding-top: 2rem; }
     .home-container .about-us .block-title {
       margin-block: 1.5rem 1rem; }
     .home-container .about-us .home-paragraph {
       margin-block: 0 2rem; }
-  .home-container .differentials-slider .slick-list {
+    .home-container .about-us .conecting-img {
+      margin-bottom: 25px; }
+  .home-container .how-generate-value {
+    background: #fff; }
+    .home-container .how-generate-value .tag {
+      margin: 0;
+      padding: 30px 0 0; }
+    .home-container .how-generate-value .block-title {
+      margin-block: 10px 15px; }
+  .home-container .testimony {
+    margin-bottom: 32px; }
+    .home-container .testimony .tag {
+      text-align: center;
+      margin: auto; }
+    .home-container .testimony .block-title {
+      text-align: center; }
+  .home-container .testimony-slider .slick-list {
     max-width: unset !important;
     margin-inline: -20px;
     padding-inline: 20px;
@@ -142,12 +175,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  .home-container .differentials-slider .slick-track {
+  .home-container .testimony-slider .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 10px; }
-  .home-container .differentials-slider .slick-slide {
+  .home-container .testimony-slider .slick-slide {
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -155,21 +188,19 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .home-container .differentials-slider .slick-slide > div {
+    .home-container .testimony-slider .slick-slide > div {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       min-width: 0;
       width: 100%;
       padding-block: 10px;
-      height: 284px; }
-  .home-container .differentials-slider .differentials-card {
+      height: 236px; }
+  .home-container .testimony-slider .testimony-card {
     height: 100%;
     border-radius: 10px;
-    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
     padding: 24px 10px;
-    background-color: white;
+    background-color: #f7f7f7;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -183,7 +214,7 @@
     min-width: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-    .home-container .differentials-slider .differentials-card-content {
+    .home-container .testimony-slider .testimony-card-content {
       display: -webkit-box !important;
       display: -ms-flexbox !important;
       display: flex !important;
@@ -191,24 +222,55 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: left;
+      -ms-flex-align: left;
+      align-items: left; }
+    .home-container .testimony-slider .testimony-card-introduction {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
-    .home-container .differentials-slider .differentials-card-title {
+      align-items: center;
+      gap: 12px; }
+      .home-container .testimony-slider .testimony-card-introduction-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start; }
+    .home-container .testimony-slider .testimony-card-name {
       font-family: "Raleway", serif;
       font-style: normal;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #353A42;
       font-weight: 300;
+      line-height: 1.5;
+      color: #353a42;
+      font-weight: 400;
       font-size: 1rem;
-      text-align: center;
-      margin-block: 25px; }
+      margin-block: 2px; }
+    .home-container .testimony-slider .testimony-card-post {
+      font-family: "Raleway", serif;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #353a42;
+      font-weight: 100;
+      margin-block: 2px;
+      font-size: 0.875rem; }
+    .home-container .testimony-slider .testimony-card-text {
+      font-family: "Raleway", serif;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #353a42;
+      font-size: 0.875rem;
+      margin-block: 16px; }
   .home-container .card-contrast-background {
-    max-width: unset !important;
-    margin-inline: -20px;
-    padding-inline: 20px;
-    background-color: #f5f5f7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -227,74 +289,82 @@
     gap: 32px;
     margin-block: 2rem 0; }
     .home-container .our-services-card {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      background: white;
-      padding: 20px;
-      gap: 1rem;
-      border-radius: 10px;
       -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1); }
-      .home-container .our-services-card-title {
-        font-family: "Raleway", serif;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #353A42;
-        margin: 0;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 500; }
-      .home-container .our-services-card-text {
-        font-family: "Raleway", serif;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5;
-        color: #353A42;
-        margin: 0;
-        text-align: center;
-        font-size: 0.875rem;
-        font-weight: 300; }
+      box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 10px; }
+      .home-container .our-services-card-son {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #f5f5f7;
+        margin: 20px;
+        gap: 1rem;
+        border-radius: 10px;
+        padding: 32px 20px; }
+        .home-container .our-services-card-son-title {
+          font-family: "Raleway", serif;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1.5;
+          color: #353a42;
+          margin: 0;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 500;
+          color: #8a8a8a; }
+        .home-container .our-services-card-son-text {
+          font-family: "Raleway", serif;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 1.5;
+          color: #353a42;
+          margin: 0;
+          text-align: center;
+          font-size: 0.875rem;
+          font-weight: 300; }
   .home-container .methodology {
-    margin-block: 2rem; }
+    max-width: unset !important;
+    margin-inline: -20px;
+    margin-top: 2rem;
+    background: #f5f5f7;
+    padding-bottom: 20px; }
     .home-container .methodology .tag {
-      margin-bottom: 4px; }
+      margin: 0 20px 4px;
+      padding-top: 32px; }
     .home-container .methodology .block-title {
       margin-block: 0;
-      text-align: center; }
+      margin-inline: 20px;
+      text-align: left; }
+    .home-container .methodology .tag-2 {
+      font-family: "Raleway", serif;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #353a42;
+      font-weight: 400;
+      border: none;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 13px 20px;
+      font-size: 0.875rem; }
     .home-container .methodology .know-more-link {
-      margin-top: 20px; }
-    .home-container .methodology-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      background: white;
-      padding: 24px 16px;
-      gap: 20px;
-      border-radius: 10px;
-      -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1); }
+      margin-block: 15px; }
     .home-container .methodology-card {
       padding: 32px 20px;
-      background-color: #f5f5f7;
-      border-radius: 10px; }
-      .home-container .methodology-card img {
-        width: 35% !important;
+      border-radius: 10px;
+      background: #fff;
+      -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+      margin: 0 20px 15px; }
+      .home-container .methodology-card svg {
         margin-inline: auto;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -303,30 +373,19 @@
       .home-container .methodology-card-title {
         font-family: "Raleway", serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.5;
-        color: #353A42;
+        color: #353a42;
         margin-block: 0 0.5rem;
         text-align: center;
-        font-size: 1rem;
-        font-weight: 500;
-        color: #8a8a8a;
-        text-transform: uppercase; }
+        font-size: 1.5rem;
+        font-weight: 500; }
       .home-container .methodology-card-text {
         font-family: "Raleway", serif;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.5;
-        color: #353A42;
+        color: #353a42;
         margin: 0;
         text-align: center;
-        font-size: 0.875rem;
-        font-weight: 400; }
-  .home-container .plataform {
-    margin-block: 2rem; }
-    .home-container .plataform .block-title {
-      margin-block: 1.5rem 2rem; }
-    .home-container .plataform .home-paragraph {
-      margin-block: 0 2rem; }
-    .home-container .plataform img {
-      margin-block: 0 2rem; }
+        font-size: 0.875rem; }
