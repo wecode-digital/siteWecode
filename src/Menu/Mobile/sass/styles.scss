@@ -1,6 +1,19 @@
 @import "./../../../styles/padroes/padroes.scss";
 
+.botao-menu {
+  position: fixed;
+  top: 27px;
+  right: 20px;
+  z-index: 5;
+}
+.botao-fechar {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  z-index: 5;
+}
 .menu-container {
+  z-index: 5;
   position: fixed;
   inset: 0;
   display: flex;

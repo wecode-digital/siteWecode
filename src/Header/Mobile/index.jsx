@@ -1,12 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./sass/styles.css";
 import MenuMob from "../../Menu/Mobile";
 import { Link } from "react-router-dom";
 
 function HeaderMob() {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      const offset = 100;
+
+      if (scrollTop < offset) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header>
-      <div className={"header-container"}>
+      <div
+        className={scrolling ? "header-container" : "header-container-ativo"}
+      >
         <Link to="/">
           <svg
             width="110"
@@ -49,9 +71,8 @@ function HeaderMob() {
             />
           </svg>
         </Link>
-
-        <MenuMob />
       </div>
+      <MenuMob />
     </header>
   );
 }

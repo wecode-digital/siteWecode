@@ -9,11 +9,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  background: #fff;
+  backdrop-filter: none;
   position: fixed;
   top: 0;
   box-sizing: border-box;
@@ -21,14 +18,15 @@ body {
   z-index: 5;
 }
 
-.header-container-menu-aberto {
+.header-container-ativo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.18);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.34);
   position: fixed;
   top: 0;

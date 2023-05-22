@@ -58,6 +58,7 @@ function MenuMob() {
               }}
             >
               <svg
+                className={"botao-fechar"}
                 width="14"
                 height="14"
                 viewBox="0 0 14 14"
@@ -151,6 +152,7 @@ function MenuMob() {
           }}
         >
           <svg
+            className={"botao-menu"}
             width="20"
             height="12"
             viewBox="0 0 20 12"
