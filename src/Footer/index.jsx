@@ -1,9 +1,14 @@
-import React from 'react';
-import FooterMob from './Mobile/index';
+import React from "react";
+import FooterMob from "./Mobile/index";
+import FooterDesk from "./Desk/index";
 
-function Footer (){
-  return(
-    <FooterMob />
-  )
-}
-export default Footer
+const Footer = () => {
+  return (
+    <>
+      <FooterMob />;
+      <FooterDesk />;
+    </>
+  );
+};
+
+export default Footer;

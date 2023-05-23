@@ -6,6 +6,13 @@
     max-width: unset !important;
     margin-inline: -20px;
     background: #0d98e6; }
+    @media (min-width: 1008px) {
+      .sobre-nos-container .first-block {
+        max-width: unset !important;
+        margin-inline: -250px; } }
+  @media (min-width: 1008px) and (min-width: 1600px) {
+    .sobre-nos-container .first-block {
+      margin-inline: -350px; } }
     .sobre-nos-container .first-block-tittle {
       margin-inline: 20px;
       font-family: "Raleway", serif;

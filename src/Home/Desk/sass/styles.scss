@@ -1,0 +1,521 @@
+@import "./../../../styles/padroes/padroes.scss";
+
+.home-container-desk {
+  margin-inline: $globalMarginDesk;
+  @media (min-width: 1600px) {
+    margin-inline: 350px;
+  }
+  .block-title {
+    @include padrao;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  .first-fold-text {
+    @include padrao;
+    text-align: center;
+  }
+  .text-highlight {
+    @include padrao;
+    color: $light-main-color;
+    font-weight: 500;
+  }
+  .tag {
+    @include padrao;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    color: #8a8a8a;
+    width: fit-content;
+    margin-inline: 20px;
+  }
+  .home-paragraph {
+    @include padrao;
+    font-size: 0.875rem;
+    i {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+  }
+  .light-background-quote {
+    // @include fullscreen;
+    @include padrao;
+    font-style: italic;
+    background-color: $light-main-color;
+    padding: $globalMarginMob;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: $text-contrast;
+    margin-bottom: 0;
+    strong {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+  }
+  .know-more-link {
+    @include padrao;
+    font-size: 1rem;
+    background: $light-main-color;
+    margin-inline: auto;
+    width: 80px;
+    display: flex;
+    padding: 12px 40px;
+    border-radius: 8px;
+    color: $text-contrast;
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+    transition: ease-in-out 0.5s;
+    animation: ease-in-out 1s;
+    white-space: nowrap;
+    &:hover {
+      background: $dark-main-color;
+      width: 110px;
+
+      svg {
+        display: block;
+      }
+    }
+    svg {
+      display: none;
+    }
+  }
+  .first-fold {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    padding-top: 15vh;
+    .block-title {
+      text-align: left;
+    }
+    .first-fold-text {
+      font-size: 1.125rem;
+      text-align: left;
+      margin: 0;
+    }
+    .first-fold-text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+  .our-clients {
+    margin-top: 100px;
+    padding: 20px 0 40px;
+    background: $background;
+    @include fullscreen;
+    // border-radius: 20px 20px 0 0;
+    &-container {
+      margin-inline: $globalMarginDesk;
+      @media (min-width: 1600px) {
+        margin-inline: 350px;
+      }
+    }
+    .block-title {
+      margin-block: 1.5rem 1rem;
+      text-align: center;
+    }
+    .tag {
+      text-align: center;
+      width: auto;
+    }
+    .know-more-link {
+      margin-top: 20px;
+    }
+  }
+  .client-list {
+    display: flex;
+    row-gap: 8px;
+    flex-direction: column;
+
+    .block-title {
+      margin-block: 1.5rem 1rem;
+    }
+
+    .client-wrapper {
+      display: flex;
+      width: 100%;
+      div {
+        background-color: #f7f7f7;
+        border: none;
+        width: 100%;
+        height: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child {
+          border-radius: 5px 0 0 5px;
+        }
+        &:last-child {
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+  }
+  .about-us {
+    background: $background;
+    @include fullscreen;
+    position: relative;
+    padding-bottom: 80px;
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border: none;
+      border-radius: 10px;
+      box-shadow: $boxShadow;
+      position: relative;
+      margin-inline: $globalMarginDesk;
+      padding: 40px;
+      @media (min-width: 1600px) {
+        margin-inline: 350px;
+      }
+    }
+    .about-us-text-container {
+      width: 50%;
+    }
+    .block-title {
+      margin-block: 1.5rem 1rem;
+      font-size: 3.5rem;
+    }
+    .home-paragraph {
+      margin-block: 0 2rem;
+      font-size: 1.125rem;
+      i {
+        font-size: 1.25rem;
+      }
+    }
+    .conecting-img {
+      position: absolute;
+      max-width: 650px;
+      right: -205px;
+      @media screen and (min-width: 1920px) {
+        right: -120px;
+      }
+    }
+  }
+
+  .about-us-text-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-generate-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    gap: 20px;
+    @include fullscreen;
+    .light-background-quote {
+      padding: 120px 20px;
+      width: 40%;
+      margin: 0;
+    }
+    .tag {
+      margin: 0;
+      padding: 30px 0 0;
+    }
+    .block-title {
+      margin-block: 10px 15px;
+    }
+    .card-link-container {
+      background: $background;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // padding: 10px;
+    }
+    .card-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: $background;
+      border: none;
+      border-radius: 10px;
+      padding: 5px 20px;
+      svg {
+        max-width: 35px;
+        max-height: 35px;
+      }
+    }
+  }
+
+  .testimony {
+    margin-bottom: 32px;
+    .tag {
+      text-align: center;
+      margin: auto;
+    }
+    .block-title {
+      text-align: center;
+    }
+  }
+  .testimony-slider {
+    .slick-list {
+      // @include fullscreen;
+      padding-inline: $globalMarginMob;
+      overflow-x: hidden;
+      height: fit-content;
+      display: flex;
+    }
+    .slick-track {
+      // height: 296px;
+      // height: fit-content;
+      // gap: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .slick-slide {
+      // height: auto;
+      // padding: 24px 10px;
+      // border-radius: 10px;
+      // box-shadow: $boxShadow;
+      // margin: 0 5px 2rem;
+      // padding: 24px 10px;
+      // background-color: white;
+      // > div {
+      //     width: 100%;
+      // }
+      height: auto;
+      display: flex;
+      justify-content: center;
+
+      > div {
+        // padding:0 10px;
+        display: flex;
+        // width: calc(100% - 10px);
+        min-width: 0;
+        width: 100%;
+        padding-block: 10px;
+        height: 236px;
+      }
+    }
+    .testimony-card {
+      height: 100%;
+      border-radius: 10px;
+
+      // margin: 0 5px 2rem;
+      padding: 24px 10px;
+      background-color: #f7f7f7;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      min-width: 0;
+      box-sizing: border-box;
+      &-content {
+        display: flex !important;
+        flex-direction: column;
+        // height: fit-content;
+        align-items: left;
+        // border-radius: 10px;
+        // box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+        // margin-block: 5px;
+        // padding: 24px 10px;
+        // background-color: white;
+      }
+      &-introduction {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        &-text {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        }
+      }
+      &-name {
+        @include padrao;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-block: 2px;
+      }
+      &-post {
+        @include padrao;
+        font-weight: 100;
+        margin-block: 2px;
+        font-size: 0.875rem;
+      }
+      &-text {
+        @include padrao;
+        font-size: 0.875rem;
+        margin-block: 16px;
+      }
+    }
+  }
+  .card-contrast-background {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-services {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-block: 2rem 0;
+
+    &-card {
+      box-shadow: $boxShadow;
+      border-radius: 10px;
+
+      &-son {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $background;
+        margin: 20px;
+        gap: 1rem;
+        border-radius: 10px;
+        padding: 32px 20px;
+
+        &-title {
+          @include padrao;
+          margin: 0;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 500;
+          color: $title-card;
+        }
+        &-text {
+          @include padrao;
+          margin: 0;
+          text-align: center;
+          font-size: 0.875rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .methodology {
+    // @include fullscreen;
+    background: #fff;
+    padding-top: 40px;
+
+    padding-bottom: 20px;
+    .tag {
+      margin: 0 20px 4px;
+      padding-top: 32px;
+      margin: auto;
+    }
+    .block-title {
+      margin-block: 0;
+      margin-inline: 20px;
+      text-align: center;
+    }
+    .tag-2 {
+      @include padrao;
+      font-weight: 400;
+      border: none;
+      width: fit-content;
+      margin: 13px 20px;
+
+      font-size: 0.875rem;
+    }
+    .know-more-link {
+      margin-block: 40px;
+    }
+
+    .methodology-card-cotainer {
+      margin-top: 30px;
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 32px;
+    }
+
+    &-card-first {
+      grid-row: 1;
+      grid-column: 1 / span 2;
+      border-radius: 10px;
+      background: $background;
+      box-shadow: $boxShadow;
+      padding-left: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 150px;
+
+      .methodology-card-title {
+        text-align: left;
+      }
+      .methodology-card-text {
+        text-align: left;
+      }
+    }
+
+    &-card-second {
+      grid-row: 2;
+      grid-column: 1;
+      padding: 40px 56px;
+    }
+
+    &-card-third {
+      grid-row: 2;
+      grid-column: 2;
+      padding: 40px 56px;
+    }
+
+    &-card {
+      border-radius: 10px;
+      background: $background;
+      box-shadow: $boxShadow;
+      display: flex;
+      align-items: center;
+
+      .know-more-link {
+        display: none;
+        margin-left: 0;
+      }
+      svg {
+        display: none;
+        width: 100%;
+      }
+      &:hover {
+        svg {
+          display: block;
+        }
+        .know-more-link {
+          display: block;
+          .know-more-arrow {
+            display: none;
+          }
+        }
+        .know-more-link:hover {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .know-more-arrow {
+            display: block;
+          }
+        }
+      }
+
+      .metodology-container-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      &-title {
+        @include padrao;
+        margin-block: 0 0.5rem;
+        text-align: left;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+      &-text {
+        @include padrao;
+        margin: 0;
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
+  }
+}

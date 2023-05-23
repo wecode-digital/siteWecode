@@ -37,6 +37,13 @@
     max-width: unset !important;
     margin-inline: -20px;
     margin-top: -20px; }
+    @media (min-width: 1008px) {
+      .menu-container .menu-header {
+        max-width: unset !important;
+        margin-inline: -250px; } }
+  @media (min-width: 1008px) and (min-width: 1600px) {
+    .menu-container .menu-header {
+      margin-inline: -350px; } }
     .menu-container .menu-header svg {
       padding: 20px;
       padding-top: 17px;

@@ -1,84 +1,104 @@
 import React from "react";
 import "./sass/styles.css";
+import wecodeImg from "../../assets/images/home-generic-images/wecode-footer.png";
 
-function FooterMob() {
-  let isMobile = false;
-  if (window.innerWidth <= 1024) {
-    isMobile = true;
+function FooterDesk() {
+  let isDesk = false;
+  if (window.innerWidth >= 1024) {
+    isDesk = true;
   }
 
   return (
     <>
-      {isMobile ? (
+      {isDesk ? (
         <footer>
-          <div className={"footer-container"}>
+          <div className={"footer-container-desk"}>
             <div className={"footer-container-form-bg"}>
               <div className={"footer-container-form-bg-circle-1"} />
               <div className={"footer-container-form-bg-circle-2"} />
               <div className={"footer-container-form-bg-circle-3"} />
               <div className={"footer-container-form-bg-circle-4"} />
               <div className={"footer-container-form-container"}>
-                <h2 className={"tag"}>CONTATO</h2>
-                <h3 className={"block-title"}>
-                  Vamos <span className={"text-highlight"}>conversar!</span>
-                </h3>
-                <p className={"home-paragraph"}>
-                  Preencha o formulário abaixo para entrar em contato, ou pelos
-                  outros meios de comunicações abaixo.
-                </p>
-                <form method="get" id="contact" action="/action_page.php">
-                  <label>
-                    Nome*{" "}
-                    <input
-                      name="name"
-                      type="text"
-                      placeholder="Digite seu nome completo"
-                    ></input>
-                  </label>
-                  <label>
-                    Empresa*{" "}
-                    <input
-                      name="company"
-                      type="text"
-                      placeholder="Digite o nome da empresa"
-                    ></input>
-                  </label>
-                  <label>
-                    Telefone*{" "}
-                    <input
-                      name="phone"
-                      type="phone"
-                      placeholder="+55 (000) 9 9999-9999"
-                    ></input>
-                  </label>
-                  <label>
-                    Sua mensagem*{" "}
-                    <textarea
-                      name="message"
-                      type="text"
-                      placeholder="Escreva aqui sua mensagem"
-                    ></textarea>
-                  </label>
-                </form>
-                <button type="submit" form="contact">
-                  Enviar
-                </button>
+                <div className={"footer-container-text-form"}>
+                  <h2 className={"tag"}>CONTATO</h2>
+                  <h3 className={"block-title"}>
+                    Vamos <span className={"text-highlight"}>conversar!</span>
+                  </h3>
+                  <p className={"home-paragraph"}>
+                    Preencha o formulário abaixo para entrar em contato,
+                    <br></br> ou pelos outros meios de comunicações abaixo.
+                  </p>
+                </div>
+                <div className={"footer-form-container"}>
+                  <form method="get" id="contact" action="/action_page.php">
+                    <label>
+                      Nome*{" "}
+                      <input
+                        name="name"
+                        type="text"
+                        placeholder="Digite seu nome completo"
+                      ></input>
+                    </label>
+                    <label>
+                      Empresa*{" "}
+                      <input
+                        name="company"
+                        type="text"
+                        placeholder="Digite o nome da empresa"
+                      ></input>
+                    </label>
+                    <label>
+                      Telefone*{" "}
+                      <input
+                        name="phone"
+                        type="phone"
+                        placeholder="+55 (000) 9 9999-9999"
+                      ></input>
+                    </label>
+                    <label>
+                      Sua mensagem*{" "}
+                      <textarea
+                        name="message"
+                        type="text"
+                        placeholder="Escreva aqui sua mensagem"
+                      ></textarea>
+                    </label>
+                    <button type="submit" form="contact">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
             <div className={"footer-container-links"}>
-              <ul>
+              <ul className={"footer-container-columns"}>
                 <li>
-                  <ul>
+                  <ul className={"form-column"}>
+                    EXPLORE
+                    <li>
+                      <a href="/sobre-nos">Sobre Nós</a>
+                    </li>
+                    <li>
+                      <a href="/cases">Cases</a>
+                    </li>
+                    <li>
+                      <a href="/depoimentos">Depoimentos</a>
+                    </li>
+                    <li>
+                      <a href="/contato">Contato</a>
+                    </li>
+                  </ul>
+                </li>
+                <li className={" contato"}>
+                  <ul className={"form-column"}>
                     E-MAIL
                     <li>
                       <a href="mailto:contato@wecode.digital">
                         contato@wecode.digital
                       </a>
                     </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
+                  </ul>{" "}
+                  <ul className={"form-column"}>
                     TELEFONE
                     <li>
                       <a href="tel:+55 (54) 3028-9452">+55 (54) 3028-9452</a>
@@ -86,18 +106,18 @@ function FooterMob() {
                   </ul>
                 </li>
                 <li>
-                  <ul>
+                  <ul className={"form-column"}>
                     ENDEREÇO
                     <li>
                       <a href="https://www.google.com/maps/place/Wecode+%7C+Tecnologia+para+E-commerce/@-29.1716095,-51.1729341,19z/data=!3m1!4b1!4m6!3m5!1s0x951ebd7ad265e52d:0x4de4320de63ee8cc!8m2!3d-29.1716095!4d-51.1723869!16s%2Fg%2F11kp8jwvdb">
-                        Rua Plácido de Castro, 1063 - Exposição, Caxias do Sul -
-                        RS, sala 403, 95084-370
+                        Rua Plácido de Castro, 1063 - Exposição,<br></br> Caxias
+                        do Sul - RS, sala 403, 95084-370
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <ul>
+                  <ul className={"form-column"}>
                     CONECTE-SE
                     <div className={"social-media"}>
                       <li>
@@ -192,24 +212,22 @@ function FooterMob() {
                     </div>
                   </ul>
                 </li>
-                <li>
-                  <ul>
-                    EXPLORE
-                    <li>
-                      <a href="/sobre-nos">Sobre Nós</a>
-                    </li>
-                    <li>
-                      <a href="/cases">Cases</a>
-                    </li>
-                    <li>
-                      <a href="/depoimentos">Depoimentos</a>
-                    </li>
-                    <li>
-                      <a href="/contato">Contato</a>
-                    </li>
-                  </ul>
-                </li>
               </ul>
+            </div>
+            <div className={"footer-final"}>
+              <div className={"footer-final-container"}>
+                <img src={wecodeImg} />
+                <div>
+                  <p className={"footer-final-text"}>
+                    ©2023 wecode.digital - e-commerce technology. Todos os
+                    direitos reservados.
+                  </p>
+                  <p className={"footer-final-text"}>
+                    Rua Plácido de Castro, 1063 - Sala 403 - Exposição, Caxias
+                    do Sul - RS, 95084-370 Telefone: (54) 3028-9452
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </footer>
@@ -220,4 +238,4 @@ function FooterMob() {
   );
 }
 
-export default FooterMob;
+export default FooterDesk;

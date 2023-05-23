@@ -1,9 +1,14 @@
-import React from 'react';
-import HomeMob from './Mobile/index';
+import React from "react";
+import HomeDesk from "./Desk/index";
+import HomeMob from "./Mobile/index";
 
-function Home (){
-  return(
-    <HomeMob />
-  )
-}
-export default Home
+const Home = () => {
+  return (
+    <>
+      <HomeMob />
+      <HomeDesk />
+    </>
+  );
+};
+
+export default Home;
