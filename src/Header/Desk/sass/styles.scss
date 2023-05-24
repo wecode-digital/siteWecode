@@ -1,0 +1,67 @@
+@import "./../../../styles/padroes/padroes.scss";
+
+// body {
+//   margin: 0;
+// }
+
+.header-container-desk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 5;
+  width: calc(100% - 700px);
+  margin-inline: $globalMarginDesk;
+  transition: top 0.3s ease;
+  @media (min-width: 1600px) {
+    margin-inline: 350px;
+  }
+}
+
+.header-container-desk-ativo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: $boxShadow;
+  border-radius: 10px;
+  background: #fff;
+  position: fixed;
+  top: 20px;
+  transition: top 0.3s ease;
+  box-sizing: border-box;
+  z-index: 5;
+  width: calc(100% - 700px);
+  margin-inline: $globalMarginDesk;
+  @media (min-width: 1600px) {
+    margin-inline: 350px;
+  }
+}
+
+.headercontainer-desk-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container-institucional {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.header-container-links {
+  @include padrao;
+  text-decoration: none;
+  color: $text;
+  &:hover {
+    text-decoration: underline;
+    color: $light-main-color;
+  }
+}

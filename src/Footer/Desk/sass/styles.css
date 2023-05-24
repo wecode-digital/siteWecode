@@ -8,7 +8,7 @@
   -ms-flex-direction: column;
   flex-direction: column; }
   .footer-container-desk .footer-container-form-bg {
-    padding: 2rem 16px 1.25rem;
+    padding: 2rem 0px 1.25rem;
     position: relative;
     background-color: #0d98e6;
     overflow: hidden; }
@@ -70,7 +70,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-inline: 250px;
-    margin-top: 80px;
+    margin-block: 80px;
     gap: 10px; }
     @media (min-width: 1600px) {
       .footer-container-desk .footer-container-form-container {
@@ -214,7 +214,7 @@
       .footer-container-desk .footer-container-columns {
         margin-inline: 350px; } }
   .footer-container-desk .footer-container-links {
-    padding: 40px;
+    padding: 40px 0;
     background-color: #053766;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -252,7 +252,8 @@
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      font-size: 1.5rem; }
     .footer-container-desk .footer-container-links .contato {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -280,12 +281,14 @@
         font-weight: 300;
         line-height: 1.5;
         color: #353a42;
-        font-size: 0.875rem;
+        font-size: 1rem;
         font-weight: 300;
         color: #fff;
         text-decoration: none; }
         .footer-container-desk .footer-container-links li a:visited {
           color: #fff; }
+        .footer-container-desk .footer-container-links li a:hover {
+          text-decoration: underline; }
   .footer-container-desk .footer-final {
     background: #353a42; }
   .footer-container-desk .footer-final-container {

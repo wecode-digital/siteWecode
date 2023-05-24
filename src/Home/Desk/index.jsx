@@ -19,6 +19,7 @@ import fernandaL from "../../assets/images/client-profile-pics/fernanda-l.png";
 //
 // import salesGraph from "../../assets/images/home-generic-images/sales-graph.png";
 import conectingVtex from "../../assets/images/home-generic-images/conecting-vtex.png";
+import CardContainer from "../../CardContainer/Desk";
 
 function HomeDesk() {
   const settings = {
@@ -695,7 +696,8 @@ function HomeDesk() {
                 Possuimos uma metodologia própria de gestão de projetos, que
                 <br></br> tem como objetivos estratégicos os seguintes pilares.
               </p>
-              <div className={"card-link-container"}>
+              <CardContainer />
+              {/* <div className={"card-link-container"}>
                 <button className={"card-links"}>
                   <svg
                     width="73"
@@ -860,7 +862,7 @@ function HomeDesk() {
                   </svg>
                   <p>Relacionamentos</p>
                 </button>
-              </div>
+              </div> */}
             </div>
 
             {/* <div className={"card-contrast-background"}>

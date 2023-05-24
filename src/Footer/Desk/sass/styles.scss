@@ -5,7 +5,7 @@
   flex-direction: column;
 
   .footer-container-form-bg {
-    padding: 2rem 16px 1.25rem;
+    padding: 2rem 0px 1.25rem;
     position: relative;
     background-color: $light-main-color;
     overflow: hidden;
@@ -61,7 +61,7 @@
     align-items: center;
     justify-content: space-between;
     margin-inline: $globalMarginDesk;
-    margin-top: 80px;
+    margin-block: 80px;
     gap: 10px;
     @media (min-width: 1600px) {
       margin-inline: 350px;
@@ -178,7 +178,7 @@
   }
 
   .footer-container-links {
-    padding: 40px;
+    padding: 40px 0;
     background-color: $dark-main-color;
     display: flex;
     flex-direction: row;
@@ -200,6 +200,7 @@
     .form-column {
       display: flex;
       flex-direction: column;
+      font-size: 1.5rem;
     }
 
     .contato {
@@ -220,13 +221,16 @@
       }
       a {
         @include padrao;
-        font-size: 0.875rem;
+        font-size: 1rem;
         font-weight: 300;
         color: $text-contrast;
         text-decoration: none;
 
         &:visited {
           color: $text-contrast;
+        }
+        &:hover {
+          text-decoration: underline;
         }
       }
     }

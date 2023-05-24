@@ -1,9 +1,13 @@
-import React from 'react';
-import HeaderMob from './Mobile/index';
+import React from "react";
+import HeaderMob from "./Mobile/index";
+import HeaderDesk from "./Desk/index";
 
-function Header (){
-  return(
-    <HeaderMob />
-  )
-}
-export default Header
+const Header = () => {
+  return (
+    <>
+      <HeaderMob />
+      <HeaderDesk />
+    </>
+  );
+};
+export default Header;

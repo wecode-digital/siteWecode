@@ -5,8 +5,8 @@ import FooterDesk from "./Desk/index";
 const Footer = () => {
   return (
     <>
-      <FooterMob />;
-      <FooterDesk />;
+      <FooterMob />
+      <FooterDesk />
     </>
   );
 };
