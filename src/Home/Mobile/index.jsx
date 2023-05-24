@@ -1045,7 +1045,9 @@ function HomeMob() {
                   digital, através de planejamento e suporte continuos.
                 </p>
               </div>
-              <a className={"know-more-link"}>Saiba mais</a>
+              <a className={"know-more-link"} href="#">
+                Saiba mais
+              </a>
             </div>
             {/* <div className={"testimony"}>
           <h2 className={"tag"}>DEPOIMENTOS</h2>
