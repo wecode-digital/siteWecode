@@ -117,7 +117,7 @@ function FooterDesk() {
                   </ul>
                 </li>
                 <li>
-                  <ul className={"form-column"}>
+                  <ul className={"form-column conectar"}>
                     CONECTE-SE
                     <div className={"social-media"}>
                       <li>

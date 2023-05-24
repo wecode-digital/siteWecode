@@ -191,4 +191,14 @@
       }
     }
   }
+  .footer-final {
+    background: #353a42;
+    @include padrao;
+    &-container {
+      margin-inline: $globalMarginMob;
+      padding-top: 10px;
+      color: $text-contrast;
+      font-size: 0.875rem;
+    }
+  }
 }

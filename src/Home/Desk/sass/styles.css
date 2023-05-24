@@ -75,6 +75,7 @@
     font-weight: 300;
     line-height: 1.5;
     color: #353a42;
+    cursor: pointer;
     font-size: 1rem;
     background: #0d98e6;
     margin-inline: auto;
@@ -92,8 +93,8 @@
     align-items: center;
     -webkit-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
-    -webkit-animation: ease-in-out 1s;
-    animation: ease-in-out 1s;
+    -webkit-animation: ease-in-out 0.5s;
+    animation: ease-in-out 0.5s;
     white-space: nowrap; }
     .home-container-desk .know-more-link:hover {
       background: #053766;
@@ -492,33 +493,42 @@
       grid-row: 1;
       grid-column: span 2;
       padding-left: 56px;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-      padding-block: 0; }
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      padding-block: 0;
+      max-height: 230px; }
+      @media screen and (max-width: 1350px) {
+        .home-container-desk .methodology-card-first .metodology-container-text {
+          margin-block: 10px; } }
       .home-container-desk .methodology-card-first .methodology-card-title {
         text-align: left; }
       .home-container-desk .methodology-card-first .methodology-card-text {
         text-align: left;
         width: 100%; }
       .home-container-desk .methodology-card-first img {
-        -webkit-transition: scale 0.3s ease;
-        transition: scale 0.3s ease; }
+        -webkit-transition: padding 0.5s ease-in-out;
+        transition: padding 0.5s ease-in-out; }
+        @media screen and (min-width: 1800px) {
+          .home-container-desk .methodology-card-first img {
+            padding-inline: 180px 40px; } }
     .home-container-desk .methodology-card-first:hover {
-      padding-left: 0; }
-      .home-container-desk .methodology-card-first:hover .metodology-container-text {
-        padding-top: 30px; }
+      padding-left: 0;
+      scale: 1.1; }
       .home-container-desk .methodology-card-first:hover svg {
-        width: 40%; }
-      .home-container-desk .methodology-card-first:hover img {
-        height: 100%; }
+        width: 40% !important; }
+      @media screen and (min-width: 1800px) {
+        .home-container-desk .methodology-card-first:hover img {
+          padding-inline: 120px 100px; } }
     .home-container-desk .methodology .methodology-card-second-row {
       padding: 40px 56px;
       max-width: 585px;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
       height: -webkit-fit-content;
       height: -moz-fit-content;
       height: fit-content; }
+      .home-container-desk .methodology .methodology-card-second-row:hover {
+        scale: 1.1; }
     .home-container-desk .methodology-card {
       border-radius: 10px;
       background: #f5f5f7;
@@ -531,20 +541,40 @@
       -ms-flex-align: center;
       align-items: center; }
       .home-container-desk .methodology-card .know-more-link {
-        display: none;
-        margin-left: 0; }
+        opacity: 0;
+        width: 0;
+        height: 0;
+        margin-left: 0;
+        margin-block: 0;
+        -webkit-animation: width, opacity 0.5s ease-in-out;
+        animation: width, opacity 0.5s ease-in-out; }
       .home-container-desk .methodology-card svg {
-        display: none;
-        width: 100%; }
+        opacity: 0;
+        width: 0;
+        -webkit-animation: width, opacity 0.5s ease-in-out;
+        animation: width, opacity 0.5s ease-in-out; }
       .home-container-desk .methodology-card:hover {
-        padding-block: 30px; }
+        gap: 25px; }
         .home-container-desk .methodology-card:hover svg {
-          display: block; }
+          opacity: 1;
+          width: 100%; }
+          @media screen and (min-width: 1800px) {
+            .home-container-desk .methodology-card:hover svg {
+              width: 50%; } }
         .home-container-desk .methodology-card:hover .know-more-link {
-          display: block;
+          opacity: 1;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          height: -webkit-fit-content;
+          height: -moz-fit-content;
+          height: fit-content;
           margin-block: 10px 0; }
           .home-container-desk .methodology-card:hover .know-more-link .know-more-arrow {
-            display: none; }
+            -webkit-animation: width, opacity 0.5s ease-in-out;
+            animation: width, opacity 0.5s ease-in-out;
+            opacity: 0;
+            width: 0; }
         .home-container-desk .methodology-card:hover .know-more-link:hover {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -556,7 +586,10 @@
           -ms-flex-pack: justify;
           justify-content: space-between; }
           .home-container-desk .methodology-card:hover .know-more-link:hover .know-more-arrow {
-            display: block; }
+            opacity: 1;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content; }
       .home-container-desk .methodology-card .metodology-container-text {
         display: -webkit-box;
         display: -ms-flexbox;

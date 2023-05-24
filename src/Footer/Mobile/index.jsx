@@ -1,5 +1,6 @@
 import React from "react";
 import "./sass/styles.css";
+import wecodeImg from "../../assets/images/home-generic-images/wecode-footer.png";
 
 function FooterMob() {
   let isMobile = false;
@@ -210,6 +211,21 @@ function FooterMob() {
                   </ul>
                 </li>
               </ul>
+            </div>
+            <div className={"footer-final"}>
+              <div className={"footer-final-container"}>
+                <img src={wecodeImg} />
+                <div>
+                  <p className={"footer-final-text"}>
+                    ©2023 wecode.digital - e-commerce technology. Todos os
+                    direitos reservados.
+                  </p>
+                  <p className={"footer-final-text"}>
+                    Rua Plácido de Castro, 1063 - Sala 403 - Exposição, Caxias
+                    do Sul - RS, 95084-370 Telefone: (54) 3028-9452
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </footer>

@@ -625,7 +625,7 @@ function HomeDesk() {
                   </div>
                 </div>
               </div>
-              <a className={"know-more-link"} href="#">
+              <a className={"know-more-link"} href={"#"} formScroll>
                 Saiba mais
                 <svg
                   className={"know-more-arrow"}

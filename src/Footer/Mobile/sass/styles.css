@@ -240,3 +240,15 @@
         text-decoration: none; }
         .footer-container .footer-container-links li a:visited {
           color: #fff; }
+  .footer-container .footer-final {
+    background: #353a42;
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #353a42; }
+    .footer-container .footer-final-container {
+      margin-inline: 20px;
+      padding-top: 10px;
+      color: #fff;
+      font-size: 0.875rem; }
