@@ -241,7 +241,7 @@
     .home-container-desk .about-us .conecting-img {
       position: absolute;
       max-width: 650px;
-      right: -205px; }
+      right: -215px; }
       @media screen and (min-width: 1920px) {
         .home-container-desk .about-us .conecting-img {
           right: -120px; } }
@@ -491,33 +491,34 @@
     .home-container-desk .methodology-card-first {
       grid-row: 1;
       grid-column: span 2;
-      border-radius: 10px;
-      background: #f5f5f7;
-      -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
       padding-left: 56px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      gap: 150px; }
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      padding-block: 0; }
       .home-container-desk .methodology-card-first .methodology-card-title {
         text-align: left; }
       .home-container-desk .methodology-card-first .methodology-card-text {
-        text-align: left; }
-    .home-container-desk .methodology-card-second {
-      grid-row: 2;
-      grid-column: 1;
-      padding: 40px 56px; }
-    .home-container-desk .methodology-card-third {
-      grid-row: 2;
-      grid-column: 2;
-      padding: 40px 56px; }
+        text-align: left;
+        width: 100%; }
+      .home-container-desk .methodology-card-first img {
+        -webkit-transition: scale 0.3s ease;
+        transition: scale 0.3s ease; }
+    .home-container-desk .methodology-card-first:hover {
+      padding-left: 0; }
+      .home-container-desk .methodology-card-first:hover .metodology-container-text {
+        padding-top: 30px; }
+      .home-container-desk .methodology-card-first:hover svg {
+        width: 40%; }
+      .home-container-desk .methodology-card-first:hover img {
+        height: 100%; }
+    .home-container-desk .methodology .methodology-card-second-row {
+      padding: 40px 56px;
+      max-width: 585px;
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content; }
     .home-container-desk .methodology-card {
       border-radius: 10px;
       background: #f5f5f7;
@@ -535,24 +536,27 @@
       .home-container-desk .methodology-card svg {
         display: none;
         width: 100%; }
-      .home-container-desk .methodology-card:hover svg {
-        display: block; }
-      .home-container-desk .methodology-card:hover .know-more-link {
-        display: block; }
-        .home-container-desk .methodology-card:hover .know-more-link .know-more-arrow {
-          display: none; }
-      .home-container-desk .methodology-card:hover .know-more-link:hover {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between; }
-        .home-container-desk .methodology-card:hover .know-more-link:hover .know-more-arrow {
+      .home-container-desk .methodology-card:hover {
+        padding-block: 30px; }
+        .home-container-desk .methodology-card:hover svg {
           display: block; }
+        .home-container-desk .methodology-card:hover .know-more-link {
+          display: block;
+          margin-block: 10px 0; }
+          .home-container-desk .methodology-card:hover .know-more-link .know-more-arrow {
+            display: none; }
+        .home-container-desk .methodology-card:hover .know-more-link:hover {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between; }
+          .home-container-desk .methodology-card:hover .know-more-link:hover .know-more-arrow {
+            display: block; }
       .home-container-desk .methodology-card .metodology-container-text {
         display: -webkit-box;
         display: -ms-flexbox;

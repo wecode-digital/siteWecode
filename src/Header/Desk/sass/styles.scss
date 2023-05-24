@@ -14,11 +14,12 @@
   top: 0;
   box-sizing: border-box;
   z-index: 5;
-  width: calc(100% - 700px);
   margin-inline: $globalMarginDesk;
+  width: calc(100% - 500px);
   transition: top 0.3s ease;
   @media (min-width: 1600px) {
     margin-inline: 350px;
+    width: calc(100% - 700px);
   }
 }
 
@@ -35,10 +36,11 @@
   transition: top 0.3s ease;
   box-sizing: border-box;
   z-index: 5;
-  width: calc(100% - 700px);
+  width: calc(100% - 500px);
   margin-inline: $globalMarginDesk;
   @media (min-width: 1600px) {
     margin-inline: 350px;
+    width: calc(100% - 700px);
   }
 }
 

@@ -195,7 +195,7 @@
     .conecting-img {
       position: absolute;
       max-width: 650px;
-      right: -205px;
+      right: -215px;
       @media screen and (min-width: 1920px) {
         right: -120px;
       }
@@ -440,33 +440,40 @@
     &-card-first {
       grid-row: 1;
       grid-column: span 2;
-      border-radius: 10px;
-      background: $background;
-      box-shadow: $boxShadow;
       padding-left: 56px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 150px;
+      transition: all 0.5s ease;
+      padding-block: 0;
 
       .methodology-card-title {
         text-align: left;
       }
       .methodology-card-text {
         text-align: left;
+        width: 100%;
+      }
+      img {
+        transition: scale 0.3s ease;
+      }
+    }
+    &-card-first:hover {
+      padding-left: 0;
+
+      .metodology-container-text {
+        padding-top: 30px;
+      }
+      svg {
+        width: 40%;
+      }
+      img {
+        height: 100%;
       }
     }
 
-    &-card-second {
-      grid-row: 2;
-      grid-column: 1;
+    .methodology-card-second-row {
       padding: 40px 56px;
-    }
-
-    &-card-third {
-      grid-row: 2;
-      grid-column: 2;
-      padding: 40px 56px;
+      max-width: 585px;
+      transition: all 0.5s ease;
+      height: fit-content;
     }
 
     &-card {
@@ -485,11 +492,13 @@
         width: 100%;
       }
       &:hover {
+        padding-block: 30px;
         svg {
           display: block;
         }
         .know-more-link {
           display: block;
+          margin-block: 10px 0;
           .know-more-arrow {
             display: none;
           }

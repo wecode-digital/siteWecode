@@ -1148,7 +1148,7 @@ function HomeDesk() {
                 </div>
                 <img src={conectingCel}></img>
               </div>
-              <div className={"methodology-card methodology-card-second"}>
+              <div className={"methodology-card methodology-card-second-row"}>
                 <svg
                   width="65"
                   height="66"
@@ -1213,7 +1213,7 @@ function HomeDesk() {
                   </a>
                 </div>
               </div>
-              <div className={"methodology-card methodology-card-third"}>
+              <div className={"methodology-card methodology-card-second-row"}>
                 <svg
                   width="65"
                   height="66"
