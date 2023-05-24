@@ -482,10 +482,17 @@
     .methodology-card-second-row {
       padding: 40px 56px;
       max-width: 585px;
-      transition: all 0.5s ease-in-out;
+      // transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in;
       height: fit-content;
       &:hover {
         scale: 1.1;
+        // transition: none;
+
+        // .know-more-link {
+        //   transition: none !important;
+        //   animation: none !important;
+        // }
       }
     }
 
@@ -502,7 +509,7 @@
         height: 0;
         margin-left: 0;
         margin-block: 0;
-        animation: width, opacity 0.5s ease-in-out;
+        animation: width, opacity 0.5s ease-in;
       }
       svg {
         opacity: 0;

@@ -62,6 +62,8 @@
   @include padrao;
   text-decoration: none;
   color: $text;
+  font-weight: 400;
+  font-size: 1.125rem;
   &:hover {
     text-decoration: underline;
     color: $light-main-color;

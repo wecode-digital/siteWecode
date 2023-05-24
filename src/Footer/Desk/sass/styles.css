@@ -79,7 +79,8 @@
     gap: 10px; }
     @media (min-width: 1600px) {
       .footer-container-desk .footer-container-form-container {
-        margin-inline: 350px; } }
+        margin-inline: 350px;
+        padding: 40px 80px; } }
     .footer-container-desk .footer-container-form-container button {
       font-family: "Raleway", serif;
       font-style: normal;
@@ -103,8 +104,7 @@
       border-radius: 5px;
       margin-top: 1.25rem; }
   .footer-container-desk .footer-container-text-form {
-    width: 50%;
-    padding-left: 40px; }
+    width: 50%; }
   .footer-container-desk .footer-form-container {
     width: 50%; }
   .footer-container-desk .tag {

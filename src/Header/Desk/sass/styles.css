@@ -85,7 +85,9 @@
   line-height: 1.5;
   color: #353a42;
   text-decoration: none;
-  color: #353a42; }
+  color: #353a42;
+  font-weight: 400;
+  font-size: 1.125rem; }
   .header-container-links:hover {
     text-decoration: underline;
     color: #0d98e6; }

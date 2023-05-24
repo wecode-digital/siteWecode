@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./sass/styles.css";
 
 import Slider from "react-slick";
@@ -34,6 +34,13 @@ function HomeDesk() {
   let isDesk = false;
   if (window.innerWidth >= 1024) {
     isDesk = true;
+  }
+
+  // setTimeout
+  function handleScrollToResults() {
+    const teste = document.querySelector("footer");
+    console.log("teste", teste);
+    teste.scrollIntoView(true);
   }
 
   return (
@@ -625,7 +632,11 @@ function HomeDesk() {
                   </div>
                 </div>
               </div>
-              <a className={"know-more-link"} href={"#"} formScroll>
+              <p
+                className={"know-more-link"}
+                // href={""}
+                onClick={handleScrollToResults}
+              >
                 Saiba mais
                 <svg
                   className={"know-more-arrow"}
@@ -640,7 +651,7 @@ function HomeDesk() {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </p>
             </div>
           </div>
 

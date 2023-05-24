@@ -79,7 +79,10 @@ function MenuMob() {
             <a className={"institutional-links"}>Cases</a>
             <a className={"institutional-links"}>Contato</a>
             <a className={"institutional-links"}>Time</a>
-            <Link to="/sobre-nos" className={"institutional-links"}>
+            <Link
+              // to="/sobre-nos"
+              className={"institutional-links"}
+            >
               Sobre Nós
             </Link>
           </div>
