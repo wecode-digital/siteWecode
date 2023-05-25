@@ -9,7 +9,7 @@ function HeaderMob() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      const offset = 100;
+      const offset = 50;
 
       if (scrollTop < offset) {
         setScrolling(true);

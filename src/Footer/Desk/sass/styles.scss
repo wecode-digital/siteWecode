@@ -96,9 +96,9 @@
 
   .tag {
     @include padrao;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0;
     color: #8a8a8a;
     width: fit-content;
     border-radius: 5px;
@@ -109,7 +109,7 @@
     font-weight: 300;
     font-size: 3rem;
     line-height: 1.1;
-    margin-block: 1.25rem 0.5rem;
+    margin-block: 0.5rem 0.5rem;
   }
   .text-highlight {
     @include padrao;

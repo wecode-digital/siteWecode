@@ -188,6 +188,10 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding-top: 8px; }
+    .footer-container form textarea:focus {
+      background-color: transparent;
+      border: 1px solid #0d98e6;
+      outline: none; }
   .footer-container .footer-container-links {
     padding: 20px;
     background-color: #053766;
@@ -240,6 +244,18 @@
         text-decoration: none; }
         .footer-container .footer-container-links li a:visited {
           color: #fff; }
+      .footer-container .footer-container-links li .contato {
+        font-family: "Raleway", serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #353a42;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: #fff;
+        margin: 0; }
+        .footer-container .footer-container-links li .contato:visited {
+          color: #fff; }
   .footer-container .footer-final {
     background: #353a42;
     font-family: "Raleway", serif;
@@ -251,4 +267,6 @@
       margin-inline: 20px;
       padding-top: 10px;
       color: #fff;
-      font-size: 0.875rem; }
+      font-size: 0.75rem; }
+      .footer-container .footer-final-container img {
+        max-width: 110px; }

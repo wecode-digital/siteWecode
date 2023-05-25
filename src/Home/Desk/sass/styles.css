@@ -115,7 +115,8 @@
     justify-content: space-between;
     padding-top: 20vh; }
     .home-container-desk .first-fold .block-title {
-      text-align: left; }
+      text-align: left;
+      margin-bottom: 15px; }
     .home-container-desk .first-fold .first-fold-text {
       font-size: 1.125rem;
       text-align: left;
@@ -135,6 +136,8 @@
       justify-content: space-around; }
       .home-container-desk .first-fold .first-fold-text-container .block-title {
         margin-top: 0; }
+    .home-container-desk .first-fold .first-fold-img {
+      width: 515px; }
   .home-container-desk .our-clients {
     margin-top: 100px;
     padding: 20px 0 40px;
@@ -154,13 +157,15 @@
         .home-container-desk .our-clients-container {
           margin-inline: 350px; } }
     .home-container-desk .our-clients .block-title {
-      margin-block: 1.5rem 1rem;
+      margin-block: 0 16px;
       text-align: center; }
     .home-container-desk .our-clients .tag {
       text-align: center;
-      width: auto; }
+      width: auto;
+      margin-bottom: 0;
+      padding-bottom: 0; }
     .home-container-desk .our-clients .know-more-link {
-      margin-top: 20px; }
+      margin-top: 60px; }
   .home-container-desk .client-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176,7 +181,8 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 100%; }
+      width: 100%;
+      margin-top: 30px; }
       .home-container-desk .client-list .client-wrapper div {
         background-color: #f7f7f7;
         border: none;
@@ -191,6 +197,14 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center; }
+        .home-container-desk .client-list .client-wrapper div img {
+          width: 123px;
+          height: 23px; }
+        .home-container-desk .client-list .client-wrapper div .kiss {
+          height: 35px; }
+        .home-container-desk .client-list .client-wrapper div svg {
+          width: 123px;
+          height: 35px; }
         .home-container-desk .client-list .client-wrapper div:first-child {
           border-radius: 5px 0 0 5px; }
         .home-container-desk .client-list .client-wrapper div:last-child {
@@ -242,7 +256,10 @@
     .home-container-desk .about-us .conecting-img {
       position: absolute;
       max-width: 650px;
-      right: -215px; }
+      right: -225px; }
+      @media screen and (min-width: 1450px) {
+        .home-container-desk .about-us .conecting-img {
+          max-width: 750px; } }
       @media screen and (min-width: 1920px) {
         .home-container-desk .about-us .conecting-img {
           right: -120px; } }

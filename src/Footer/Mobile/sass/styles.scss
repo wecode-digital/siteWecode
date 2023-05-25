@@ -148,6 +148,11 @@
       box-sizing: border-box;
       padding-top: 8px;
     }
+    textarea:focus {
+      background-color: transparent;
+      border: 1px solid #0d98e6;
+      outline: none;
+    }
   }
   .footer-container-links {
     padding: 20px;
@@ -189,6 +194,16 @@
           color: $text-contrast;
         }
       }
+      .contato {
+        @include padrao;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: $text-contrast;
+        margin: 0;
+        &:visited {
+          color: $text-contrast;
+        }
+      }
     }
   }
   .footer-final {
@@ -198,7 +213,10 @@
       margin-inline: $globalMarginMob;
       padding-top: 10px;
       color: $text-contrast;
-      font-size: 0.875rem;
+      font-size: 0.75rem;
+      img {
+        max-width: 110px;
+      }
     }
   }
 }

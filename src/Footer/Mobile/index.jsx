@@ -8,6 +8,11 @@ function FooterMob() {
     isMobile = true;
   }
 
+  function handleScrollToResults() {
+    const teste = document.querySelector("footer");
+    console.log("teste", teste);
+    teste.scrollIntoView({ behavior: "smooth" });
+  }
   return (
     <>
       {isMobile ? (
@@ -31,6 +36,7 @@ function FooterMob() {
                   <label>
                     Nome*{" "}
                     <input
+                      required="required"
                       name="name"
                       type="text"
                       placeholder="Digite seu nome completo"
@@ -39,6 +45,7 @@ function FooterMob() {
                   <label>
                     Empresa*{" "}
                     <input
+                      required="required"
                       name="company"
                       type="text"
                       placeholder="Digite o nome da empresa"
@@ -47,14 +54,18 @@ function FooterMob() {
                   <label>
                     Telefone*{" "}
                     <input
+                      required="required"
                       name="phone"
-                      type="phone"
+                      type="tel"
+                      maxLength="15"
                       placeholder="+55 (000) 9 9999-9999"
+                      pattern="[0-9]{2}-[0-9]{4,6}-[0-9]{3,4}$"
                     ></input>
                   </label>
                   <label>
                     Sua mensagem*{" "}
                     <textarea
+                      required="required"
                       name="message"
                       type="text"
                       placeholder="Escreva aqui sua mensagem"
@@ -206,7 +217,14 @@ function FooterMob() {
                       <a href="/depoimentos">Depoimentos</a>
                     </li>
                     <li>
-                      <a href="/contato">Contato</a>
+                      <p
+                        className={"contato"}
+                        onClick={() => {
+                          handleScrollToResults();
+                        }}
+                      >
+                        Contato
+                      </p>
                     </li>
                   </ul>
                 </li>

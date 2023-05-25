@@ -530,7 +530,12 @@ function HomeDesk() {
                     </svg>
                   </div>
                   <div>
-                    <img width="65" height="25" src={logokissny}></img>
+                    <img
+                      className={"kiss"}
+                      width="65"
+                      height="25"
+                      src={logokissny}
+                    ></img>
                   </div>
 
                   <div>

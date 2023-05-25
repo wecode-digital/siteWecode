@@ -113,9 +113,9 @@
     font-weight: 300;
     line-height: 1.5;
     color: #353a42;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0;
     color: #8a8a8a;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -131,7 +131,7 @@
     font-weight: 300;
     font-size: 3rem;
     line-height: 1.1;
-    margin-block: 1.25rem 0.5rem; }
+    margin-block: 0.5rem 0.5rem; }
   .footer-container-desk .text-highlight {
     font-family: "Raleway", serif;
     font-style: normal;

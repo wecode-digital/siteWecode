@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./sass/styles.css";
 import { Link } from "react-router-dom";
 
-function MenuMob({ title }) {
+function MenuMob() {
   const [OpenMenu, SetOpenMenu] = useState(false);
 
   function handleScrollToResults() {
@@ -132,7 +132,10 @@ function MenuMob({ title }) {
             <div className={"menu-social-media"}>
               <h5>REDES SOCIAIS</h5>
               <div className={"menu-social-media-wrapper"}>
-                <a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/wecode.digital/"
+                >
                   Instagram
                   <svg
                     width="8"
@@ -147,7 +150,10 @@ function MenuMob({ title }) {
                     />
                   </svg>
                 </a>
-                <a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/wecodedigital/?original_referer=https%3A%2F%2Fwww.wecode.digital%2F"
+                >
                   Linkedin
                   <svg
                     width="8"
@@ -162,7 +168,10 @@ function MenuMob({ title }) {
                     />
                   </svg>
                 </a>
-                <a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/wecode.digital"
+                >
                   Facebook
                   <svg
                     width="8"
@@ -190,14 +199,23 @@ function MenuMob({ title }) {
           <svg
             className={"botao-menu"}
             width="20"
-            height="12"
-            viewBox="0 0 20 12"
+            height="16"
+            viewBox="0 0 20 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect y="0" width="20" height="1" rx="1" fill="#353A42" />
-            <rect y="5" width="20" height="1" rx="1" fill="#353A42" />
-            <rect y="10" width="20" height="1" rx="1" fill="#353A42" />
+            <path
+              d="M0 0H20V0.0844444C20 1.14148 18.7122 2 17.1267 2H2.87444C1.28889 2 0.0011122 1.14148 0.0011122 0.0844444V0H0Z"
+              fill="#353A42"
+            />
+            <path
+              d="M2.74222 7H20V7.17185C20 8.18074 18.7711 9 17.2578 9H0V8.82815C0 7.81926 1.22889 7 2.74222 7Z"
+              fill="#353A42"
+            />
+            <path
+              d="M2.87444 14H17.1267C18.7122 14 20 14.8585 20 15.9156V16H0V15.9156C0 14.8585 1.28778 14 2.87334 14H2.87444Z"
+              fill="#353A42"
+            />
           </svg>
         </div>
       )}

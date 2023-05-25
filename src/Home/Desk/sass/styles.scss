@@ -89,6 +89,7 @@
     padding-top: 20vh;
     .block-title {
       text-align: left;
+      margin-bottom: 15px;
     }
     .first-fold-text {
       font-size: 1.125rem;
@@ -104,6 +105,9 @@
         margin-top: 0;
       }
     }
+    .first-fold-img {
+      width: 515px;
+    }
   }
   .our-clients {
     margin-top: 100px;
@@ -118,15 +122,17 @@
       }
     }
     .block-title {
-      margin-block: 1.5rem 1rem;
+      margin-block: 0 16px;
       text-align: center;
     }
     .tag {
       text-align: center;
       width: auto;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
     .know-more-link {
-      margin-top: 20px;
+      margin-top: 60px;
     }
   }
   .client-list {
@@ -141,6 +147,7 @@
     .client-wrapper {
       display: flex;
       width: 100%;
+      margin-top: 30px;
       div {
         background-color: #f7f7f7;
         border: none;
@@ -149,6 +156,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        img {
+          width: 123px;
+          height: 23px;
+        }
+        .kiss {
+          height: 35px;
+        }
+        svg {
+          width: 123px;
+          height: 35px;
+        }
 
         &:first-child {
           border-radius: 5px 0 0 5px;
@@ -196,7 +215,10 @@
     .conecting-img {
       position: absolute;
       max-width: 650px;
-      right: -215px;
+      right: -225px;
+      @media screen and (min-width: 1450px) {
+        max-width: 750px;
+      }
       @media screen and (min-width: 1920px) {
         right: -120px;
       }
