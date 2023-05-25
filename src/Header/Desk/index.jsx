@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 function HeaderDesk() {
   const [scrolling, setScrolling] = useState(false);
 
+  function handleScrollToResults() {
+    const teste = document.querySelector("footer");
+    console.log("teste", teste);
+    teste.scrollIntoView({ behavior: "smooth" });
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
@@ -83,18 +89,34 @@ function HeaderDesk() {
                 </svg>
               </Link>
               <div className={"header-container-institucional"}>
-                <a href="#" className={"header-container-links"}>
+                <p
+                  onClick={handleScrollToResults}
+                  // href="#"
+                  className={"header-container-links"}
+                >
                   Cases
-                </a>
-                <a href="#" className={"header-container-links"}>
+                </p>
+                <p
+                  onClick={handleScrollToResults}
+                  // href="#"
+                  className={"header-container-links"}
+                >
                   Contato
-                </a>
-                <a href="#" className={"header-container-links"}>
+                </p>
+                <p
+                  onClick={handleScrollToResults}
+                  // href="#"
+                  className={"header-container-links"}
+                >
                   Time
-                </a>
-                <a href="#" className={"header-container-links"}>
+                </p>
+                <p
+                  onClick={handleScrollToResults}
+                  // href="#"
+                  className={"header-container-links"}
+                >
                   Sobre nós
-                </a>
+                </p>
               </div>
             </div>
           </div>

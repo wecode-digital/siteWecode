@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import "./sass/styles.css";
 import { Link } from "react-router-dom";
 
-function MenuMob() {
+function MenuMob({ title }) {
   const [OpenMenu, SetOpenMenu] = useState(false);
+
+  function handleScrollToResults() {
+    const teste = document.querySelector("footer");
+    console.log("teste", teste);
+    teste.scrollIntoView({ behavior: "smooth" });
+  }
 
   return (
     <>
@@ -76,11 +82,38 @@ function MenuMob() {
           </div>
 
           <div className={"menu-body"}>
-            <a className={"institutional-links"}>Cases</a>
-            <a className={"institutional-links"}>Contato</a>
-            <a className={"institutional-links"}>Time</a>
+            <p
+              className={"institutional-links"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToResults();
+              }}
+            >
+              Cases
+            </p>
+            <p
+              className={"institutional-links"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToResults();
+              }}
+            >
+              Contato
+            </p>
+            <p
+              className={"institutional-links"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToResults();
+              }}
+            >
+              Time
+            </p>
             <Link
-              // to="/sobre-nos"
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToResults();
+              }}
               className={"institutional-links"}
             >
               Sobre Nós

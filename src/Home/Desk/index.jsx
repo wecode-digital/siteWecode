@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./sass/styles.css";
 
 import Slider from "react-slick";
@@ -36,11 +36,11 @@ function HomeDesk() {
     isDesk = true;
   }
 
-  // setTimeout
+  // scroll para o footer
   function handleScrollToResults() {
     const teste = document.querySelector("footer");
     console.log("teste", teste);
-    teste.scrollIntoView(true);
+    teste.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -1140,7 +1140,11 @@ function HomeDesk() {
                     de comércio eletrônico B2B, B2C e Omnichannel sem
                     complicações e com total flexibilidade
                   </p>
-                  <a className={"know-more-link"} href="#">
+                  <p
+                    className={"know-more-link"}
+                    // href="#"
+                    onClick={handleScrollToResults}
+                  >
                     Saiba mais
                     <svg
                       className={"know-more-arrow"}
@@ -1155,7 +1159,7 @@ function HomeDesk() {
                         fill="white"
                       />
                     </svg>
-                  </a>
+                  </p>
                 </div>
                 <img src={conectingCel}></img>
               </div>
@@ -1206,7 +1210,11 @@ function HomeDesk() {
                     Migração da sua loja para o ecossistema VTEX, garantindo uma
                     transição tranquila e sem atritos ao cliente final
                   </p>
-                  <a className={"know-more-link"} href="#">
+                  <p
+                    className={"know-more-link"}
+                    // href="#"
+                    onClick={handleScrollToResults}
+                  >
                     Saiba mais
                     <svg
                       className={"know-more-arrow"}
@@ -1221,7 +1229,7 @@ function HomeDesk() {
                         fill="white"
                       />
                     </svg>
-                  </a>
+                  </p>
                 </div>
               </div>
               <div className={"methodology-card methodology-card-second-row"}>
@@ -1284,7 +1292,11 @@ function HomeDesk() {
                     Ciclos mensais de analise e evolução do seu canal de vendas
                     digital, através de planejamento e suporte continuos.
                   </p>
-                  <a className={"know-more-link"} href="#">
+                  <p
+                    className={"know-more-link"}
+                    // href="#"
+                    onClick={handleScrollToResults}
+                  >
                     Saiba mais
                     <svg
                       className={"know-more-arrow"}
@@ -1299,11 +1311,15 @@ function HomeDesk() {
                         fill="white"
                       />
                     </svg>
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
-            <a className={"know-more-link"} href="#">
+            <p
+              className={"know-more-link"}
+              // href="#"
+              onClick={handleScrollToResults}
+            >
               Saiba mais
               <svg
                 className={"know-more-arrow"}
@@ -1318,7 +1334,7 @@ function HomeDesk() {
                   fill="white"
                 />
               </svg>
-            </a>
+            </p>
           </div>
           {/* <div className={"testimony"}>
           <h2 className={"tag"}>DEPOIMENTOS</h2>

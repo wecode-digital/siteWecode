@@ -13,6 +13,7 @@
   z-index: 5;
 }
 .menu-container {
+  transition: opacity 0.3s ease-out;
   z-index: 5;
   position: fixed;
   inset: 0;
@@ -48,6 +49,7 @@
       font-size: 2rem;
       color: $text-contrast;
       text-decoration: none;
+      margin: 0;
     }
   }
   .menu-footer {

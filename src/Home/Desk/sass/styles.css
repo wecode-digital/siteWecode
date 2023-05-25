@@ -546,13 +546,13 @@
         height: 0;
         margin-left: 0;
         margin-block: 0;
-        -webkit-animation: width, opacity 0.5s ease-in;
-        animation: width, opacity 0.5s ease-in; }
+        -webkit-transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.5s; }
       .home-container-desk .methodology-card svg {
         opacity: 0;
         width: 0;
-        -webkit-animation: width, opacity 0.5s ease-in-out;
-        animation: width, opacity 0.5s ease-in-out; }
+        -webkit-transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.5s; }
       .home-container-desk .methodology-card:hover {
         gap: 25px; }
         .home-container-desk .methodology-card:hover svg {
@@ -569,10 +569,12 @@
           height: -webkit-fit-content;
           height: -moz-fit-content;
           height: fit-content;
+          -webkit-transition: all ease-in-out 0.5s;
+          transition: all ease-in-out 0.5s;
           margin-block: 10px 0; }
           .home-container-desk .methodology-card:hover .know-more-link .know-more-arrow {
-            -webkit-animation: width, opacity 0.5s ease-in-out;
-            animation: width, opacity 0.5s ease-in-out;
+            -webkit-transition: all ease-in-out 0.5s;
+            transition: all ease-in-out 0.5s;
             opacity: 0;
             width: 0; }
         .home-container-desk .methodology-card:hover .know-more-link:hover {

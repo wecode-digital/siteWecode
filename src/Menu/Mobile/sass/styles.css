@@ -12,6 +12,8 @@
   z-index: 5; }
 
 .menu-container {
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
   z-index: 5;
   position: fixed;
   inset: 0;
@@ -74,7 +76,8 @@
       font-weight: 100;
       font-size: 2rem;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      margin: 0; }
   .menu-container .menu-footer {
     display: -webkit-box;
     display: -ms-flexbox;

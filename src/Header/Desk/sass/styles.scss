@@ -64,6 +64,7 @@
   color: $text;
   font-weight: 400;
   font-size: 1.125rem;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
     color: $light-main-color;

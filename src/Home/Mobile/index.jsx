@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./sass/styles.css";
 
 import Slider from "react-slick";
@@ -18,7 +18,7 @@ import fernandaL from "../../assets/images/client-profile-pics/fernanda-l.png";
 // import salesGraph from "../../assets/images/home-generic-images/sales-graph.png";
 import conectingVtex from "../../assets/images/home-generic-images/conecting-vtex.png";
 
-function HomeMob() {
+function HomeMob({ title }) {
   const settings = {
     dots: false,
     arrows: false,
@@ -27,6 +27,14 @@ function HomeMob() {
     slidesToScroll: 1,
     centerMode: false,
   };
+
+  //scroll para o footer
+  function handleScrollToResults() {
+    const teste = document.querySelector("footer");
+    console.log("teste", teste);
+    teste.scrollIntoView({ behavior: "smooth" });
+  }
+  //cards
 
   let isMobile = false;
   if (window.innerWidth <= 1024) {
@@ -624,9 +632,13 @@ function HomeMob() {
                   </div>
                 </div>
               </div>
-              <a className={"know-more-link"} href="#">
+              <p
+                className={"know-more-link"}
+                // href="#"
+                onClick={handleScrollToResults}
+              >
                 Saiba mais
-              </a>
+              </p>
             </div>
           </div>
           <div className={"about-us"}>
@@ -1045,7 +1057,11 @@ function HomeMob() {
                   digital, através de planejamento e suporte continuos.
                 </p>
               </div>
-              <a className={"know-more-link"} href="#">
+              <a
+                className={"know-more-link"}
+                // href="#"
+                onClick={handleScrollToResults}
+              >
                 Saiba mais
               </a>
             </div>
