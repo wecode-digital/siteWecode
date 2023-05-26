@@ -295,7 +295,8 @@
       margin: 0;
       font-size: 2.5rem; }
     .home-container-desk .how-generate-value .tag {
-      margin: 0;
+      margin-top: 20px;
+      margin-left: 0;
       padding: 30px 0 0; }
     .home-container-desk .how-generate-value .block-title {
       margin-block: 10px 15px; }

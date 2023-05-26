@@ -206,6 +206,10 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding-top: 8px; }
+      .footer-container-desk form textarea:focus {
+        background-color: transparent;
+        border: 1px solid #0d98e6;
+        outline: none; }
   .footer-container-desk .footer-container-columns {
     width: 100%;
     margin-inline: 250px;
@@ -312,6 +316,11 @@
     @media (min-width: 1600px) {
       .footer-container-desk .footer-final-container {
         margin-inline: 350px; } }
+    .footer-container-desk .footer-final-container img {
+      max-width: 110px; }
   .footer-container-desk .footer-final-text {
     color: #fff;
-    text-align: end; }
+    text-align: end;
+    font-size: 12px; }
+  .footer-container-desk .first {
+    margin-bottom: 0; }

@@ -34,6 +34,7 @@ function FooterDesk() {
                     <label>
                       Nome*{" "}
                       <input
+                        required="required"
                         name="name"
                         type="text"
                         placeholder="Digite seu nome completo"
@@ -42,6 +43,7 @@ function FooterDesk() {
                     <label>
                       Empresa*{" "}
                       <input
+                        required="required"
                         name="company"
                         type="text"
                         placeholder="Digite o nome da empresa"
@@ -50,9 +52,11 @@ function FooterDesk() {
                     <label>
                       Telefone*{" "}
                       <input
+                        required="required"
                         name="phone"
                         type="phone"
                         placeholder="+55 (000) 9 9999-9999"
+                        pattern="[0-9]{2}-[0-9]{4,6}-[0-9]{3,4}$"
                       ></input>
                     </label>
                     <label>
@@ -218,7 +222,7 @@ function FooterDesk() {
               <div className={"footer-final-container"}>
                 <img src={wecodeImg} />
                 <div>
-                  <p className={"footer-final-text"}>
+                  <p className={"footer-final-text first"}>
                     ©2023 wecode.digital - e-commerce technology. Todos os
                     direitos reservados.
                   </p>
