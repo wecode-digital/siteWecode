@@ -56,7 +56,6 @@ function HomeDesk() {
               </h2>
               <p className={"first-fold-text"}>
                 A Wecode é certificada e homologada para revender, implantar e
-                <br></br>
                 prestar suporte para as soluções de e-commerce da VTEX
               </p>
             </div>

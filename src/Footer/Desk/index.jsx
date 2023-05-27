@@ -25,8 +25,8 @@ function FooterDesk() {
                     Vamos <span className={"text-highlight"}>conversar!</span>
                   </h3>
                   <p className={"home-paragraph"}>
-                    Preencha o formulário abaixo para entrar em contato,
-                    <br></br> ou pelos outros meios de comunicações abaixo.
+                    Preencha o formulário abaixo para entrar em contato, ou
+                    pelos outros meios de comunicações abaixo.
                   </p>
                 </div>
                 <div className={"footer-form-container"}>
@@ -125,7 +125,10 @@ function FooterDesk() {
                     CONECTE-SE
                     <div className={"social-media"}>
                       <li>
-                        <a href="https://www.instagram.com/wecode.digital/">
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/wecode.digital/"
+                        >
                           <svg
                             width="24"
                             height="24"
@@ -154,7 +157,10 @@ function FooterDesk() {
                       </li>
 
                       <li>
-                        <a href="https://www.facebook.com/wecode.digital">
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/wecode.digital"
+                        >
                           <svg
                             width="24"
                             height="24"
@@ -171,7 +177,10 @@ function FooterDesk() {
                       </li>
 
                       <li>
-                        <a href="https://www.linkedin.com/company/wecodedigital?original_referer=https%3A%2F%2Fwww.wecode.digital%2F">
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/company/wecodedigital?original_referer=https%3A%2F%2Fwww.wecode.digital%2F"
+                        >
                           <svg
                             width="25"
                             height="25"

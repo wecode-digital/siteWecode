@@ -52,8 +52,6 @@
     padding: 1.5rem 20px;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
-    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.7px);
     -webkit-backdrop-filter: blur(6.7px);
     display: -webkit-box;
@@ -147,7 +145,7 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      font-size: 0.875rem;
+      font-size: 1rem;
       margin-top: 1.5rem; }
       .footer-container form label:first-child {
         margin: 0; }

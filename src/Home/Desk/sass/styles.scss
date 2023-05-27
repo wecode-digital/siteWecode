@@ -6,9 +6,7 @@
     margin-inline: 350px;
   }
   .block-title {
-    @include padrao;
-    font-weight: 300;
-    font-size: 3rem;
+    @include title;
     line-height: 1.1;
   }
   .first-fold-text {
@@ -99,7 +97,6 @@
     .first-fold-text-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-around;
       .block-title {
         margin-top: 0;
@@ -219,7 +216,10 @@
       @media screen and (min-width: 1450px) {
         max-width: 750px;
       }
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1600px) {
+        right: -280px;
+      }
+      @media screen and (min-width: 1900px) {
         right: -120px;
       }
     }
@@ -240,7 +240,10 @@
       padding: 120px 60px;
       width: 40%;
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
+      @media (min-width: 1500px) {
+        font-size: 2.5rem;
+      }
     }
     .tag {
       margin-top: 20px;
@@ -458,7 +461,7 @@
       margin-top: 30px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 32px;
+      gap: 32px 40px;
     }
 
     &-card-first {
@@ -493,17 +496,29 @@
       scale: 1.1;
 
       svg {
-        width: 40% !important;
+        width: 30% !important;
+        @media screen and (min-width: 1700px) {
+          width: 20% !important;
+        }
+        @media screen and (min-width: 1800px) {
+          width: 40% !important;
+        }
+        @media screen and (min-width: 1900px) {
+          width: 20% !important;
+        }
       }
       img {
         @media screen and (min-width: 1800px) {
-          padding-inline: 120px 100px;
+          padding-inline: 0px 100px;
+        }
+        @media screen and (min-width: 1900px) {
+          padding-inline: 90px 100px;
         }
       }
     }
 
     .methodology-card-second-row {
-      padding: 40px 56px;
+      padding: 30px 25px;
       max-width: 585px;
       transition: all 0.5s ease-in;
       height: fit-content;
@@ -533,12 +548,15 @@
         transition: all ease-in-out 0.5s;
       }
       &:hover {
-        gap: 25px;
+        // gap: 25px;
         svg {
           opacity: 1;
-          width: 100%;
-          @media screen and (min-width: 1800px) {
-            width: 50%;
+          width: 80%;
+          @media screen and (min-width: 1500px) {
+            width: 40%;
+          }
+          @media screen and (min-width: 1900px) {
+            width: 25%;
           }
         }
         .know-more-link {
@@ -547,8 +565,10 @@
           height: fit-content;
           transition: all ease-in-out 0.5s;
           margin-block: 10px 0;
+          width: 80px;
           .know-more-arrow {
-            transition: all ease-in-out 0.5s;
+            transition: all ease 0.5s;
+            animation: all ease 0.5s;
             opacity: 0;
             width: 0;
           }
@@ -557,6 +577,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+          width: 110px;
           .know-more-arrow {
             opacity: 1;
             width: fit-content;

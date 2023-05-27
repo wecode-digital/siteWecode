@@ -7,12 +7,13 @@
   .home-container-desk .block-title {
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 300;
-    line-height: 1.5;
+    font-weight: 500;
     color: #353a42;
-    font-weight: 300;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.1; }
+    @media (min-width: 1800px) {
+      .home-container-desk .block-title {
+        font-size: 3rem; } }
   .home-container-desk .first-fold-text {
     font-family: "Raleway", serif;
     font-style: normal;
@@ -129,9 +130,6 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
       -ms-flex-pack: distribute;
       justify-content: space-around; }
       .home-container-desk .first-fold .first-fold-text-container .block-title {
@@ -260,7 +258,10 @@
       @media screen and (min-width: 1450px) {
         .home-container-desk .about-us .conecting-img {
           max-width: 750px; } }
-      @media screen and (min-width: 1920px) {
+      @media screen and (min-width: 1600px) {
+        .home-container-desk .about-us .conecting-img {
+          right: -280px; } }
+      @media screen and (min-width: 1900px) {
         .home-container-desk .about-us .conecting-img {
           right: -120px; } }
   .home-container-desk .about-us-text-container {
@@ -293,7 +294,10 @@
       padding: 120px 60px;
       width: 40%;
       margin: 0;
-      font-size: 2.5rem; }
+      font-size: 2rem; }
+      @media (min-width: 1500px) {
+        .home-container-desk .how-generate-value .light-background-quote {
+          font-size: 2.5rem; } }
     .home-container-desk .how-generate-value .tag {
       margin-top: 20px;
       margin-left: 0;
@@ -506,7 +510,7 @@
       margin-top: 30px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 32px; }
+      gap: 32px 40px; }
     .home-container-desk .methodology-card-first {
       grid-row: 1;
       grid-column: span 2;
@@ -533,12 +537,24 @@
       padding-left: 0;
       scale: 1.1; }
       .home-container-desk .methodology-card-first:hover svg {
-        width: 40% !important; }
+        width: 30% !important; }
+        @media screen and (min-width: 1700px) {
+          .home-container-desk .methodology-card-first:hover svg {
+            width: 20% !important; } }
+        @media screen and (min-width: 1800px) {
+          .home-container-desk .methodology-card-first:hover svg {
+            width: 40% !important; } }
+        @media screen and (min-width: 1900px) {
+          .home-container-desk .methodology-card-first:hover svg {
+            width: 20% !important; } }
       @media screen and (min-width: 1800px) {
         .home-container-desk .methodology-card-first:hover img {
-          padding-inline: 120px 100px; } }
+          padding-inline: 0px 100px; } }
+      @media screen and (min-width: 1900px) {
+        .home-container-desk .methodology-card-first:hover img {
+          padding-inline: 90px 100px; } }
     .home-container-desk .methodology .methodology-card-second-row {
-      padding: 40px 56px;
+      padding: 30px 25px;
       max-width: 585px;
       -webkit-transition: all 0.5s ease-in;
       transition: all 0.5s ease-in;
@@ -571,45 +587,50 @@
         width: 0;
         -webkit-transition: all ease-in-out 0.5s;
         transition: all ease-in-out 0.5s; }
-      .home-container-desk .methodology-card:hover {
-        gap: 25px; }
-        .home-container-desk .methodology-card:hover svg {
-          opacity: 1;
-          width: 100%; }
-          @media screen and (min-width: 1800px) {
-            .home-container-desk .methodology-card:hover svg {
-              width: 50%; } }
-        .home-container-desk .methodology-card:hover .know-more-link {
+      .home-container-desk .methodology-card:hover svg {
+        opacity: 1;
+        width: 80%; }
+        @media screen and (min-width: 1500px) {
+          .home-container-desk .methodology-card:hover svg {
+            width: 40%; } }
+        @media screen and (min-width: 1900px) {
+          .home-container-desk .methodology-card:hover svg {
+            width: 25%; } }
+      .home-container-desk .methodology-card:hover .know-more-link {
+        opacity: 1;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        -webkit-transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.5s;
+        margin-block: 10px 0;
+        width: 80px; }
+        .home-container-desk .methodology-card:hover .know-more-link .know-more-arrow {
+          -webkit-transition: all ease 0.5s;
+          transition: all ease 0.5s;
+          -webkit-animation: all ease 0.5s;
+          animation: all ease 0.5s;
+          opacity: 0;
+          width: 0; }
+      .home-container-desk .methodology-card:hover .know-more-link:hover {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 110px; }
+        .home-container-desk .methodology-card:hover .know-more-link:hover .know-more-arrow {
           opacity: 1;
           width: -webkit-fit-content;
           width: -moz-fit-content;
-          width: fit-content;
-          height: -webkit-fit-content;
-          height: -moz-fit-content;
-          height: fit-content;
-          -webkit-transition: all ease-in-out 0.5s;
-          transition: all ease-in-out 0.5s;
-          margin-block: 10px 0; }
-          .home-container-desk .methodology-card:hover .know-more-link .know-more-arrow {
-            -webkit-transition: all ease-in-out 0.5s;
-            transition: all ease-in-out 0.5s;
-            opacity: 0;
-            width: 0; }
-        .home-container-desk .methodology-card:hover .know-more-link:hover {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-          justify-content: space-between; }
-          .home-container-desk .methodology-card:hover .know-more-link:hover .know-more-arrow {
-            opacity: 1;
-            width: -webkit-fit-content;
-            width: -moz-fit-content;
-            width: fit-content; }
+          width: fit-content; }
       .home-container-desk .methodology-card .metodology-container-text {
         display: -webkit-box;
         display: -ms-flexbox;

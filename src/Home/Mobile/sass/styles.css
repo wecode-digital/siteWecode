@@ -99,7 +99,19 @@
     position: sticky;
     top: 0;
     z-index: -1;
-    padding-top: 10vh; }
+    padding-top: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .home-container .first-fold img {
+      max-width: 340px; }
     .home-container .first-fold .block-title {
       text-align: center;
       margin-block: 0 2rem; }
