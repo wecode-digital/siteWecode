@@ -84,7 +84,6 @@ function FooterDesk() {
                         name="phone"
                         type="phone"
                         placeholder="+55 (000) 9 9999-9999"
-                        pattern="[0-9]{2}-[0-9]{4,6}-[0-9]{3,4}$"
                       ></input>
                     </label>
                     <label>
