@@ -5,11 +5,33 @@ import { Link } from "react-router-dom";
 function HeaderDesk() {
   const [scrolling, setScrolling] = useState(false);
 
-  function handleScrollToResults() {
-    const teste = document.querySelector("footer");
-    console.log("teste", teste);
-    teste.scrollIntoView({ behavior: "smooth" });
+  function handleScrollToSection(selector, offset = 80) {
+    console.log(offset, "AQUIIIITESTETESTE");
+    const section = document.querySelector(selector);
+    if (section) {
+      const topOffset = section.offsetTop - offset;
+      console.log(section.offsetTop, "TESTEAQUIIII");
+      window.scrollTo({
+        top: topOffset,
+        behavior: "smooth",
+      });
+    }
   }
+
+  function addClickEventToButton(buttonClass, sectionClass) {
+    const button = document.querySelector(buttonClass);
+    if (button) {
+      button.addEventListener("click", function () {
+        handleScrollToSection(sectionClass);
+      });
+    }
+  }
+  addClickEventToButton("link-home");
+  addClickEventToButton("link-clients");
+  addClickEventToButton("link-about-us");
+  addClickEventToButton("link-value");
+  addClickEventToButton("link-methodology");
+  addClickEventToButton("link-contato");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,7 +68,12 @@ function HeaderDesk() {
             }
           >
             <div className={"headercontainer-desk-layout"}>
-              <Link to="/">
+              <p
+                className={"link-home"}
+                onClick={() => {
+                  handleScrollToSection(".first-fold");
+                }}
+              >
                 <svg
                   width="110"
                   height="24"
@@ -87,35 +114,47 @@ function HeaderDesk() {
                     fill="#0D98E6"
                   />
                 </svg>
-              </Link>
+              </p>
               <div className={"header-container-institucional"}>
                 <p
-                  onClick={handleScrollToResults}
-                  // href="#"
-                  className={"header-container-links"}
+                  className={"header-container-links link-clients"}
+                  onClick={() => {
+                    handleScrollToSection(".our-clients");
+                  }}
                 >
-                  Cases
+                  Nossos clientes
                 </p>
                 <p
-                  onClick={handleScrollToResults}
-                  // href="#"
-                  className={"header-container-links"}
+                  className={"header-container-links link-about-us"}
+                  onClick={() => {
+                    handleScrollToSection(".about-us");
+                  }}
+                >
+                  VTEX by Wecode
+                </p>
+                <p
+                  className={"header-container-links link-value"}
+                  onClick={() => {
+                    handleScrollToSection(".how-generate-value");
+                  }}
+                >
+                  Como geramos valor
+                </p>
+                <p
+                  className={"header-container-links link-methodology"}
+                  onClick={() => {
+                    handleScrollToSection(".methodology");
+                  }}
+                >
+                  O que fazemos
+                </p>
+                <p
+                  className={"header-container-links link-contato"}
+                  onClick={() => {
+                    handleScrollToSection(".footer-container-desk");
+                  }}
                 >
                   Contato
-                </p>
-                <p
-                  onClick={handleScrollToResults}
-                  // href="#"
-                  className={"header-container-links"}
-                >
-                  Time
-                </p>
-                <p
-                  onClick={handleScrollToResults}
-                  // href="#"
-                  className={"header-container-links"}
-                >
-                  Sobre nós
                 </p>
               </div>
             </div>

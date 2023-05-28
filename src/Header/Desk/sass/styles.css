@@ -54,6 +54,9 @@
       margin-inline: 350px;
       width: calc(100% - 700px); } }
 
+.link-home {
+  cursor: pointer; }
+
 .headercontainer-desk-layout {
   width: 100%;
   display: -webkit-box;

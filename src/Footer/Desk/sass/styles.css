@@ -264,6 +264,21 @@
       -ms-flex-direction: column;
       flex-direction: column;
       font-size: 1.5rem; }
+      .footer-container-desk .footer-container-links .form-column .link-scroll {
+        font-family: "Raleway", serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #353a42;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer; }
+        .footer-container-desk .footer-container-links .form-column .link-scroll:visited {
+          color: #fff; }
+        .footer-container-desk .footer-container-links .form-column .link-scroll:hover {
+          text-decoration: underline; }
     .footer-container-desk .footer-container-links .conectar {
       white-space: nowrap; }
     .footer-container-desk .footer-container-links .contato {

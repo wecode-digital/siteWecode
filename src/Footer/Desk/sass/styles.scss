@@ -205,6 +205,21 @@
       display: flex;
       flex-direction: column;
       font-size: 1.5rem;
+      .link-scroll {
+        @include padrao;
+        font-size: 1rem;
+        font-weight: 300;
+        color: $text-contrast;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:visited {
+          color: $text-contrast;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     .conectar {

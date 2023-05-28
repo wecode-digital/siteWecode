@@ -8,11 +8,39 @@ function FooterMob() {
     isMobile = true;
   }
 
-  function handleScrollToResults() {
-    const teste = document.querySelector("footer");
-    console.log("teste", teste);
-    teste.scrollIntoView({ behavior: "smooth" });
+  function handleScrollToSection(selector, offset = 80) {
+    console.log(offset, "AQUIIIITESTETESTE");
+    const section = document.querySelector(selector);
+    if (section) {
+      const topOffset = section.offsetTop - offset;
+      console.log(section.offsetTop, "TESTEAQUIIII");
+      window.scrollTo({
+        top: topOffset,
+        behavior: "smooth",
+      });
+    }
   }
+
+  function addClickEventToButton(buttonClass, sectionClass) {
+    const button = document.querySelector(buttonClass);
+    if (button) {
+      button.addEventListener("click", function () {
+        handleScrollToSection(sectionClass);
+      });
+    }
+  }
+
+  addClickEventToButton("link-clients");
+  addClickEventToButton("link-about-us");
+  addClickEventToButton("link-value");
+  addClickEventToButton("link-methodology");
+  addClickEventToButton("link-contato");
+
+  // function handleScrollToResults() {
+  //   const teste = document.querySelector("footer");
+  //   console.log("teste", teste);
+  //   teste.scrollIntoView({ behavior: "smooth" });
+  // }
   return (
     <>
       {isMobile ? (
@@ -58,7 +86,6 @@ function FooterMob() {
                       name="phone"
                       type="tel"
                       placeholder="+55 (000) 9 9999-9999"
-                      pattern="[0-9]{2}-[0-9]{4,6}-[0-9]{3,4}$"
                     ></input>
                   </label>
                   <label>
@@ -71,8 +98,26 @@ function FooterMob() {
                     ></textarea>
                   </label>
                 </form>
-                <button type="submit" form="contact">
-                  Enviar
+                <button className={"form-button"} type="submit" form="contact">
+                  <p className={"form-buttom-text"}>Enviar</p>
+                  <div className={"form-buttom-container"}>
+                    <p>Enviado</p>{" "}
+                    <svg
+                      width="13"
+                      height="11"
+                      viewBox="0 0 13 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.5 6.35986L5.5 9.47674L11.5 1.29492"
+                        stroke="#0D98E6"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
                 </button>
               </div>
             </div>
@@ -207,19 +252,50 @@ function FooterMob() {
                   <ul>
                     EXPLORE
                     <li>
-                      <a href="/sobre-nos">Sobre Nós</a>
-                    </li>
-                    <li>
-                      <a href="/cases">Cases</a>
-                    </li>
-                    <li>
-                      <a href="/depoimentos">Depoimentos</a>
+                      <p
+                        className={"link-scroll link-clients"}
+                        onClick={() => {
+                          handleScrollToSection(".our-clients");
+                        }}
+                      >
+                        Nossos clientes
+                      </p>
                     </li>
                     <li>
                       <p
-                        className={"contato"}
+                        className={"link-scroll link-about-us"}
                         onClick={() => {
-                          handleScrollToResults();
+                          handleScrollToSection(".about-us");
+                        }}
+                      >
+                        VTEX by Wecode
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        className={"link-scroll link-value"}
+                        onClick={() => {
+                          handleScrollToSection(".how-generate-value");
+                        }}
+                      >
+                        Como geramos valor
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        className={"link-scroll link-methodology"}
+                        onClick={() => {
+                          handleScrollToSection(".methodology");
+                        }}
+                      >
+                        O que fazemos
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        className={"link-scroll link-contato"}
+                        onClick={() => {
+                          handleScrollToSection(".footer-container-desk");
                         }}
                       >
                         Contato

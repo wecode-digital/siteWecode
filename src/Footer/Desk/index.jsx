@@ -8,6 +8,34 @@ function FooterDesk() {
     isDesk = true;
   }
 
+  function handleScrollToSection(selector, offset = 80) {
+    console.log(offset, "AQUIIIITESTETESTE");
+    const section = document.querySelector(selector);
+    if (section) {
+      const topOffset = section.offsetTop - offset;
+      console.log(section.offsetTop, "TESTEAQUIIII");
+      window.scrollTo({
+        top: topOffset,
+        behavior: "smooth",
+      });
+    }
+  }
+
+  function addClickEventToButton(buttonClass, sectionClass) {
+    const button = document.querySelector(buttonClass);
+    if (button) {
+      button.addEventListener("click", function () {
+        handleScrollToSection(sectionClass);
+      });
+    }
+  }
+
+  addClickEventToButton("link-clients");
+  addClickEventToButton("link-about-us");
+  addClickEventToButton("link-value");
+  addClickEventToButton("link-methodology");
+  addClickEventToButton("link-contato");
+
   return (
     <>
       {isDesk ? (
@@ -80,16 +108,54 @@ function FooterDesk() {
                   <ul className={"form-column"}>
                     EXPLORE
                     <li>
-                      <a href="/sobre-nos">Sobre Nós</a>
+                      <p
+                        className={"link-scroll link-clients"}
+                        onClick={() => {
+                          handleScrollToSection(".our-clients");
+                        }}
+                      >
+                        Nossos clientes
+                      </p>
                     </li>
                     <li>
-                      <a href="/cases">Cases</a>
+                      <p
+                        className={"link-scroll link-about-us"}
+                        onClick={() => {
+                          handleScrollToSection(".about-us");
+                        }}
+                      >
+                        VTEX by Wecode
+                      </p>
                     </li>
                     <li>
-                      <a href="/depoimentos">Depoimentos</a>
+                      <p
+                        className={"link-scroll link-value"}
+                        onClick={() => {
+                          handleScrollToSection(".how-generate-value");
+                        }}
+                      >
+                        Como geramos valor
+                      </p>
                     </li>
                     <li>
-                      <a href="/contato">Contato</a>
+                      <p
+                        className={"link-scroll link-methodology"}
+                        onClick={() => {
+                          handleScrollToSection(".methodology");
+                        }}
+                      >
+                        O que fazemos
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        className={"link-scroll link-contato"}
+                        onClick={() => {
+                          handleScrollToSection(".footer-container-desk");
+                        }}
+                      >
+                        Contato
+                      </p>
                     </li>
                   </ul>
                 </li>

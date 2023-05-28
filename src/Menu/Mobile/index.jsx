@@ -5,18 +5,47 @@ import { Link } from "react-router-dom";
 function MenuMob() {
   const [OpenMenu, SetOpenMenu] = useState(false);
 
-  function handleScrollToResults() {
-    const teste = document.querySelector("footer");
-    console.log("teste", teste);
-    teste.scrollIntoView({ behavior: "smooth" });
+  function handleScrollToSection(selector, offset = 60) {
+    console.log(offset, "AQUIIIITESTETESTE");
+    const section = document.querySelector(selector);
+    if (section) {
+      const topOffset = section.offsetTop - offset;
+      console.log(section.offsetTop, "TESTEAQUIIII");
+      window.scrollTo({
+        top: topOffset,
+        behavior: "smooth",
+      });
+    }
   }
+
+  function addClickEventToButton(buttonClass, sectionClass) {
+    const button = document.querySelector(buttonClass);
+    if (button) {
+      button.addEventListener("click", function () {
+        handleScrollToSection(sectionClass);
+      });
+    }
+  }
+
+  // addClickEventToButton("link-home");
+  addClickEventToButton("link-clients");
+  addClickEventToButton("link-about-us");
+  addClickEventToButton("link-value");
+  addClickEventToButton("link-methodology");
+  addClickEventToButton("link-contato");
 
   return (
     <>
       {OpenMenu ? (
         <div className={"menu-container"}>
           <div className={"menu-header"}>
-            <Link to="/">
+            <p
+              className={"link-home"}
+              // onClick={() => {
+              //   SetOpenMenu(false);
+              //   handleScrollToSection(".first-fold");
+              // }}
+            >
               <svg
                 width="110"
                 height="23"
@@ -57,7 +86,7 @@ function MenuMob() {
                   fill="white"
                 />
               </svg>
-            </Link>
+            </p>
             <div
               onClick={() => {
                 SetOpenMenu(false);
@@ -83,40 +112,49 @@ function MenuMob() {
 
           <div className={"menu-body"}>
             <p
-              className={"institutional-links"}
+              className={"institutional-links  link-clients"}
               onClick={() => {
                 SetOpenMenu(false);
-                handleScrollToResults();
+                handleScrollToSection(".our-clients");
               }}
             >
-              Cases
+              Nossos Clientes
             </p>
             <p
-              className={"institutional-links"}
+              className={"institutional-links link-about-us"}
               onClick={() => {
                 SetOpenMenu(false);
-                handleScrollToResults();
+                handleScrollToSection(".about-us");
+              }}
+            >
+              VTEX by Wecode
+            </p>
+            <p
+              className={"institutional-links link-value"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToSection(".how-generate-value");
+              }}
+            >
+              Como geramos valor
+            </p>
+            <Link
+              className={"institutional-links  link-methodology"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToSection(".methodology");
+              }}
+            >
+              O que fazemos
+            </Link>
+            <Link
+              className={"institutional-links link-contato"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToSection(".footer-container");
               }}
             >
               Contato
-            </p>
-            <p
-              className={"institutional-links"}
-              onClick={() => {
-                SetOpenMenu(false);
-                handleScrollToResults();
-              }}
-            >
-              Time
-            </p>
-            <Link
-              onClick={() => {
-                SetOpenMenu(false);
-                handleScrollToResults();
-              }}
-              className={"institutional-links"}
-            >
-              Sobre Nós
             </Link>
           </div>
 
