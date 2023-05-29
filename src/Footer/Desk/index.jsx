@@ -1,6 +1,7 @@
 import React from "react";
 import "./sass/styles.css";
 import wecodeImg from "../../assets/images/home-generic-images/wecode-footer.png";
+import MyForm from "../formPost/index"
 
 function FooterDesk() {
   let isDesk = false;
@@ -30,7 +31,9 @@ function FooterDesk() {
                   </p>
                 </div>
                 <div className={"footer-form-container"}>
-                  <form method="get" id="contact" action="/action_page.php">
+                  <MyForm />
+
+                  {/* <form method="get" id="contact" action="/action_page.php">
                     <label>
                       Nome*{" "}
                       <input
@@ -66,7 +69,7 @@ function FooterDesk() {
                     <button type="submit" form="contact">
                       Enviar
                     </button>
-                  </form>
+                  </form> */}
                 </div>
               </div>
             </div>

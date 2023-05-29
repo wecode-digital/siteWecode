@@ -1,11 +1,13 @@
 import React from "react";
 import "./sass/styles.css";
+import MyForm from "../formPost/index"
 
 function FooterMob() {
   let isMobile = false;
   if (window.innerWidth <= 1024) {
     isMobile = true;
   }
+
 
   return (
     <>
@@ -26,11 +28,12 @@ function FooterMob() {
                   Preencha o formulário abaixo para entrar em contato, ou pelos
                   outros meios de comunicações abaixo.
                 </p>
-                <form method="get" id="contact" action="/action_page.php">
+                {/* <form id="contact" >
                   <label>
                     Nome*{" "}
                     <input
                       name="name"
+                      id="name"
                       type="text"
                       placeholder="Digite seu nome completo"
                     ></input>
@@ -39,14 +42,25 @@ function FooterMob() {
                     Empresa*{" "}
                     <input
                       name="company"
+                      id="company"
                       type="text"
                       placeholder="Digite o nome da empresa"
+                    ></input>
+                  </label>
+                  <label>
+                    E-mail*{" "}
+                    <input
+                      name="email"
+                      id="email"
+                      type="email"
+                      placeholder="Digite seu e-mail"
                     ></input>
                   </label>
                   <label>
                     Telefone*{" "}
                     <input
                       name="phone"
+                      id="phone"
                       type="phone"
                       placeholder="+55 (000) 9 9999-9999"
                     ></input>
@@ -55,14 +69,17 @@ function FooterMob() {
                     Sua mensagem*{" "}
                     <textarea
                       name="message"
+                      id="message"
                       type="text"
                       placeholder="Escreva aqui sua mensagem"
                     ></textarea>
                   </label>
-                </form>
-                <button type="submit" form="contact">
-                  Enviar
-                </button>
+                  <button id="send " type="submit" value="ENVIAR">
+                    Enviar
+                  </button>
+                
+                </form> */}
+                <MyForm />
               </div>
             </div>
             <div className={"footer-container-links"}>

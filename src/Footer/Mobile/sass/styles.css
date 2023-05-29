@@ -66,28 +66,33 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .footer-container-form-container button {
+    .footer-container-form-container .submit-botao {
+      all: unset;
       font-family: "Raleway", serif;
       font-style: normal;
       font-weight: 300;
       line-height: 1.5;
       color: #353a42;
+      background-color: #0d98e6;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1.25rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 100%;
-      background-color: #0d98e6;
-      color: #fff;
-      border: none;
       text-align: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
       font-size: 1rem;
       font-weight: 500;
-      padding-block: 0.75rem;
-      border-radius: 5px;
-      margin-top: 1.25rem; }
+      height: 42px; }
+      .footer-container-form-container .submit-botao-disabled {
+        background-color: WHITE;
+        color: #0d98e6;
+        border: 1px #cfcfcf solid; }
   .footer-container .tag {
     font-family: "Raleway", serif;
     font-style: normal;
@@ -140,6 +145,7 @@
       font-weight: 300;
       line-height: 1.5;
       color: #353a42;
+      font-weight: 400;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -148,7 +154,7 @@
       -ms-flex-direction: column;
       flex-direction: column;
       font-size: 0.875rem;
-      margin-top: 1.5rem; }
+      margin-top: 1rem; }
       .footer-container form label:first-child {
         margin: 0; }
     .footer-container form input {
@@ -164,11 +170,20 @@
       margin-top: 0.625rem;
       padding-inline: 14px;
       color: #8a8a8a;
-      font-size: 0.75rem; }
+      font-size: 0.75rem;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
       .footer-container form input:focus {
         background-color: transparent;
         border: 1px solid #0d98e6;
         outline: none; }
+    .footer-container form .enviar {
+      all: unset;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .footer-container form textarea {
       font-family: "Raleway", serif;
       font-style: normal;
