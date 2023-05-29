@@ -5,42 +5,55 @@
 // }
 
 .header-container-desk {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 30px;
-  background: #fff;
   position: fixed;
   top: 0;
   box-sizing: border-box;
   z-index: 5;
-  margin-inline: $globalMarginDesk;
-  width: calc(100% - 500px);
   transition: top 0.3s ease;
-  @media (min-width: 1600px) {
-    margin-inline: 350px;
-    width: calc(100% - 700px);
+  width: 100%;
+  margin: auto;
+  .headercontainer-desk-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    border-radius: 10px;
+    background: #fff;
+    width: 80vw;
+    padding-block: 10px;
+    margin: auto;
+    @media screen and (min-width: 1500px) {
+      width: 60vw;
+    }
+    svg {
+      width: 140px;
+      height: auto;
+    }
   }
 }
 
 .header-container-desk-ativo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 30px;
-  box-shadow: $boxShadow;
-  border-radius: 10px;
-  background: #fff;
+  margin: auto;
   position: fixed;
   top: 20px;
   transition: top 0.3s ease;
   box-sizing: border-box;
   z-index: 5;
-  width: calc(100% - 500px);
-  margin-inline: $globalMarginDesk;
-  @media (min-width: 1600px) {
-    margin-inline: 350px;
-    width: calc(100% - 700px);
+  width: 100%;
+  padding-block: 10px;
+  .headercontainer-desk-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    box-shadow: $boxShadow;
+    border-radius: 10px;
+    background: #fff;
+    width: 80vw;
+    margin: auto;
+    @media screen and (min-width: 1500px) {
+      width: 60vw;
+    }
   }
 }
 
@@ -67,7 +80,7 @@
   text-decoration: none;
   color: $text;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1rem;
   cursor: pointer;
   &:hover {
     text-decoration: underline;

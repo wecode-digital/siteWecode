@@ -34,7 +34,7 @@ function HomeMob({ title }) {
     console.log("teste", teste);
     teste.scrollIntoView({ behavior: "smooth" });
   }
-  //cards
+  // cards;
   // const cards = document.querySelectorAll(".our-services-card-son");
   // window.addEventListener("scroll", checkCards);
   // function checkCards() {
@@ -42,6 +42,7 @@ function HomeMob({ title }) {
 
   //   cards.forEach((card) => {
   //     const cardTop = card.getBoundingClientRect().top;
+  //     console.log(cardTop, "TESTEs");
 
   //     if (cardTop < triggerBottom) {
   //       card.classList.add("show");

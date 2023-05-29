@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./sass/styles.css";
 import wecodeImg from "../../assets/images/home-generic-images/wecode-footer.png";
 
@@ -7,6 +7,22 @@ function FooterDesk() {
   if (window.innerWidth >= 1024) {
     isDesk = true;
   }
+
+  const [value, setValue] = useState("");
+
+  const handlePhone = (event) => {
+    let inputValue = event.target.value;
+    inputValue = phoneMask(inputValue);
+    setValue(inputValue);
+  };
+
+  const phoneMask = (value) => {
+    if (!value) return "";
+    value = value.replace(/\D/g, "");
+    value = value.replace(/(\d{2})(\d)/, "($1) $2");
+    value = value.replace(/(\d)(\d{4})$/, "$1-$2");
+    return value;
+  };
 
   function handleScrollToSection(selector, offset = 80) {
     console.log(offset, "AQUIIIITESTETESTE");
@@ -82,8 +98,10 @@ function FooterDesk() {
                       <input
                         required="required"
                         name="phone"
-                        type="phone"
-                        placeholder="+55 (000) 9 9999-9999"
+                        type="tel"
+                        placeholder="+55 9 9999-9999"
+                        value={value}
+                        onChange={handlePhone}
                       ></input>
                     </label>
                     <label>
@@ -105,7 +123,7 @@ function FooterDesk() {
               <ul className={"footer-container-columns"}>
                 <li>
                   <ul className={"form-column"}>
-                    EXPLORE
+                    <p className={"form-colum-title"}>EXPLORE</p>
                     <li>
                       <p
                         className={"link-scroll link-clients"}
@@ -160,7 +178,8 @@ function FooterDesk() {
                 </li>
                 <li className={" contato"}>
                   <ul className={"form-column"}>
-                    E-MAIL
+                    <p className={"form-colum-title"}>E-MAIL</p>
+
                     <li>
                       <a href="mailto:contato@wecode.digital">
                         contato@wecode.digital
@@ -168,7 +187,8 @@ function FooterDesk() {
                     </li>
                   </ul>{" "}
                   <ul className={"form-column"}>
-                    TELEFONE
+                    <p className={"form-colum-title"}>TELEFONE</p>
+
                     <li>
                       <a href="tel:+55 (54) 3028-9452">+55 (54) 3028-9452</a>
                     </li>
@@ -176,7 +196,7 @@ function FooterDesk() {
                 </li>
                 <li>
                   <ul className={"form-column"}>
-                    ENDEREÇO
+                    <p className={"form-colum-title"}>ENDEREÇO </p>
                     <li>
                       <a href="https://www.google.com/maps/place/Wecode+%7C+Tecnologia+para+E-commerce/@-29.1716095,-51.1729341,19z/data=!3m1!4b1!4m6!3m5!1s0x951ebd7ad265e52d:0x4de4320de63ee8cc!8m2!3d-29.1716095!4d-51.1723869!16s%2Fg%2F11kp8jwvdb">
                         Rua Plácido de Castro, 1063 - Exposição,<br></br> Caxias
@@ -187,7 +207,7 @@ function FooterDesk() {
                 </li>
                 <li>
                   <ul className={"form-column conectar"}>
-                    CONECTE-SE
+                    <p className={"form-colum-title"}>CONECTE-SE</p>
                     <div className={"social-media"}>
                       <li>
                         <a
