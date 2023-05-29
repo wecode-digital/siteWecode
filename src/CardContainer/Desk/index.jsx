@@ -255,9 +255,9 @@ function CardContainer() {
             <p className={"card-title"}>Taylor Made</p>
             <p className={"card-text"}>
               Soluções de alta performance e qualidade, desenvolvendo projetos
-              sob medida, sem o uso de <br></br>templates e layouts pré
-              definidos, explorando ao máximo os recursos da VTEX. Cada projeto
-              é muito importante para nós, você não será só mais um cliente.
+              sob medida, sem o uso de templates e layouts pré definidos,
+              explorando ao máximo os recursos da VTEX. Cada projeto é muito
+              importante para nós, você não será só mais um cliente.
             </p>
           </div>
         </div>

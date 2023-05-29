@@ -11,9 +11,13 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  // padding: 10px;
+  padding: 10px;
+  p {
+    font-size: 1.125rem;
+  }
 }
 .card-links {
+  @include padrao;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,8 +25,15 @@
   background: $background;
   border: none;
   border-radius: 10px;
-  padding: 5px 20px;
+  padding: 0px 20px;
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  p {
+    font-size: 0.875rem;
+    @media screen and (min-width: 1800px) {
+      font-size: 1.125rem;
+    }
+  }
   svg {
     max-width: 35px;
     max-height: 35px;
@@ -30,6 +41,7 @@
 }
 
 .card-links-ativo {
+  @include padrao;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,8 +49,14 @@
   background: $light-main-color;
   border: none;
   border-radius: 10px;
-  padding: 5px 20px;
+  padding: 0px 20px;
   color: #fff;
+  p {
+    font-size: 0.875rem;
+    @media screen and (min-width: 1700px) {
+      font-size: 1.125rem;
+    }
+  }
   svg {
     max-width: 35px;
     max-height: 35px;
@@ -75,21 +93,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 20px 0;
   background: $background;
   border-radius: 10px;
   gap: 20px;
   max-width: 978px;
   height: 178px;
+  // margin-bottom: 40px;
+  box-shadow: $boxShadow;
   svg {
-    width: 120px;
+    min-width: 60px;
+    height: auto;
   }
   .card-title {
     color: $light-main-color;
     font-size: 1.25rem;
     font-weight: 500;
+    margin-bottom: 15px;
   }
   .card-text {
     font-size: 1rem;
+    margin-top: 0;
   }
 }

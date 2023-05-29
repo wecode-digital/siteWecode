@@ -24,13 +24,17 @@ body {
   align-items: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.34);
+  border: none;
   position: fixed;
   top: 0;
   box-sizing: border-box;
   width: 100%;
   z-index: 5;
+}
+
+.home-link {
+  margin: 0;
 }

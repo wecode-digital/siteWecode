@@ -52,8 +52,6 @@
     padding: 1.5rem 20px;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
-    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.7px);
     -webkit-backdrop-filter: blur(6.7px);
     display: -webkit-box;
@@ -203,6 +201,10 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding-top: 8px; }
+    .footer-container form textarea:focus {
+      background-color: transparent;
+      border: 1px solid #0d98e6;
+      outline: none; }
   .footer-container .footer-container-links {
     padding: 20px;
     background-color: #053766;
@@ -255,3 +257,29 @@
         text-decoration: none; }
         .footer-container .footer-container-links li a:visited {
           color: #fff; }
+      .footer-container .footer-container-links li .link-scroll {
+        font-family: "Raleway", serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #353a42;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: #fff;
+        margin: 0; }
+        .footer-container .footer-container-links li .link-scroll:visited {
+          color: #fff; }
+  .footer-container .footer-final {
+    background: #353a42;
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #353a42; }
+    .footer-container .footer-final-container {
+      margin-inline: 20px;
+      padding-top: 10px;
+      color: #fff;
+      font-size: 0.75rem; }
+      .footer-container .footer-final-container img {
+        max-width: 110px; }

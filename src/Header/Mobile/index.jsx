@@ -6,10 +6,17 @@ import { Link } from "react-router-dom";
 function HeaderMob() {
   const [scrolling, setScrolling] = useState(false);
 
+  function handleScrollToResults() {
+    const teste = document.querySelector("body");
+    teste.addEventListener("click", function () {
+      window.scrollTo(0, 0);
+    });
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      const offset = 100;
+      const offset = 50;
 
       if (scrollTop < offset) {
         setScrolling(true);
@@ -38,7 +45,12 @@ function HeaderMob() {
               scrolling ? "header-container" : "header-container-ativo"
             }
           >
-            <Link to="/">
+            <p
+              className={"home-link"}
+              onClick={() => {
+                handleScrollToResults(".about-us");
+              }}
+            >
               <svg
                 width="110"
                 height="24"
@@ -79,7 +91,7 @@ function HeaderMob() {
                   fill="#0D98E6"
                 />
               </svg>
-            </Link>
+            </p>
           </div>
           <MenuMob />
         </header>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./sass/styles.css";
 import MyForm from "../formPost/index"
+import wecodeImg from "../../assets/images/home-generic-images/wecode-footer.png";
 
 function FooterMob() {
   let isMobile = false;
@@ -8,7 +9,39 @@ function FooterMob() {
     isMobile = true;
   }
 
+  function handleScrollToSection(selector, offset = 80) {
+    console.log(offset, "AQUIIIITESTETESTE");
+    const section = document.querySelector(selector);
+    if (section) {
+      const topOffset = section.offsetTop - offset;
+      console.log(section.offsetTop, "TESTEAQUIIII");
+      window.scrollTo({
+        top: topOffset,
+        behavior: "smooth",
+      });
+    }
+  }
 
+  function addClickEventToButton(buttonClass, sectionClass) {
+    const button = document.querySelector(buttonClass);
+    if (button) {
+      button.addEventListener("click", function () {
+        handleScrollToSection(sectionClass);
+      });
+    }
+  }
+
+  addClickEventToButton("link-clients");
+  addClickEventToButton("link-about-us");
+  addClickEventToButton("link-value");
+  addClickEventToButton("link-methodology");
+  addClickEventToButton("link-contato");
+
+  // function handleScrollToResults() {
+  //   const teste = document.querySelector("footer");
+  //   console.log("teste", teste);
+  //   teste.scrollIntoView({ behavior: "smooth" });
+  // }
   return (
     <>
       {isMobile ? (
@@ -28,57 +61,6 @@ function FooterMob() {
                   Preencha o formulário abaixo para entrar em contato, ou pelos
                   outros meios de comunicações abaixo.
                 </p>
-                {/* <form id="contact" >
-                  <label>
-                    Nome*{" "}
-                    <input
-                      name="name"
-                      id="name"
-                      type="text"
-                      placeholder="Digite seu nome completo"
-                    ></input>
-                  </label>
-                  <label>
-                    Empresa*{" "}
-                    <input
-                      name="company"
-                      id="company"
-                      type="text"
-                      placeholder="Digite o nome da empresa"
-                    ></input>
-                  </label>
-                  <label>
-                    E-mail*{" "}
-                    <input
-                      name="email"
-                      id="email"
-                      type="email"
-                      placeholder="Digite seu e-mail"
-                    ></input>
-                  </label>
-                  <label>
-                    Telefone*{" "}
-                    <input
-                      name="phone"
-                      id="phone"
-                      type="phone"
-                      placeholder="+55 (000) 9 9999-9999"
-                    ></input>
-                  </label>
-                  <label>
-                    Sua mensagem*{" "}
-                    <textarea
-                      name="message"
-                      id="message"
-                      type="text"
-                      placeholder="Escreva aqui sua mensagem"
-                    ></textarea>
-                  </label>
-                  <button id="send " type="submit" value="ENVIAR">
-                    Enviar
-                  </button>
-                
-                </form> */}
                 <MyForm />
               </div>
             </div>
@@ -213,20 +195,73 @@ function FooterMob() {
                   <ul>
                     EXPLORE
                     <li>
-                      <a href="/sobre-nos">Sobre Nós</a>
+                      <p
+                        className={"link-scroll link-clients"}
+                        onClick={() => {
+                          handleScrollToSection(".our-clients");
+                        }}
+                      >
+                        Nossos clientes
+                      </p>
                     </li>
                     <li>
-                      <a href="/cases">Cases</a>
+                      <p
+                        className={"link-scroll link-about-us"}
+                        onClick={() => {
+                          handleScrollToSection(".about-us");
+                        }}
+                      >
+                        VTEX by Wecode
+                      </p>
                     </li>
                     <li>
-                      <a href="/depoimentos">Depoimentos</a>
+                      <p
+                        className={"link-scroll link-value"}
+                        onClick={() => {
+                          handleScrollToSection(".how-generate-value");
+                        }}
+                      >
+                        Como geramos valor
+                      </p>
                     </li>
                     <li>
-                      <a href="/contato">Contato</a>
+                      <p
+                        className={"link-scroll link-methodology"}
+                        onClick={() => {
+                          handleScrollToSection(".methodology");
+                        }}
+                      >
+                        O que fazemos
+                      </p>
+                    </li>
+                    <li>
+                      <p
+                        className={"link-scroll link-contato"}
+                        onClick={() => {
+                          handleScrollToSection(".footer-container-desk");
+                        }}
+                      >
+                        Contato
+                      </p>
                     </li>
                   </ul>
                 </li>
               </ul>
+            </div>
+            <div className={"footer-final"}>
+              <div className={"footer-final-container"}>
+                <img src={wecodeImg} />
+                <div>
+                  <p className={"footer-final-text"}>
+                    ©2023 wecode.digital - e-commerce technology. Todos os
+                    direitos reservados.
+                  </p>
+                  <p className={"footer-final-text"}>
+                    Rua Plácido de Castro, 1063 - Sala 403 - Exposição, Caxias
+                    do Sul - RS, 95084-370 Telefone: (54) 3028-9452
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </footer>

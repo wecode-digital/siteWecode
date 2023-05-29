@@ -2,7 +2,7 @@
 
 .botao-menu {
   position: fixed;
-  top: 27px;
+  top: 25px;
   right: 20px;
   z-index: 5;
 }
@@ -13,6 +13,7 @@
   z-index: 5;
 }
 .menu-container {
+  transition: all 0.3s ease-in-out;
   z-index: 5;
   position: fixed;
   inset: 0;
@@ -20,6 +21,9 @@
   flex-direction: column;
   padding: 20px;
   background: $dark-main-color;
+  .link-home {
+    margin: 0;
+  }
   .menu-header {
     display: flex;
     justify-content: space-between;
@@ -48,6 +52,7 @@
       font-size: 2rem;
       color: $text-contrast;
       text-decoration: none;
+      margin: 0;
     }
   }
   .menu-footer {

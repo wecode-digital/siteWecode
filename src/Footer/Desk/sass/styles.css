@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .footer-container-desk {
+  font-family: "Raleway", serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #353a42;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +54,7 @@
       -webkit-filter: blur(90px);
       filter: blur(90px); }
   .footer-container-desk .footer-container-form-container {
-    padding: 1.5rem 20px;
+    padding: 40px;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
     -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -71,13 +76,13 @@
     justify-content: space-between;
     margin-inline: 250px;
     margin-block: 80px;
-    gap: 10px; }
+    gap: 50px; }
     @media (min-width: 1600px) {
       .footer-container-desk .footer-container-form-container {
-        margin-inline: 350px; } }
+        margin-inline: 350px;
+        padding: 40px 80px; } }
   .footer-container-desk .footer-container-text-form {
-    width: 50%;
-    padding-left: 40px; }
+    width: 50%; }
   .footer-container-desk .footer-form-container {
     width: 50%; }
   .footer-container-desk .tag {
@@ -86,9 +91,9 @@
     font-weight: 300;
     line-height: 1.5;
     color: #353a42;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0;
     color: #8a8a8a;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -98,13 +103,14 @@
   .footer-container-desk .block-title {
     font-family: "Raleway", serif;
     font-style: normal;
-    font-weight: 300;
-    line-height: 1.5;
+    font-weight: 500;
     color: #353a42;
-    font-weight: 300;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.1;
-    margin-block: 1.25rem 0.5rem; }
+    margin-block: 0.5rem 0.5rem; }
+    @media (min-width: 1800px) {
+      .footer-container-desk .block-title {
+        font-size: 3rem; } }
   .footer-container-desk .text-highlight {
     font-family: "Raleway", serif;
     font-style: normal;
@@ -189,6 +195,10 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding-top: 8px; }
+      .footer-container-desk form textarea:focus {
+        background-color: transparent;
+        border: 1px solid #0d98e6;
+        outline: none; }
     .footer-container-desk form .submit-botao {
       all: unset;
       font-family: "Raleway", serif;
@@ -269,6 +279,28 @@
       -ms-flex-direction: column;
       flex-direction: column;
       font-size: 1.5rem; }
+      .footer-container-desk .footer-container-links .form-column .form-colum-title {
+        margin: 0;
+        font-weight: 300;
+        font-size: 1.25rem; }
+      .footer-container-desk .footer-container-links .form-column .link-scroll {
+        font-family: "Raleway", serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #353a42;
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+        text-decoration: none;
+        margin: 0;
+        cursor: pointer; }
+        .footer-container-desk .footer-container-links .form-column .link-scroll:visited {
+          color: #fff; }
+        .footer-container-desk .footer-container-links .form-column .link-scroll:hover {
+          text-decoration: underline; }
+    .footer-container-desk .footer-container-links .conectar {
+      white-space: nowrap; }
     .footer-container-desk .footer-container-links .contato {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -320,6 +352,11 @@
     @media (min-width: 1600px) {
       .footer-container-desk .footer-final-container {
         margin-inline: 350px; } }
+    .footer-container-desk .footer-final-container img {
+      max-width: 110px; }
   .footer-container-desk .footer-final-text {
     color: #fff;
-    text-align: end; }
+    text-align: end;
+    font-size: 12px; }
+  .footer-container-desk .first {
+    margin-bottom: 0; }

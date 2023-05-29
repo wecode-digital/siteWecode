@@ -53,7 +53,6 @@
     padding: 1.5rem 20px;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.7px);
     -webkit-backdrop-filter: blur(6.7px);
     display: flex;
@@ -163,6 +162,11 @@
       box-sizing: border-box;
       padding-top: 8px;
     }
+    textarea:focus {
+      background-color: transparent;
+      border: 1px solid #0d98e6;
+      outline: none;
+    }
   }
   .footer-container-links {
     padding: 20px;
@@ -203,6 +207,29 @@
         &:visited {
           color: $text-contrast;
         }
+      }
+      .link-scroll {
+        @include padrao;
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: $text-contrast;
+        margin: 0;
+        &:visited {
+          color: $text-contrast;
+        }
+      }
+    }
+  }
+  .footer-final {
+    background: #353a42;
+    @include padrao;
+    &-container {
+      margin-inline: $globalMarginMob;
+      padding-top: 10px;
+      color: $text-contrast;
+      font-size: 0.75rem;
+      img {
+        max-width: 110px;
       }
     }
   }

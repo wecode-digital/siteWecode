@@ -5,12 +5,47 @@ import { Link } from "react-router-dom";
 function MenuMob() {
   const [OpenMenu, SetOpenMenu] = useState(false);
 
+  function handleScrollToSection(selector, offset = 60) {
+    console.log(offset, "AQUIIIITESTETESTE");
+    const section = document.querySelector(selector);
+    if (section) {
+      const topOffset = section.offsetTop - offset;
+      console.log(section.offsetTop, "TESTEAQUIIII");
+      window.scrollTo({
+        top: topOffset,
+        behavior: "smooth",
+      });
+    }
+  }
+
+  function addClickEventToButton(buttonClass, sectionClass) {
+    const button = document.querySelector(buttonClass);
+    if (button) {
+      button.addEventListener("click", function () {
+        handleScrollToSection(sectionClass);
+      });
+    }
+  }
+
+  // addClickEventToButton("link-home");
+  addClickEventToButton("link-clients");
+  addClickEventToButton("link-about-us");
+  addClickEventToButton("link-value");
+  addClickEventToButton("link-methodology");
+  addClickEventToButton("link-contato");
+
   return (
     <>
       {OpenMenu ? (
         <div className={"menu-container"}>
           <div className={"menu-header"}>
-            <Link to="/">
+            <p
+              className={"link-home"}
+              // onClick={() => {
+              //   SetOpenMenu(false);
+              //   handleScrollToSection(".first-fold");
+              // }}
+            >
               <svg
                 width="110"
                 height="23"
@@ -51,7 +86,7 @@ function MenuMob() {
                   fill="white"
                 />
               </svg>
-            </Link>
+            </p>
             <div
               onClick={() => {
                 SetOpenMenu(false);
@@ -76,11 +111,50 @@ function MenuMob() {
           </div>
 
           <div className={"menu-body"}>
-            <a className={"institutional-links"}>Cases</a>
-            <a className={"institutional-links"}>Contato</a>
-            <a className={"institutional-links"}>Time</a>
-            <Link to="/sobre-nos" className={"institutional-links"}>
-              Sobre Nós
+            <p
+              className={"institutional-links  link-clients"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToSection(".our-clients");
+              }}
+            >
+              Nossos Clientes
+            </p>
+            <p
+              className={"institutional-links link-about-us"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToSection(".about-us");
+              }}
+            >
+              VTEX by Wecode
+            </p>
+            <p
+              className={"institutional-links link-value"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToSection(".how-generate-value");
+              }}
+            >
+              Como geramos valor
+            </p>
+            <Link
+              className={"institutional-links  link-methodology"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToSection(".methodology");
+              }}
+            >
+              O que fazemos
+            </Link>
+            <Link
+              className={"institutional-links link-contato"}
+              onClick={() => {
+                SetOpenMenu(false);
+                handleScrollToSection(".footer-container");
+              }}
+            >
+              Contato
             </Link>
           </div>
 
@@ -96,7 +170,10 @@ function MenuMob() {
             <div className={"menu-social-media"}>
               <h5>REDES SOCIAIS</h5>
               <div className={"menu-social-media-wrapper"}>
-                <a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/wecode.digital/"
+                >
                   Instagram
                   <svg
                     width="8"
@@ -111,7 +188,10 @@ function MenuMob() {
                     />
                   </svg>
                 </a>
-                <a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/wecodedigital/?original_referer=https%3A%2F%2Fwww.wecode.digital%2F"
+                >
                   Linkedin
                   <svg
                     width="8"
@@ -126,7 +206,10 @@ function MenuMob() {
                     />
                   </svg>
                 </a>
-                <a>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/wecode.digital"
+                >
                   Facebook
                   <svg
                     width="8"
@@ -154,14 +237,23 @@ function MenuMob() {
           <svg
             className={"botao-menu"}
             width="20"
-            height="12"
-            viewBox="0 0 20 12"
+            height="16"
+            viewBox="0 0 20 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect y="0" width="20" height="1" rx="1" fill="#353A42" />
-            <rect y="5" width="20" height="1" rx="1" fill="#353A42" />
-            <rect y="10" width="20" height="1" rx="1" fill="#353A42" />
+            <path
+              d="M0 0H20V0.0844444C20 1.14148 18.7122 2 17.1267 2H2.87444C1.28889 2 0.0011122 1.14148 0.0011122 0.0844444V0H0Z"
+              fill="#353A42"
+            />
+            <path
+              d="M2.74222 7H20V7.17185C20 8.18074 18.7711 9 17.2578 9H0V8.82815C0 7.81926 1.22889 7 2.74222 7Z"
+              fill="#353A42"
+            />
+            <path
+              d="M2.87444 14H17.1267C18.7122 14 20 14.8585 20 15.9156V16H0V15.9156C0 14.8585 1.28778 14 2.87334 14H2.87444Z"
+              fill="#353A42"
+            />
           </svg>
         </div>
       )}
