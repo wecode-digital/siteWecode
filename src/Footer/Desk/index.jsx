@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./sass/styles.css";
 import wecodeImg from "../../assets/images/home-generic-images/wecode-footer.png";
-import MyForm from "../formPost/index"
+import MyForm from "../formPost/index";
 
 function FooterDesk() {
   let isDesk = false;
@@ -184,9 +184,7 @@ function FooterDesk() {
                     <p className={"form-colum-title"}>E-MAIL</p>
 
                     <li>
-                      <a href="mailto:contato@wecode.digital">
-                        contato@wecode.digital
-                      </a>
+                      <a href="mailto:ola@wecode.digital">ola@wecode.digital</a>
                     </li>
                   </ul>{" "}
                   <ul className={"form-column"}>
@@ -320,7 +318,7 @@ function FooterDesk() {
                 <img src={wecodeImg} />
                 <div>
                   <p className={"footer-final-text first"}>
-                    ©2023 wecode.digital - e-commerce technology. Todos os
+                    ©2023 Wecode Tecnologia para e-commerce ltda. Todos os
                     direitos reservados.
                   </p>
                   <p className={"footer-final-text"}>

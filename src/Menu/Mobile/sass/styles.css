@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .botao-menu {
-  position: fixed;
-  top: 25px;
-  right: 20px;
-  z-index: 5; }
+  z-index: 5;
+  padding-right: 10px; }
 
-.botao-fechar {
-  position: fixed;
-  top: 5px;
-  right: 10px;
-  z-index: 5; }
+.ativo {
+  padding-right: 10px; }
 
 .menu-container {
+  opacity: 0;
+  z-index: -5;
+  width: 0;
+  height: 0; }
+
+.menu-container-ativo {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  z-index: 5;
+  opacity: 1;
+  z-index: 1;
   position: fixed;
   inset: 0;
   display: -webkit-box;
@@ -25,10 +27,11 @@
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 20px;
-  background: #053766; }
-  .menu-container .link-home {
+  background: #053766;
+  overflow-y: scroll; }
+  .menu-container-ativo .link-home {
     margin: 0; }
-  .menu-container .menu-header {
+  .menu-container-ativo .menu-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,24 +45,24 @@
     margin-inline: -20px;
     margin-top: -20px; }
     @media (min-width: 1008px) {
-      .menu-container .menu-header {
+      .menu-container-ativo .menu-header {
         max-width: unset !important;
         margin-inline: -250px; } }
   @media (min-width: 1008px) and (min-width: 1600px) {
-    .menu-container .menu-header {
+    .menu-container-ativo .menu-header {
       margin-inline: -350px; } }
-    .menu-container .menu-header svg {
+    .menu-container-ativo .menu-header svg {
       padding: 20px;
       padding-top: 17px;
       cursor: pointer; }
-    .menu-container .menu-header a {
+    .menu-container-ativo .menu-header a {
       height: -webkit-fit-content;
       height: -moz-fit-content;
       height: fit-content;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-  .menu-container .menu-body {
+  .menu-container-ativo .menu-body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -69,7 +72,7 @@
     flex-direction: column;
     padding-block: 13% 25%;
     gap: 1.5rem; }
-    .menu-container .menu-body .institutional-links {
+    .menu-container-ativo .menu-body .institutional-links {
       font-family: "Raleway", serif;
       font-style: normal;
       font-weight: 300;
@@ -80,7 +83,7 @@
       color: #fff;
       text-decoration: none;
       margin: 0; }
-  .menu-container .menu-footer {
+  .menu-container-ativo .menu-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -89,7 +92,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 2rem; }
-    .menu-container .menu-footer .menu-address {
+    .menu-container-ativo .menu-footer .menu-address {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -97,7 +100,7 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-      .menu-container .menu-footer .menu-address h5 {
+      .menu-container-ativo .menu-footer .menu-address h5 {
         font-family: "Raleway", serif;
         font-style: normal;
         font-weight: 300;
@@ -107,7 +110,7 @@
         font-weight: 500;
         color: #8a8a8a;
         margin-block: 0 0.5rem; }
-      .menu-container .menu-footer .menu-address p {
+      .menu-container-ativo .menu-footer .menu-address p {
         font-family: "Raleway", serif;
         font-style: normal;
         font-weight: 300;
@@ -116,7 +119,7 @@
         font-size: 0.875rem;
         color: #fff;
         margin-block: 0; }
-    .menu-container .menu-footer .menu-social-media {
+    .menu-container-ativo .menu-footer .menu-social-media {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -124,12 +127,12 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-      .menu-container .menu-footer .menu-social-media .menu-social-media-wrapper {
+      .menu-container-ativo .menu-footer .menu-social-media .menu-social-media-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         gap: 2rem; }
-      .menu-container .menu-footer .menu-social-media h5 {
+      .menu-container-ativo .menu-footer .menu-social-media h5 {
         font-family: "Raleway", serif;
         font-style: normal;
         font-weight: 300;
@@ -139,7 +142,7 @@
         font-weight: 500;
         color: #8a8a8a;
         margin-block: 0 0.5rem; }
-      .menu-container .menu-footer .menu-social-media a {
+      .menu-container-ativo .menu-footer .menu-social-media a {
         font-family: "Raleway", serif;
         font-style: normal;
         font-weight: 300;

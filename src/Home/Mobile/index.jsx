@@ -8,6 +8,7 @@ import imagehome from "../../assets/images/home-generic-images/image-home.png";
 import logopolitorno from "../../assets/images/client-logos/logo-politorno.png";
 import logokappesberg from "../../assets/images/client-logos/logo-kappesberg.png";
 import logokissny from "../../assets/images/client-logos/logo-kissNY.png";
+import aboutUsImg from "../../assets/images/home-generic-images/about-us-img.png";
 // import gestaoDeProjetos from "../../assets/images/diferencials/gestao-de-projetos.png";
 // import ExperienciaEmEcommerce from "../../assets/images/diferencials/Experiencia-em-e-commerce.png";
 // import tailorMade from "../../assets/images/diferencials/tailor-made.png";
@@ -674,7 +675,7 @@ function HomeMob({ title }) {
                 </p>
                 <img
                   className={"conecting-img"}
-                  src={conectingVtex}
+                  src={aboutUsImg}
                   width="100%"
                 ></img>
                 <p className={"home-paragraph"}>
@@ -916,7 +917,7 @@ function HomeMob({ title }) {
                 <h2 className={"tag"}>O QUE FAZEMOS</h2>
                 <h3 className={"block-title"}>
                   Somos <span className={"text-highlight"}>experts</span> nas
-                  soluções de e-<br></br>comerce{" "}
+                  soluções de e-<br></br>commerce{" "}
                   <span className={"text-highlight"}>VTEX</span>
                 </h3>
                 <h2 className={"tag-2"}>Conheça os serviços que prestamos</h2>

@@ -2,6 +2,7 @@
 
 .home-container {
   margin-inline: $globalMarginMob;
+  transition: all 0.3s ease-in-out;
   .block-title {
     @include padrao;
     font-weight: 300;
@@ -11,6 +12,7 @@
   .first-fold-text {
     @include padrao;
     text-align: center;
+    margin-bottom: 20px;
   }
   .text-highlight {
     @include padrao;
@@ -78,6 +80,9 @@
       text-align: center;
       margin-block: 0 2rem;
     }
+    @media screen and (max-width: 400px) {
+      padding-bottom: 40px;
+    }
   }
   .our-clients {
     margin-top: 2rem;
@@ -88,6 +93,7 @@
     .block-title {
       margin-block: 1.5rem 1rem;
       margin-inline: 20px;
+      font-size: 1.9rem;
     }
   }
   .client-list {
@@ -340,15 +346,16 @@
       background: #fff;
       box-shadow: $boxShadow;
       margin: 0 20px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       svg {
-        margin-inline: auto;
-        display: flex;
         margin-bottom: 24px;
       }
       &-title {
         @include padrao;
         margin-block: 0 0.5rem;
-        text-align: center;
+        // text-align: center;
         font-size: 1.5rem;
         font-weight: 500;
       }

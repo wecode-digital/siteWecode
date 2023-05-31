@@ -711,7 +711,6 @@ function HomeDesk() {
                 <br></br> tem como objetivos estratégicos os seguintes pilares.
               </p>
               <CardContainer />
-              
             </div>
 
             {/* <div className={"card-contrast-background"}>
@@ -922,7 +921,7 @@ function HomeDesk() {
             <h2 className={"tag"}>O QUE FAZEMOS</h2>
             <h3 className={"block-title"}>
               Somos <span className={"text-highlight"}>experts</span> nas
-              soluções de<br></br> e-comerce{" "}
+              soluções de<br></br> e-commerce{" "}
               <span className={"text-highlight"}>VTEX</span>
             </h3>
             <div className={"methodology-card-cotainer"}>

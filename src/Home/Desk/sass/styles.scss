@@ -219,13 +219,17 @@
       position: absolute;
       max-width: 600px;
       height: auto;
-      right: -240px;
-      @media screen and (min-width: 1450px) {
+      right: -180px;
+      @media screen and (min-width: 1500px) {
+        right: -150px;
         // max-width: 750px;
       }
       @media screen and (min-width: 1600px) {
         right: -330px;
         max-width: 750px;
+      }
+      @media screen and (min-width: 1700px) {
+        right: -290px;
       }
       @media screen and (min-width: 1900px) {
         right: -170px;

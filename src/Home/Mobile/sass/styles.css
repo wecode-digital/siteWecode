@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .home-container {
-  margin-inline: 20px; }
+  margin-inline: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   .home-container .block-title {
     font-family: "Raleway", serif;
     font-style: normal;
@@ -16,7 +18,8 @@
     font-weight: 300;
     line-height: 1.5;
     color: #353a42;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
   .home-container .text-highlight {
     font-family: "Raleway", serif;
     font-style: normal;
@@ -115,6 +118,9 @@
     .home-container .first-fold .block-title {
       text-align: center;
       margin-block: 0 2rem; }
+    @media screen and (max-width: 400px) {
+      .home-container .first-fold {
+        padding-bottom: 40px; } }
   .home-container .our-clients {
     margin-top: 2rem;
     padding: 20px 0 40px;
@@ -131,7 +137,8 @@
       margin-inline: -350px; } }
     .home-container .our-clients .block-title {
       margin-block: 1.5rem 1rem;
-      margin-inline: 20px; }
+      margin-inline: 20px;
+      font-size: 1.9rem; }
   .home-container .client-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -426,12 +433,18 @@
       background: #fff;
       -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
       box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
-      margin: 0 20px 15px; }
+      margin: 0 20px 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .home-container .methodology-card svg {
-        margin-inline: auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
         margin-bottom: 24px; }
       .home-container .methodology-card-title {
         font-family: "Raleway", serif;
@@ -440,7 +453,6 @@
         line-height: 1.5;
         color: #353a42;
         margin-block: 0 0.5rem;
-        text-align: center;
         font-size: 1.5rem;
         font-weight: 500; }
       .home-container .methodology-card-text {

@@ -9,7 +9,7 @@
   top: 0;
   box-sizing: border-box;
   z-index: 5;
-  transition: top 0.3s ease;
+  transition: top 0.5s ease;
   width: 100%;
   margin: auto;
   .headercontainer-desk-layout {
@@ -36,7 +36,7 @@
   margin: auto;
   position: fixed;
   top: 20px;
-  transition: top 0.3s ease;
+  transition: top 0.5s ease;
   box-sizing: border-box;
   z-index: 5;
   width: 100%;
@@ -53,6 +53,10 @@
     margin: auto;
     @media screen and (min-width: 1500px) {
       width: 60vw;
+    }
+    svg {
+      width: 140px;
+      height: auto;
     }
   }
 }

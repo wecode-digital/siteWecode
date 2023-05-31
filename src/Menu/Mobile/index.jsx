@@ -1,9 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./sass/styles.css";
 import { Link } from "react-router-dom";
 
 function MenuMob() {
   const [OpenMenu, SetOpenMenu] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      const offset = 50;
+      const btnMenu = document.querySelector(".botao-menu");
+      console.log(btnMenu, "Antes do if");
+      if (btnMenu == null || btnMenu == undefined) {
+        return;
+      }
+      if (scrollTop > offset) {
+        console.log(btnMenu, "TESTE");
+        btnMenu.classList.add("ativo");
+      } else {
+        btnMenu.classList.remove("ativo");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   function handleScrollToSection(selector, offset = 60) {
     console.log(offset, "AQUIIIITESTETESTE");

@@ -1,6 +1,6 @@
 import React from "react";
 import "./sass/styles.css";
-import MyForm from "../formPost/index"
+import MyForm from "../formPost/index";
 import wecodeImg from "../../assets/images/home-generic-images/wecode-footer.png";
 
 function FooterMob() {
@@ -70,9 +70,7 @@ function FooterMob() {
                   <ul>
                     E-MAIL
                     <li>
-                      <a href="mailto:contato@wecode.digital">
-                        contato@wecode.digital
-                      </a>
+                      <a href="mailto:ola@wecode.digital">ola@wecode.digital</a>
                     </li>
                   </ul>
                 </li>
@@ -253,7 +251,7 @@ function FooterMob() {
                 <img src={wecodeImg} />
                 <div>
                   <p className={"footer-final-text"}>
-                    ©2023 wecode.digital - e-commerce technology. Todos os
+                    ©2023 Wecode Tecnologia para e-commerce ltda. Todos os
                     direitos reservados.
                   </p>
                   <p className={"footer-final-text"}>

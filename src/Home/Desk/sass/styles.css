@@ -261,11 +261,17 @@
       position: absolute;
       max-width: 600px;
       height: auto;
-      right: -240px; }
+      right: -180px; }
+      @media screen and (min-width: 1500px) {
+        .home-container-desk .about-us .conecting-img {
+          right: -150px; } }
       @media screen and (min-width: 1600px) {
         .home-container-desk .about-us .conecting-img {
           right: -330px;
           max-width: 750px; } }
+      @media screen and (min-width: 1700px) {
+        .home-container-desk .about-us .conecting-img {
+          right: -290px; } }
       @media screen and (min-width: 1900px) {
         .home-container-desk .about-us .conecting-img {
           right: -170px;
