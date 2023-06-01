@@ -4,6 +4,7 @@ import MenuMob from "../../Menu/Mobile";
 import { Link } from "react-router-dom";
 
 function HeaderMob() {
+  //scroll com mudança do header
   const [scrolling, setScrolling] = useState(false);
   function handleScrollToResults() {
     const teste = document.querySelector("body");

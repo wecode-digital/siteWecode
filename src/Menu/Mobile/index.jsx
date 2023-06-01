@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 function MenuMob() {
   const [OpenMenu, SetOpenMenu] = useState(false);
 
+  //scroll pela pagina
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
@@ -56,6 +58,8 @@ function MenuMob() {
   addClickEventToButton("link-value");
   addClickEventToButton("link-methodology");
   addClickEventToButton("link-contato");
+
+  //
 
   return (
     <>
