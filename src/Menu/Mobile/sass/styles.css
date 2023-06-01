@@ -12,17 +12,16 @@
   margin-right: 40px; }
 
 .menu-container {
-  opacity: 0.5;
-  display: none;
-  z-index: -5;
   width: 0;
-  height: 0; }
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease; }
 
-.menu-container.active {
-  opacity: 1;
+.menu-container-open {
   inset: 0;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
   display: block;
   z-index: 1;
   position: fixed;
@@ -39,9 +38,9 @@
   padding: 20px;
   background: #053766;
   overflow-y: scroll; }
-  .menu-container.active .link-home {
+  .menu-container-open .link-home {
     margin: 0; }
-  .menu-container.active .menu-header {
+  .menu-container-open .menu-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -55,24 +54,24 @@
     margin-inline: -20px;
     margin-top: -20px; }
     @media (min-width: 1008px) {
-      .menu-container.active .menu-header {
+      .menu-container-open .menu-header {
         max-width: unset !important;
         margin-inline: -250px; } }
   @media (min-width: 1008px) and (min-width: 1600px) {
-    .menu-container.active .menu-header {
+    .menu-container-open .menu-header {
       margin-inline: -350px; } }
-    .menu-container.active .menu-header svg {
+    .menu-container-open .menu-header svg {
       padding: 30px;
       padding-top: 20px;
       cursor: pointer; }
-    .menu-container.active .menu-header a {
+    .menu-container-open .menu-header a {
       height: -webkit-fit-content;
       height: -moz-fit-content;
       height: fit-content;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-  .menu-container.active .menu-body {
+  .menu-container-open .menu-body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -82,7 +81,7 @@
     flex-direction: column;
     padding-block: 13% 25%;
     gap: 1.5rem; }
-    .menu-container.active .menu-body .institutional-links {
+    .menu-container-open .menu-body .institutional-links {
       font-family: "Raleway", serif;
       font-style: normal;
       font-weight: 300;
@@ -93,7 +92,7 @@
       color: #fff;
       text-decoration: none;
       margin: 0; }
-  .menu-container.active .menu-footer {
+  .menu-container-open .menu-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -102,7 +101,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 2rem; }
-    .menu-container.active .menu-footer .menu-address {
+    .menu-container-open .menu-footer .menu-address {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -110,7 +109,7 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-      .menu-container.active .menu-footer .menu-address h5 {
+      .menu-container-open .menu-footer .menu-address h5 {
         font-family: "Raleway", serif;
         font-style: normal;
         font-weight: 300;
@@ -120,7 +119,7 @@
         font-weight: 500;
         color: #8a8a8a;
         margin-block: 0 0.5rem; }
-      .menu-container.active .menu-footer .menu-address p {
+      .menu-container-open .menu-footer .menu-address p {
         font-family: "Raleway", serif;
         font-style: normal;
         font-weight: 300;
@@ -129,7 +128,7 @@
         font-size: 0.875rem;
         color: #fff;
         margin-block: 0; }
-    .menu-container.active .menu-footer .menu-social-media {
+    .menu-container-open .menu-footer .menu-social-media {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -137,12 +136,12 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-      .menu-container.active .menu-footer .menu-social-media .menu-social-media-wrapper {
+      .menu-container-open .menu-footer .menu-social-media .menu-social-media-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         gap: 2rem; }
-      .menu-container.active .menu-footer .menu-social-media h5 {
+      .menu-container-open .menu-footer .menu-social-media h5 {
         font-family: "Raleway", serif;
         font-style: normal;
         font-weight: 300;
@@ -152,7 +151,7 @@
         font-weight: 500;
         color: #8a8a8a;
         margin-block: 0 0.5rem; }
-      .menu-container.active .menu-footer .menu-social-media a {
+      .menu-container-open .menu-footer .menu-social-media a {
         font-family: "Raleway", serif;
         font-style: normal;
         font-weight: 300;

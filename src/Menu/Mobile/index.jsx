@@ -60,7 +60,7 @@ function MenuMob() {
   return (
     <>
       {OpenMenu ? (
-        <div className={"menu-container"}>
+        <div className={"menu-container-open"}>
           <div className={"menu-header"}>
             <p
               className={"link-home"}
