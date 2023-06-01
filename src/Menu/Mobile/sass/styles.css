@@ -62,8 +62,7 @@
       margin-inline: -350px; } }
     .menu-container-open .menu-header svg {
       padding: 30px;
-      padding-top: 20px;
-      cursor: pointer; }
+      padding-top: 20px; }
     .menu-container-open .menu-header a {
       height: -webkit-fit-content;
       height: -moz-fit-content;
