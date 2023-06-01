@@ -1,9 +1,46 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./sass/styles.css";
 import MenuMob from "../../Menu/Mobile";
 import { Link } from "react-router-dom";
 
 function HeaderMob() {
+  // const useOutsideClick = (el, initialState) => {
+  // const [isActive, setIsActive] = useState(false);
+
+  // useEffect(() => {
+  //   const onClick = (e) => {
+  //     if (el.current !== null && !el.current.contains(e.target)) {
+  //       setIsActive(!isActive);
+  //     }
+  //   };
+
+  //   if (isActive) {
+  //     window.addEventListener("click", onClick);
+  //   }
+  //   return () => {
+  //     window.removeEventListener("click", onClick);
+  //   };
+  // }, []);
+  // return [isActive, setIsActive];
+  // };
+
+  const menuRef = useRef(null);
+  const [isActive, setIsActive] = useState(false);
+  const onClick = () => setIsActive(!isActive);
+
+  const btnRef = useRef(null);
+  const [btn, setbtn] = useState(false);
+  const btnMenu = () => setbtn(!btn);
+
+  console.log(btn, "AQUIIII");
+
+  function trocaBotoes() {
+    onClick();
+    btnMenu();
+  }
+
+  console.log(isActive, "TESTANDo");
+
   const [scrolling, setScrolling] = useState(false);
   function handleScrollToResults() {
     const teste = document.querySelector("body");
@@ -92,7 +129,9 @@ function HeaderMob() {
                 </svg>
               </p>
               <svg
-                className={"botao-menu"}
+                onClick={trocaBotoes}
+                ref={btnRef}
+                className={`botao-menu ${btn ? "active" : "inactive"}`}
                 width="20"
                 height="16"
                 viewBox="0 0 20 16"
@@ -113,7 +152,10 @@ function HeaderMob() {
                 />
               </svg>
               {/* <MenuMob /> */}
-              <div className={"menu-container"}>
+              <div
+                className={`menu-container ${isActive ? "active" : "inactive"}`}
+                ref={menuRef}
+              >
                 <div className={"menu-header"}>
                   <p
                     className={"link-home"}
@@ -169,6 +211,7 @@ function HeaderMob() {
                   // }}
                   >
                     <svg
+                      onClick={trocaBotoes}
                       className={"botao-fechar"}
                       width="14"
                       height="14"

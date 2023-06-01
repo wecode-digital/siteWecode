@@ -4,18 +4,21 @@
   // position: fixed;
   // top: 25px;
   // right: 30px;
+  display: block;
   z-index: 5;
   padding-right: 10px;
 }
 
-.ativo {
+.botao-menu.active {
   padding-right: 10px;
+  display: none;
   // position: fixed;
   // top: 42px;
   // right: 30px;
   // z-index: 5;
 }
 .botao-fechar {
+  margin-right: 40px;
   // position: fixed;
   // top: 5px;
   // right: 10px;
@@ -23,16 +26,28 @@
 }
 
 .menu-container {
-  opacity: 0;
+  // transition: opacity 0.3s ease-in-out;
+  // visibility: hidden;
+  // opacity: 0;
+  opacity: 0.5;
+  // transform: translateX(-500px);
+  display: none;
   z-index: -5;
   width: 0;
   height: 0;
 }
-.menu-container-ativo {
-  transition: all 0.3s ease-in-out;
+.menu-container.active {
+  // transition: opacity 0.3s ease-in-out;
+  // visibility: visible;
+  // opacity: 1;
   opacity: 1;
+  inset: 0;
+  transform: translateX(0);
+  display: block;
   z-index: 1;
   position: fixed;
+  width: 100%;
+  height: auto;
   inset: 0;
   display: flex;
   flex-direction: column;
@@ -50,8 +65,8 @@
     @include fullscreen;
     margin-top: -20px;
     svg {
-      padding: 20px;
-      padding-top: 17px;
+      padding: 30px;
+      padding-top: 20px;
       cursor: pointer;
     }
     a {
