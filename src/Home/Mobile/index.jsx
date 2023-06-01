@@ -63,11 +63,11 @@ function HomeMob({ title }) {
       {isMobile ? (
         <div className={"home-container"}>
           <div className={"first-fold"}>
-            <h2 className={"block-title"}>
+            <h1 className={"block-title"}>
               Valorizamos <span className={"text-highlight"}>pessoas</span>
               <br></br> e impulsionamos{" "}
               <span className={"text-highlight"}>negócios</span>
-            </h2>
+            </h1>
             <img src={imagehome}></img>
             <p className={"first-fold-text"}>
               A Wecode é certificada e homologada para revender, implantar e
@@ -78,12 +78,12 @@ function HomeMob({ title }) {
           <div className={"our-clients"}>
             <div className={"our-client-container"}>
               {" "}
-              <h2 className={"tag"}>NOSSOS CLIENTES</h2>
-              <h3 className={"block-title"}>
+              <h3 className={"tag"}>NOSSOS CLIENTES</h3>
+              <h2 className={"block-title"}>
                 Quem <span className={"text-highlight"}>confia</span> em nosso
                 trabalho e <span className={"text-highlight"}>atesta</span>{" "}
                 nossa qualidade
-              </h3>
+              </h2>
               <div className={"client-list"}>
                 <div className={"client-wrapper"}>
                   <div>
@@ -662,9 +662,9 @@ function HomeMob({ title }) {
             <div className={"about-us"}>
               <div className={"about-us-container"}>
                 {" "}
-                <h3 className={"block-title"}>
+                <h2 className={"block-title"}>
                   VTEX by <span className={"text-highlight"}>Wecode</span>
-                </h3>
+                </h2>
                 <p className={"home-paragraph"}>
                   A VTEX é uma plataforma completa, integrada e composable que
                   gera experiências avançadas de comércio B2B, B2C, Crossborder,
@@ -699,11 +699,11 @@ function HomeMob({ title }) {
           </div>
           <div className={"how-generate-value-master"}>
             <div className={"how-generate-value"}>
-              <h2 className={"tag"}>COMO GERAMOS VALOR</h2>
-              <h3 className={"block-title"}>
+              <h3 className={"tag"}>COMO GERAMOS VALOR</h3>
+              <h2 className={"block-title"}>
                 Não somos uma <br></br>
                 <span className={"text-highlight"}> agência</span>
-              </h3>
+              </h2>
               <p className={"home-paragraph"}>
                 Possuimos uma metodologia própria de gestão de projetos, que tem
                 como objetivos estratégicos os seguintes pilares.
@@ -914,13 +914,13 @@ function HomeMob({ title }) {
               </div>
 
               <div className={"methodology"}>
-                <h2 className={"tag"}>O QUE FAZEMOS</h2>
-                <h3 className={"block-title"}>
+                <h3 className={"tag"}>O QUE FAZEMOS</h3>
+                <h2 className={"block-title"}>
                   Somos <span className={"text-highlight"}>experts</span> nas
                   soluções de e-<br></br>commerce{" "}
                   <span className={"text-highlight"}>VTEX</span>
-                </h3>
-                <h2 className={"tag-2"}>Conheça os serviços que prestamos</h2>
+                </h2>
+                <h3 className={"tag-2"}>Conheça os serviços que prestamos</h3>
                 <div className={"methodology-card"}>
                   <svg
                     width="65"

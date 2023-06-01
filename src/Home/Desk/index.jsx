@@ -49,11 +49,11 @@ function HomeDesk() {
         <div className={"home-container-desk"}>
           <div className={"first-fold"}>
             <div className={"first-fold-text-container"}>
-              <h2 className={"block-title"}>
+              <h1 className={"block-title"}>
                 Valorizamos <span className={"text-highlight"}>pessoas</span> e{" "}
                 <br></br> impulsionamos{" "}
                 <span className={"text-highlight"}>negócios</span>
-              </h2>
+              </h1>
               <p className={"first-fold-text"}>
                 A Wecode é certificada e homologada para revender, implantar e
                 prestar suporte para as soluções de e-commerce da VTEX
@@ -65,12 +65,12 @@ function HomeDesk() {
           </div>
           <div className={"our-clients"}>
             <div className={"our-clients-container"}>
-              <h2 className={"tag"}>NOSSOS CLIENTES</h2>
-              <h3 className={"block-title"}>
+              <h3 className={"tag"}>NOSSOS CLIENTES</h3>
+              <h2 className={"block-title"}>
                 Quem <span className={"text-highlight"}>confia</span> em nosso
                 trabalho e <br></br>
                 <span className={"text-highlight"}>atesta</span> nossa qualidade
-              </h3>
+              </h2>
               <div className={"client-list"}>
                 <div className={"client-wrapper"}>
                   <div>
@@ -660,10 +660,10 @@ function HomeDesk() {
           <div className={"about-us"}>
             <div className={"about-us-container"}>
               <div className={"about-us-text-container"}>
-                <h3 className={"block-title"}>
+                <h2 className={"block-title"}>
                   VTEX by<br></br>{" "}
                   <span className={"text-highlight"}>WeCode</span>
-                </h3>
+                </h2>
                 <p className={"home-paragraph"}>
                   A VTEX é uma plataforma completa, integrada e composable que
                   gera experiências avançadas de comércio B2B, B2C, Crossborder,
@@ -701,11 +701,11 @@ function HomeDesk() {
               </p>
             </div>
             <div className={"how-generate-value-text-container"}>
-              <h2 className={"tag"}>COMO GERAMOS VALOR</h2>
-              <h3 className={"block-title"}>
+              <h3 className={"tag"}>COMO GERAMOS VALOR</h3>
+              <h2 className={"block-title"}>
                 Não somos uma <br></br>
                 <span className={"text-highlight"}> agência</span>
-              </h3>
+              </h2>
               <p className={"home-paragraph"}>
                 Possuimos uma metodologia própria de gestão de projetos, que
                 <br></br> tem como objetivos estratégicos os seguintes pilares.
@@ -918,12 +918,12 @@ function HomeDesk() {
             </div> */}
           </div>
           <div className={"methodology"}>
-            <h2 className={"tag"}>O QUE FAZEMOS</h2>
-            <h3 className={"block-title"}>
+            <h3 className={"tag"}>O QUE FAZEMOS</h3>
+            <h2 className={"block-title"}>
               Somos <span className={"text-highlight"}>experts</span> nas
               soluções de<br></br> e-commerce{" "}
               <span className={"text-highlight"}>VTEX</span>
-            </h3>
+            </h2>
             <div className={"methodology-card-cotainer"}>
               <div className={"methodology-card-first methodology-card"}>
                 <svg

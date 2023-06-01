@@ -65,10 +65,10 @@ function FooterDesk() {
               <div className={"footer-container-form-bg-circle-4"} />
               <div className={"footer-container-form-container"}>
                 <div className={"footer-container-text-form"}>
-                  <h2 className={"tag"}>CONTATO</h2>
-                  <h3 className={"block-title"}>
+                  <p className={"tag"}>CONTATO</p>
+                  <h4 className={"block-title"}>
                     Vamos <span className={"text-highlight"}>conversar!</span>
-                  </h3>
+                  </h4>
                   <p className={"home-paragraph"}>
                     Preencha o formulário abaixo para entrar em contato, ou
                     pelos outros meios de comunicações abaixo.
