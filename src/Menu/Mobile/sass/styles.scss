@@ -10,9 +10,6 @@
   padding-right: 10px;
   display: none;
 }
-.botao-fechar {
-  margin-right: 40px;
-}
 
 .menu-container {
   width: 0;
@@ -58,6 +55,7 @@
   padding: 20px;
   background: $dark-main-color;
   overflow-y: scroll;
+  box-sizing: border-box;
 
   .link-home {
     margin: 0;
