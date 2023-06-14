@@ -87,7 +87,7 @@ function HomeMob({ title }) {
               <div className={"client-list"}>
                 <div className={"client-wrapper"}>
                   <div>
-                    <img width="81" height="15" src={logopolitorno}></img>
+                    <img width="81" height="auto" src={logopolitorno}></img>
                   </div>
 
                   <div>

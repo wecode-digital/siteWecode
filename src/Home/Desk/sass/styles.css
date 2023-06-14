@@ -203,7 +203,7 @@
         justify-content: center; }
         .home-container-desk .client-list .client-wrapper div img {
           width: 123px;
-          height: 23px; }
+          height: auto; }
         .home-container-desk .client-list .client-wrapper div .kiss {
           height: 35px; }
         .home-container-desk .client-list .client-wrapper div svg {
