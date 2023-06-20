@@ -662,7 +662,7 @@ function HomeDesk() {
               <div className={"about-us-text-container"}>
                 <h2 className={"block-title"}>
                   VTEX by<br></br>{" "}
-                  <span className={"text-highlight"}>WeCode</span>
+                  <span className={"text-highlight"}>Wecode</span>
                 </h2>
                 <p className={"home-paragraph"}>
                   A VTEX é uma plataforma completa, integrada e composable que
