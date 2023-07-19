@@ -1126,7 +1126,7 @@ function HomeDesk() {
                     Suporte e Evolução
                   </h4>
                   <p className={"methodology-card-text"}>
-                    Ciclos mensais de analise e evolução do seu canal de vendas
+                    Ciclos mensais de análise e evolução do seu canal de vendas
                     digital, através de planejamento e suporte continuos.
                   </p>
                   <p
