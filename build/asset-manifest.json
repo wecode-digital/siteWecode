@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1b5e1b71.css",
-    "main.js": "/static/js/main.dd76ec97.js",
+    "main.js": "/static/js/main.a269638b.js",
     "static/media/office.png": "/static/media/office.35e986a8f7d2b38de167.png",
     "static/media/conecting-vtex.png": "/static/media/conecting-vtex.06eb61e3fe35a58b1fdf.png",
     "static/media/image-home.png": "/static/media/image-home.6949318943b971cb1219.png",
@@ -10,10 +10,10 @@
     "static/media/logo-politorno.png": "/static/media/logo-politorno.e63cc29a7c0e769a2235.png",
     "index.html": "/index.html",
     "main.1b5e1b71.css.map": "/static/css/main.1b5e1b71.css.map",
-    "main.dd76ec97.js.map": "/static/js/main.dd76ec97.js.map"
+    "main.a269638b.js.map": "/static/js/main.a269638b.js.map"
   },
   "entrypoints": [
     "static/css/main.1b5e1b71.css",
-    "static/js/main.dd76ec97.js"
+    "static/js/main.a269638b.js"
   ]
 }

@@ -191,7 +191,7 @@ function FooterDesk() {
                     <p className={"form-colum-title"}>TELEFONE</p>
 
                     <li>
-                      <a href="tel:+55 (54) 3028-9452">+55 (54) 3028-9452</a>
+                    <a href="https://wa.me/send?phone=5481110081">+55 (54) 98111-0081</a>
                     </li>
                   </ul>
                 </li>
@@ -200,8 +200,7 @@ function FooterDesk() {
                     <p className={"form-colum-title"}>ENDEREÇO </p>
                     <li>
                       <a href="https://www.google.com/maps/place/Wecode+%7C+Tecnologia+para+E-commerce/@-29.1716095,-51.1729341,19z/data=!3m1!4b1!4m6!3m5!1s0x951ebd7ad265e52d:0x4de4320de63ee8cc!8m2!3d-29.1716095!4d-51.1723869!16s%2Fg%2F11kp8jwvdb">
-                        Rua Plácido de Castro, 1063 - Exposição,<br></br> Caxias
-                        do Sul - RS, sala 403, 95084-370
+                      Rua Olavo Bilac, 503 - Sala 4 - Rio Branco,<br></br> Caxias do Sul - RS, 95010-080
                       </a>
                     </li>
                   </ul>
@@ -322,8 +321,7 @@ function FooterDesk() {
                     direitos reservados.
                   </p>
                   <p className={"footer-final-text"}>
-                    Rua Plácido de Castro, 1063 - Sala 403 - Exposição, Caxias
-                    do Sul - RS, 95084-370 Telefone: (54) 3028-9452
+                    Rua Olavo Bilac, 503 - Sala 4 - Rio Branco, Caxias do Sul - RS, 95010-080
                   </p>
                 </div>
               </div>
