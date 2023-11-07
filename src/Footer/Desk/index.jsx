@@ -191,7 +191,7 @@ function FooterDesk() {
                     <p className={"form-colum-title"}>TELEFONE</p>
 
                     <li>
-                    <a href="https://wa.me/send?phone=5481110081">+55 (54) 98111-0081</a>
+                    <a href="tel:+555422220235">+55 (54) 2222-0235</a>
                     </li>
                   </ul>
                 </li>
