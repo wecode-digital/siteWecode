@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const MyForm = () => {
+
   const [contact, setContact] = useState({
     name: '',
     email: '',
@@ -20,6 +21,23 @@ const MyForm = () => {
 
   const handleChange = e => setContact({ ...contact, [e.target.name]: e.target.value });
 
+  const dataLayerEvent = (data) => {
+    //console.log(data, "dados")
+
+
+    if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
+      window.dataLayer.push({
+        dadosCliente: {
+          nome: data?.name,
+          empresa: data?.subject,
+          telefone: data?.phone,
+          email: data?.phone,
+          mensagem: data?.message
+        }
+      });
+      console.log("datalayer", window.dataLayer)
+    };
+  }
   const handleSubmit = async e => {
     e.preventDefault();
     setIsButtonDisabled(true);
@@ -38,7 +56,7 @@ const MyForm = () => {
           type: 'success',
           message: 'Thank you for reaching out to us.'
         });
-
+        dataLayerEvent(contact);
         document.querySelectorAll("form .form_2").forEach((el) => {
           console.log("el", el.value)
           el.value = ""
