@@ -33,9 +33,17 @@ const MyForm = () => {
           telefone: data?.phone,
           email: data?.phone,
           mensagem: data?.message
+        },
+        submitFormWecode: {
+          nome: data?.name,
+          empresa: data?.subject,
+          telefone: data?.phone,
+          email: data?.phone,
+          mensagem: data?.message
         }
       });
-      console.log("datalayer", window.dataLayer)
+
+      //console.log("datalayer", window.dataLayer)
     };
   }
   const handleSubmit = async e => {
@@ -58,7 +66,7 @@ const MyForm = () => {
         });
         dataLayerEvent(contact);
         document.querySelectorAll("form .form_2").forEach((el) => {
-          console.log("el", el.value)
+          //console.log("el", el.value)
           el.value = ""
         })
 

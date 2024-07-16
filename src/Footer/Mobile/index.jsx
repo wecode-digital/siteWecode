@@ -10,11 +10,11 @@ function FooterMob() {
   }
 
   function handleScrollToSection(selector, offset = 80) {
-    console.log(offset, "AQUIIIITESTETESTE");
+    //console.log(offset, "AQUIIIITESTETESTE");
     const section = document.querySelector(selector);
     if (section) {
       const topOffset = section.offsetTop - offset;
-      console.log(section.offsetTop, "TESTEAQUIIII");
+      // console.log(section.offsetTop, "TESTEAQUIIII");
       window.scrollTo({
         top: topOffset,
         behavior: "smooth",
@@ -87,7 +87,7 @@ function FooterMob() {
                     ENDEREÇO
                     <li>
                       <a href="https://www.google.com/maps/place/Wecode+%7C+Tecnologia+para+E-commerce/@-29.1716095,-51.1729341,19z/data=!3m1!4b1!4m6!3m5!1s0x951ebd7ad265e52d:0x4de4320de63ee8cc!8m2!3d-29.1716095!4d-51.1723869!16s%2Fg%2F11kp8jwvdb">
-                      R. Olavo Bilac, 503 - Sala 4 - Rio Branco, Caxias do Sul - RS, 95010-080
+                        R. Olavo Bilac, 503 - Sala 4 - Rio Branco, Caxias do Sul - RS, 95010-080
                       </a>
                     </li>
                   </ul>
@@ -254,8 +254,8 @@ function FooterMob() {
                     direitos reservados.
                   </p>
                   <p className={"footer-final-text"}>
-                  Rua Olavo Bilac, 503 - Sala 4 - Rio Branco, Caxias do Sul - RS, 95010-080
-                   Telefone: (54) 98111-0081
+                    Rua Olavo Bilac, 503 - Sala 4 - Rio Branco, Caxias do Sul - RS, 95010-080
+                    Telefone: (54) 98111-0081
                   </p>
                 </div>
               </div>

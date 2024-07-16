@@ -6,11 +6,11 @@ function HeaderDesk() {
   const [scrolling, setScrolling] = useState(false);
 
   function handleScrollToSection(selector, offset = 80) {
-    console.log(offset, "AQUIIIITESTETESTE");
+    //console.log(offset, "AQUIIIITESTETESTE");
     const section = document.querySelector(selector);
     if (section) {
       const topOffset = section.offsetTop - offset;
-      console.log(section.offsetTop, "TESTEAQUIIII");
+      //console.log(section.offsetTop, "TESTEAQUIIII");
       window.scrollTo({
         top: topOffset,
         behavior: "smooth",

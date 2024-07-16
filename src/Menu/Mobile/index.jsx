@@ -31,11 +31,11 @@ function MenuMob() {
   }, []);
 
   function handleScrollToSection(selector, offset = 60) {
-    console.log(offset, "AQUIIIITESTETESTE");
+    //console.log(offset, "AQUIIIITESTETESTE");
     const section = document.querySelector(selector);
     if (section) {
       const topOffset = section.offsetTop - offset;
-      console.log(section.offsetTop, "TESTEAQUIIII");
+      //console.log(section.offsetTop, "TESTEAQUIIII");
       window.scrollTo({
         top: topOffset,
         behavior: "smooth",
@@ -68,10 +68,10 @@ function MenuMob() {
           <div className={"menu-header"}>
             <p
               className={"link-home"}
-              // onClick={() => {
-              //   SetOpenMenu(false);
-              //   handleScrollToSection(".first-fold");
-              // }}
+            // onClick={() => {
+            //   SetOpenMenu(false);
+            //   handleScrollToSection(".first-fold");
+            // }}
             >
               <svg
                 width="110"
