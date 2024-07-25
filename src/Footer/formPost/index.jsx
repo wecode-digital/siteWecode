@@ -34,13 +34,7 @@ const MyForm = () => {
           email: data?.phone,
           mensagem: data?.message
         },
-        submitFormWecode: {
-          nome: data?.name,
-          empresa: data?.subject,
-          telefone: data?.phone,
-          email: data?.phone,
-          mensagem: data?.message
-        }
+        event: "submitFormWecode"
       });
 
       //console.log("datalayer", window.dataLayer)
