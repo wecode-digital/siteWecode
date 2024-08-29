@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./sass/styles.css";
+import TestimonialSlider from '../Depoimento-clientes/index'
 
 import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
@@ -20,19 +21,13 @@ import fernandaL from "../../assets/images/client-profile-pics/fernanda-l.png";
 import conectingVtex from "../../assets/images/home-generic-images/conecting-vtex.png";
 
 function HomeMob({ title }) {
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: false,
-    slidesToShow: 1.7,
-    slidesToScroll: 1,
-    centerMode: false,
-  };
+
+
 
   //scroll para o footer
   function handleScrollToResults() {
     const teste = document.querySelector("footer");
-    console.log("teste", teste);
+    // console.log("teste", teste);
     teste.scrollIntoView({ behavior: "smooth" });
   }
   // cards;
@@ -1270,6 +1265,11 @@ function HomeMob({ title }) {
                   Saiba mais
                 </a>
               </div>
+
+              {/* depoimentos */}
+                <TestimonialSlider />
+              {/* depoimentos fim */}
+
               {/* <div className={"testimony"}>
           <h2 className={"tag"}>DEPOIMENTOS</h2>
           <h3 className={"block-title"}>

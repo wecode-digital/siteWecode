@@ -1,0 +1,58 @@
+@import "./../../../styles/padroes/padroes.scss";
+
+p,
+h2,
+h3 {
+  margin: unset;
+}
+
+
+.testimony-main-container {
+  overflow: hidden;
+}
+
+
+.testimony-titles-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 1.5rem;
+  gap: 1.5rem;
+
+  .testimony-title {
+    color: $title-card;
+    text-align: center;
+    font-size: .75rem;
+    font-family: $fontFamily;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .testimony-subtitle {
+    color: $text;
+    text-align: center;
+    font-size: 2rem;
+    font-family: $fontFamily;
+    font-weight: 300;
+  }
+}
+
+.testimonial-slide {
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .testimonial-profile {
+      display: flex;
+      align-items: center;
+
+      .testimonial-name-position {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+    }
+
+    
+  }
+}
