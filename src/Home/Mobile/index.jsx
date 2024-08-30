@@ -15,7 +15,7 @@ import aboutUsImg from "../../assets/images/home-generic-images/about-us-img.png
 // import tailorMade from "../../assets/images/diferencials/tailor-made.png";
 // import especialistasEmVtexIo from "../../assets/images/diferencials/especialistas-em-vtex-io.png";
 // import dedicacaoDoInicioAoFim from "../../assets/images/diferencials/dedicacao-do-inicio-ao-fim.png";
-import fernandaL from "../../assets/images/client-profile-pics/fernanda-l.png";
+// import fernandaL from "../../assets/images/client-profile-pics/fernanda-l.png";
 //
 // import salesGraph from "../../assets/images/home-generic-images/sales-graph.png";
 import conectingVtex from "../../assets/images/home-generic-images/conecting-vtex.png";

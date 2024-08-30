@@ -1,5 +1,6 @@
 import React from "react";
 import "./sass/styles.css";
+import TestimonialSlider from '../Depoimento-clientes/index'
 
 import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
@@ -15,7 +16,7 @@ import conectingCel from "../../assets/images/home-generic-images/conecting-cel.
 // import tailorMade from "../../assets/images/diferencials/tailor-made.png";
 // import especialistasEmVtexIo from "../../assets/images/diferencials/especialistas-em-vtex-io.png";
 // import dedicacaoDoInicioAoFim from "../../assets/images/diferencials/dedicacao-do-inicio-ao-fim.png";
-import fernandaL from "../../assets/images/client-profile-pics/fernanda-l.png";
+// import fernandaL from "../../assets/images/client-profile-pics/fernanda-l.png";
 //
 // import salesGraph from "../../assets/images/home-generic-images/sales-graph.png";
 import conectingVtex from "../../assets/images/home-generic-images/conecting-vtex.png";
@@ -1377,6 +1378,11 @@ function HomeDesk() {
               </svg>
             </p>
           </div>
+
+            {/* depoimentos */}
+            <TestimonialSlider />
+              {/* depoimentos fim */}
+
           {/* <div className={"testimony"}>
           <h2 className={"tag"}>DEPOIMENTOS</h2>
           <h3 className={"block-title"}>

@@ -9,6 +9,7 @@ h3 {
 
 .testimony-main-container {
   overflow: hidden;
+  margin-inline: -20px;
 }
 
 
@@ -33,26 +34,177 @@ h3 {
     font-size: 2rem;
     font-family: $fontFamily;
     font-weight: 300;
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 1008px) {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.slick-slider {
+
+  button.slick-prev {
+    left: 0 !important;
+    border: 1px solid black;
+  }
+
+  button.slick-next {
+    right: 0 !important;
+    border: 1px solid black;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #0056b3;
   }
 }
 
 .testimonial-slide {
+  
   .testimonial-content {
     display: flex;
     flex-direction: column;
+    background-color: $gray-main-color;
+    padding: 20px;
+    border-radius: 10px;
     gap: 1rem;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 1008px) {
+      padding: 48px 52px;
+      margin-bottom: 80px;
+    }
 
     .testimonial-profile {
       display: flex;
       align-items: center;
+      gap: .75rem;
 
       .testimonial-name-position {
         display: flex;
         flex-direction: column;
         gap: 6px;
+
+        .testimonial-name {
+          color: $text;
+          font-family: $fontFamily;
+          font-weight: 400;
+        }
+
+        .testimonial-position {
+          color: $text;
+          font-family: $fontFamily;
+          font-size: .875rem;
+          font-weight: 100;
+        }
       }
     }
 
+    .testimonial-desciption {
+
+      .testimonial-description-content {
+        color: $text;
+        font-family: $fontFamily;
+        font-size: .875rem;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.5rem;
+
+        @media screen and (min-width: 1008px) {
+          font-size: 1.125rem;
+          line-height: 2rem;
+        }
+      }
+    }
+
+    .testimonial-video {
+
+      .testimonial-button-video {
+        padding: .875rem 1rem;
+        border-radius: 8px;
+        border: 1px solid $light-main-color;
+        background: none;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+        color: $light-main-color;
+      }
+      
+    }
+  }
+}
+
+.slick-track {
+  display: flex !important;
+  gap: 8px;
+}
+
+.slick-slide {
+  transition: all 0.5s ease; // Suaviza as transições ao trocar de slide
+}
+
+.slick-center .testimonial-content {
+  transform: scale(1); // Aumenta o tamanho do slide central
+}
+
+.slick-slide:not(.slick-center) {
+  opacity: 0.5; // Reduz a opacidade dos slides não centrais
+  filter: grayscale(100%); // Aplica um efeito de desaturação para desfoque visual
+
+  @media screen and (min-width: 1008px) {
+    opacity: 1;
+    filter: blur(3px);
+    transform: scale(.75);
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  z-index: 1001;
+
+  @media screen and (min-width: 1008px) {
+    iframe {
+      max-width: 100%;
+      height: 50%;
+      aspect-ratio: 16 / 9;
+    }
     
   }
+}
+
+// video {
+//   top: 280px !important;
+// }
+
+.modal-content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .modal-close-button {
+    top: -10px;
+    position: absolute;
+    right: -6px;
+    z-index: 999;
+  } 
 }

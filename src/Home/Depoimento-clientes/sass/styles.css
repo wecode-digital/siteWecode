@@ -5,7 +5,8 @@ h3 {
   margin: unset; }
 
 .testimony-main-container {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-inline: -20px; }
 
 .testimony-titles-container {
   display: -webkit-box;
@@ -29,7 +30,23 @@ h3 {
     text-align: center;
     font-size: 2rem;
     font-family: "Raleway", serif;
-    font-weight: 300; }
+    font-weight: 300;
+    margin-bottom: 1.5rem; }
+    @media screen and (min-width: 1008px) {
+      .testimony-titles-container .testimony-subtitle {
+        font-size: 3rem;
+        margin-bottom: 3rem; } }
+
+.slick-slider button.slick-prev {
+  left: 0 !important;
+  border: 1px solid black; }
+
+.slick-slider button.slick-next {
+  right: 0 !important;
+  border: 1px solid black; }
+
+.slick-slider .slick-prev:hover, .slick-slider .slick-next:hover {
+  color: #0056b3; }
 
 .testimonial-slide .testimonial-content {
   display: -webkit-box;
@@ -39,14 +56,23 @@ h3 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 1rem; }
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 1rem;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 1008px) {
+    .testimonial-slide .testimonial-content {
+      padding: 48px 52px;
+      margin-bottom: 80px; } }
   .testimonial-slide .testimonial-content .testimonial-profile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    gap: .75rem; }
     .testimonial-slide .testimonial-content .testimonial-profile .testimonial-name-position {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -56,3 +82,110 @@ h3 {
       -ms-flex-direction: column;
       flex-direction: column;
       gap: 6px; }
+      .testimonial-slide .testimonial-content .testimonial-profile .testimonial-name-position .testimonial-name {
+        color: #353a42;
+        font-family: "Raleway", serif;
+        font-weight: 400; }
+      .testimonial-slide .testimonial-content .testimonial-profile .testimonial-name-position .testimonial-position {
+        color: #353a42;
+        font-family: "Raleway", serif;
+        font-size: .875rem;
+        font-weight: 100; }
+  .testimonial-slide .testimonial-content .testimonial-desciption .testimonial-description-content {
+    color: #353a42;
+    font-family: "Raleway", serif;
+    font-size: .875rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5rem; }
+    @media screen and (min-width: 1008px) {
+      .testimonial-slide .testimonial-content .testimonial-desciption .testimonial-description-content {
+        font-size: 1.125rem;
+        line-height: 2rem; } }
+  .testimonial-slide .testimonial-content .testimonial-video .testimonial-button-video {
+    padding: .875rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #0d98e6;
+    background: none;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    color: #0d98e6; }
+
+.slick-track {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  gap: 8px; }
+
+.slick-slide {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.slick-center .testimonial-content {
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+.slick-slide:not(.slick-center) {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  @media screen and (min-width: 1008px) {
+    .slick-slide:not(.slick-center) {
+      opacity: 1;
+      -webkit-filter: blur(3px);
+      filter: blur(3px);
+      -webkit-transform: scale(0.75);
+      transform: scale(0.75); } }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  /* Fundo escuro */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1000; }
+
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  z-index: 1001; }
+  @media screen and (min-width: 1008px) {
+    .modal-content iframe {
+      max-width: 100%;
+      height: 50%;
+      aspect-ratio: 16 / 9; } }
+
+.modal-content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+  .modal-content-inner .modal-close-button {
+    top: -10px;
+    position: absolute;
+    right: -6px;
+    z-index: 999; }
