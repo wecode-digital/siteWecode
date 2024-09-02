@@ -14,7 +14,7 @@ const testimonials = [
     position: 'CEO • PICCADILLY',
     image: fernandaL,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    video: 'https://vimeo.com/1003519988'
+    video: 'https://player.vimeo.com/video/1003519988?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
   },
   {
     name: 'Fernanda L.',
@@ -124,15 +124,16 @@ export const TestimonialSlider = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <button onClick={closeModal} className="modal-close-button">X</button>
+    
           <iframe
-      src={videoSrc}
-      width="100%"
-      height="100%"
-      frameBorder="0"
-      allow="autoplay; encrypted-media"
-      allowFullScreen
-      title="Depoimento em Vídeo"
-    ></iframe>
+            src={videoSrc}
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="Depoimento em Vídeo"
+          ></iframe>
         </div>
       </Modal>
     </div>
