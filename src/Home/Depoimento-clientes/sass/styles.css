@@ -45,7 +45,8 @@ h3 {
   right: 0 !important;
   border: 1px solid black; }
 
-.slick-slider .slick-prev:hover, .slick-slider .slick-next:hover {
+.slick-slider .slick-prev:hover,
+.slick-slider .slick-next:hover {
   color: #0056b3; }
 
 .testimonial-slide .testimonial-content {
@@ -114,8 +115,7 @@ h3 {
 .slick-track {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important;
-  gap: 8px; }
+  display: flex !important; }
 
 .slick-slide {
   -webkit-transition: all 0.5s ease;
@@ -126,9 +126,11 @@ h3 {
   transform: scale(1); }
 
 .slick-slide:not(.slick-center) {
-  opacity: 0.5;
+  opacity: 0.6;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  filter: grayscale(100%);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9); }
   @media screen and (min-width: 1008px) {
     .slick-slide:not(.slick-center) {
       opacity: 1;
