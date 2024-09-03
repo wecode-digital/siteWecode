@@ -6,25 +6,26 @@ import Modal from 'react-modal';
 import "./sass/styles.css";
 
 import fernandaL from "../../assets/images/client-profile-pics/fernanda-1.png";
-import felipe from "../../assets/videos/teste.mp4";
+import felipe from "../../assets/videos/felipe-carraro-horizontal.mp4";
+import felipeDepoimentoVertical from "../../assets/videos/felipe-carraro-vertical.mp4"
 
 const testimonials = [
   {
-    name: 'Fernanda L.',
-    position: 'CEO • PICCADILLY',
+    name: 'Teste.',
+    position: 'CEO • Teste',
     image: fernandaL,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     video: 'https://player.vimeo.com/video/1003519988?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
   },
   {
-    name: 'Fernanda L.',
-    position: 'CEO • PICCADILLY',
+    name: 'Felipe Farina',
+    position: 'CEO • Carraro',
     image: fernandaL,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    video: felipe
+    video: felipeDepoimentoVertical
   },
   {
-    name: 'Fernanda L.',
+    name: 'Horizontal Video',
     position: 'CEO • PICCADILLY',
     image: fernandaL,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
