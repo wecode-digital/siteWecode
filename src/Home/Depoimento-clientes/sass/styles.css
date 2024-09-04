@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 p,
 h2,
@@ -37,17 +38,39 @@ h3 {
         font-size: 3rem;
         margin-bottom: 3rem; } }
 
-.slick-slider button.slick-prev {
-  left: 0 !important;
-  border: 1px solid black; }
-
-.slick-slider button.slick-next {
-  right: 0 !important;
-  border: 1px solid black; }
-
-.slick-slider .slick-prev:hover,
-.slick-slider .slick-next:hover {
-  color: #0056b3; }
+.slick-slider {
+  position: relative; }
+  .slick-slider .slick-prev,
+  .slick-slider .slick-next {
+    background: none;
+    border: none;
+    opacity: 0.75;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 38%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer; }
+  .slick-slider button.slick-prev {
+    left: 24%;
+    /* Altere para ajustar a posição */ }
+  .slick-slider button.slick-next {
+    right: 25%;
+    /* Altere para ajustar a posição */ }
+  .slick-slider .slick-prev::before {
+    content: url("../../../assets/svg/left-arrow.svg");
+    display: block; }
+  .slick-slider .slick-next::before {
+    content: url("../../../assets/svg/right-arrow.svg");
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0px; }
 
 .testimonial-slide .testimonial-content {
   display: -webkit-box;

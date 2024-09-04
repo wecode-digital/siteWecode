@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,8 +6,8 @@ import Modal from 'react-modal';
 import "./sass/styles.css";
 
 import fernandaL from "../../assets/images/client-profile-pics/fernanda-1.png";
-import felipe from "../../assets/videos/felipe-carraro-horizontal.mp4";
-import felipeDepoimentoVertical from "../../assets/videos/felipe-carraro-vertical.mp4"
+import felipeHorizontal from "../../assets/videos/felipe-carraro-horizontal.mp4";
+import felipeVertical from "../../assets/videos/felipe-carraro-vertical.mp4"
 
 const testimonials = [
   {
@@ -15,34 +15,47 @@ const testimonials = [
     position: 'CEO • Teste',
     image: fernandaL,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    video: 'https://player.vimeo.com/video/1003519988?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+    video: {
+      horizontal: 'https://player.vimeo.com/video/1003519988?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
+      vertical: felipeVertical,
+    }
   },
   {
     name: 'Felipe Farina',
     position: 'CEO • Carraro',
     image: fernandaL,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    video: felipeDepoimentoVertical
+    video: {
+      horizontal: felipeHorizontal,
+      vertical: felipeVertical,
+    }
   },
   {
     name: 'Horizontal Video',
     position: 'CEO • PICCADILLY',
     image: fernandaL,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    video: felipe
+    video: {
+      horizontal: felipeHorizontal,
+      vertical: felipeVertical,
+    }
   },
   {
     name: 'Fernanda L.',
     position: 'CEO • PICCADILLY',
     image: fernandaL,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    video: felipe
+    video: {
+      horizontal: felipeHorizontal,
+      vertical: felipeVertical,
+    }
   },
 ];
 
 export const TestimonialSlider = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [videoSrc, setVideoSrc] = useState('');
+  const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 768px)").matches);
 
   const openModal = (videoUrl) => {
     setVideoSrc(videoUrl);
@@ -54,16 +67,14 @@ export const TestimonialSlider = () => {
     setVideoSrc('');
   }
 
-  React.useEffect(() => {
-    if (modalIsOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-    return () => {
-      document.body.style.overflow = 'auto';
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.matchMedia("(max-width: 768px)").matches);
     };
-  }, [modalIsOpen]);
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const settings = {
     centerMode: true,
@@ -107,7 +118,7 @@ export const TestimonialSlider = () => {
                 <p className={'testimonial-description-content'}>{testimonial.testimonial}</p>
               </div>
               <div className={'testimonial-video'}>
-                <button onClick={() => openModal(testimonial.video)} className={'testimonial-button-video'}>Assistir depoimento</button>
+                <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento</button>
               </div>
             </div>
           </div>
@@ -130,7 +141,7 @@ export const TestimonialSlider = () => {
             src={videoSrc}
             width="100%"
             height="100%"
-            frameborder="0"
+            frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
             title="Depoimento em Vídeo"
