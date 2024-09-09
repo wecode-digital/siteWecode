@@ -5,15 +5,17 @@ import "slick-carousel/slick/slick-theme.css";
 import Modal from 'react-modal';
 import "./sass/styles.css";
 
-import fernandaL from "../../assets/images/client-profile-pics/fernanda-1.png";
+import felipeFarina from "../../assets/images/client-profile-pics/felipe-carraro-photo.png";
 import felipeHorizontal from "../../assets/videos/felipe-carraro-horizontal.mp4";
 import felipeVertical from "../../assets/videos/felipe-carraro-vertical.mp4"
+import playDepoimentos from "../../assets/svg/play.svg"
+import fecharModal from "../../assets/svg/fechar-modal.svg"
 
 const testimonials = [
   {
-    name: 'Teste.',
-    position: 'CEO • Teste',
-    image: fernandaL,
+    name: 'Felipe Farina',
+    position: 'Gerente de E-commerce',
+    image: felipeFarina,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     video: {
       horizontal: 'https://player.vimeo.com/video/1003519988?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
@@ -23,7 +25,7 @@ const testimonials = [
   {
     name: 'Felipe Farina',
     position: 'CEO • Carraro',
-    image: fernandaL,
+    image: felipeFarina,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     video: {
       horizontal: felipeHorizontal,
@@ -33,7 +35,7 @@ const testimonials = [
   {
     name: 'Horizontal Video',
     position: 'CEO • PICCADILLY',
-    image: fernandaL,
+    image: felipeFarina,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     video: {
       horizontal: felipeHorizontal,
@@ -43,7 +45,7 @@ const testimonials = [
   {
     name: 'Fernanda L.',
     position: 'CEO • PICCADILLY',
-    image: fernandaL,
+    image: felipeFarina,
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
     video: {
       horizontal: felipeHorizontal,
@@ -118,7 +120,7 @@ export const TestimonialSlider = () => {
                 <p className={'testimonial-description-content'}>{testimonial.testimonial}</p>
               </div>
               <div className={'testimonial-video'}>
-                <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento</button>
+                <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento <img src={playDepoimentos} alt="" /></button>
               </div>
             </div>
           </div>
@@ -135,7 +137,7 @@ export const TestimonialSlider = () => {
           className="modal-content-inner"
           onClick={(e) => e.stopPropagation()}
         >
-          <button onClick={closeModal} className="modal-close-button">X</button>
+          <button onClick={closeModal} className="modal-close-button"><img src={fecharModal} alt="" /></button>
     
           <iframe
             src={videoSrc}
