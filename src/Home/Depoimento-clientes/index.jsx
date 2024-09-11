@@ -137,7 +137,7 @@ export const TestimonialSlider = () => {
               <p className={'testimonial-description-content'} dangerouslySetInnerHTML={{ __html: testimonial.testimonial }} />
               </div>
               <div className={'testimonial-video'}>
-                <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento <img src={playDepoimentos} alt="" /></button>
+                <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento <img src={playDepoimentos} className='testiomonial-video-arrow' alt="" /></button>
               </div>
             </div>
           </div>
