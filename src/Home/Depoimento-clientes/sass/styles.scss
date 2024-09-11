@@ -1,12 +1,5 @@
 @import "./../../../styles/padroes/padroes.scss";
 
-p,
-h2,
-h3 {
-  margin: unset;
-}
-
-
 .testimony-main-container {
   overflow: hidden;
   margin-inline: -20px;
@@ -16,7 +9,7 @@ h3 {
 .testimony-titles-container {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0 1.5rem;
+  margin: 2rem 0 0;
   gap: 1.5rem;
 
   .testimony-title {
@@ -25,6 +18,7 @@ h3 {
     font-size: .75rem;
     font-family: $fontFamily;
     font-weight: 500;
+    margin: unset;
     text-transform: uppercase;
   }
 
@@ -34,6 +28,7 @@ h3 {
     font-size: 2rem;
     font-family: $fontFamily;
     font-weight: 300;
+    margin: unset;
     margin-bottom: 1.5rem;
 
     @media screen and (min-width: 1008px) {
@@ -61,11 +56,11 @@ h3 {
   }
 
   button.slick-prev {
-    left: 24%; /* Altere para ajustar a posição */
+    left: 27.9%; /* Altere para ajustar a posição */
   }
 
   button.slick-next {
-    right: 27.5%; /* Altere para ajustar a posição */
+    right: 31.1%; /* Altere para ajustar a posição */
   }
   
   .slick-prev::before {
@@ -89,10 +84,14 @@ h3 {
     border-radius: 10px;
     gap: 1rem;
     margin-bottom: 2rem;
+    height: 345px;
+    justify-content: center;
 
     @media screen and (min-width: 1008px) {
       padding: 48px 52px;
       margin-bottom: 80px;
+      height: 360px;
+      justify-content: center;
     }
 
     .testimonial-profile {
@@ -108,14 +107,17 @@ h3 {
         .testimonial-name {
           color: $text;
           font-family: $fontFamily;
-          font-weight: 400;
+          font-size: 1rem;
+          margin: unset;
+          font-weight: 500;
         }
 
         .testimonial-position {
           color: $text;
           font-family: $fontFamily;
           font-size: .875rem;
-          font-weight: 100;
+          margin: unset;
+          font-weight: 300;
         }
       }
 
@@ -129,14 +131,19 @@ h3 {
       .testimonial-description-content {
         color: $text;
         font-family: $fontFamily;
-        font-size: .875rem;
+        font-size: 12px;
         font-style: italic;
         font-weight: 300;
         line-height: 1.5rem;
+        margin: unset;
 
         @media screen and (min-width: 1008px) {
-          font-size: 1.125rem;
+          font-size: 1rem;
           line-height: 2rem;
+        }
+
+        span {
+          font-weight: 600;
         }
       }
     }
@@ -144,17 +151,34 @@ h3 {
     .testimonial-video {
 
       .testimonial-button-video {
-        display: flex;
-        gap: 6px;
-        align-items: center;
-        padding: .875rem 1rem;
-        border-radius: 8px;
-        border: 1px solid $light-main-color;
-        background: none;
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
-        color: $light-main-color;
-        font-family: $fontFamily;
+        @include padrao;
         cursor: pointer;
+        font-size: .75rem;
+        background: $light-main-color;
+        // margin-inline: auto;
+        width: 180px;
+        display: flex;
+        padding: 12px 40px;
+        border-radius: 8px;
+        border: none;
+        color: $text-contrast;
+        gap: 16px;
+        text-decoration: none;
+        align-items: center;
+        transition: ease-in-out 0.6s;
+        animation: ease-in-out 0.6s;
+        white-space: nowrap;
+        &:hover {
+          background: $dark-main-color;
+          width: 205px;
+    
+          svg {
+            display: block;
+          }
+        }
+        svg {
+          display: none;
+        }
       }
 
     }

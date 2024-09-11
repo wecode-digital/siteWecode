@@ -5,51 +5,68 @@ import "slick-carousel/slick/slick-theme.css";
 import Modal from 'react-modal';
 import "./sass/styles.css";
 
+//Profile pic
 import felipeFarina from "../../assets/images/client-profile-pics/felipe-carraro-photo.png";
-import felipeHorizontal from "../../assets/videos/felipe-carraro-horizontal.mp4";
-import felipeVertical from "../../assets/videos/felipe-carraro-vertical.mp4"
+import priscilaBaum from "../../assets/images/client-profile-pics/priscila-baum-photo.png";
+import giulianoBettanin from "../../assets/images/client-profile-pics/giuliano-inbetta.png";
+import viniciusMartini from "../../assets/images/client-profile-pics/vinicius-ou-photo.png";
+
+//Videos
+import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
+import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4"
+
+import priscilaHorizontal from "../../assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
+import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4"
+
+import giulianoHorizontal from "../../assets/videos/depoimentos/giuliano-bettanin-horizontal.mp4";
+import giulianoVertical from "../../assets/videos/depoimentos/giuliano-bettanin-vertical.mp4"
+
+import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
+import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4"
+
+//svg
 import playDepoimentos from "../../assets/svg/play.svg"
 import fecharModal from "../../assets/svg/fechar-modal.svg"
 
 const testimonials = [
   {
     name: 'Felipe Farina',
-    position: 'Gerente de E-commerce',
+    position: 'Gerente de E-commerce da Carraro',
     image: felipeFarina,
-    testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    video: {
-      horizontal: 'https://player.vimeo.com/video/1003519988?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479',
-      vertical: felipeVertical,
-    }
-  },
-  {
-    name: 'Felipe Farina',
-    position: 'CEO • Carraro',
-    image: felipeFarina,
-    testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    testimonial: '&quotEles nos ajudaram bastante no processo, desde o início. E seguem nos ajudando ainda hoje na parte de <span>melhorias e novos recursos</span> para ter, cada vez mais, uma <span>navegação melhor</span> do nosso consumidor.&quot',
     video: {
       horizontal: felipeHorizontal,
       vertical: felipeVertical,
     }
   },
   {
-    name: 'Horizontal Video',
-    position: 'CEO • PICCADILLY',
-    image: felipeFarina,
-    testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    name: 'Priscila Baum',
+    position: 'Gerente de E-commerce da PICCADILLY',
+    image: priscilaBaum,
+    testimonial: '&quotA parceria com a Wecode foi assertiva. No primeiro ano, a gente já pôde notar um <span>crescimento do canal digital</span> e o trabalho continua crescendo, sempre em desenvolvimento, com todos os <span>times super integrados</span>.&quot',
     video: {
-      horizontal: felipeHorizontal,
-      vertical: felipeVertical,
+      horizontal: priscilaHorizontal,
+      vertical: priscilaVertical,
     }
   },
   {
-    name: 'Fernanda L.',
-    position: 'CEO • PICCADILLY',
-    image: felipeFarina,
-    testimonial: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    name: 'Giuliano Bettanin',
+    position: 'Gestor dos Canais Digitais da InBetta',
+    image: giulianoBettanin,
+    testimonial: '&quotA gente tem uma atenção especial, consegue conversar com os funcionários, tem uma <span>abertura</span> muito boa. Diria que temos um contato mais recorrente. Eles passam muita segurança no que falam e <span>é um parceiro que a gente pode contar</span>.&quot',
     video: {
-      horizontal: felipeHorizontal,
-      vertical: felipeVertical,
+      horizontal: giulianoHorizontal,
+      vertical: giulianoVertical,
+    }
+  },
+  {
+    name: 'Vínicius Martini',
+    position: 'Gerente de Marketing da Martiplast',
+    image: viniciusMartini,
+    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
+    video: {
+      horizontal: viniciusHorizontal,
+      vertical: viniciusVertical,
     }
   },
 ];
@@ -117,7 +134,7 @@ export const TestimonialSlider = () => {
                 </div>
               </div>
               <div className={'testimonial-desciption'}>
-                <p className={'testimonial-description-content'}>{testimonial.testimonial}</p>
+              <p className={'testimonial-description-content'} dangerouslySetInnerHTML={{ __html: testimonial.testimonial }} />
               </div>
               <div className={'testimonial-video'}>
                 <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento <img src={playDepoimentos} alt="" /></button>
