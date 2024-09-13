@@ -3,6 +3,14 @@
 .testimony-main-container {
   overflow: hidden;
   margin-inline: -20px;
+  background: $text-contrast;
+}
+
+@media screen and (min-width: 1008px) {
+  .testimony-main-container {
+    overflow: hidden;
+    margin-inline: -220px;
+  }
 }
 
 
@@ -78,6 +86,7 @@
 
 .testimonial-slide {
 
+
   .testimonial-content {
     display: flex;
     flex-direction: column;
@@ -89,10 +98,14 @@
     height: 345px;
     justify-content: center;
 
-    @media screen and (min-width: 1008px) {
+    @media screen and (min-width: 1008px) and (max-width: 1200px) {
+      height: 420px;
+    }
+
+    @media screen and (min-width: 1201px) {
       padding: 48px 52px;
       margin-bottom: 80px;
-      height: 360px;
+      height: 355px;
       justify-content: center;
     }
 
@@ -157,49 +170,68 @@
         cursor: pointer;
         font-size: .75rem;
         background: $light-main-color;
-        // margin-inline: auto;
         width: 180px;
         display: flex;
         padding: 12px 40px;
         border-radius: 8px;
         border: none;
         color: $text-contrast;
-        gap: 20px;
+        gap: 10px;
+        justify-content: center;
         text-decoration: none;
         align-items: center;
-        transition: ease-in-out 0.6s;
-        animation: ease-in-out 0.6s;
         white-space: nowrap;
+      }
 
-        &:hover {
-          background: $dark-main-color;
-          width: 200px;
+      @media screen and (min-width: 1008px) {
+        .testimonial-button-video {
+          @include padrao;
+          cursor: pointer;
+          font-size: .75rem;
+          background: $light-main-color;
+          width: 180px;
+          display: flex;
+          padding: 12px 40px;
+          border-radius: 8px;
+          border: none;
+          color: $text-contrast;
+          gap: 20px;
+          text-decoration: none;
+          justify-content: start;
+          align-items: center;
+          transition: ease-in-out 0.6s;
+          animation: ease-in-out 0.6s;
+          white-space: nowrap;
+
+          &:hover {
+            background: $dark-main-color;
+            width: 200px;
+
+            .testiomonial-video-arrow {
+              display: block;
+              width: fit-content;
+              transition: fadeIn ease-in-out 0.6s;
+              animation: fadeIn ease-in-out 0.6s;
+            }
+          }
 
           .testiomonial-video-arrow {
-            display: block;
-            width: fit-content;
-            transition: fadeIn ease-in-out 0.6s;
-            animation: fadeIn ease-in-out 0.6s;
-          }
-        }
-
-        .testiomonial-video-arrow {
-          display: none;
-        }
-
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
+            display: none;
           }
 
-          to {
-            opacity: 1;
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+
+            to {
+              opacity: 1;
+            }
           }
         }
       }
+
     }
-
-
   }
 }
 
@@ -269,16 +301,29 @@
     .modal-close-button {
       top: 4px;
       position: absolute;
-      right: 4px;
+      right: 2px;
       border-radius: 4px;
       border: none;
       background: none;
       z-index: 999;
+    }
 
-      img:hover {
-        filter: opacity(0.5);
-        cursor: pointer;
+    @media screen and (min-width: 1008px) {
+      .modal-close-button {
+        top: 4px;
+        position: absolute;
+        right: 4px;
+        border-radius: 4px;
+        border: none;
+        background: none;
+        z-index: 999;
+  
+        img:hover {
+          filter: opacity(0.5);
+          cursor: pointer;
+        }
       }
     }
+    
   }
 }

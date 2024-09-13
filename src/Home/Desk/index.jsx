@@ -862,6 +862,9 @@ function HomeDesk() {
             </div>
           </div>
 
+          {/* A ideia é colocar os depoimentos aqui */}
+          <TestimonialSlider />
+
           <div className={"about-us"}>
             <div className={"about-us-container"}>
               <div className={"about-us-text-container"}>
@@ -1380,7 +1383,7 @@ function HomeDesk() {
           </div>
 
             {/* depoimentos */}
-            <TestimonialSlider />
+           
               {/* depoimentos fim */}
 
           {/* <div className={"testimony"}>

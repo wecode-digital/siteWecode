@@ -835,6 +835,9 @@ function HomeMob({ title }) {
               </p>
             </div>
           </div>
+
+          <TestimonialSlider />
+
           <div className={"about-us-master"}>
             <div className={"about-us"}>
               <div className={"about-us-container"}>
@@ -1267,7 +1270,6 @@ function HomeMob({ title }) {
               </div>
 
               {/* depoimentos */}
-                <TestimonialSlider />
               {/* depoimentos fim */}
 
               {/* <div className={"testimony"}>
