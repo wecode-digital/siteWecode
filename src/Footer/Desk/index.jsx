@@ -317,7 +317,7 @@ function FooterDesk() {
                 <img src={wecodeImg} />
                 <div>
                   <p className={"footer-final-text first"}>
-                    ©2023 Wecode Tecnologia para e-commerce ltda. Todos os
+                    ©2024 Wecode Tecnologia para e-commerce ltda. Todos os
                     direitos reservados.
                   </p>
                   <p className={"footer-final-text"}>
