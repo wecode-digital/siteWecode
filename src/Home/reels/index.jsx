@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Modal from 'react-modal';
 import './sass/styles.scss';
 
@@ -18,7 +18,7 @@ const videos = [
       vertical: '/path/to/vertical-video-2.mp4',
     },
   },
-  // Adicione mais vídeos aqui
+  // adicione mais vídeos aqui se necessário
 ];
 
 Modal.setAppElement('#root');
@@ -27,6 +27,9 @@ const VideoPlayer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [currentTime, setCurrentTime] = useState(0);
+  const videoRef = useRef(null);
+  const modalVideoRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
@@ -35,11 +38,37 @@ const VideoPlayer = () => {
   }, []);
 
   const openModal = () => {
+    if (videoRef.current) {
+      setCurrentTime(videoRef.current.currentTime);
+      videoRef.current.pause();
+    }
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
+    if (videoRef.current) {
+      videoRef.current.currentTime = currentTime;
+      videoRef.current.play();
+    }
+  };
+
+  const handleModalTimeUpdate = () => {
+    if (modalVideoRef.current) {
+      setCurrentTime(modalVideoRef.current.currentTime);
+    }
+  };
+
+  const handleNextVideo = () => {
+    if (currentVideoIndex < videos.length - 1) {
+      setCurrentVideoIndex(currentVideoIndex + 1);
+    }
+  };
+
+  const handlePrevVideo = () => {
+    if (currentVideoIndex > 0) {
+      setCurrentVideoIndex(currentVideoIndex - 1);
+    }
   };
 
   const currentVideo = videos[currentVideoIndex];
@@ -49,26 +78,27 @@ const VideoPlayer = () => {
     if (currentVideoIndex < videos.length - 1) {
       setCurrentVideoIndex(currentVideoIndex + 1);
     } else {
-      setCurrentVideoIndex(0); // Se for o último vídeo, reinicia
+      setCurrentVideoIndex(0);
     }
   };
 
   return (
     <>
       <p>teste</p>
-      {/* Vídeo fixo no canto esquerdo */}
-      <div className="video-fixed">
-        <video
-          src={videoSrc}
-          muted
-          autoPlay
-          loop
-          onClick={openModal}
-        />
-        <button className="play-button" onClick={openModal}>▶</button>
-      </div>
+      {!isModalOpen && ( 
+        <div className="video-fixed">
+          <video
+            src={videoSrc}
+            muted
+            autoPlay
+            loop
+            ref={videoRef}
+            onClick={openModal}
+          />
+          <button className="play-button" onClick={openModal}>▶</button>
+        </div>
+      )}
 
-      {/* Modal com o vídeo */}
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
@@ -77,16 +107,27 @@ const VideoPlayer = () => {
         overlayClassName="modal-overlay"
       >
         <button className="close" onClick={closeModal}>&times;</button>
-        <iframe
-          src={`${videoSrc}?autoplay=1&mute=1&controls=0&loop=1`}
+
+        {videos.length > 1 && (
+          <div className="modal-controls">
+            {currentVideoIndex > 0 && (
+              <button className="prev-button" onClick={handlePrevVideo}>⬅</button>
+            )}
+            {currentVideoIndex < videos.length - 1 && (
+              <button className="next-button" onClick={handleNextVideo}>➡</button>
+            )}
+          </div>
+        )}
+
+        <video
+          src={videoSrc}
           controls
           autoPlay
+          ref={modalVideoRef}
+          onTimeUpdate={handleModalTimeUpdate}
           onEnded={handleVideoEnd}
-          allow="autoplay; encrypted-media"
-          frameBorder="0"
-          allowFullScreen
           className="modal-video"
-        ></iframe>
+        />
       </Modal>
     </>
   );
