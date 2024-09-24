@@ -13,16 +13,16 @@ import viniciusMartini from "../../assets/images/client-profile-pics/vinicius-ou
 
 //Videos
 import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
-import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4"
+import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4";
 
 import priscilaHorizontal from "../../assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
-import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4"
+import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
 
 import giulianoHorizontal from "../../assets/videos/depoimentos/giuliano-bettanin-horizontal.mp4";
-import giulianoVertical from "../../assets/videos/depoimentos/giuliano-bettanin-vertical.mp4"
+import giulianoVertical from "../../assets/videos/depoimentos/giuliano-bettanin-vertical.mp4";
 
 import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
-import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4"
+import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4";
 
 //svg
 import playDepoimentos from "../../assets/svg/play.svg"

@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
-import './VideoPlayer.css';
+import './sass/styles.scss';
 
-// Cadastro de vídeos simplificado
+import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
+import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4";
+
 const videos = [
   {
     video: {
-      horizontal: '/path/to/horizontal-video.mp4',
-      vertical: '/path/to/vertical-video.mp4',
+      horizontal: felipeHorizontal,
+      vertical: felipeVertical,
     },
   },
   {
@@ -26,7 +28,6 @@ const VideoPlayer = () => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  // Detectar se está no mobile ou desktop
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
@@ -41,11 +42,9 @@ const VideoPlayer = () => {
     setIsModalOpen(false);
   };
 
-  // Pegar o vídeo atual da lista
   const currentVideo = videos[currentVideoIndex];
   const videoSrc = isMobile ? currentVideo.video.vertical : currentVideo.video.horizontal;
 
-  // Função para avançar para o próximo vídeo
   const handleVideoEnd = () => {
     if (currentVideoIndex < videos.length - 1) {
       setCurrentVideoIndex(currentVideoIndex + 1);
@@ -56,6 +55,7 @@ const VideoPlayer = () => {
 
   return (
     <>
+      <p>teste</p>
       {/* Vídeo fixo no canto esquerdo */}
       <div className="video-fixed">
         <video
@@ -77,13 +77,16 @@ const VideoPlayer = () => {
         overlayClassName="modal-overlay"
       >
         <button className="close" onClick={closeModal}>&times;</button>
-        <video
-          src={videoSrc}
+        <iframe
+          src={`${videoSrc}?autoplay=1&mute=1&controls=0&loop=1`}
           controls
           autoPlay
-          onEnded={handleVideoEnd} // Executa ao fim do vídeo
+          onEnded={handleVideoEnd}
+          allow="autoplay; encrypted-media"
+          frameBorder="0"
+          allowFullScreen
           className="modal-video"
-        />
+        ></iframe>
       </Modal>
     </>
   );

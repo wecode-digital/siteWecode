@@ -1,6 +1,7 @@
 import React from "react";
 import "./sass/styles.css";
 import TestimonialSlider from '../Depoimento-clientes/index'
+import VideoPlayer from "../reels/index";
 
 import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
@@ -48,6 +49,8 @@ function HomeDesk() {
     <>
       {isDesk ? (
         <div className={"home-container-desk"}>
+          <VideoPlayer />
+
           <div className={"first-fold"}>
             <div className={"first-fold-text-container"}>
               <h1 className={"block-title"}>
@@ -64,6 +67,7 @@ function HomeDesk() {
               <img className={"first-fold-img"} src={imagehome}></img>
             </div>
           </div>
+
           <div className={"our-clients"}>
             <div className={"our-clients-container"}>
               <h3 className={"tag"}>NOSSOS CLIENTES</h3>

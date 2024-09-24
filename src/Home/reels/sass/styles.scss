@@ -6,6 +6,8 @@
   width: 100px;
   height: 150px;
   z-index: 1000;
+  border: 1px solid #0D98E6;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -27,13 +29,10 @@
   cursor: pointer;
 }
 
-/* Modal */
 .modal {
   position: relative;
   width: 80%;
   max-width: 700px;
-  background-color: white;
-  padding: 20px;
   border-radius: 10px;
   outline: none;
 }
@@ -48,6 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: auto;
 }
 
 .modal-video {
