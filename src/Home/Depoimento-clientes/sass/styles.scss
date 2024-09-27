@@ -317,6 +317,7 @@
         border: none;
         background: none;
         z-index: 999;
+        filter: brightness(0);
   
         img:hover {
           filter: opacity(0.5);

@@ -312,7 +312,9 @@
         border-radius: 4px;
         border: none;
         background: none;
-        z-index: 999; }
+        z-index: 999;
+        -webkit-filter: brightness(0);
+        filter: brightness(0); }
         .modal-content .modal-content-inner .modal-close-button img:hover {
           -webkit-filter: opacity(0.5);
           filter: opacity(0.5);

@@ -2,8 +2,20 @@ import React, { useState, useEffect, useRef } from 'react';
 import Modal from 'react-modal';
 import './sass/styles.scss';
 
+//videos reels
 import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
 import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4";
+
+import priscilaHorizontal from "../../assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
+import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
+
+import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
+import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4";
+
+//svg
+import fecharModal from "../../assets/svg/fechar-modal.svg"
+import arrowEsquerda from "../../assets/svg/left-arrow.svg"
+import arrowDireita from "../../assets/svg/right-arrow.svg"
 
 const videos = [
   {
@@ -14,11 +26,16 @@ const videos = [
   },
   {
     video: {
-      horizontal: '/path/to/horizontal-video-2.mp4',
-      vertical: '/path/to/vertical-video-2.mp4',
+      horizontal: priscilaHorizontal,
+      vertical: priscilaVertical,
     },
   },
-  // adicione mais vídeos aqui se necessário
+  {
+    video: {
+      horizontal: viniciusHorizontal,
+      vertical: viniciusVertical,
+    },
+  },
 ];
 
 Modal.setAppElement('#root');
@@ -84,8 +101,7 @@ const VideoPlayer = () => {
 
   return (
     <>
-      <p>teste</p>
-      {!isModalOpen && ( 
+      {!isModalOpen && (
         <div className="video-fixed">
           <video
             src={videoSrc}
@@ -106,18 +122,20 @@ const VideoPlayer = () => {
         className="modal"
         overlayClassName="modal-overlay"
       >
-        <button className="close" onClick={closeModal}>&times;</button>
+        <button className="close" onClick={closeModal}><img src={fecharModal} alt="" /></button>
 
         {videos.length > 1 && (
           <div className="modal-controls">
             {currentVideoIndex > 0 && (
-              <button className="prev-button" onClick={handlePrevVideo}>⬅</button>
+              <button className="prev-button" onClick={handlePrevVideo}><img src={arrowEsquerda} alt="" /></button>
             )}
+
             {currentVideoIndex < videos.length - 1 && (
-              <button className="next-button" onClick={handleNextVideo}>➡</button>
+              <button className="next-button" onClick={handleNextVideo}><img src={arrowDireita} alt="" /></button>
             )}
           </div>
         )}
+
 
         <video
           src={videoSrc}

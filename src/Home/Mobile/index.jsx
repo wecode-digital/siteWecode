@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./sass/styles.css";
 import TestimonialSlider from '../Depoimento-clientes/index'
+import VideoPlayer from "../reels/index";
 
 import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
@@ -57,6 +58,8 @@ function HomeMob({ title }) {
     <>
       {isMobile ? (
         <div className={"home-container"}>
+          <VideoPlayer />
+
           <div className={"first-fold"}>
             <h1 className={"block-title"}>
               Valorizamos <span className={"text-highlight"}>pessoas</span>
