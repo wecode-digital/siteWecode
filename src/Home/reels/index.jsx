@@ -111,7 +111,6 @@ const VideoPlayer = () => {
             ref={videoRef}
             onClick={openModal}
           />
-          <button className="play-button" onClick={openModal}>▶</button>
         </div>
       )}
 

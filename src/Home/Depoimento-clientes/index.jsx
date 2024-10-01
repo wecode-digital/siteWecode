@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,18 +73,43 @@ const testimonials = [
 
 export const TestimonialSlider = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0); // Estado para armazenar o índice do vídeo atual
   const [videoSrc, setVideoSrc] = useState('');
   const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 768px)").matches);
+  const sliderRef = useRef(null); // Referência para o slider
 
-  const openModal = (videoUrl) => {
+  const openModal = (index) => {
+    setCurrentVideoIndex(index);
+    const videoUrl = isMobile
+      ? testimonials[index].video.vertical
+      : testimonials[index].video.horizontal;
     setVideoSrc(videoUrl);
     setModalIsOpen(true);
   }
 
   const closeModal = () => {
     setModalIsOpen(false);
+    sliderRef.current.slickGoTo(currentVideoIndex); // Vai pro slide do vídeo atual
     setVideoSrc('');
   }
+
+  const handlePrevious = () => {
+    const newIndex = currentVideoIndex > 0 ? currentVideoIndex - 1 : testimonials.length - 1;
+    setCurrentVideoIndex(newIndex);
+    const videoUrl = isMobile
+      ? testimonials[newIndex].video.vertical
+      : testimonials[newIndex].video.horizontal;
+    setVideoSrc(videoUrl);
+  };
+
+  const handleNext = () => {
+    const newIndex = (currentVideoIndex + 1) % testimonials.length;
+    setCurrentVideoIndex(newIndex);
+    const videoUrl = isMobile
+      ? testimonials[newIndex].video.vertical
+      : testimonials[newIndex].video.horizontal;
+    setVideoSrc(videoUrl);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -122,7 +147,7 @@ export const TestimonialSlider = () => {
         <h2 className={'testimony-title'}>Depoimentos</h2>
         <h3 className={'testimony-subtitle'}>Quem confia no nosso trabalho e atesta nossa qualidade</h3>
       </div>
-      <Slider {...settings}>
+      <Slider ref={sliderRef} {...settings}>
         {testimonials.map((testimonial, index) => (
           <div key={index} className="testimonial-slide">
             <div className="testimonial-content">
@@ -134,10 +159,12 @@ export const TestimonialSlider = () => {
                 </div>
               </div>
               <div className={'testimonial-desciption'}>
-              <p className={'testimonial-description-content'} dangerouslySetInnerHTML={{ __html: testimonial.testimonial }} />
+                <p className={'testimonial-description-content'} dangerouslySetInnerHTML={{ __html: testimonial.testimonial }} />
               </div>
               <div className={'testimonial-video'}>
-                <button onClick={() => openModal(isMobile ? testimonial.video.vertical : testimonial.video.horizontal)} className={'testimonial-button-video'}>Assistir depoimento <img src={playDepoimentos} className='testiomonial-video-arrow' alt="" /></button>
+                <button onClick={() => openModal(index)} className={'testimonial-button-video'}>
+                  Assistir depoimento <img src={playDepoimentos} className='testiomonial-video-arrow' alt="" />
+                </button>
               </div>
             </div>
           </div>
@@ -155,20 +182,24 @@ export const TestimonialSlider = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <button onClick={closeModal} className="modal-close-button"><img src={fecharModal} alt="" /></button>
-    
-          <iframe
-            src={videoSrc}
-            width="100%"
-            height="100%"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="Depoimento em Vídeo"
-          ></iframe>
+          <div className="modal-navigation">
+            <button onClick={handlePrevious} className="modal-arrow-left">←</button>
+            <iframe
+              src={videoSrc}
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="Depoimento em Vídeo"
+            ></iframe>
+            <button onClick={handleNext} className="modal-arrow-right">→</button>
+          </div>
         </div>
       </Modal>
     </div>
   );
 };
+
 
 export default TestimonialSlider;
