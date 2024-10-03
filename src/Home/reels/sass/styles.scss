@@ -2,7 +2,7 @@
 
 .video-fixed {
   position: fixed;
-  bottom: 20px;
+  bottom: clamp(10px, 5%, 20px);
   left: 20px;
   width: 60px;
   height: 100px;
@@ -10,6 +10,7 @@
   border: 2px solid $light-main-color;
   padding: 2px;
   border-radius: 4px;
+  max-height: calc(100vh - 40px);
   cursor: pointer;
 }
 
@@ -75,7 +76,7 @@
   z-index: 1999999999;
   background: none;
   border: none;
-  left: -11%;
+  left: -70px;
   font-size: 2rem;
   cursor: pointer;
 
@@ -89,7 +90,7 @@
   z-index: 1999999999;
   background: none;
   border: none;
-  left: 100%;
+  right: -70px;
   font-size: 2rem;
   cursor: pointer;
 

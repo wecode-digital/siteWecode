@@ -16,17 +16,19 @@ import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-hor
 import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4";
 
 import priscilaHorizontal from "../../assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
-import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
+// import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
 
 import giulianoHorizontal from "../../assets/videos/depoimentos/giuliano-bettanin-horizontal.mp4";
 import giulianoVertical from "../../assets/videos/depoimentos/giuliano-bettanin-vertical.mp4";
 
-import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
+// import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
 import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4";
 
 //svg
 import playDepoimentos from "../../assets/svg/play.svg"
 import fecharModal from "../../assets/svg/fechar-modal.svg"
+import arrowEsquerda from "../../assets/svg/left-arrow.svg"
+import arrowDireita from "../../assets/svg/right-arrow.svg"
 
 const testimonials = [
   {
@@ -46,7 +48,7 @@ const testimonials = [
     testimonial: '&quotA parceria com a Wecode foi assertiva. No primeiro ano, a gente já pôde notar um <span>crescimento do canal digital</span> e o trabalho continua crescendo, sempre em desenvolvimento, com todos os <span>times super integrados</span>.&quot',
     video: {
       horizontal: priscilaHorizontal,
-      vertical: priscilaVertical,
+      // vertical: priscilaVertical,
     }
   },
   {
@@ -65,7 +67,7 @@ const testimonials = [
     image: viniciusMartini,
     testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
     video: {
-      horizontal: viniciusHorizontal,
+      // horizontal: viniciusHorizontal,
       vertical: viniciusVertical,
     }
   },
@@ -183,7 +185,7 @@ export const TestimonialSlider = () => {
         >
           <button onClick={closeModal} className="modal-close-button"><img src={fecharModal} alt="" /></button>
           <div className="modal-navigation">
-            <button onClick={handlePrevious} className="modal-arrow-left">←</button>
+            <button onClick={handlePrevious} className="modal-arrow-left"><img src={arrowEsquerda} alt="" /></button>
             <iframe
               src={videoSrc}
               width="100%"
@@ -193,7 +195,7 @@ export const TestimonialSlider = () => {
               allowFullScreen
               title="Depoimento em Vídeo"
             ></iframe>
-            <button onClick={handleNext} className="modal-arrow-right">→</button>
+            <button onClick={handleNext} className="modal-arrow-right"><img src={arrowDireita} alt="" /></button>
           </div>
         </div>
       </Modal>

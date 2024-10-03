@@ -3,14 +3,10 @@ import Modal from 'react-modal';
 import './sass/styles.scss';
 
 //videos reels
+import compiladoReels from "../../assets/videos/depoimentos/compilado-wecode-bibi-anselmi-keko.mp4"
+
 import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
 import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4";
-
-import priscilaHorizontal from "../../assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
-import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
-
-import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
-import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4";
 
 //svg
 import fecharModal from "../../assets/svg/fechar-modal.svg"
@@ -20,20 +16,14 @@ import arrowDireita from "../../assets/svg/right-arrow.svg"
 const videos = [
   {
     video: {
+      horizontal: compiladoReels,
+      vertical: compiladoReels,
+    },
+  },
+  {
+    video: {
       horizontal: felipeHorizontal,
       vertical: felipeVertical,
-    },
-  },
-  {
-    video: {
-      horizontal: priscilaHorizontal,
-      vertical: priscilaVertical,
-    },
-  },
-  {
-    video: {
-      horizontal: viniciusHorizontal,
-      vertical: viniciusVertical,
     },
   },
 ];

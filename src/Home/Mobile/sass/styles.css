@@ -185,6 +185,8 @@
     .home-container .about-us-master {
       margin-inline: -350px; } }
   .home-container .about-us {
+    padding-top: 80px; }
+  .home-container .about-us {
     margin-inline: 20px;
     background: #fff;
     padding-top: 2rem; }

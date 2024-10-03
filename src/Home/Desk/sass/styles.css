@@ -218,7 +218,7 @@
     max-width: unset !important;
     margin-inline: -20px;
     position: relative;
-    padding-bottom: 80px; }
+    padding-block: 80px; }
     @media (min-width: 1008px) {
       .home-container-desk .about-us {
         max-width: unset !important;

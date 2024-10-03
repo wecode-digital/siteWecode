@@ -185,7 +185,7 @@
     background: $background;
     @include fullscreen;
     position: relative;
-    padding-bottom: 80px;
+    padding-block: 80px;
     &-container {
       display: flex;
       align-items: center;
