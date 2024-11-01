@@ -4,9 +4,7 @@ import './sass/styles.scss';
 
 //videos reels
 import compiladoReels from "../../assets/videos/depoimentos/compilado-wecode-bibi-anselmi-keko.mp4"
-
-import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
-import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4";
+import compiladoHorizontal from "../../assets/videos/depoimentos/compiladoReelsHorizontal.mp4"
 
 //svg
 import fecharModal from "../../assets/svg/fechar-modal.svg"
@@ -16,14 +14,8 @@ import arrowDireita from "../../assets/svg/right-arrow.svg"
 const videos = [
   {
     video: {
-      horizontal: compiladoReels,
+      horizontal: compiladoHorizontal,
       vertical: compiladoReels,
-    },
-  },
-  {
-    video: {
-      horizontal: felipeHorizontal,
-      vertical: felipeVertical,
     },
   },
 ];

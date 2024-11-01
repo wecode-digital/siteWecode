@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .video-fixed {
   position: fixed;
-  bottom: 20px;
+  bottom: clamp(10px, 5%, 20px);
   left: 20px;
   width: 60px;
   height: 100px;
@@ -9,6 +9,7 @@
   border: 2px solid #0d98e6;
   padding: 2px;
   border-radius: 4px;
+  max-height: calc(100vh - 40px);
   cursor: pointer; }
 
 .video-fixed video {
@@ -78,7 +79,7 @@
   z-index: 1999999999;
   background: none;
   border: none;
-  left: -11%;
+  left: -70px;
   font-size: 2rem;
   cursor: pointer; }
   @media screen and (max-width: 1008px) {
@@ -90,7 +91,7 @@
   z-index: 1999999999;
   background: none;
   border: none;
-  left: 100%;
+  right: -70px;
   font-size: 2rem;
   cursor: pointer; }
   @media screen and (max-width: 1008px) {

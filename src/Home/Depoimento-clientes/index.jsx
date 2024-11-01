@@ -24,6 +24,8 @@ import giulianoVertical from "../../assets/videos/depoimentos/giuliano-bettanin-
 // import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
 import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4";
 
+import priscilaAnselmi from "../../assets/videos/depoimentos/priscila-anselmi-depoimento.mp4"
+
 //svg
 import playDepoimentos from "../../assets/svg/play.svg"
 import fecharModal from "../../assets/svg/fechar-modal.svg"
@@ -59,6 +61,36 @@ const testimonials = [
     video: {
       horizontal: giulianoHorizontal,
       vertical: giulianoVertical,
+    }
+  },
+  {
+    name: 'Vínicius Martini',
+    position: 'Gerente de Marketing da Martiplast',
+    image: viniciusMartini,
+    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
+    video: {
+      // horizontal: viniciusHorizontal,
+      vertical: viniciusVertical,
+    }
+  },
+  {
+    name: 'Priscila',
+    position: 'Anselmi',
+    image: viniciusMartini,
+    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
+    video: {
+      horizontal: priscilaAnselmi,
+      vertical: priscilaAnselmi,
+    }
+  },
+  {
+    name: 'Vínicius Martini',
+    position: 'Gerente de Marketing da Martiplast',
+    image: viniciusMartini,
+    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
+    video: {
+      // horizontal: viniciusHorizontal,
+      vertical: viniciusVertical,
     }
   },
   {

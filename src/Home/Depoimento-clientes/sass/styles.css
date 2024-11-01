@@ -290,6 +290,9 @@
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     z-index: 1001;
     aspect-ratio: 9 / 16;
     max-height: 100%; }
@@ -297,9 +300,9 @@
       .modal-content .modal-content-inner {
         aspect-ratio: 16 / 9; } }
     .modal-content .modal-content-inner .modal-close-button {
-      top: 4px;
+      top: 140px;
       position: absolute;
-      right: 2px;
+      right: 78px;
       border-radius: 4px;
       border: none;
       background: none;
@@ -312,18 +315,20 @@
         border-radius: 4px;
         border: none;
         background: none;
-        z-index: 999;
-        -webkit-filter: brightness(0);
-        filter: brightness(0); }
+        z-index: 999; }
         .modal-content .modal-content-inner .modal-close-button img:hover {
-          -webkit-filter: opacity(0.5);
-          filter: opacity(0.5);
+          -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
           cursor: pointer; } }
     .modal-content .modal-content-inner .modal-navigation {
       position: relative;
-      width: 100%;
+      width: 65%;
       border-radius: 10px;
-      aspect-ratio: 16 / 9; }
+      aspect-ratio: 9 / 16; }
+      @media screen and (min-width: 1008px) {
+        .modal-content .modal-content-inner .modal-navigation {
+          width: 100%;
+          aspect-ratio: 16 / 9; } }
     .modal-content .modal-content-inner .modal-arrow-left {
       position: absolute;
       top: 45%;
