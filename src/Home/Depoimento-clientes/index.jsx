@@ -37,6 +37,7 @@ import fecharModal from "../../assets/svg/fechar-modal.svg"
 import arrowEsquerda from "../../assets/svg/left-arrow.svg"
 import arrowDireita from "../../assets/svg/right-arrow.svg"
 
+//Ordem dos depoimentos
 const testimonials = [
   {
     name: 'Alan Rosanelli',
