@@ -10,21 +10,26 @@ import felipeFarina from "../../assets/images/client-profile-pics/felipe-carraro
 import priscilaBaum from "../../assets/images/client-profile-pics/priscila-baum-photo.png";
 import giulianoBettanin from "../../assets/images/client-profile-pics/giuliano-inbetta.png";
 import viniciusMartini from "../../assets/images/client-profile-pics/vinicius-ou-photo.png";
+import alanRosanelli from "../../assets/images/client-profile-pics/alan-bibi-photo.png";
+import priscilaAnselmiPhoto from "../../assets/images/client-profile-pics/priscila-anselmi-photo.png"
+import liliamKekoPhoto from "../../assets/images/client-profile-pics/liliam-keko-photo.png"
 
 //Videos
 import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
 import felipeVertical from "../../assets/videos/depoimentos/felipe-carraro-vertical.mp4";
 
 import priscilaHorizontal from "../../assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
-// import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
+import priscilaVertical from "../../assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
 
 import giulianoHorizontal from "../../assets/videos/depoimentos/giuliano-bettanin-horizontal.mp4";
 import giulianoVertical from "../../assets/videos/depoimentos/giuliano-bettanin-vertical.mp4";
 
-// import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
+import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
 import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4";
 
 import priscilaAnselmi from "../../assets/videos/depoimentos/priscila-anselmi-depoimento.mp4"
+import liliamKeko from "../../assets/videos/depoimentos/liliam-keko-depoimento.mp4"
+import alanBibi from "../../assets/videos/depoimentos/alan-bibi-depoimento.mp4"
 
 //svg
 import playDepoimentos from "../../assets/svg/play.svg"
@@ -33,6 +38,36 @@ import arrowEsquerda from "../../assets/svg/left-arrow.svg"
 import arrowDireita from "../../assets/svg/right-arrow.svg"
 
 const testimonials = [
+  {
+    name: 'Alan Rosanelli',
+    position: 'Gerente de Omnicanalidade da Bibi',
+    image: alanRosanelli,
+    testimonial: '&quotDe 22 pra 23, <span>a gente cresceu mais de 100%</span> e isso é muito fruto desse trabalho feito a quatro mãos junto com a Wecode.&quot',
+    video: {
+      horizontal: alanBibi,
+      vertical: alanBibi,
+    }
+  },
+  {
+    name: 'Priscila',
+    position: 'Supervisora de E-commerce da Anselmi',
+    image: priscilaAnselmiPhoto,
+    testimonial: '&quotCom certeza, o que a gente está colhendo hoje no nosso e-commerce é muito <span>fruto do que a Wecode fez pela gente</span>.&quot',
+    video: {
+      horizontal: priscilaAnselmi,
+      vertical: priscilaAnselmi,
+    }
+  },
+  {
+    name: 'Liliam Mantovani',
+    position: 'Gerente de Marketing da Keko',
+    image: liliamKekoPhoto,
+    testimonial: '&quotUma das coisas que eu mais gosto na Wecode é que eu acho que <span>eu nunca ouvi um não</span>.&quot',
+    video: {
+      horizontal: liliamKeko,
+      vertical: liliamKeko,
+    }
+  },
   {
     name: 'Felipe Farina',
     position: 'Gerente de E-commerce da Carraro',
@@ -50,7 +85,7 @@ const testimonials = [
     testimonial: '&quotA parceria com a Wecode foi assertiva. No primeiro ano, a gente já pôde notar um <span>crescimento do canal digital</span> e o trabalho continua crescendo, sempre em desenvolvimento, com todos os <span>times super integrados</span>.&quot',
     video: {
       horizontal: priscilaHorizontal,
-      // vertical: priscilaVertical,
+      vertical: priscilaVertical,
     }
   },
   {
@@ -69,37 +104,7 @@ const testimonials = [
     image: viniciusMartini,
     testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
     video: {
-      // horizontal: viniciusHorizontal,
-      vertical: viniciusVertical,
-    }
-  },
-  {
-    name: 'Priscila',
-    position: 'Anselmi',
-    image: viniciusMartini,
-    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
-    video: {
-      horizontal: priscilaAnselmi,
-      vertical: priscilaAnselmi,
-    }
-  },
-  {
-    name: 'Vínicius Martini',
-    position: 'Gerente de Marketing da Martiplast',
-    image: viniciusMartini,
-    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
-    video: {
-      // horizontal: viniciusHorizontal,
-      vertical: viniciusVertical,
-    }
-  },
-  {
-    name: 'Vínicius Martini',
-    position: 'Gerente de Marketing da Martiplast',
-    image: viniciusMartini,
-    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
-    video: {
-      // horizontal: viniciusHorizontal,
+      horizontal: viniciusHorizontal,
       vertical: viniciusVertical,
     }
   },
