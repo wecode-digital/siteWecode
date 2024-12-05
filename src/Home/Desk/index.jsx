@@ -1,16 +1,16 @@
 import React from "react";
 import "./sass/styles.css";
 import TestimonialSlider from "../Depoimento-clientes/index";
-import VideoPlayer from "../reels/index";
+// import VideoPlayer from "../reels/index";
 
-import Slider from "react-slick";
+// import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import imagehome from "../../assets/images/home-generic-images/image-home.png";
 import aboutUsImg from "../../assets/images/home-generic-images/about-us-img.png";
 import logopolitorno from "../../assets/images/client-logos/logo-politorno.png";
 import logokappesberg from "../../assets/images/client-logos/logo-kappesberg.png";
-import logokissny from "../../assets/images/client-logos/logo-kissNY.png";
+// import logokissny from "../../assets/images/client-logos/logo-kissNY.png";
 import conectingCel from "../../assets/images/home-generic-images/conecting-cel.png";
 // import gestaoDeProjetos from "../../assets/images/diferencials/gestao-de-projetos.png";
 // import ExperienciaEmEcommerce from "../../assets/images/diferencials/Experiencia-em-e-commerce.png";
@@ -20,7 +20,7 @@ import conectingCel from "../../assets/images/home-generic-images/conecting-cel.
 // import fernandaL from "../../assets/images/client-profile-pics/fernanda-l.png";
 //
 // import salesGraph from "../../assets/images/home-generic-images/sales-graph.png";
-import conectingVtex from "../../assets/images/home-generic-images/conecting-vtex.png";
+// import conectingVtex from "../../assets/images/home-generic-images/conecting-vtex.png";
 import CardContainer from "../../CardContainer/Desk";
 
 function HomeDesk() {
@@ -49,7 +49,7 @@ function HomeDesk() {
     <>
       {isDesk ? (
         <div className={"home-container-desk"}>
-          <VideoPlayer />
+          {/* <VideoPlayer /> */}
 
           <div className={"first-fold"}>
             <div className={"first-fold-text-container"}>
@@ -64,7 +64,11 @@ function HomeDesk() {
               </p>
             </div>
             <div className={"first-fold-img-container"}>
-              <img className={"first-fold-img"} src={imagehome}></img>
+              <img
+                className={"first-fold-img"}
+                src={imagehome}
+                alt="first fold"
+              ></img>
             </div>
           </div>
 
@@ -84,11 +88,21 @@ function HomeDesk() {
               <div className={"client-list"}>
                 <div className={"client-wrapper"}>
                   <div>
-                    <img width="81" height="15" src={logopolitorno}></img>
+                    <img
+                      width="81"
+                      height="15"
+                      src={logopolitorno}
+                      alt="logo politorno"
+                    ></img>
                   </div>
 
                   <div>
-                    <img width="80" height="18" src={logokappesberg}></img>
+                    <img
+                      width="80"
+                      height="18"
+                      src={logokappesberg}
+                      alt="logo kappesberg"
+                    ></img>
                   </div>
 
                   <div>
@@ -1486,6 +1500,7 @@ function HomeDesk() {
                 className={"conecting-img"}
                 src={aboutUsImg}
                 width="100%"
+                alt="sobre nós"
               ></img>
             </div>
           </div>
@@ -1797,7 +1812,7 @@ function HomeDesk() {
                     </svg>
                   </p>
                 </div>
-                <img src={conectingCel}></img>
+                <img src={conectingCel} alt="connection cel"></img>
               </div>
               <div className={"methodology-card methodology-card-second-row"}>
                 <svg
@@ -2077,10 +2092,10 @@ function HomeDesk() {
 
 export default HomeDesk;
 
-{
-  /* <h2 className={"block-title"}>
-                Quem <span className={"text-highlight"}>confia</span> em nosso
-                trabalho e <br></br>
-                <span className={"text-highlight"}>atesta</span> nossa qualidade
-              </h2> */
-}
+// {
+//   /* <h2 className={"block-title"}>
+//                 Quem <span className={"text-highlight"}>confia</span> em nosso
+//                 trabalho e <br></br>
+//                 <span className={"text-highlight"}>atesta</span> nossa qualidade
+//               </h2> */
+// }

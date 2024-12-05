@@ -13,7 +13,7 @@ function MenuMob() {
       const offset = 50;
       const btnMenu = document.querySelector(".botao-menu");
       console.log(btnMenu, "Antes do if");
-      if (btnMenu == null || btnMenu == undefined) {
+      if (btnMenu == null || btnMenu === undefined) {
         return;
       }
       if (scrollTop > offset) {
@@ -68,10 +68,10 @@ function MenuMob() {
           <div className={"menu-header"}>
             <p
               className={"link-home"}
-            // onClick={() => {
-            //   SetOpenMenu(false);
-            //   handleScrollToSection(".first-fold");
-            // }}
+              // onClick={() => {
+              //   SetOpenMenu(false);
+              //   handleScrollToSection(".first-fold");
+              // }}
             >
               <svg
                 width="110"
@@ -200,6 +200,7 @@ function MenuMob() {
                 <a
                   target="_blank"
                   href="https://www.instagram.com/wecode.digital/"
+                  rel="noreferrer"
                 >
                   Instagram
                   <svg
@@ -218,6 +219,7 @@ function MenuMob() {
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/company/wecodedigital/?original_referer=https%3A%2F%2Fwww.wecode.digital%2F"
+                  rel="noreferrer"
                 >
                   Linkedin
                   <svg
@@ -236,6 +238,7 @@ function MenuMob() {
                 <a
                   target="_blank"
                   href="https://www.facebook.com/wecode.digital"
+                  rel="noreferrer"
                 >
                   Facebook
                   <svg

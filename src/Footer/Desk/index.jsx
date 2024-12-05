@@ -200,7 +200,8 @@ function FooterDesk() {
                     <p className={"form-colum-title"}>ENDEREÇO </p>
                     <li>
                       <a href="https://www.google.com/maps/place/Wecode+%7C+Tecnologia+para+E-commerce/@-29.1716095,-51.1729341,19z/data=!3m1!4b1!4m6!3m5!1s0x951ebd7ad265e52d:0x4de4320de63ee8cc!8m2!3d-29.1716095!4d-51.1723869!16s%2Fg%2F11kp8jwvdb">
-                        Rua Olavo Bilac, 503 - Sala 4 - Rio Branco,<br></br> Caxias do Sul - RS, 95010-080
+                        Rua Olavo Bilac, 503 - Sala 4 - Rio Branco,<br></br>{" "}
+                        Caxias do Sul - RS, 95010-080
                       </a>
                     </li>
                   </ul>
@@ -213,6 +214,7 @@ function FooterDesk() {
                         <a
                           target="_blank"
                           href="https://www.instagram.com/wecode.digital/"
+                          rel="noreferrer"
                         >
                           <svg
                             width="24"
@@ -245,6 +247,7 @@ function FooterDesk() {
                         <a
                           target="_blank"
                           href="https://www.facebook.com/wecode.digital"
+                          rel="noreferrer"
                         >
                           <svg
                             width="24"
@@ -265,6 +268,7 @@ function FooterDesk() {
                         <a
                           target="_blank"
                           href="https://www.linkedin.com/company/wecodedigital?original_referer=https%3A%2F%2Fwww.wecode.digital%2F"
+                          rel="noreferrer"
                         >
                           <svg
                             width="25"
@@ -314,14 +318,15 @@ function FooterDesk() {
             </div>
             <div className={"footer-final"}>
               <div className={"footer-final-container"}>
-                <img src={wecodeImg} />
+                <img src={wecodeImg} rel="noreferrer" alt="wecode-imagem" />
                 <div>
                   <p className={"footer-final-text first"}>
                     ©2024 Wecode Tecnologia para e-commerce ltda. Todos os
                     direitos reservados.
                   </p>
                   <p className={"footer-final-text"}>
-                    Rua Olavo Bilac, 503 - Sala 4 - Rio Branco, Caxias do Sul - RS, 95010-080
+                    Rua Olavo Bilac, 503 - Sala 4 - Rio Branco, Caxias do Sul -
+                    RS, 95010-080
                   </p>
                 </div>
               </div>

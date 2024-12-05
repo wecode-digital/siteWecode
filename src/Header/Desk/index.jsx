@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sass/styles.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function HeaderDesk() {
   const [scrolling, setScrolling] = useState(false);

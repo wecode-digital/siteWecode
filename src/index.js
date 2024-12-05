@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import Home from "./Home/index.jsx";
 import Header from "./Header/index.jsx";
 import Footer from "./Footer/index.jsx";
-import SobreNos from "./Sobre-nos/index.jsx";
+// import SobreNos from "./Sobre-nos/index.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

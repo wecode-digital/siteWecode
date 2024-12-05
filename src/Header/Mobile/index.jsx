@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./sass/styles.css";
 import MenuMob from "../../Menu/Mobile";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function HeaderMob() {
   //scroll com mudança do header
