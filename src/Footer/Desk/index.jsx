@@ -144,7 +144,7 @@ function FooterDesk() {
                           handleScrollToSection(".about-us");
                         }}
                       >
-                        VTEX by Wecode
+                        Soluções de E-commerce
                       </p>
                     </li>
                     <li>

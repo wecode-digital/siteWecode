@@ -10,7 +10,7 @@ import imagehome from "../../assets/images/home-generic-images/image-home.png";
 import logopolitorno from "../../assets/images/client-logos/logo-politorno.png";
 import logokappesberg from "../../assets/images/client-logos/logo-kappesberg.png";
 import logokissny from "../../assets/images/client-logos/logo-kissNY.png";
-import aboutUsImg from "../../assets/images/home-generic-images/about-us-img.png";
+import aboutUsImg from "../../assets/images/home-generic-images/about-us-image.png";
 // import gestaoDeProjetos from "../../assets/images/diferencials/gestao-de-projetos.png";
 // import ExperienciaEmEcommerce from "../../assets/images/diferencials/Experiencia-em-e-commerce.png";
 // import tailorMade from "../../assets/images/diferencials/tailor-made.png";
@@ -66,7 +66,7 @@ function HomeMob({ title }) {
             <img src={imagehome} alt="imagem-home"></img>
             <p className={"first-fold-text"}>
               A Wecode é certificada e homologada para revender, implantar e
-              prestar suporte para as soluções de e-commerce da VTEX
+              prestar suporte para as soluções de e-commerce da VTEX e Shopify
             </p>
             {/* animation */}
           </div>
@@ -1355,15 +1355,10 @@ function HomeMob({ title }) {
               <div className={"about-us-container"}>
                 {" "}
                 <h2 className={"block-title"}>
-                  VTEX by <span className={"text-highlight"}>Wecode</span>
+                  Soluções de E-commerce para <span className={"text-highlight"}>VTEX</span> e <span className={"text-highlight"}>Shopify</span>
                 </h2>
                 <p className={"home-paragraph"}>
-                  A VTEX é uma plataforma completa, integrada e composable que
-                  gera experiências avançadas de comércio B2B, B2C, Crossborder,
-                  Marketplace e Omnichannel sem complicações e com total
-                  flexibilidade. Vá além do e-commerce tradicional, vendendo em
-                  todos os canais, colaborando com parceiros e expandindo sua
-                  oferta de produtos.
+                  VTEX e Shopify são plataformas completas, integradas e composable que geram experiências avançadas de comércio B2B, B2C, Crossborder, Marketplace e Omnichannel sem complicações e com total flexibilidade. Vá além do e-commerce tradicional, vendendo em todos os canais, colaborando com parceiros e expandindo sua oferta de produtos.
                 </p>
                 <img
                   className={"conecting-img"}
@@ -1373,14 +1368,10 @@ function HomeMob({ title }) {
                 ></img>
                 <p className={"home-paragraph"}>
                   <i>
-                    A VTEX disponibiliza diversos recursos de forma nativa,
-                    cabendo a cada parceiro implantador habilitar, personalizar
-                    e até desenvolver recursos. A Wecode, através de sua
-                    metodologia e expertise, habilita e desenvolve
-                    funcionalidades que garantem uma experiência de compra
-                    única, gerando resultado e vendas para nossos clientes.
+                    A VTEX e a Shopify disponibilizam diversos recursos de forma nativa, cabendo a cada parceiro implantador habilitar, personalizar e até desenvolver recursos. A Wecode, através de sua metodologia e expertise, habilita e desenvolve funcionalidades que garantem uma experiência de compra única, gerando resultado e vendas para nossos clientes.
                   </i>
                 </p>
+                <p className={"home-paragraph-help"}>Nossos especialistas podem te ajudar a escolher a plataforma que melhor atende às necessidades do seu negócio.</p>
                 <p className={"light-background-quote"}>
                   “Com tanto mais do mesmo, entregamos o{" "}
                   <strong>diferente</strong>, o <strong>característico</strong>{" "}
@@ -1466,11 +1457,7 @@ function HomeMob({ title }) {
                         TAILOR MADE
                       </h4>
                       <p className={"our-services-card-son-text"}>
-                        Soluções de alta performance e qualidade, desenvolvendo
-                        projetos sob medida, sem o uso de templates e layouts
-                        pré definidos, explorando ao máximo os recursos da VTEX.
-                        Cada projeto é muito importante para nós, você não será
-                        só mais um cliente.
+                        Soluções de alta performance e qualidade, desenvolvendo projetos sob medida, sem o uso de templates e layouts pré definidos, explorando ao máximo os recursos da VTEX e Shopify. Cada projeto é muito importante para nós, você não será só mais um cliente.
                       </p>
                     </div>
                     <div className={"our-services-card-son"}>
@@ -1610,8 +1597,8 @@ function HomeMob({ title }) {
                 <h3 className={"tag"}>O QUE FAZEMOS</h3>
                 <h2 className={"block-title"}>
                   Somos <span className={"text-highlight"}>experts</span> nas
-                  soluções de e-<br></br>commerce{" "}
-                  <span className={"text-highlight"}>VTEX</span>
+                  soluções de{" "}
+                  <span className={"text-highlight"}>e-commerce</span>
                 </h2>
                 <h3 className={"tag-2"}>Conheça os serviços que prestamos</h3>
                 <div className={"methodology-card"}>
@@ -1709,8 +1696,7 @@ function HomeMob({ title }) {
                   </svg>
                   <h4 className={"methodology-card-title"}>Migração</h4>
                   <p className={"methodology-card-text"}>
-                    Migração da sua loja para o ecossistema VTEX, garantindo uma
-                    transição tranquila e sem atritos ao cliente final
+                    Migração da sua loja para o ecossistema VTEX e Shopify, garantindo uma transição tranquila e sem atritos ao cliente final
                   </p>
                 </div>
                 <div className={"methodology-card"}>

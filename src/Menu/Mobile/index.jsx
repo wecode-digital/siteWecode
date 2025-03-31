@@ -154,7 +154,7 @@ function MenuMob() {
                 handleScrollToSection(".about-us");
               }}
             >
-              VTEX by Wecode
+              Soluções de E-commerce
             </p>
             <p
               className={"institutional-links link-value"}

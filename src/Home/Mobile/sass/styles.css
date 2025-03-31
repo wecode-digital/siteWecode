@@ -52,6 +52,13 @@
     .home-container .home-paragraph i {
       font-size: 1.25rem;
       font-weight: 300; }
+  .home-container .home-paragraph-help {
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #353a42;
+    font-size: 0.875rem; }
   .home-container .light-background-quote {
     max-width: unset !important;
     margin-inline: -20px;

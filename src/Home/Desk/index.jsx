@@ -7,7 +7,7 @@ import TestimonialSlider from "../Depoimento-clientes/index";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import imagehome from "../../assets/images/home-generic-images/image-home.png";
-import aboutUsImg from "../../assets/images/home-generic-images/about-us-img.png";
+import aboutUsImg from "../../assets/images/home-generic-images/about-us-image.png";
 import logopolitorno from "../../assets/images/client-logos/logo-politorno.png";
 import logokappesberg from "../../assets/images/client-logos/logo-kappesberg.png";
 // import logokissny from "../../assets/images/client-logos/logo-kissNY.png";
@@ -60,7 +60,7 @@ function HomeDesk() {
               </h1>
               <p className={"first-fold-text"}>
                 A Wecode é certificada e homologada para revender, implantar e
-                prestar suporte para as soluções de e-commerce da VTEX
+                prestar suporte para as soluções de e-commerce da VTEX e Shopify
               </p>
             </div>
             <div className={"first-fold-img-container"}>
@@ -1474,27 +1474,28 @@ function HomeDesk() {
             <div className={"about-us-container"}>
               <div className={"about-us-text-container"}>
                 <h2 className={"block-title"}>
-                  VTEX by<br></br>{" "}
-                  <span className={"text-highlight"}>Wecode</span>
+                  Soluções de E-commerce<br></br>{" "}
+                  para <span className={"text-highlight"}>VTEX</span> e <span className={"text-highlight"}>Shopify</span>
                 </h2>
                 <p className={"home-paragraph"}>
-                  A VTEX é uma plataforma completa, integrada e composable que
-                  gera experiências avançadas de comércio B2B, B2C, Crossborder,
-                  Marketplace e Omnichannel sem complicações e com total
-                  flexibilidade. Vá além do e-commerce tradicional, vendendo em
-                  todos os canais, colaborando com parceiros e expandindo sua
-                  oferta de produtos.
+                  VTEX e Shopify são plataformas completas, integradas e 
+                  composable que geram experiências avançadas de comércio B2B,
+                  B2C, Crossborder, Marketplace e Omnichannel sem complicações e 
+                  com total flexibilidade. Vá além do e-commerce tradicional, 
+                  vendendo em todos os canais, colaborando com parceiros e 
+                  expandindo sua oferta de produtos.
                 </p>
                 <p className={"home-paragraph"}>
                   <i>
-                    A VTEX disponibiliza diversos recursos de forma nativa,
-                    cabendo a cada parceiro implantador habilitar, personalizar
-                    e até desenvolver recursos. A Wecode, através de sua
-                    metodologia e expertise, habilita e desenvolve
-                    funcionalidades que garantem uma experiência de compra
+                    A VTEX e a Shopify disponibilizam diversos recursos de forma 
+                    nativa, cabendo a cada parceiro implantador habilitar, 
+                    personalizar e até desenvolver recursos. A Wecode, através de
+                    sua metodologia e expertise, habilita e desenvolve 
+                    funcionalidades que garantem uma experiência de compra 
                     única, gerando resultado e vendas para nossos clientes.
                   </i>
                 </p>
+                <p className={"home-paragraph-help"}>Nossos especialistas podem te ajudar a escolher a plataforma que melhor atende às necessidades do seu negócio.</p>
               </div>
               <img
                 className={"conecting-img"}
@@ -1518,7 +1519,7 @@ function HomeDesk() {
               <h3 className={"tag"}>COMO GERAMOS VALOR</h3>
               <h2 className={"block-title"}>
                 Não somos uma <br></br>
-                <span className={"text-highlight"}> agência</span>
+                <span className={"text-highlight"}> agência.</span>
               </h2>
               <p className={"home-paragraph"}>
                 Possuimos uma metodologia própria de gestão de projetos, que
@@ -1734,9 +1735,8 @@ function HomeDesk() {
           <div className={"methodology"}>
             <h3 className={"tag"}>O QUE FAZEMOS</h3>
             <h2 className={"block-title"}>
-              Somos <span className={"text-highlight"}>experts</span> nas
-              soluções de<br></br> e-commerce{" "}
-              <span className={"text-highlight"}>VTEX</span>
+              Somos <span className={"text-highlight"}>experts</span> nas soluções<br></br>
+              de <span className={"text-highlight"}>e-commerce</span>
             </h2>
             <div className={"methodology-card-cotainer"}>
               <div className={"methodology-card-first methodology-card"}>
@@ -1858,8 +1858,9 @@ function HomeDesk() {
                 <div className={"metodology-container-text"}>
                   <h4 className={"methodology-card-title"}>Migração</h4>
                   <p className={"methodology-card-text"}>
-                    Migração da sua loja para o ecossistema VTEX, garantindo uma
-                    transição tranquila e sem atritos ao cliente final
+                    Migração da sua loja para o ecossistema VTEX e 
+                    Shopify, garantindo uma transição tranquila e sem 
+                    atritos ao cliente final
                   </p>
                   <p
                     className={"know-more-link"}

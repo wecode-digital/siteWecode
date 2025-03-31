@@ -209,7 +209,7 @@ function FooterMob() {
                           handleScrollToSection(".about-us");
                         }}
                       >
-                        VTEX by Wecode
+                        Soluções de E-commerce
                       </p>
                     </li>
                     <li>

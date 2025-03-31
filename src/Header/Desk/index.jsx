@@ -130,7 +130,7 @@ function HeaderDesk() {
                     handleScrollToSection(".about-us");
                   }}
                 >
-                  VTEX by Wecode
+                  Soluções de E-commerce
                 </p>
                 <p
                   className={"header-container-links link-value"}

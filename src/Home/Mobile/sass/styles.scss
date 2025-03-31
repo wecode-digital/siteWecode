@@ -36,6 +36,11 @@
       font-weight: 300;
     }
   }
+  .home-paragraph-help {
+    @include padrao;
+    font-weight: 300;
+    font-size: 0.875rem
+  }
   .light-background-quote {
     @include fullscreen;
     @include padrao;
