@@ -167,7 +167,6 @@
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       .footer-container-desk form input:focus {
-        background-color: transparent;
         border: 1px solid #0d98e6;
         outline: none; }
     .footer-container-desk form .enviar {
@@ -196,7 +195,6 @@
       box-sizing: border-box;
       padding-top: 8px; }
       .footer-container-desk form textarea:focus {
-        background-color: transparent;
         border: 1px solid #0d98e6;
         outline: none; }
     .footer-container-desk form .submit-botao {
@@ -219,8 +217,10 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      align-items: center;
       font-size: 1rem;
       font-weight: 500;
+      cursor: pointer;
       height: 42px; }
       .footer-container-desk form .submit-botao-disabled {
         background-color: WHITE;

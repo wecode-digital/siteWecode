@@ -1,7 +1,9 @@
 const gulp = require('gulp'),
-  sass = require('gulp-sass')(require('node-sass')),
   autoprefixer = require('gulp-autoprefixer'),
   sourcemaps = require('gulp-sourcemaps');
+
+const sass = require('gulp-sass')(require('sass'));
+
 let bases = {
   src: '.',
   // buildCss: './styles/css',
@@ -27,7 +29,7 @@ gulp.task('sassReact', () => {
       allowEmpty: true,
     })
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({cascade: false, overrideBrowserslist:['last  2 versions']}))
+    .pipe(autoprefixer({ cascade: false, overrideBrowserslist: ['last  2 versions'] }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(function (file) {
       return file.base;

@@ -22,11 +22,11 @@ const MyForm = () => {
   const handleChange = e => setContact({ ...contact, [e.target.name]: e.target.value });
 
   const dataLayerEvent = (data) => {
-    //console.log(data, "dados")
+    console.log(data, "dados")
 
 
-    if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
-      window.dataLayer.push({
+    // if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
+      window?.dataLayer?.push({
         dadosCliente: {
           nome: data?.name,
           empresa: data?.subject,
@@ -38,7 +38,7 @@ const MyForm = () => {
       });
 
       //console.log("datalayer", window.dataLayer)
-    };
+    // };
   }
   const handleSubmit = async e => {
     e.preventDefault();
@@ -52,15 +52,15 @@ const MyForm = () => {
       });
 
       const json = await res.json();
-
-      if (json.success) {
+      
+      if (res.ok) {
+        dataLayerEvent(contact);
         setResponse({
           type: 'success',
           message: 'Thank you for reaching out to us.'
         });
-        dataLayerEvent(contact);
-        document.querySelectorAll("form .form_2").forEach((el) => {
-          //console.log("el", el.value)
+        document.querySelectorAll(".form_2").forEach((el) => {
+          // console.log("el", el.value)
           el.value = ""
         })
 
@@ -80,6 +80,10 @@ const MyForm = () => {
 
     setTimeout(() => {
       setIsButtonDisabled(false);
+      setResponse({
+        type: '',
+        message: ''
+      })
     }, 5000);
   };
 
@@ -144,12 +148,12 @@ const MyForm = () => {
           placeholder="Nos envie uma mensagem por aqui!*"
           onChange={handleChange}
         ></textarea>
-        <button className="form_2 enviar margem-botao">
-          {response.type === 'success' && isButtonDisabled === true ? (
-            <input className="submit-botao submit-botao-disabled" type="submit" value="Enviado" disabled={isButtonDisabled} />
-          ) : (
-            <input className="submit-botao" type="submit" value="Enviar" disabled={isButtonDisabled} />
-          )}
+        <button
+          className={`form_2 submit-botao ${isButtonDisabled ? 'submit-botao-disabled' : ''}`}
+          type="submit"
+          disabled={isButtonDisabled}
+        >
+          {response.type === 'success' ? 'Enviado' : 'Enviar'}
         </button>
       </div>
     </form>
