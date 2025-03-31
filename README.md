@@ -24,5 +24,3 @@
 - NodeJs
 - React Router Dom
 - Sass
-
-
