@@ -35,7 +35,7 @@ import liliamKeko from "../../assets/videos/depoimentos/liliam-keko-depoimento.m
 
 import alanBibi from "../../assets/videos/depoimentos/alan-bibi-depoimento.mp4";
 
-import svenStihl from "../../assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
+import svenStihl from "../../assets/videos/depoimentos/sven-vanessa-stihl.mp4";
 
 import ezequielJb from "../../assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
 
@@ -44,6 +44,7 @@ import playDepoimentos from "../../assets/svg/play.svg"
 import fecharModal from "../../assets/svg/fechar-modal.svg"
 import arrowEsquerda from "../../assets/svg/left-arrow.svg"
 import arrowDireita from "../../assets/svg/right-arrow.svg"
+
 
 //Ordem dos depoimentos (Mais podem ser adicionados da mesma maneira)
 const testimonials = [

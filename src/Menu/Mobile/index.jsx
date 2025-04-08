@@ -12,12 +12,12 @@ function MenuMob() {
       const scrollTop = window.pageYOffset;
       const offset = 50;
       const btnMenu = document.querySelector(".botao-menu");
-      console.log(btnMenu, "Antes do if");
+      // console.log(btnMenu, "Antes do if");
       if (btnMenu == null || btnMenu === undefined) {
         return;
       }
       if (scrollTop > offset) {
-        console.log(btnMenu, "TESTE");
+        // console.log(btnMenu, "TESTE");
         btnMenu.classList.add("ativo");
       } else {
         btnMenu.classList.remove("ativo");

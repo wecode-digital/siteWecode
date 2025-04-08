@@ -24,14 +24,14 @@ import conectingCel from "../../assets/images/home-generic-images/conecting-cel.
 import CardContainer from "../../CardContainer/Desk";
 
 function HomeDesk() {
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: false,
-    slidesToShow: 1.7,
-    slidesToScroll: 1,
-    centerMode: false,
-  };
+  // const settings = {
+  //   dots: false,
+  //   arrows: false,
+  //   infinite: false,
+  //   slidesToShow: 1.7,
+  //   slidesToScroll: 1,
+  //   centerMode: false,
+  // };
 
   let isDesk = false;
   if (window.innerWidth >= 1024) {
