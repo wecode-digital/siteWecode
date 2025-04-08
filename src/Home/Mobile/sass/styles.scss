@@ -18,6 +18,7 @@
     @include padrao;
     color: $light-main-color;
     font-weight: 500;
+    white-space: nowrap;
   }
   .tag {
     @include padrao;

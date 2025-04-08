@@ -12,7 +12,9 @@ import giulianoBettanin from "../../assets/images/client-profile-pics/giuliano-i
 import viniciusMartini from "../../assets/images/client-profile-pics/vinicius-ou-photo.png";
 import alanRosanelli from "../../assets/images/client-profile-pics/alan-bibi-photo.png";
 import priscilaAnselmiPhoto from "../../assets/images/client-profile-pics/priscila-anselmi-photo.png"
-import liliamKekoPhoto from "../../assets/images/client-profile-pics/liliam-keko-photo.png"
+import liliamKekoPhoto from "../../assets/images/client-profile-pics/liliam-keko-photo.png";
+import svenStihlPhoto from "../../assets/images/client-profile-pics/sven-stihl-photo.png";
+import ezequielJbPhoto from "../../assets/images/client-profile-pics/ezequiel-jb-photo.png";
 
 //Videos
 import felipeHorizontal from "../../assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
@@ -27,9 +29,15 @@ import giulianoVertical from "../../assets/videos/depoimentos/giuliano-bettanin-
 import viniciusHorizontal from "../../assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
 import viniciusVertical from "../../assets/videos/depoimentos/vinicius-ou-vertical.mp4";
 
-import priscilaAnselmi from "../../assets/videos/depoimentos/priscila-anselmi-depoimento.mp4"
-import liliamKeko from "../../assets/videos/depoimentos/liliam-keko-depoimento.mp4"
-import alanBibi from "../../assets/videos/depoimentos/alan-bibi-depoimento.mp4"
+import priscilaAnselmi from "../../assets/videos/depoimentos/priscila-anselmi-depoimento.mp4";
+
+import liliamKeko from "../../assets/videos/depoimentos/liliam-keko-depoimento.mp4";
+
+import alanBibi from "../../assets/videos/depoimentos/alan-bibi-depoimento.mp4";
+
+import svenStihl from "../../assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
+
+import ezequielJb from "../../assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
 
 //svg
 import playDepoimentos from "../../assets/svg/play.svg"
@@ -107,6 +115,26 @@ const testimonials = [
     video: {
       horizontal: viniciusHorizontal,
       vertical: viniciusVertical,
+    }
+  },
+  {
+    name: 'Sven Laure',
+    position: 'Head of Marketing Systems & E-Commerce',
+    image: svenStihlPhoto,
+    testimonial: '&quotAtrás da Wecode, há um <span>grande time</span> de pessoas excelentes que, em todos os momentos, com muito entusiasmo, <span>abraçaram esse projeto</span> e deram o máximo para fazer ele acontecer.&quot',
+    video: {
+      horizontal: svenStihl,
+      vertical: svenStihl,
+    }
+  },
+  {
+    name: 'Ezequiel Fischer',
+    position: 'Coordenador de TI',
+    image: ezequielJbPhoto,
+    testimonial: '&quotA Wecode tem uma preocupação não só com a entrega do projeto, <span>mas com a empresa</span>.&quot',
+    video: {
+      horizontal: ezequielJb,
+      vertical: ezequielJb,
     }
   },
 ];
