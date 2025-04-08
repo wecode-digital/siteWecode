@@ -139,7 +139,8 @@ const MyForm = () => {
           onChange={handleChange}
         />
         <label for="message">Sua mensagem*</label>
-
+        {/* recaptcha widget */}
+        <div class="g-recaptcha" data-sitekey="6LczhgUrAAAAAAWfWFCTX_pQoDAzfy2Wua0Xt8V7"></div>
         <textarea
           className="form_2"
           name="message"
@@ -155,6 +156,8 @@ const MyForm = () => {
         >
           {response.type === 'success' ? 'Enviado' : 'Enviar'}
         </button>
+        {/* recaptcha script */}
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       </div>
     </form>
   );
