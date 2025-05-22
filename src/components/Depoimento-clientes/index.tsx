@@ -45,7 +45,7 @@ import alanBibi from "../../../public/assets/videos/depoimentos/alan-bibi-depoim
 import svenStihl from "../../../public/assets/videos/depoimentos/sven-vanessa-stihl.mp4";
 
 import ezequielJb from "../../../public/assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
-import svenVanessa from '../../../public/assets/videos/depoimentos/DepoimentoSveneVanessa.mp4'
+// import svenVanessa from '../../../public/assets/videos/depoimentos/DepoimentoSveneVanessa.mp4'
 import depoimentoJb from '../../../public/assets/videos/depoimentos/DepoimentoJBV2.mp4'
 
 //svg
@@ -58,52 +58,52 @@ import logoStihl from "../../../public/assets/svg/play.svg"
 
 //Ordem dos depoimentos (Mais podem ser adicionados da mesma maneira)
 const testimonials = [
-   {
-    type: 'double',
-    logo: logoStihl,
-    testimonial: '&quotDe 22 pra 23, <span>a gente cresceu mais de 100%</span> e isso é muito fruto desse trabalho feito a quatro mãos junto com a Wecode.&quot',
-    people: [
-      {
-        id: 'sven',
-        name: 'Sven Laure',
-        position: 'Head of Marketing Systems & E-Commerce',
-        image: svenStihlPhoto,
-      },
-      {
-        id: 'vanessa',
-        name: 'Vanessa Spall',
-        position: 'Analista de E-commerce',
-        image: vanessaStihlPhoto,
-      }
-    ],
-    video: {
-      horizontal: svenVanessa,
-      vertical: svenVanessa,
-    }
-  },
-  {
-    type: 'double',
-    logo: logoJb,
-    testimonial: '&quotLorem Ipsum is simply dummy text of the printing and typesetting industry.&quot',
-    people: [
-      {
-        id: 'ezequiel',
-        name: 'Ezequiel Fisher',
-        position: 'Coordenador de TI',
-        image: ezequielJbPhoto,
-      },
-      {
-        id: 'djenifer',
-        name: 'Djenifer',
-        position: 'Coordenadora de E-commerce',
-        image: djeniferJbPhoto,
-      }
-    ],
-    video: {
-      horizontal: depoimentoJb,
-      vertical: depoimentoJb
-    }
-  },
+  //  {
+  //   type: 'double',
+  //   logo: logoStihl,
+  //   testimonial: '&quotDe 22 pra 23, <span>a gente cresceu mais de 100%</span> e isso é muito fruto desse trabalho feito a quatro mãos junto com a Wecode.&quot',
+  //   people: [
+  //     {
+  //       id: 'sven',
+  //       name: 'Sven Laure',
+  //       position: 'Head of Marketing Systems & E-Commerce',
+  //       image: svenStihlPhoto,
+  //     },
+  //     {
+  //       id: 'vanessa',
+  //       name: 'Vanessa Spall',
+  //       position: 'Analista de E-commerce',
+  //       image: vanessaStihlPhoto,
+  //     }
+  //   ],
+  //   video: {
+  //     horizontal: svenVanessa,
+  //     vertical: svenVanessa,
+  //   }
+  // },
+  // {
+  //   type: 'double',
+  //   logo: logoJb,
+  //   testimonial: '&quotLorem Ipsum is simply dummy text of the printing and typesetting industry.&quot',
+  //   people: [
+  //     {
+  //       id: 'ezequiel',
+  //       name: 'Ezequiel Fisher',
+  //       position: 'Coordenador de TI',
+  //       image: ezequielJbPhoto,
+  //     },
+  //     {
+  //       id: 'djenifer',
+  //       name: 'Djenifer',
+  //       position: 'Coordenadora de E-commerce',
+  //       image: djeniferJbPhoto,
+  //     }
+  //   ],
+  //   video: {
+  //     horizontal: depoimentoJb,
+  //     vertical: depoimentoJb
+  //   }
+  // },
   {
     name: 'Alan Rosanelli',
     position: 'Gerente de Omnicanalidade da Bibi',
