@@ -1,0 +1,138 @@
+@import "./../../../styles/padroes/padroes.scss";
+
+.botao-menu {
+  display: block;
+  z-index: 5;
+  padding-right: 10px;
+}
+
+.botao-menu.active {
+  padding-right: 10px;
+  display: none;
+}
+
+.menu-container {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  // background-color: #333;
+  // overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+// .menu {
+//   width: 0;
+//   height: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: #333;
+//   overflow: hidden;
+//   transition: width 0.3s ease;
+//   transform-origin: left center;
+// }
+
+// .menu-open {
+//   width: 100%;
+//   transition: width 0.3s ease,
+//     transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+//   transform: scaleX(1);
+// }
+
+.menu-container-open {
+  //
+  inset: 0;
+  display: block;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: $dark-main-color;
+  overflow-y: scroll;
+  box-sizing: border-box;
+
+  .link-home {
+    margin: 0;
+  }
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include fullscreen;
+    margin-top: -20px;
+    svg {
+      padding: 30px;
+      padding-top: 20px;
+    }
+    a {
+      height: fit-content;
+      display: flex;
+    }
+  }
+  .menu-body {
+    display: flex;
+    flex-direction: column;
+    padding-block: 13% 25%;
+    gap: 1.5rem;
+    .institutional-links {
+      @include padrao;
+      font-weight: 100;
+      font-size: 1.625rem;
+      color: $text-contrast;
+      text-decoration: none;
+      margin: 0;
+    }
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .menu-address {
+      display: flex;
+      flex-direction: column;
+      h5 {
+        @include padrao;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #8a8a8a;
+        margin-block: 0 0.5rem;
+      }
+      p {
+        @include padrao;
+        font-size: 0.875rem;
+        color: $text-contrast;
+        margin-block: 0;
+      }
+    }
+    .menu-social-media {
+      display: flex;
+      flex-direction: column;
+      .menu-social-media-wrapper {
+        display: flex;
+        gap: 2rem;
+      }
+      h5 {
+        @include padrao;
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #8a8a8a;
+        margin-block: 0 0.5rem;
+      }
+      a {
+        @include padrao;
+        font-size: 0.875rem;
+        color: $text-contrast;
+        gap: 0.5rem;
+        display: flex;
+        align-items: center;
+        margin-block: 0;
+      }
+    }
+  }
+}

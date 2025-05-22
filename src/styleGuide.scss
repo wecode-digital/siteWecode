@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$fontFamily: "Raleway", serif;
+$boxShadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+$globalMarginDesk: 250px;
+$globalMarginMob: 20px;
+$dark-main-color: #053766;
+$light-main-color: #0d98e6;
+$gray-main-color: #f7f7f7;
+$text: #353a42;
+$text-contrast: #fff;
+$title-card: #8a8a8a;
+$background: #f5f5f7;
+
+
+@mixin padrao {
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  // letter-spacing: 0.5px;
+  color: $text;
+}
+
+@mixin title {
+  font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 500;
+  color: $text;
+  font-size: 2.5rem;
+  @media (min-width: 1800px) {
+    font-size: 3rem;
+  }
+}
+
+@mixin fullscreen {
+  max-width: unset !important;
+  margin-inline: -$globalMarginMob;
+  @media (min-width: 1008px) {
+    max-width: unset !important;
+    margin-inline: -$globalMarginDesk;
+    @media (min-width: 1600px) {
+      margin-inline: -350px;
+    }
+  }
+}
