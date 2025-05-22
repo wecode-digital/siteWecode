@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import "./sass/styles.css";
 import wecodeImg from "../../../../public/assets/images/home-generic-images/wecode-footer.png";
-// import MyForm from "../formPost/index";
+import Contato from "../../Contato/ContatoDesk/ContatoDesk.tsx";
 import Image from "next/image";
 import homeStyles from "@/app/page.module.scss";
 
@@ -49,7 +49,7 @@ function FooterDesk() {
                   </p>
                 </div>
                 <div className={"footer-form-container"}>
-                  {/* <MyForm /> */}
+                  <Contato />
                 </div>
               </div>
             </div>

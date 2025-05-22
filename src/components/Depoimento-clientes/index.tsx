@@ -16,8 +16,8 @@ import viniciusMartini from "../../../public/assets/images/client-profile-pics/v
 import alanRosanelli from "../../../public/assets/images/client-profile-pics/alan-bibi-photo.png"; 
 import priscilaAnselmiPhoto from "../../../public/assets/images/client-profile-pics/priscila-anselmi-photo.png"
 import liliamKekoPhoto from "../../../public/assets/images/client-profile-pics/liliam-keko-photo.png";
-import svenStihlPhoto from "../../../public/assets/images/client-profile-pics/liliam-keko-photo.png";
-import ezequielJbPhoto from "../../../public/assets/images/client-profile-pics/liliam-keko-photo.png";
+import svenStihlPhoto from "../../../public/assets/images/client-profile-pics/sven-stihl-photo.png";
+import ezequielJbPhoto from "../../../public/assets/images/client-profile-pics/ezequiel-jb-photo.png";
 import vanessaStihlPhoto from "../../../public/assets/images/client-profile-pics/liliam-keko-photo.png";
 import djeniferJbPhoto from "../../../public/assets/images/client-profile-pics/liliam-keko-photo.png";
 

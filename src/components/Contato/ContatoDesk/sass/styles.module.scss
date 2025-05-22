@@ -1,0 +1,115 @@
+@import '../../../../styleGuide.scss';
+
+.sectionContatoDesk {
+  padding: 11.25rem 15%;
+  background-color: $neutral-200;
+
+  .containerDados {
+    padding: 2rem;
+    background-color: $pure-white;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid $pure-white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+
+    .texts {
+      color: $neutral-800;
+      font-style: normal;
+      line-height: normal;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 40%;
+
+      .titleContact {
+        color: $neutral-600;
+        font-size: $fontSize3;
+        font-weight: $weight3;
+      }
+
+      .form {
+        gap: 0.75rem;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: $fontSize9;
+          font-weight: $weight2;
+          > span {
+            color: $color--brand-primary;
+            font-weight: $weight5;
+          }
+        }
+
+        .text {
+          font-size: $fontSize6;
+        }
+      }
+    }
+  }
+
+  .group_form {
+    flex-direction: column;
+    display: flex;
+    width: 33vw;
+    gap: 1.5rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      > label {
+        color: $neutral-800;
+        font-size: $fontSize2;
+        font-style: normal;
+        font-weight: $weight2;
+        line-height: normal;
+      }
+    }
+
+    input,
+    textarea:focus {
+      outline: none;
+    }
+
+    .button {
+      @include btn3;
+      cursor: pointer;
+      color: $pure-white;
+      font-size: $fontSize3;
+
+      input {
+        border: none;
+        background: transparent;
+        color: $pure-white;
+        font-size: $fontSize3;
+        font-style: normal;
+        font-weight: $weight5;
+        line-height: normal;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .items_form {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid $neutral-700;
+    background: $pure-white;
+    color: $neutral-600;
+    font-size: $fontSize1;
+    font-style: normal;
+    font-weight: $weight2;
+    line-height: normal;
+  }
+
+  textarea.items_form {
+    width: 100%;
+    resize: vertical;
+  }
+}

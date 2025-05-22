@@ -46,11 +46,34 @@
   }
 }
 
-.slick-slider {
-  position: relative;
+.testimonyMainContainer {
+  :global(.slick-track) {
+    display: flex;
+    gap: 2rem;
+  }
 
-  .slick-prev,
-  .slick-next {
+  :global(.slick-slider) {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+  }
+
+  :global(.slick-slide) {
+    transition: all 0.3s ease;
+    // opacity: 0.25;
+    transform: scale(0.85);
+    filter: blur(2px);
+  }
+
+  :global(.slick-center) {
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+    z-index: 2;
+  }
+
+  :global(.slick-prev),
+  :global(.slick-next) {
     background: none;
     border: none;
     opacity: 0.75;
@@ -58,28 +81,29 @@
     position: absolute;
     top: 38%;
     transform: translateY(-50%);
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
   }
 
-  button.slick-prev {
+  button:global(.slick-prev) {
     left: 27.9%;
   }
 
-  button.slick-next {
+  button:global(.slick-next) {
     right: 31.1%;
   }
 
-  .slick-prev::before {
+  :global(.slick-prev)::before {
     content: url("/assets/svg/left-arrow.svg");
     display: block;
   }
 
-  .slick-next::before {
+  :global(.slick-next)::before {
     content: url("/assets/svg/right-arrow.svg");
     display: block;
   }
 }
+
 
 .testimonialSlide {
 
@@ -217,6 +241,10 @@
             background: $dark-main-color;
             width: 200px;
 
+            img{
+              display: block !important;
+            }
+
             .testiomonialVideoArrow {
               display: block;
               width: fit-content;
@@ -225,8 +253,8 @@
             }
           }
 
-          .testiomonialVideoArrow {
-            display: none;
+          img{
+            display: none !important;
           }
 
           @keyframes fadeIn {

@@ -1,0 +1,105 @@
+@import '../../../styleGuide.scss';
+
+.sectionContato {
+  padding: 1.25rem 1.25rem 2.5rem;
+  background-color: $neutral-200;
+
+  .containerDados {
+    padding: 2rem;
+    background-color: $pure-white;
+    box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid $pure-white;
+    border-radius: 0.5rem;
+
+    .texts {
+      color: $neutral-800;
+      font-style: normal;
+      line-height: normal;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+
+      .titleContact {
+        color: $neutral-600;
+        font-size: $fontSize3;
+        font-weight: $weight3;
+      }
+
+      .title {
+        font-size: $fontSize6;
+        font-weight: $weight2;
+        > span {
+          color: $color--brand-primary;
+          font-weight: $weight5;
+        }
+      }
+
+      .text {
+        font-size: $fontSize1;
+      }
+    }
+  }
+
+  .group_form {
+    flex-direction: column;
+    display: flex;
+    width: inherit;
+    gap: 1.5rem;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      > label {
+        color: $neutral-800;
+        font-size: $fontSize2;
+        font-style: normal;
+        font-weight: $weight2;
+        line-height: normal;
+      }
+    }
+
+    input,
+    textarea:focus {
+      outline: none;
+    }
+
+    .button {
+      @include btn3;
+      cursor: pointer;
+      color: $pure-white;
+      font-size: $fontSize3;
+
+      input {
+        border: none;
+        background: transparent;
+        color: $pure-white;
+        font-size: $fontSize3;
+        font-style: normal;
+        font-weight: $weight5;
+        line-height: normal;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .items_form {
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid $neutral-700;
+    background: $pure-white;
+    color: $neutral-600;
+    font-size: $fontSize3;
+    font-style: normal;
+    font-weight: $weight2;
+    line-height: normal;
+  }
+
+  textarea.items_form {
+    width: 100%;
+    resize: vertical;
+  }
+}
