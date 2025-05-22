@@ -1,104 +1,73 @@
-'use client';
-
 import React, { useState } from 'react';
+import {BACKEND_ENDPOINT} from '../../constants'
 
 const MyForm = () => {
-
   const [contact, setContact] = useState({
     name: '',
     email: '',
-    subject: 'StaticForms - Contact Form',
-    honeypot: '',
-    message: '',
-    replyTo: 'felipe@wecode.digital',
-    accessKey: '7277fb36-e05f-47ef-86ff-d0bf291ca2a8'
-  });
-
-  const [response, setResponse] = useState({
-    type: '',
+    subject: '',
+    phone: '',
     message: ''
   });
 
+  const [response, setResponse] = useState({ type: '', message: '' });
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
-  const handleChange = e => setContact({ ...contact, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setContact({ ...contact, [e.target.name]: e.target.value })
+  };
 
-  const dataLayerEvent = (data) => {
-    console.log(data, "dados")
-
-
-    // if (typeof window.dataLayer !== 'undefined' && window.dataLayer?.push) {
-      window?.dataLayer?.push({
-        dadosCliente: {
-          nome: data?.name,
-          empresa: data?.subject,
-          telefone: data?.phone,
-          email: data?.phone,
-          mensagem: data?.message
-        },
-        event: "submitFormWecode"
-      });
-
-      //console.log("datalayer", window.dataLayer)
-    // };
-  }
   const handleSubmit = async e => {
     e.preventDefault();
     setIsButtonDisabled(true);
 
     try {
-      const res = await fetch('https://api.staticforms.xyz/submit', {
+      const res = await fetch(BACKEND_ENDPOINT, {
         method: 'POST',
-        body: JSON.stringify(contact),
-        headers: { 'Content-Type': 'application/json' }
+        headers: {
+          'Content-Type': 'application/json',
+          // Accept: 'application/vnd.vtex.ds.v10+json',
+          // 'X-VTEX-API-AppKey': 'vtexappkey-wecode-VSEKLD',
+          // 'X-VTEX-API-AppToken': 'RGTGLRQELVMXDDFBBXZBJTBPONBZBDPTFYEFRUYAHPKNDOFMRKFMAZOXAWLYWRTBZRDOGWIVZGSTHJZOFFNVZBUNWZAVQIFYVNTYPYFGCLODCZLXVSTQBIPEGRPSNSRN'
+        },
+        body: JSON.stringify(contact)
       });
 
       const json = await res.json();
-      
+
       if (res.ok) {
-        dataLayerEvent(contact);
+
         setResponse({
           type: 'success',
-          message: 'Thank you for reaching out to us.'
+          message: 'Obrigado! Sua mensagem foi enviada com sucesso.'
         });
         document.querySelectorAll(".form_2").forEach((el) => {
-          // console.log("el", el.value)
-          el.value = ""
-        })
-
+          el.value = "";
+        });
       } else {
         setResponse({
           type: 'error',
-          message: json.message
+          message: json?.Message || 'Erro ao enviar o formulário.'
         });
       }
     } catch (e) {
-      console.log('An error occurred', e);
+      console.log('Erro:', e);
       setResponse({
         type: 'error',
-        message: 'An error occurred while submitting the form'
+        message: 'Erro ao enviar o formulário.'
       });
     }
 
     setTimeout(() => {
       setIsButtonDisabled(false);
-      setResponse({
-        type: '',
-        message: ''
-      })
+      setResponse({ type: '', message: '' });
     }, 5000);
   };
 
   return (
-    <form
-      method="post"
-      id="staticform"
-      action="https://api.staticforms.xyz/submit"
-      onSubmit={handleSubmit}
-      className="formulario_master"
-    >
+    <form id="vtexform" onSubmit={handleSubmit} className="formulario_master">
       <div className="form_group">
-        <label for="name">Nome*</label>
+        <label htmlFor="name">Nome*</label>
         <input
           className="form_2"
           name="name"
@@ -108,7 +77,7 @@ const MyForm = () => {
           placeholder="Nome*"
           onChange={handleChange}
         />
-        <label for="subject">Empresa*</label>
+        <label htmlFor="subject">Empresa*</label>
         <input
           className="form_2"
           name="subject"
@@ -118,8 +87,7 @@ const MyForm = () => {
           placeholder="Empresa*"
           onChange={handleChange}
         />
-        <label for="phone">Telefone*</label>
-
+        <label htmlFor="phone">Telefone*</label>
         <input
           className="form_2"
           name="phone"
@@ -129,8 +97,7 @@ const MyForm = () => {
           placeholder="Telefone*"
           onChange={handleChange}
         />
-        <label for="email">E-mail*</label>
-
+        <label htmlFor="email">E-mail*</label>
         <input
           className="form_2"
           name="email"
@@ -140,9 +107,7 @@ const MyForm = () => {
           placeholder="Email*"
           onChange={handleChange}
         />
-        <label for="message">Sua mensagem*</label>
-        {/* recaptcha widget */}
-        <div class="g-recaptcha" data-sitekey="6LczhgUrAAAAAAWfWFCTX_pQoDAzfy2Wua0Xt8V7"></div>
+        <label htmlFor="message">Sua mensagem*</label>
         <textarea
           className="form_2"
           name="message"
@@ -158,10 +123,12 @@ const MyForm = () => {
         >
           {response.type === 'success' ? 'Enviado' : 'Enviar'}
         </button>
-        {/* recaptcha script */}
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        {response.message && (
+          <p className={`form-response ${response.type}`}>{response.message}</p>
+        )}
       </div>
     </form>
   );
 };
+
 export default MyForm;

@@ -285,7 +285,7 @@ export const TestimonialSlider = () => {
           <div key={index} className={styles.testimonialSlide}>
             <div className={styles.testimonialContent}>
               <div className={styles.testimonialProfile}>
-                <div><Image src={testimonial.logo} alt="Logo" className={styles.testimonialLogoImage} /></div>
+                {/* <div><Image src={testimonial.logo} alt="Logo" className={styles.testimonialLogoImage} /></div> */}
                 {testimonial.type === 'double' ? (
                   <div className={styles.testimonialLogo}>
                     <Image src={testimonial.people[0].image} alt="Logo" className={styles.testimonialLogoImage} />
