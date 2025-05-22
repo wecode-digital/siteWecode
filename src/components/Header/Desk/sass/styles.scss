@@ -1,0 +1,93 @@
+@import "@/styleGuide.scss";
+
+// body {
+//   margin: 0;
+// }
+
+.header-container-desk {
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  z-index: 5;
+  transition: top 0.5s ease;
+  width: 100%;
+  margin: auto;
+  .headercontainer-desk-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    border-radius: 10px;
+    background: #fff;
+    width: 80vw;
+    padding-block: 10px;
+    margin: auto;
+    @media screen and (min-width: 1500px) {
+      width: 60vw;
+    }
+    svg {
+      width: 140px;
+      height: auto;
+    }
+  }
+}
+
+.header-container-desk-ativo {
+  margin: auto;
+  position: fixed;
+  top: 20px;
+  transition: top 0.5s ease;
+  box-sizing: border-box;
+  z-index: 5;
+  width: 100%;
+  padding-block: 10px;
+  .headercontainer-desk-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    box-shadow: $boxShadow;
+    border-radius: 10px;
+    background: #fff;
+    width: 80vw;
+    margin: auto;
+    @media screen and (min-width: 1500px) {
+      width: 60vw;
+    }
+    svg {
+      width: 140px;
+      height: auto;
+    }
+  }
+}
+
+.link-home {
+  cursor: pointer;
+}
+
+.headercontainer-desk-layout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container-institucional {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header-container-links {
+  @include padrao;
+  text-decoration: none;
+  color: $text;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+    color: $light-main-color;
+  }
+}

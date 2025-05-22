@@ -1,0 +1,578 @@
+@import "../../styleGuide.scss";
+
+.testimonyMainContainer {
+  overflow: hidden;
+  margin-inline: -20px;
+  background: $text-contrast;
+}
+
+@media screen and (min-width: 1008px) {
+  .testimonyMainContainer {
+    overflow: hidden;
+    margin-inline: -220px;
+  }
+}
+
+
+.testimonyTitlesContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 0;
+  gap: 1.5rem;
+
+  .testimonyTitle {
+    color: $title-card;
+    text-align: center;
+    font-size: .75rem;
+    font-family: $fontFamily;
+    font-weight: 500;
+    margin: unset;
+    text-transform: uppercase;
+  }
+
+  .testimonySubtitle {
+    color: $text;
+    text-align: center;
+    font-size: 2rem;
+    font-family: $fontFamily;
+    font-weight: 300;
+    margin: unset;
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 1008px) {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.testimonyMainContainer {
+  :global(.slick-track) {
+    display: flex;
+    gap: 2rem;
+  }
+
+  :global(.slick-slider) {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+  }
+
+  :global(.slick-slide) {
+    transition: all 0.3s ease;
+    // opacity: 0.25;
+    transform: scale(0.85);
+    filter: blur(2px);
+  }
+
+  :global(.slick-center) {
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+    z-index: 2;
+  }
+
+  :global(.slick-prev),
+  :global(.slick-next) {
+    background: none;
+    border: none;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  button:global(.slick-prev) {
+    left: 27.9%;
+  }
+
+  button:global(.slick-next) {
+    right: 31.1%;
+  }
+
+  :global(.slick-prev)::before {
+    content: url("/assets/svg/left-arrow.svg");
+    display: block;
+  }
+
+  :global(.slick-next)::before {
+    content: url("/assets/svg/right-arrow.svg");
+    display: block;
+  }
+}
+
+
+.testimonialSlide {
+
+  img {
+    max-width: 50px;
+  }
+
+  .testimonialContent {
+    display: flex;
+    flex-direction: column;
+    background-color: $gray-main-color;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    height: 345px;
+    justify-content: center;
+
+    @media screen and (min-width: 1008px) and (max-width: 1200px) {
+      height: 420px;
+    }
+
+    @media screen and (min-width: 1201px) {
+      padding: 48px 52px;
+      margin-bottom: 80px;
+      height: 355px;
+      justify-content: center;
+    }
+
+    .testimonialProfile {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+
+      .testimonialNamePosition {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .testimonialName {
+          color: $text;
+          font-family: $fontFamily;
+          font-size: 1rem;
+          margin: unset;
+          font-weight: 500;
+        }
+
+        .testimonialPosition {
+          color: $text;
+          font-family: $fontFamily;
+          font-size: .875rem;
+          margin: unset;
+          font-weight: 300;
+        }
+      }
+
+      .testimonialImage {
+        max-width: 60px;
+      }
+
+      .testimonialLogo {
+        display: flex;
+        gap: 0.75rem;
+      }
+
+      .testimonialLogoImage {
+        max-width: 60px;
+        height: auto;
+      }
+    }
+
+    .testimonialDesciption {
+
+      .testimonialDescriptionContent {
+        color: $text;
+        font-family: $fontFamily;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 1.5rem;
+        margin: unset;
+
+        @media screen and (min-width: 1008px) {
+          font-size: 1rem;
+          line-height: 2rem;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .testimonialVideo {
+
+      .testimonialButtonVideo {
+        @include padrao;
+        cursor: pointer;
+        font-size: .75rem;
+        background: $light-main-color;
+        width: 180px;
+        display: flex;
+        padding: 12px 40px;
+        border-radius: 8px;
+        border: none;
+        color: $text-contrast;
+        gap: 10px;
+        justify-content: center;
+        text-decoration: none;
+        align-items: center;
+        white-space: nowrap;
+      }
+
+      @media screen and (min-width: 1008px) {
+        .testimonialButtonVideo {
+          @include padrao;
+          cursor: pointer;
+          font-size: .75rem;
+          background: $light-main-color;
+          width: 180px;
+          display: flex;
+          padding: 12px 40px;
+          border-radius: 8px;
+          border: none;
+          color: $text-contrast;
+          gap: 20px;
+          text-decoration: none;
+          justify-content: flex-start;
+          align-items: center;
+          transition: ease-in-out 0.6s;
+          animation: ease-in-out 0.6s;
+          white-space: nowrap;
+
+          &:hover {
+            background: $dark-main-color;
+            width: 200px;
+
+            img{
+              display: block !important;
+            }
+
+            .testiomonialVideoArrow {
+              display: block;
+              width: fit-content;
+              transition: fadeIn ease-in-out 0.6s;
+              animation: fadeIn ease-in-out 0.6s;
+            }
+          }
+
+          img{
+            display: none !important;
+          }
+
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+
+            to {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.slick-track {
+  display: flex !important;
+  // gap: 8px;
+}
+
+.slick-slide {
+  transition: all 0.5s ease;
+}
+
+.slick-center .testimonialContent {
+  transform: scale(1);
+}
+
+.slick-slide:not(.slick-center) {
+  opacity: 1;
+  filter: blur(3px);
+  transform: scale(0.9);
+
+  @media screen and (min-width: 1008px) {
+    opacity: 1;
+    filter: blur(3px);
+    transform: scale(.75);
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  /* Fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.modalContent {
+  position: relative;
+  border-radius: 8px;
+  max-width: 800px;
+  z-index: 1001;
+
+  width: 100%;
+  border-radius: 8px;
+
+  .modalContentInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    z-index: 1001;
+    aspect-ratio: 9 / 16;
+    max-height: 100%;
+
+    @media screen and (min-width: 1008px) {
+      aspect-ratio: 16 / 9;
+    }
+
+    .modalCloseButton {
+      top: 140px;
+      position: absolute;
+      right: 78px;
+      border-radius: 4px;
+      border: none;
+      background: none;
+      z-index: 999;
+    }
+
+    @media screen and (min-width: 1008px) {
+      .modal-close-button {
+        top: 4px;
+        position: absolute;
+        right: 4px;
+        border-radius: 4px;
+        border: none;
+        background: none;
+        z-index: 999;
+
+        img:hover {
+          filter: opacity(0.8);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .modalNavigation {
+      position: relative;
+      width: 65%;
+      border-radius: 10px;
+      aspect-ratio: 9 / 16;
+
+      @media screen and (min-width: 1008px) {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+    }
+
+    .modalArrowLeft {
+      position: absolute;
+      top: 45%;
+      left: -70px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    .modalArrowRight {
+      position: absolute;
+      top: 45%;
+      right: -70px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+//double testimonials
+.testimonialContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+//CONTAINER PRINCIPAL
+.testimonialDoublePeople {
+  max-width: 350px;
+
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $gray-main-color;
+  padding: 42px 52px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  height: 345px;
+}
+
+//LOGO DA EMPRESA
+
+//IMAGENS
+.testimonialImagesContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+
+  img {
+    width: 50px;
+  }
+}
+
+.testimonialImagesDouble {
+  display: flex;
+  flex-direction: row;
+}
+
+// NOMES
+.testimonialNamesContainer {
+  flex-flow: wrap;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 0;
+    color: $text;
+    font-family: $fontFamily;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.testimonialNamesList {
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonialNamesDouble {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+
+  h3 {
+    margin: 0;
+    color: $text;
+    font-family: $fontFamily;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.testimonialAnd {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+//CARGO
+.testimonialPositionsContainer {
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+
+  p {
+    color: $text;
+    font-family: $fontFamily;
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  span {
+    padding: 0 2px;
+    height: 5px;
+  }
+
+  :global(.testimonialsven),
+  :global(.testimonialdjenifer) {
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  :global(.testimonialvanessa) {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// DEPOIMENTO 
+.testimonialDescriptionContent {
+  color: #353a42;
+  margin: unset;
+  font-family: Raleway, serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.testimonialButtonVideo {
+  @include padrao;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  background: #0d98e6;
+  border: none;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 180px;
+  padding: 12px 40px;
+  font-family: Raleway, serif;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .6s ease-in-out;
+  animation: none;
+  display: flex;
+
+  &:hover {
+    background: $dark-main-color;
+    width: 200px;
+
+    .testiomonialVideoArrow {
+      display: block;
+      width: fit-content;
+      transition: fadeIn ease-in-out 0.6s;
+      animation: fadeIn ease-in-out 0.6s;
+    }
+  }
+
+  .testiomonialVideoArrow {
+    display: none;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}

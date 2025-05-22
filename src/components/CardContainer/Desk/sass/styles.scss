@@ -1,0 +1,118 @@
+@import "./../../../styles/padroes/padroes.scss";
+
+.card-container-change {
+  @include padrao;
+}
+
+.card-link-container {
+  background: $background;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  p {
+    font-size: 1.125rem;
+  }
+}
+.card-links {
+  @include padrao;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: $background;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  p {
+    font-size: 0.875rem;
+    @media screen and (min-width: 1800px) {
+      font-size: 1.125rem;
+    }
+  }
+  svg {
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
+
+.card-links-ativo {
+  @include padrao;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: $light-main-color;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 20px;
+  color: #fff;
+  p {
+    font-size: 0.875rem;
+    @media screen and (min-width: 1700px) {
+      font-size: 1.125rem;
+    }
+  }
+  svg {
+    max-width: 35px;
+    max-height: 35px;
+  }
+  svg path {
+    fill: #fff;
+  }
+}
+
+.card-container {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: $background;
+  border-radius: 10px;
+  gap: 20px;
+  max-width: 978px;
+  height: 178px;
+  svg {
+    width: 120px;
+  }
+  .card-title {
+    color: $light-main-color;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+.card-container-ativo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 0;
+  background: $background;
+  border-radius: 10px;
+  gap: 20px;
+  max-width: 978px;
+  height: 178px;
+  // margin-bottom: 40px;
+  box-shadow: $boxShadow;
+  svg {
+    min-width: 60px;
+    height: auto;
+  }
+  .card-title {
+    color: $light-main-color;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .card-text {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}
