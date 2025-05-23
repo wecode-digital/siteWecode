@@ -308,8 +308,8 @@ export const TestimonialSlider = () => {
                 {/* <div><Image src={testimonial.logo} alt="Logo" className={styles.testimonialLogoImage} /></div> */}
                 {testimonial.type === 'double' ? (
                   <div className={styles.testimonialLogo}>
-                    <Image src={testimonial.people[0].image} alt="Logo" className={styles.testimonialLogoImage} />
-                    <Image src={testimonial.people[1].image} alt="Logo" className={styles.testimonialLogoImage} />
+                    <Image src={testimonial.people?.[0]?.image} alt="Logo" className={styles.testimonialLogoImage} />
+                    <Image src={testimonial.people?.[1]?.image} alt="Logo" className={styles.testimonialLogoImage} />
                   </div>
                 ) : (
                   <Image src={testimonial?.image ?? ''} alt={testimonial?.name ?? ''} className={styles.testimonialImage} />
