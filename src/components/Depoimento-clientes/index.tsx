@@ -42,7 +42,7 @@ import liliamKeko from "../../../public/assets/videos/depoimentos/liliam-keko-de
 
 import alanBibi from "../../../public/assets/videos/depoimentos/alan-bibi-depoimento.mp4";
 
-import svenStihl from "../../../public/assets/videos/depoimentos/sven-vanessa-stihl.mp4";
+// import svenStihl from "../../../public/assets/videos/depoimentos/sven-vanessa-stihl.mp4";
 
 import ezequielJb from "../../../public/assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
 // import svenVanessa from '../../../public/assets/videos/depoimentos/DepoimentoSveneVanessa.mp4'
