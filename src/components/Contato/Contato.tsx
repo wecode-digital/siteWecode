@@ -94,22 +94,14 @@ export default function Contato() {
   };
 
   return (
-    <section className={styles.sectionContato} id='contato'>
-      <div className={styles.containerDados}>
-        <div className={styles.texts}>
-          <p className={styles.titleContact}>Contato</p>
-          <h1 className={styles.title}>Vamos <span>conversar!</span></h1>
-          <p className={styles.text}>
-            Preencha o formulário para que possamos falar com você ou entre em contato pelos canais abaixo.
-          </p>
-        </div>
-
-        <form method="post" onSubmit={handleSubmit} className="form_contato">
-          <div className={styles.group_form}>
+    <section id="contato">
+      <div>
+        <form onSubmit={handleSubmit} >
+          <div>
             <div>
               <label htmlFor="name">Nome*</label>
               <input
-                className={styles.items_form}
+                
                 name="name"
                 type="text"
                 id="name"
@@ -123,7 +115,7 @@ export default function Contato() {
             <div>
               <label htmlFor="enterprise">Empresa*</label>
               <input
-                className={styles.items_form}
+                
                 type="text"
                 id="enterprise"
                 name="enterprise"
@@ -137,49 +129,66 @@ export default function Contato() {
             <div>
               <label htmlFor="phone">Telefone*</label>
               <input
-                className={styles.items_form}
+                
                 inputMode="numeric"
                 type="tel"
                 id="phone"
                 name="phone"
+                required
                 value={contact.phone}
                 onChange={handleChange}
                 placeholder="(00) 00000-0000"
                 maxLength={15}
-                required
+                pattern="\(?\d{2}\)?\s?\d{4,5}-\d{4}"
               />
             </div>
 
             <div>
               <label htmlFor="email">E-mail*</label>
               <input
-                className={styles.items_form}
+                
                 name="email"
                 type="email"
                 id="email"
                 required
                 value={contact.email}
                 onChange={handleChange}
-                placeholder="Digite o seu melhor e-mail"
+                placeholder="Digite seu melhor e-mail"
+              />
+            </div>
+
+            <div style={{ display: "none" }}>
+              <input
+                type="text"
+                name="honeypot"
+                value={contact.honeypot}
+                onChange={handleChange}
+                autoComplete="off"
               />
             </div>
 
             <div>
               <label htmlFor="message">Sua mensagem*</label>
               <textarea
-                className={styles.items_form}
+                
                 name="message"
                 id="message"
                 required
                 value={contact.message}
                 onChange={handleChange}
                 placeholder="Escreva aqui sua mensagem"
-              />
+              ></textarea>
             </div>
 
-            <button className={styles.button} type="submit" disabled={isButtonDisabled}>
+            <button className={'submit-botao'} type="submit" disabled={isButtonDisabled}>
               {isButtonDisabled ? 'Enviando...' : 'Enviar'}
             </button>
+
+            {response.message && (
+              <p style={{ color: response.type === 'success' ? 'green' : 'red' }}>
+                {response.message}
+              </p>
+            )}
           </div>
         </form>
       </div>

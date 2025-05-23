@@ -5,6 +5,7 @@ import "./sass/styles.css";
 // import MyForm from "../formPost/index";
 import wecodeImg from "../../../../public/assets/images/home-generic-images/wecode-footer.png";
 import homeStyles from "@/app/page.module.scss";
+import Contato from "@/components/Contato/Contato";
 
 function FooterMob() {
   const [isMobile, setIsMobile] = React.useState(true);
@@ -45,7 +46,7 @@ function FooterMob() {
                   Preencha o formulário abaixo para entrar em contato, ou pelos
                   outros meios de comunicações abaixo.
                 </p>
-                {/* <MyForm /> */}
+                <Contato />
               </div>
             </div>
             <div className={"footer-container-links"}>
