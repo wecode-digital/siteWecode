@@ -94,10 +94,10 @@ export default function Contato() {
   };
 
   return (
-    <section id="contato">
+    <section id="contato" className={styles.contatoMain}>
       <div>
-        <form onSubmit={handleSubmit} >
-          <div>
+        <form onSubmit={handleSubmit} className={styles.contatoForm}>
+          <div className={styles.contatoFormGroup}>
             <div>
               <label htmlFor="name">Nome*</label>
               <input

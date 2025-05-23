@@ -30,7 +30,8 @@
       .title {
         font-size: $fontSize6;
         font-weight: $weight2;
-        > span {
+
+        >span {
           color: $color--brand-primary;
           font-weight: $weight5;
         }
@@ -48,12 +49,12 @@
     width: inherit;
     gap: 1.5rem;
 
-    > div {
+    >div {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
 
-      > label {
+      >label {
         color: $neutral-800;
         font-size: $fontSize2;
         font-style: normal;
@@ -101,5 +102,20 @@
   textarea.items_form {
     width: 100%;
     resize: vertical;
+  }
+}
+
+.contatoMain {
+  min-width: 100%;
+
+  .contatoForm {
+    // width: 100%;
+    display: flex;
+
+    .contatoFormGroup {
+      display: flex;
+      width: 142%;
+      flex-direction: column;
+    }
   }
 }
