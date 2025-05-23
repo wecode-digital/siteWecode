@@ -56,8 +56,28 @@ import arrowDireita from "../../../public/assets/svg/right-arrow.svg"
 import logoJb from "../../../public/assets/svg/play.svg"
 import logoStihl from "../../../public/assets/svg/play.svg"
 
+// Tipagem dos depoimentos
+type Testimonial = {
+  type?: string;
+  logo?: any;
+  testimonial: string;
+  people?: Array<{
+    id: string;
+    name: string;
+    position: string;
+    image: any;
+  }>;
+  name?: string;
+  position?: string;
+  image?: any;
+  video: {
+    horizontal: string;
+    vertical: string;
+  };
+};
+
 //Ordem dos depoimentos (Mais podem ser adicionados da mesma maneira)
-const testimonials = [
+const testimonials: Testimonial[] = [
   //  {
   //   type: 'double',
   //   logo: logoStihl,
