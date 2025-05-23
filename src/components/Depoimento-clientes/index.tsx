@@ -134,16 +134,16 @@ const testimonials: Testimonial[] = [
       vertical: alanBibi,
     }
   },
-  {
-    name: 'Priscila',
-    position: 'Supervisora de E-commerce da Anselmi',
-    image: priscilaAnselmiPhoto,
-    testimonial: '&quotCom certeza, o que a gente está colhendo hoje no nosso e-commerce é muito <span>fruto do que a Wecode fez pela gente</span>.&quot',
-    video: {
-      horizontal: priscilaAnselmi,
-      vertical: priscilaAnselmi,
-    }
-  },
+  // {
+  //   name: 'Priscila',
+  //   position: 'Supervisora de E-commerce da Anselmi',
+  //   image: priscilaAnselmiPhoto,
+  //   testimonial: '&quotCom certeza, o que a gente está colhendo hoje no nosso e-commerce é muito <span>fruto do que a Wecode fez pela gente</span>.&quot',
+  //   video: {
+  //     horizontal: priscilaAnselmi,
+  //     vertical: priscilaAnselmi,
+  //   }
+  // },
   {
     name: 'Liliam Mantovani',
     position: 'Gerente de Marketing da Keko',
@@ -154,46 +154,46 @@ const testimonials: Testimonial[] = [
       vertical: liliamKeko,
     }
   },
-  {
-    name: 'Felipe Farina',
-    position: 'Gerente de E-commerce da Carraro',
-    image: felipeFarina,
-    testimonial: '&quotEles nos ajudaram bastante no processo, desde o início. E seguem nos ajudando ainda hoje na parte de <span>melhorias e novos recursos</span> para ter, cada vez mais, uma <span>navegação melhor</span> do nosso consumidor.&quot',
-    video: {
-      horizontal: felipeHorizontal,
-      vertical: felipeVertical,
-    }
-  },
-  {
-    name: 'Priscila Baum',
-    position: 'Gerente de E-commerce da PICCADILLY',
-    image: priscilaBaum,
-    testimonial: '&quotA parceria com a Wecode foi assertiva. No primeiro ano, a gente já pôde notar um <span>crescimento do canal digital</span> e o trabalho continua crescendo, sempre em desenvolvimento, com todos os <span>times super integrados</span>.&quot',
-    video: {
-      horizontal: priscilaHorizontal,
-      vertical: priscilaVertical,
-    }
-  },
-  {
-    name: 'Giuliano Bettanin',
-    position: 'Gestor dos Canais Digitais da InBetta',
-    image: giulianoBettanin,
-    testimonial: '&quotA gente tem uma atenção especial, consegue conversar com os funcionários, tem uma <span>abertura</span> muito boa. Diria que temos um contato mais recorrente. Eles passam muita segurança no que falam e <span>é um parceiro que a gente pode contar</span>.&quot',
-    video: {
-      horizontal: giulianoHorizontal,
-      vertical: giulianoVertical,
-    }
-  },
-  {
-    name: 'Vínicius Martini',
-    position: 'Gerente de Marketing da Martiplast',
-    image: viniciusMartini,
-    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
-    video: {
-      horizontal: viniciusHorizontal,
-      vertical: viniciusVertical,
-    }
-  },
+  // {
+  //   name: 'Felipe Farina',
+  //   position: 'Gerente de E-commerce da Carraro',
+  //   image: felipeFarina,
+  //   testimonial: '&quotEles nos ajudaram bastante no processo, desde o início. E seguem nos ajudando ainda hoje na parte de <span>melhorias e novos recursos</span> para ter, cada vez mais, uma <span>navegação melhor</span> do nosso consumidor.&quot',
+  //   video: {
+  //     horizontal: felipeHorizontal,
+  //     vertical: felipeVertical,
+  //   }
+  // },
+  // {
+  //   name: 'Priscila Baum',
+  //   position: 'Gerente de E-commerce da PICCADILLY',
+  //   image: priscilaBaum,
+  //   testimonial: '&quotA parceria com a Wecode foi assertiva. No primeiro ano, a gente já pôde notar um <span>crescimento do canal digital</span> e o trabalho continua crescendo, sempre em desenvolvimento, com todos os <span>times super integrados</span>.&quot',
+  //   video: {
+  //     horizontal: priscilaHorizontal,
+  //     vertical: priscilaVertical,
+  //   }
+  // },
+  // {
+  //   name: 'Giuliano Bettanin',
+  //   position: 'Gestor dos Canais Digitais da InBetta',
+  //   image: giulianoBettanin,
+  //   testimonial: '&quotA gente tem uma atenção especial, consegue conversar com os funcionários, tem uma <span>abertura</span> muito boa. Diria que temos um contato mais recorrente. Eles passam muita segurança no que falam e <span>é um parceiro que a gente pode contar</span>.&quot',
+  //   video: {
+  //     horizontal: giulianoHorizontal,
+  //     vertical: giulianoVertical,
+  //   }
+  // // },
+  // {
+  //   name: 'Vínicius Martini',
+  //   position: 'Gerente de Marketing da Martiplast',
+  //   image: viniciusMartini,
+  //   testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
+  //   video: {
+  //     horizontal: viniciusHorizontal,
+  //     vertical: viniciusVertical,
+  //   }
+  // },
   {
     name: 'Sven Laure',
     position: 'Head of Marketing Systems & E-Commerce',
