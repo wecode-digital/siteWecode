@@ -1,7 +1,13 @@
 "use client"
 
 import React, { useState } from 'react';
-import styles from "./sass/styles.module.scss";
+
+declare global {
+  interface Window {
+    dataLayer?: Array<Record<string, any>>;
+  }
+}
+
 
 type ContactInfo = {
   name: string;
