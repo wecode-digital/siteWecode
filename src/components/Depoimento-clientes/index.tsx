@@ -13,7 +13,7 @@ import felipeFarina from "../../../public/assets/images/client-profile-pics/feli
 import priscilaBaum from "../../../public/assets/images/client-profile-pics/priscila-baum-photo.png";
 import giulianoBettanin from "../../../public/assets/images/client-profile-pics/giuliano-inbetta.png";
 import viniciusMartini from "../../../public/assets/images/client-profile-pics/vinicius-ou-photo.png";
-import alanRosanelli from "../../../public/assets/images/client-profile-pics/alan-bibi-photo.png"; 
+import alanRosanelli from "../../../public/assets/images/client-profile-pics/alan-bibi-photo.png";
 import priscilaAnselmiPhoto from "../../../public/assets/images/client-profile-pics/priscila-anselmi-photo.png"
 import liliamKekoPhoto from "../../../public/assets/images/client-profile-pics/liliam-keko-photo.png";
 import svenStihlPhoto from "../../../public/assets/images/client-profile-pics/sven-stihl-photo.png";
@@ -144,16 +144,16 @@ const testimonials: Testimonial[] = [
   //     vertical: priscilaAnselmi,
   //   }
   // },
-  {
-    name: 'Liliam Mantovani',
-    position: 'Gerente de Marketing da Keko',
-    image: liliamKekoPhoto,
-    testimonial: '&quotUma das coisas que eu mais gosto na Wecode é que eu acho que <span>eu nunca ouvi um não</span>.&quot',
-    video: {
-      horizontal: liliamKeko,
-      vertical: liliamKeko,
-    }
-  },
+  // {
+  //   name: 'Liliam Mantovani',
+  //   position: 'Gerente de Marketing da Keko',
+  //   image: liliamKekoPhoto,
+  //   testimonial: '&quotUma das coisas que eu mais gosto na Wecode é que eu acho que <span>eu nunca ouvi um não</span>.&quot',
+  //   video: {
+  //     horizontal: liliamKeko,
+  //     vertical: liliamKeko,
+  //   }
+  // },
   // {
   //   name: 'Felipe Farina',
   //   position: 'Gerente de E-commerce da Carraro',
@@ -174,16 +174,16 @@ const testimonials: Testimonial[] = [
   //     vertical: priscilaVertical,
   //   }
   // },
-  // {
-  //   name: 'Giuliano Bettanin',
-  //   position: 'Gestor dos Canais Digitais da InBetta',
-  //   image: giulianoBettanin,
-  //   testimonial: '&quotA gente tem uma atenção especial, consegue conversar com os funcionários, tem uma <span>abertura</span> muito boa. Diria que temos um contato mais recorrente. Eles passam muita segurança no que falam e <span>é um parceiro que a gente pode contar</span>.&quot',
-  //   video: {
-  //     horizontal: giulianoHorizontal,
-  //     vertical: giulianoVertical,
-  //   }
-  // // },
+  {
+    name: 'Giuliano Bettanin',
+    position: 'Gestor dos Canais Digitais da InBetta',
+    image: giulianoBettanin,
+    testimonial: '&quotA gente tem uma atenção especial, consegue conversar com os funcionários, tem uma <span>abertura</span> muito boa. Diria que temos um contato mais recorrente. Eles passam muita segurança no que falam e <span>é um parceiro que a gente pode contar</span>.&quot',
+    video: {
+      horizontal: giulianoHorizontal,
+      vertical: giulianoVertical,
+    }
+  },
   // {
   //   name: 'Vínicius Martini',
   //   position: 'Gerente de Marketing da Martiplast',
@@ -314,7 +314,7 @@ export const TestimonialSlider = () => {
                 ) : (
                   <Image src={testimonial?.image ?? ''} alt={testimonial?.name ?? ''} className={styles.testimonialImage} />
                 )
-              }
+                }
                 <div className={styles.testimonialNamePosition}>
                   <h3 className={styles.testimonialName}>{testimonial.name}</h3>
                   <p className={styles.testimonialPosition}>{testimonial.position}</p>
