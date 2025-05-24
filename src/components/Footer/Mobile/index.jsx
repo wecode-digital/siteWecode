@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import "./sass/styles.css";
+import Image from "next/image";
 // import MyForm from "../formPost/index";
 import wecodeImg from "../../../../public/assets/images/home-generic-images/wecode-footer.png";
 import homeStyles from "@/app/page.module.scss";
@@ -233,7 +234,7 @@ function FooterMob() {
             </div>
             <div className={"footer-final"}>
               <div className={"footer-final-container"}>
-                <img src={wecodeImg} alt="wecode imagem " />
+                <Image src={wecodeImg} alt="wecode imagem " />
                 <div>
                   <p className={"footer-final-text"}>
                     ©2024 Wecode Tecnologia para e-commerce ltda. Todos os
