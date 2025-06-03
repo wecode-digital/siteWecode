@@ -24,29 +24,21 @@ import djeniferJbPhoto from "../../../public/assets/images/client-profile-pics/l
 
 //Videos
 
+// Remove duplicate svenStihl import and standardize naming
 import felipeHorizontal from "../../../public/assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
 import felipeVertical from "../../../public/assets/videos/depoimentos/felipe-carraro-vertical.mp4";
-
 import priscilaHorizontal from "../../../public/assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
 import priscilaVertical from "../../../public/assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
-
 import giulianoHorizontal from "../../../public/assets/videos/depoimentos/giuliano-bettanin-horizontal.mp4";
 import giulianoVertical from "../../../public/assets/videos/depoimentos/giuliano-bettanin-vertical.mp4";
-
 import viniciusHorizontal from "../../../public/assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
 import viniciusVertical from "../../../public/assets/videos/depoimentos/vinicius-ou-vertical.mp4";
-
 import priscilaAnselmi from "../../../public/assets/videos/depoimentos/priscila-anselmi-depoimento.mp4";
-
 import liliamKeko from "../../../public/assets/videos/depoimentos/liliam-keko-depoimento.mp4";
-
 import alanBibi from "../../../public/assets/videos/depoimentos/alan-bibi-depoimento.mp4";
-
-import svenStihl from "../../../public/assets/videos/depoimentos/sven-vanessa-stihl.mp4";
-
+import svenVanessa from '../../../public/assets/videos/depoimentos/sven-vanessa-stihl.mp4';
 import ezequielJb from "../../../public/assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
-// import svenVanessa from '../../../public/assets/videos/depoimentos/DepoimentoSveneVanessa.mp4'
-import depoimentoJb from '../../../public/assets/videos/depoimentos/DepoimentoJBV2.mp4'
+import depoimentoJb from '../../../public/assets/videos/depoimentos/depoimento-jb-v2.mp4';
 
 //svg
 import playDepoimentos from "../../../public/assets/svg/play.svg"
@@ -78,52 +70,52 @@ type Testimonial = {
 
 //Ordem dos depoimentos (Mais podem ser adicionados da mesma maneira)
 const testimonials: Testimonial[] = [
-  //  {
-  //   type: 'double',
-  //   logo: logoStihl,
-  //   testimonial: '&quotDe 22 pra 23, <span>a gente cresceu mais de 100%</span> e isso é muito fruto desse trabalho feito a quatro mãos junto com a Wecode.&quot',
-  //   people: [
-  //     {
-  //       id: 'sven',
-  //       name: 'Sven Laure',
-  //       position: 'Head of Marketing Systems & E-Commerce',
-  //       image: svenStihlPhoto,
-  //     },
-  //     {
-  //       id: 'vanessa',
-  //       name: 'Vanessa Spall',
-  //       position: 'Analista de E-commerce',
-  //       image: vanessaStihlPhoto,
-  //     }
-  //   ],
-  //   video: {
-  //     horizontal: svenVanessa,
-  //     vertical: svenVanessa,
-  //   }
-  // },
-  // {
-  //   type: 'double',
-  //   logo: logoJb,
-  //   testimonial: '&quotLorem Ipsum is simply dummy text of the printing and typesetting industry.&quot',
-  //   people: [
-  //     {
-  //       id: 'ezequiel',
-  //       name: 'Ezequiel Fisher',
-  //       position: 'Coordenador de TI',
-  //       image: ezequielJbPhoto,
-  //     },
-  //     {
-  //       id: 'djenifer',
-  //       name: 'Djenifer',
-  //       position: 'Coordenadora de E-commerce',
-  //       image: djeniferJbPhoto,
-  //     }
-  //   ],
-  //   video: {
-  //     horizontal: depoimentoJb,
-  //     vertical: depoimentoJb
-  //   }
-  // },
+   {
+    type: 'double',
+    logo: logoStihl,
+    testimonial: '&quotDe 22 pra 23, <span>a gente cresceu mais de 100%</span> e isso é muito fruto desse trabalho feito a quatro mãos junto com a Wecode.&quot',
+    people: [
+      {
+        id: 'sven',
+        name: 'Sven Laure',
+        position: 'Head of Marketing Systems & E-Commerce',
+        image: svenStihlPhoto,
+      },
+      {
+        id: 'vanessa',
+        name: 'Vanessa Spall',
+        position: 'Analista de E-commerce',
+        image: vanessaStihlPhoto,
+      }
+    ],
+    video: {
+      horizontal: svenVanessa,
+      vertical: svenVanessa,
+    }
+  },
+  {
+    type: 'double',
+    logo: logoJb,
+    testimonial: '&quotLorem Ipsum is simply dummy text of the printing and typesetting industry.&quot',
+    people: [
+      {
+        id: 'ezequiel',
+        name: 'Ezequiel Fisher',
+        position: 'Coordenador de TI',
+        image: ezequielJbPhoto,
+      },
+      {
+        id: 'djenifer',
+        name: 'Djenifer',
+        position: 'Coordenadora de E-commerce',
+        image: djeniferJbPhoto,
+      }
+    ],
+    video: {
+      horizontal: depoimentoJb,
+      vertical: depoimentoJb
+    }
+  },
   {
     name: 'Alan Rosanelli',
     position: 'Gerente de Omnicanalidade da Bibi',
@@ -134,46 +126,46 @@ const testimonials: Testimonial[] = [
       vertical: alanBibi,
     }
   },
-  // {
-  //   name: 'Priscila',
-  //   position: 'Supervisora de E-commerce da Anselmi',
-  //   image: priscilaAnselmiPhoto,
-  //   testimonial: '&quotCom certeza, o que a gente está colhendo hoje no nosso e-commerce é muito <span>fruto do que a Wecode fez pela gente</span>.&quot',
-  //   video: {
-  //     horizontal: priscilaAnselmi,
-  //     vertical: priscilaAnselmi,
-  //   }
-  // },
-  // {
-  //   name: 'Liliam Mantovani',
-  //   position: 'Gerente de Marketing da Keko',
-  //   image: liliamKekoPhoto,
-  //   testimonial: '&quotUma das coisas que eu mais gosto na Wecode é que eu acho que <span>eu nunca ouvi um não</span>.&quot',
-  //   video: {
-  //     horizontal: liliamKeko,
-  //     vertical: liliamKeko,
-  //   }
-  // },
-  // {
-  //   name: 'Felipe Farina',
-  //   position: 'Gerente de E-commerce da Carraro',
-  //   image: felipeFarina,
-  //   testimonial: '&quotEles nos ajudaram bastante no processo, desde o início. E seguem nos ajudando ainda hoje na parte de <span>melhorias e novos recursos</span> para ter, cada vez mais, uma <span>navegação melhor</span> do nosso consumidor.&quot',
-  //   video: {
-  //     horizontal: felipeHorizontal,
-  //     vertical: felipeVertical,
-  //   }
-  // },
-  // {
-  //   name: 'Priscila Baum',
-  //   position: 'Gerente de E-commerce da PICCADILLY',
-  //   image: priscilaBaum,
-  //   testimonial: '&quotA parceria com a Wecode foi assertiva. No primeiro ano, a gente já pôde notar um <span>crescimento do canal digital</span> e o trabalho continua crescendo, sempre em desenvolvimento, com todos os <span>times super integrados</span>.&quot',
-  //   video: {
-  //     horizontal: priscilaHorizontal,
-  //     vertical: priscilaVertical,
-  //   }
-  // },
+  {
+    name: 'Priscila',
+    position: 'Supervisora de E-commerce da Anselmi',
+    image: priscilaAnselmiPhoto,
+    testimonial: '&quotCom certeza, o que a gente está colhendo hoje no nosso e-commerce é muito <span>fruto do que a Wecode fez pela gente</span>.&quot',
+    video: {
+      horizontal: priscilaAnselmi,
+      vertical: priscilaAnselmi,
+    }
+  },
+  {
+    name: 'Liliam Mantovani',
+    position: 'Gerente de Marketing da Keko',
+    image: liliamKekoPhoto,
+    testimonial: '&quotUma das coisas que eu mais gosto na Wecode é que eu acho que <span>eu nunca ouvi um não</span>.&quot',
+    video: {
+      horizontal: liliamKeko,
+      vertical: liliamKeko,
+    }
+  },
+  {
+    name: 'Felipe Farina',
+    position: 'Gerente de E-commerce da Carraro',
+    image: felipeFarina,
+    testimonial: '&quotEles nos ajudaram bastante no processo, desde o início. E seguem nos ajudando ainda hoje na parte de <span>melhorias e novos recursos</span> para ter, cada vez mais, uma <span>navegação melhor</span> do nosso consumidor.&quot',
+    video: {
+      horizontal: felipeHorizontal,
+      vertical: felipeVertical,
+    }
+  },
+  {
+    name: 'Priscila Baum',
+    position: 'Gerente de E-commerce da PICCADILLY',
+    image: priscilaBaum,
+    testimonial: '&quotA parceria com a Wecode foi assertiva. No primeiro ano, a gente já pôde notar um <span>crescimento do canal digital</span> e o trabalho continua crescendo, sempre em desenvolvimento, com todos os <span>times super integrados</span>.&quot',
+    video: {
+      horizontal: priscilaHorizontal,
+      vertical: priscilaVertical,
+    }
+  },
   {
     name: 'Giuliano Bettanin',
     position: 'Gestor dos Canais Digitais da InBetta',
@@ -184,26 +176,26 @@ const testimonials: Testimonial[] = [
       vertical: giulianoVertical,
     }
   },
-  // {
-  //   name: 'Vínicius Martini',
-  //   position: 'Gerente de Marketing da Martiplast',
-  //   image: viniciusMartini,
-  //   testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
-  //   video: {
-  //     horizontal: viniciusHorizontal,
-  //     vertical: viniciusVertical,
-  //   }
-  // },
   {
-    name: 'Sven Laure',
-    position: 'Head of Marketing Systems & E-Commerce',
-    image: svenStihlPhoto,
-    testimonial: '&quotAtrás da Wecode, há um <span>grande time</span> de pessoas excelentes que, em todos os momentos, com muito entusiasmo, <span>abraçaram esse projeto</span> e deram o máximo para fazer ele acontecer.&quot',
+    name: 'Vínicius Martini',
+    position: 'Gerente de Marketing da Martiplast',
+    image: viniciusMartini,
+    testimonial: '&quotO parceiro veio, nos ouviu, entendeu o que era importante e, através dos seus recursos, nos entregou um projeto que, hoje, <span>é uma extensão da nossa marca</span>. É um espaço dentro do mundo digital onde a gente pode mostrar os nossos produtos com qualidade, pode <span>transmitir a nossa mensagem</span>.&quot',
     video: {
-      horizontal: svenStihl,
-      vertical: svenStihl,
+      horizontal: viniciusHorizontal,
+      vertical: viniciusVertical,
     }
   },
+  // {
+  //   name: 'Sven Laure',
+  //   position: 'Head of Marketing Systems & E-Commerce',
+  //   image: svenStihlPhoto,
+  //   testimonial: '&quotAtrás da Wecode, há um <span>grande time</span> de pessoas excelentes que, em todos os momentos, com muito entusiasmo, <span>abraçaram esse projeto</span> e deram o máximo para fazer ele acontecer.&quot',
+  //   video: {
+  //     horizontal: svenStihl,
+  //     vertical: svenStihl,
+  //   }
+  // },
   {
     name: 'Ezequiel Fischer',
     position: 'Coordenador de TI',
