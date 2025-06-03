@@ -7,13 +7,6 @@ import MenuMob from "../../Menu/Mobile";
 function HeaderMob() {
   //scroll com mudança do header
   const [scrolling, setScrolling] = useState(false);
-  const [isMobile, setIsMobile] = React.useState(true);
-
-  React.useEffect(() => {
-    if (window && window.innerWidth >= 1024) {
-      setIsMobile(false);
-    }
-  }, []);
 
   function handleScrollToResults(el:string) {
     const domEl = document.querySelector(el);
@@ -43,7 +36,7 @@ function HeaderMob() {
 
   return (
     <>
-      {isMobile ? (
+      
         <header>
           <div
             className={
@@ -103,9 +96,6 @@ function HeaderMob() {
             </div>
           </div>
         </header>
-      ) : (
-        <></>
-      )}
     </>
   );
 }

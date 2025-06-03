@@ -63,7 +63,9 @@
       }
     }
 
-    input,
+    input:focus {
+      outline: none;
+    }
     textarea:focus {
       outline: none;
     }
@@ -118,9 +120,10 @@
       flex-direction: column;
     }
   }
-}
-
-input,
-textarea {
-  font-size: 16px;
+  input{
+    font-size: 16px;
+  }
+  textarea {
+    font-size: 16px;
+  }
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from "react";
+import React from "react";
 import "./sass/styles.css";
 import Image from "next/image";
 // import MyForm from "../formPost/index";
@@ -9,13 +9,6 @@ import homeStyles from "@/app/page.module.scss";
 import Contato from "@/components/Contato/Contato";
 
 function FooterMob() {
-  const [isMobile, setIsMobile] = React.useState(true);
-
-  useEffect(() => {
-    if (window && window.innerWidth >= 1024) {
-      setIsMobile(false);
-    }
-  }, []);
 
   function handleScrollToSection(selector, offset = 80) {
     const section = document.querySelector(selector);
@@ -29,8 +22,6 @@ function FooterMob() {
   }
 
   return (
-    <>
-      {isMobile ? (
         <footer>
           <div className={"footer-container"}>
             <div className={"footer-container-form-bg"}>
@@ -249,10 +240,6 @@ function FooterMob() {
             </div>
           </div>
         </footer>
-      ) : (
-        <></>
-      )}
-    </>
   );
 }
 
