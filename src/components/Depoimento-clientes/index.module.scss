@@ -49,20 +49,24 @@
 .testimonyMainContainer {
   :global(.slick-track) {
     display: flex;
-    gap: 2rem;
+    // gap: 2rem;
   }
 
   :global(.slick-slider) {
     position: relative;
     display: flex;
-    gap: 2rem;
+    // gap: 2rem;
   }
 
   :global(.slick-slide) {
     transition: all 0.3s ease;
-    // opacity: 0.25;
-    transform: scale(0.85);
+    // transform: scale(0.85);
     filter: blur(2px);
+
+    >div {
+      display: flex;
+      width: 100%;
+    }
   }
 
   :global(.slick-center) {
@@ -106,6 +110,7 @@
 
 
 .testimonialSlide {
+  // margin-inline: .5rem;
 
   img {
     max-width: 50px;
@@ -119,18 +124,46 @@
     border-radius: 10px;
     gap: 1rem;
     margin-bottom: 2rem;
-    height: 345px;
+    // height: 345px;
+    height: fit-content;
     justify-content: center;
+    margin-inline: .5rem;
+    // @media (max-width:1008px){
 
-    @media screen and (min-width: 1008px) and (max-width: 1200px) {
-      height: 420px;
+    // }
+
+    // @media screen and (min-width: 1008px) and (max-width: 1200px) {
+    //   height: 420px;
+    // }
+
+    // @media screen and (min-width: 1201px) {
+    //   padding: 48px 52px;
+    //   margin-bottom: 80px;
+    //   // height: 355px;
+    //   justify-content: center;
+    // }
+
+    .testimonialNamePosition {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
     }
 
-    @media screen and (min-width: 1201px) {
-      padding: 48px 52px;
-      margin-bottom: 80px;
-      height: 355px;
-      justify-content: center;
+    .testimonialName {
+      color: $text;
+      font-family: $fontFamily;
+      font-size: 1rem;
+      margin: unset;
+      font-weight: 500;
+    }
+
+    .testimonialPosition {
+      color: $text;
+      font-family: $fontFamily;
+      font-size: .875rem;
+      margin: unset;
+      font-weight: 300;
     }
 
     .testimonialProfile {
@@ -138,27 +171,6 @@
       align-items: center;
       gap: .75rem;
 
-      .testimonialNamePosition {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-
-        .testimonialName {
-          color: $text;
-          font-family: $fontFamily;
-          font-size: 1rem;
-          margin: unset;
-          font-weight: 500;
-        }
-
-        .testimonialPosition {
-          color: $text;
-          font-family: $fontFamily;
-          font-size: .875rem;
-          margin: unset;
-          font-weight: 300;
-        }
-      }
 
       .testimonialImage {
         max-width: 60px;
@@ -170,8 +182,9 @@
       }
 
       .testimonialLogoImage {
-        max-width: 60px;
+        max-width: 50px;
         height: auto;
+        border-radius: 99px;
       }
     }
 
@@ -241,7 +254,7 @@
             background: $dark-main-color;
             width: 200px;
 
-            img{
+            img {
               display: block !important;
             }
 
@@ -253,7 +266,7 @@
             }
           }
 
-          img{
+          img {
             display: none !important;
           }
 
@@ -316,63 +329,56 @@
 .modalContent {
   position: relative;
   border-radius: 8px;
-  max-width: 800px;
   z-index: 1001;
-
-  width: 100%;
   border-radius: 8px;
+  width: fit-content;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
 
   .modalContentInner {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     position: relative;
     justify-content: center;
     z-index: 1001;
-    aspect-ratio: 9 / 16;
+    // aspect-ratio: 9 / 16;
     max-height: 100%;
+    width: fit-content;
+    height: fit-content;
 
-    @media screen and (min-width: 1008px) {
-      aspect-ratio: 16 / 9;
-    }
+    // @media screen and (min-width: 1008px) {
+    //   aspect-ratio: 16 / 9;
+    // }
 
     .modalCloseButton {
-      top: 140px;
       position: absolute;
-      right: 78px;
+      top: 5px;
+      right: 5px;
+      z-index: 999;
       border-radius: 4px;
       border: none;
       background: none;
-      z-index: 999;
-    }
-
-    @media screen and (min-width: 1008px) {
-      .modal-close-button {
-        top: 4px;
-        position: absolute;
-        right: 4px;
-        border-radius: 4px;
-        border: none;
-        background: none;
-        z-index: 999;
-
-        img:hover {
-          filter: opacity(0.8);
-          cursor: pointer;
-        }
-      }
+      cursor: pointer;
     }
 
     .modalNavigation {
       position: relative;
-      width: 65%;
+      width: 65vw;
       border-radius: 10px;
       aspect-ratio: 9 / 16;
 
       @media screen and (min-width: 1008px) {
-        width: 100%;
+        // width: 100%;
         aspect-ratio: 16 / 9;
       }
+    }
+
+    .verticalVideoDesk {
+      aspect-ratio: 22/39;
+      width: auto;
+      height: 90vh;
     }
 
     .modalArrowLeft {
@@ -575,4 +581,54 @@
       opacity: 1;
     }
   }
+}
+
+.testimonialContentSingle {
+  .testimonialNamePosition {
+    padding-top: .5rem;
+    gap: .5rem !important;
+  }
+}
+
+.testimonialContentDouble {
+  .testimonialProfile {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem !important;
+
+  }
+
+  .testimonialLogo {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .testimonialLogos {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .testimonialLogo2 {
+    position: relative;
+    z-index: 1;
+    left: -15%;
+  }
+
+  .iconNameWrap {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+}
+
+.testimonialNamePosition {
+  padding-bottom: .75rem;
+}
+
+.testimonialDescriptionContent {
+  padding-bottom: 1rem;
 }

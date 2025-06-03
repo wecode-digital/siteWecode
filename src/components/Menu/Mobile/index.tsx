@@ -136,8 +136,8 @@ function MenuMob() {
                 <path
                   d="M13 13.4678L1 1.46777M13 1.46777L1 13.4678"
                   stroke="white"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
