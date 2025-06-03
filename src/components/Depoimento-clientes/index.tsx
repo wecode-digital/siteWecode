@@ -23,22 +23,20 @@ import djeniferJbPhoto from "../../../public/assets/images/client-profile-pics/l
 
 
 //Videos
-
-// Remove duplicate svenStihl import and standardize naming
-import felipeHorizontal from "../../../public/assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
-import felipeVertical from "../../../public/assets/videos/depoimentos/felipe-carraro-vertical.mp4";
-import priscilaHorizontal from "../../../public/assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
-import priscilaVertical from "../../../public/assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
-import giulianoHorizontal from "../../../public/assets/videos/depoimentos/giuliano-bettanin-horizontal.mp4";
-import giulianoVertical from "../../../public/assets/videos/depoimentos/giuliano-bettanin-vertical.mp4";
-import viniciusHorizontal from "../../../public/assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
-import viniciusVertical from "../../../public/assets/videos/depoimentos/vinicius-ou-vertical.mp4";
-import priscilaAnselmi from "../../../public/assets/videos/depoimentos/priscila-anselmi-depoimento.mp4";
-import liliamKeko from "../../../public/assets/videos/depoimentos/liliam-keko-depoimento.mp4";
-import alanBibi from "../../../public/assets/videos/depoimentos/alan-bibi-depoimento.mp4";
-import svenVanessa from '../../../public/assets/videos/depoimentos/sven-vanessa-stihl.mp4';
-import ezequielJb from "../../../public/assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
-import depoimentoJb from '../../../public/assets/videos/depoimentos/depoimento-jb-v2.mp4';
+// import felipeHorizontal from "../../../public/assets/videos/depoimentos/felipe-carraro-horizontal.mp4";
+// import felipeVertical from "../../../public/assets/videos/depoimentos/felipe-carraro-vertical.mp4";
+// import priscilaHorizontal from "../../../public/assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4";
+// import priscilaVertical from "../../../public/assets/videos/depoimentos/priscila-piccaddily-vertical.mp4";
+// import giulianoHorizontal from "../../../public/assets/videos/depoimentos/giuliano-bettanin-horizontal.mp4";
+// import giulianoVertical from "../../../public/assets/videos/depoimentos/giuliano-bettanin-vertical.mp4";
+// import viniciusHorizontal from "../../../public/assets/videos/depoimentos/vinicius-ou-horizontal.mp4";
+// import viniciusVertical from "../../../public/assets/videos/depoimentos/vinicius-ou-vertical.mp4";
+// import priscilaAnselmi from "../../../public/assets/videos/depoimentos/priscila-anselmi-depoimento.mp4";
+// import liliamKeko from "../../../public/assets/videos/depoimentos/liliam-keko-depoimento.mp4";
+// import alanBibi from "../../../public/assets/videos/depoimentos/alan-bibi-depoimento.mp4";
+// import svenVanessa from '../../../public/assets/videos/depoimentos/sven-vanessa-stihl.mp4';
+// import ezequielJb from "../../../public/assets/videos/depoimentos/ezequiel-jorgebischoff.mp4";
+// import depoimentoJb from '../../../public/assets/videos/depoimentos/depoimento-jb-v2.mp4';
 
 //svg
 import playDepoimentos from "../../../public/assets/svg/play.svg"
@@ -48,6 +46,20 @@ import arrowDireita from "../../../public/assets/svg/right-arrow.svg"
 import logoJb from "../../../public/assets/svg/play.svg"
 import logoStihl from "../../../public/assets/svg/play.svg"
 
+const alanBibi='/assets/videos/depoimentos/alan-bibi-depoimento.mp4'
+const felipeHorizontal = '/assets/videos/depoimentos/felipe-carraro-horizontal.mp4';
+const felipeVertical = '/assets/videos/depoimentos/felipe-carraro-vertical.mp4';
+const priscilaHorizontal = '/assets/videos/depoimentos/priscila-piccaddily-horizontal.mp4';
+const priscilaVertical = '/assets/videos/depoimentos/priscila-piccaddily-vertical.mp4';
+const giulianoHorizontal = '/assets/videos/depoimentos/giuliano-bettanin-horizontal.mp4';
+const giulianoVertical = '/assets/videos/depoimentos/giuliano-bettanin-vertical.mp4';
+const viniciusHorizontal = '/assets/videos/depoimentos/vinicius-ou-horizontal.mp4';
+const viniciusVertical = '/assets/videos/depoimentos/vinicius-ou-vertical.mp4';
+const priscilaAnselmi = '/assets/videos/depoimentos/priscila-anselmi-depoimento.mp4';
+const liliamKeko = '/assets/videos/depoimentos/liliam-keko-depoimento.mp4';
+const svenVanessa = '/assets/videos/depoimentos/sven-vanessa-stihl.mp4';
+const ezequielJb = '/assets/videos/depoimentos/ezequiel-jorgebischoff.mp4';
+const depoimentoJb = '/assets/videos/depoimentos/depoimento-jb-v2.mp4';
 // Tipagem dos depoimentos
 type Testimonial = {
   type?: string;
