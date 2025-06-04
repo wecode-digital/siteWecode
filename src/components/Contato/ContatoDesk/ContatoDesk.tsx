@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-
+import styles from "./sass/styles.module.scss";
 declare global {
   interface Window {
     dataLayer?: Array<Record<string, any>>;
@@ -100,7 +100,7 @@ export default function ContatoDesk() {
     <section id="contato">
       <div>
         <form onSubmit={handleSubmit} >
-          <div>
+          <div className={styles.contatoFormGroup}>
             <div>
               <label htmlFor="name">Nome*</label>
               <input

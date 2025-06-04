@@ -3,6 +3,7 @@
 .testimonyMainContainer {
   overflow: hidden;
   margin-inline: -20px;
+  padding-bottom: 2rem;
   background: $text-contrast;
 }
 
@@ -106,6 +107,22 @@
     content: url("/assets/svg/right-arrow.svg");
     display: block;
   }
+
+  :global(.slick-dots){
+    li{
+      margin: 0 !important;
+       button::before{
+        color: $dark-main-color !important;
+        opacity: .2;
+      }
+    }
+    :global(.slick-active){
+      button::before{
+        color: $light-main-color !important;
+        opacity: 1;
+      }
+    }
+  }
 }
 
 
@@ -123,7 +140,7 @@
     padding: 20px;
     border-radius: 10px;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     // height: 345px;
     height: fit-content;
     justify-content: center;
@@ -595,7 +612,7 @@
     display: flex;
     flex-direction: column;
     gap: .5rem !important;
-
+    align-items: flex-start !important;
   }
 
   .testimonialLogo {
