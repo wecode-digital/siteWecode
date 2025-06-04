@@ -291,26 +291,6 @@
   }
 }
 
-.slick-slide {
-  transition: all 0.5s ease;
-}
-
-.slick-center .testimonialContent {
-  transform: scale(1);
-}
-
-.slick-slide:not(.slick-center) {
-  opacity: 1;
-  filter: blur(3px);
-  transform: scale(0.9);
-
-  @media screen and (min-width: 1008px) {
-    opacity: 1;
-    filter: blur(3px);
-    transform: scale(.75);
-  }
-}
-
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -644,6 +624,8 @@
 }
 
 .testimonyMainContainer {
+  // width: 100%;
+
   :global(.slick-slider) {
     // position: relative;
     // height: 100% !important;
@@ -692,5 +674,25 @@
     opacity: 1;
     transform: scale(1) !important;
     filter: none !important;
+  }
+
+  :global(.slick-slide) {
+    transition: all 0.5s ease;
+  }
+
+  :global(.slick-center) .testimonialContent {
+    transform: scale(1);
+  }
+
+  :global(.slick-slide):not(:global(.slick-center)) {
+    opacity: 1;
+    filter: blur(3px);
+    transform: scale(0.9);
+
+    @media screen and (min-width: 1008px) {
+      opacity: 1;
+      filter: blur(3px);
+      transform: scale(.75);
+    }
   }
 }

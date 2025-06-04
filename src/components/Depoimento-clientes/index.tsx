@@ -308,7 +308,7 @@ export const TestimonialSlider = () => {
                       <h3 className={styles.testimonialName}>{testimonial?.people && testimonial?.people[0]?.name} e {testimonial?.people && testimonial?.people[1]?.name}</h3>
                     </div>
                     <div className={styles.testimonialNamePosition}>
-                      <p className={styles.testimonialPosition}>{testimonial?.people && testimonial?.people[0]?.position} e {testimonial?.people && testimonial?.people[0]?.position}</p>
+                      <p className={styles.testimonialPosition}>{testimonial?.people && testimonial?.people[0]?.position} e {testimonial?.people && testimonial?.people[1]?.position}</p>
                     </div>
                   </div>
                   <div className={styles.testimonialDescription}>
