@@ -30,7 +30,7 @@ function MenuMob() {
   }, []);
 
   const handleScrollToSection = (selector, offset = 60) => {
-    console.log('selector',selector);
+    console.log('selector', selector);
     if (typeof document !== 'undefined') {
       const section = document.querySelector(selector);
       if (section) {
@@ -78,6 +78,7 @@ function MenuMob() {
           <div className={"menu-header"}>
             <p
               className={"link-home"}
+              onClick={() => { SetOpenMenu(!OpenMenu) }}
             >
               <svg
                 width="110"
@@ -121,12 +122,13 @@ function MenuMob() {
               </svg>
             </p>
             <div
+              className={"botao-fechar"}
               onClick={() => {
                 SetOpenMenu(false);
               }}
             >
               <svg
-                className={"botao-fechar"}
+
                 width="14"
                 height="14"
                 viewBox="0 0 14 14"
@@ -266,12 +268,13 @@ function MenuMob() {
         </div>
       ) : (
         <div
+          className={"botao-menu"}
+
           onClick={() => {
             SetOpenMenu(true);
           }}
         >
           <svg
-            className={"botao-menu"}
             width="20"
             height="16"
             viewBox="0 0 20 16"

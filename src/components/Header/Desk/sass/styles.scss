@@ -12,6 +12,7 @@
   transition: top 0.5s ease;
   width: 100%;
   margin: auto;
+
   .headercontainer-desk-layout {
     display: flex;
     justify-content: space-between;
@@ -20,11 +21,14 @@
     border-radius: 10px;
     background: #fff;
     width: 80vw;
-    padding-block: 10px;
+    padding-block: 12px;
+
     margin: auto;
+
     @media screen and (min-width: 1500px) {
       width: 60vw;
     }
+
     svg {
       width: 140px;
       height: auto;
@@ -41,6 +45,7 @@
   z-index: 5;
   width: 100%;
   padding-block: 10px;
+
   .headercontainer-desk-layout {
     display: flex;
     justify-content: space-between;
@@ -51,9 +56,12 @@
     background: #fff;
     width: 80vw;
     margin: auto;
+    padding-block: 12px;
+
     @media screen and (min-width: 1500px) {
       width: 60vw;
     }
+
     svg {
       width: 140px;
       height: auto;
@@ -86,6 +94,7 @@
   font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
+
   &:hover {
     text-decoration: underline;
     color: $light-main-color;
