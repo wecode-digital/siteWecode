@@ -176,7 +176,7 @@ export default function HomeContent({isMobile}: { isMobile: boolean }) {
               </p>
             </div>
           </div>
-          {/* <TestimonialSlider /> */}
+          <TestimonialSlider />
           <div className={styles.aboutUsMaster}>
             <div className={styles.aboutUs}>
               <div className={styles.aboutUsContainer}>

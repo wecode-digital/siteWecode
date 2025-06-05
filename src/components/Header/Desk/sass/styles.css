@@ -20,10 +20,10 @@
     -ms-flex-align: center;
     align-items: center;
     padding-inline: 30px;
+    padding-block: 12px;
     border-radius: 10px;
     background: #fff;
     width: 80vw;
-    padding-block: 10px;
     margin: auto; }
     @media screen and (min-width: 1500px) {
       .header-container-desk .headercontainer-desk-layout {
@@ -54,6 +54,7 @@
     -ms-flex-align: center;
     align-items: center;
     padding-inline: 30px;
+    padding-block: 12px;
     -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;

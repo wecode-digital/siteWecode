@@ -116,8 +116,9 @@
 
     .contatoFormGroup {
       display: flex;
-      width: 142%;
+      width: 100%;
       flex-direction: column;
+      gap: .5rem;
     }
   }
   input{

@@ -31,7 +31,8 @@
     border: none;
     color: #8a8a8a;
     width: fit-content;
-    margin-inline: 20px;
+    margin: 0 auto 0 0;
+    padding-block: 1rem;
   }
 
   .homeParagraph {
@@ -47,7 +48,8 @@
   .homeParagraphHelp {
     @include padrao;
     font-weight: 300;
-    font-size: 0.875rem
+    font-size: 0.875rem;
+    padding-bottom: 1rem;
   }
 
   .lightBackgroundQuote {
@@ -80,13 +82,14 @@
     color: $text-contrast;
     gap: 4px;
     text-decoration: none;
+    width: fit-content !important;
   }
 
   .firstFold {
     position: sticky;
     top: 0;
     z-index: -1;
-    padding-top: 10vh;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,6 +119,11 @@
       margin-block: 1.5rem 1rem;
       margin-inline: 20px;
       font-size: 1.9rem;
+    }
+
+    .tag {
+      padding-left: 20px;
+      padding-bottom: 0;
     }
   }
 
@@ -164,7 +172,7 @@
     padding-top: 2rem;
 
     .blockTitle {
-      margin-block: 1.5rem 1rem;
+      margin-block: 0 1rem;
     }
 
     .homeParagraph {
@@ -185,23 +193,23 @@
     margin-inline: $globalMarginMob;
     background: #fff;
 
-    .tag {
-      margin: 0;
-      padding: 30px 0 0;
-    }
+    // .tag {
+    //   margin: 0;
+    //   padding: 30px 0 0;
+    // }
 
     .blockTitle {
-      margin-block: 10px 15px;
+      margin-block: 0 15px;
     }
   }
 
   .testimony {
     margin-bottom: 32px;
 
-    .tag {
-      text-align: center;
-      margin: auto;
-    }
+    // .tag {
+    //   text-align: center;
+    //   margin: auto;
+    // }
 
     .block-title {
       text-align: center;
@@ -367,11 +375,6 @@
     background: $background;
     padding-bottom: 20px;
 
-    .tag {
-      margin: 0 20px 4px;
-      padding-top: 32px;
-    }
-
     .blockTitle {
       margin-block: 0;
       margin-inline: 20px;
@@ -421,12 +424,17 @@
         font-size: 0.875rem;
       }
     }
+   .tag {
+      padding-left: 20px;
+      // padding-bottom: 0;
+    }
   }
 
   .conectingImage {
     width: 100%;
   }
 }
+
 //desk
 @media screen and (min-width: 1024px) {
   .homeContainerDesk {
@@ -457,16 +465,16 @@
       @include padrao;
       font-size: 0.75rem;
       font-weight: 500;
-      padding: 0.5rem 0.75rem;
       border: none;
       color: #8a8a8a;
       width: fit-content;
-      margin-inline: 20px;
+      margin: 2rem auto;
     }
 
     .homeParagraph {
       @include padrao;
       font-size: 0.875rem;
+      margin-bottom: 1rem;
 
       i {
         font-size: 1.25rem;
@@ -474,7 +482,7 @@
       }
     }
 
-     .homeParagraphHelp {
+    .homeParagraphHelp {
       font-family: "Raleway", serif;
       font-style: normal;
       font-weight: 300;
@@ -505,7 +513,7 @@
       font-size: 1rem;
       background: $light-main-color;
       margin-inline: auto;
-      width: 80px;
+      width: fit-content !important;
       display: flex;
       padding: 12px 40px;
       border-radius: 8px;
@@ -589,10 +597,8 @@
       }
 
       .tag {
-        text-align: center;
-        width: auto;
-        margin-bottom: 0;
-        padding-bottom: 0;
+        width: fit-content;
+        margin-inline: auto;
       }
 
       .knowMoreLink {
@@ -908,12 +914,6 @@
       padding-top: 40px;
       padding-bottom: 20px;
 
-      .tag {
-        margin: 0 20px 4px;
-        padding-top: 32px;
-        margin: auto;
-      }
-
       .blockTitle {
         margin-block: 0;
         margin-inline: 20px;
@@ -946,7 +946,7 @@
         padding-left: 56px;
         transition: all 0.5s ease-in-out;
         padding-block: 0;
-        max-height: 230px;
+        padding: 1.5rem 2rem;
 
         .metodologyContainerText {
           @media screen and (max-width: 1350px) {
@@ -1005,8 +1005,8 @@
       }
 
       .methodologyCardSecondRow {
-        padding: 30px 25px;
-        max-width: 585px;
+        padding: 1.5rem 2rem;
+        max-width: 510%;
         transition: all 0.5s ease-in;
         height: fit-content;
 
@@ -1087,6 +1087,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          // padding-block: 1rem;
         }
 
         &Title {
