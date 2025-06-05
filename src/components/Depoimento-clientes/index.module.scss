@@ -630,11 +630,7 @@
     // position: relative;
     // height: 100% !important;
     // display: flex !important;
-    height: 420px !important;
-
-    @media (min-width: 1008px) {
-      height: 330px !important;
-    }
+    height: fit-content !important;
   }
 
   :global(.slick-list) {
@@ -668,6 +664,28 @@
     height: 100% !important;
     box-sizing: border-box;
     // display: flex !important;
+     min-height: 330px !important;
+    height: fit-content;
+
+    // @media (max-width: 1008px) {
+    //   margin-inline: -20px;
+    // }
+
+    @media (min-width: 1008px) {
+      min-height: 330px !important;
+    }
+
+    @media (min-width: 1200px) {
+      min-height: 330px !important;
+    }
+
+    @media (min-width: 1400px) {
+      min-height: 300px !important;
+    }
+
+    @media (min-width: 1600px) {
+      min-height: 300px !important;
+    }
   }
 
   :global(.slick-center) {
