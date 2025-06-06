@@ -9,7 +9,7 @@ yarn dev
 # or
 yarn dev 
 # or
-pnpm dev
+pnpm dev 
 # or
 bun dev
 ```
