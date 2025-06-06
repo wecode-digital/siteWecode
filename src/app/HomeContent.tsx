@@ -15,10 +15,10 @@ import CardContainer from "@/components/CardContainer";
 
 import "@/components/svgs/Svgs";
 //@ts-ignore
-import { Svg1, Svg2, Svg3, Svg4, Svg5, Svg6, Svg7, Svg8, Svg9, Svg10, Svg11, Svg12, Svg13, Svg14, Svg15, Svg16, Svg17, Svg18, Svg19, Svg20, Svg21, Svg22, Svg23, Svg24, Svg25, Svg26, Svg27, Svg28, Svg29, Svg30, Svg31 } from "@/components/svgs/Svgs";
+import { Svg1, Svg2, Svg3, Svg4, Svg5, Svg6, Svg7, Svg8, Svg9, Svg10, Svg11, Svg12, Svg13, Svg14, Svg15, Svg16, Svg17, Svg18, Svg19, Svg20, Svg21, Svg22, Svg23, Svg24, Svg25, Svg26, Svg27, Svg28, Svg29, Svg30, Svg31, Svg32, Svg33, Svg34, Svg35, Svg36, Svg37, Svg38, Svg39, Svg40, Svg41, Svg42, Svg43, Svg44, Svg45, Svg46, Svg47, Svg48, Svg49, Svg50, Svg51, Svg52, Svg53, Svg54, Svg55 } from "@/components/svgs/Svgs";
 import TestimonialSlider from "@/components/Depoimento-clientes";
 
-export default function HomeContent({isMobile}: { isMobile: boolean }) {
+export default function HomeContent({ isMobile }: { isMobile: boolean }) {
 
   function handleScrollToResults() {
     const footer = document.querySelector("footer");
@@ -54,118 +54,165 @@ export default function HomeContent({isMobile}: { isMobile: boolean }) {
                 nossa qualidade
               </h2>
               <div className={styles.clientList}>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Image
-                      width="81"
-                      src={logopolitorno}
-                      alt="logo-politorno"
-                    ></Image>
-                  </div>
-                  <div>
-                    <Image
-                      width="80"
-                      height="18"
-                      src={logokappesberg}
-                      alt="logo-kappesberg"
-                    ></Image>
-                  </div>
-                  <div>
-                    <Svg1 />
-                  </div>
+                <div>
+                  <Svg55></Svg55>
                 </div>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Svg2 />
-                  </div>
-                  <div>
-                    <Svg3 />
-                  </div>
-                  <div>
-                    <Svg4 />
-                  </div>
+                <div>
+                  <Image
+                    width="80"
+                    height="18"
+                    src={logokappesberg}
+                    alt="logo-kappesberg"
+                  ></Image>
                 </div>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Svg5 />
-                  </div>
-                  <div>
-                    <Svg6 />
-                  </div>
-                  <div>
-                    <Svg7 />
-                  </div>
+                <div>
+                  <Svg1 />
                 </div>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Svg8 />
-                  </div>
-                  <div>
-                    <Svg9 />
-                  </div>
-                  <div>
-                    <Svg10 />
-                  </div>
+                <div>
+                  <Svg2 />
                 </div>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Image
-                      width="65"
-                      height="25"
-                      src={logokissny}
-                      alt="logo-kiss-new-york"
-                    ></Image>
-                  </div>
-                  <div>
-                    <Svg11 />
-                  </div>
-                  <div>
-                    <Svg12 />
-                  </div>
+                <div>
+                  <Svg3 />
                 </div>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Svg13 />
-                  </div>
-                  <div>
-                    <Svg14 />
-                  </div>
-                  <div>
-                    <Svg15 />
-                  </div>
+                <div>
+                  <Svg4 />
                 </div>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Svg16 />
-                  </div>
-                  <div>
-                    <Svg17 />
-                  </div>
-                  <div>
-                    <Svg18 />
-                  </div>
+                <div>
+                  <Svg5 />
                 </div>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Svg19 />
-                  </div>
-                  <div>
-                    <Svg20 />
-                  </div>
-                  <div>
-                    <Svg21 />
-                  </div>
+                <div>
+                  <Svg6 />
                 </div>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Svg22 />
-                  </div>
-                  <div>
-                    <Svg23 />
-                  </div>
-                  <div>
-                    <Svg24 />
-                  </div>
+                <div>
+                  <Svg7 />
+                </div>
+                <div>
+                  <Svg8 />
+                </div>
+                <div>
+                  <Svg9 />
+                </div>
+                <div>
+                  <Svg10 />
+                </div>
+                <div>
+                  <Image
+                    width="65"
+                    height="25"
+                    src={logokissny}
+                    alt="logo-kiss-new-york"
+                  ></Image>
+                </div>
+                <div>
+                  <Svg11 />
+                </div>
+                <div>
+                  <Svg12 />
+                </div>
+                <div>
+                  <Svg13 />
+                </div>
+                <div>
+                  <Svg14 />
+                </div>
+                <div>
+                  <Svg15 />
+                </div>
+                <div>
+                  <Svg16 />
+                </div>
+                <div>
+                  <Svg17 />
+                </div>
+                <div>
+                  <Svg18 />
+                </div>
+                <div>
+                  <Svg19 />
+                </div>
+                <div>
+                  <Svg20 />
+                </div>
+                <div>
+                  <Svg21 />
+                </div>
+                <div>
+                  <Svg22 />
+                </div>
+                <div>
+                  <Svg23 />
+                </div>
+                <div>
+                  <Svg24 />
+                </div>
+                <div>
+                  <Svg32 />
+                </div>
+                <div>
+                  <Svg33 />
+                </div>
+                {/* <div>
+                  <Svg34 />
+                </div> */}
+                <div>
+                  <Svg35 />
+                </div>
+                <div>
+                  <Svg36 />
+                </div>
+                <div>
+                  <Svg37 />
+                </div>
+                <div>
+                  <Svg38 />
+                </div>
+                <div>
+                  <Svg39 />
+                </div>
+                <div>
+                  <Svg40 />
+                </div>
+                <div>
+                  <Svg41 />
+                </div>
+                <div>
+                  <Svg42 />
+                </div>
+                <div>
+                  <Svg43 />
+                </div>
+                <div>
+                  <Svg44 />
+                </div>
+                <div>
+                  <Svg45 />
+                </div>
+                <div>
+                  <Svg46 />
+                </div>
+                <div>
+                  <Svg47 />
+                </div>
+                <div>
+                  <Svg48 />
+                </div>
+                <div>
+                  <Svg49 />
+                </div>
+                <div>
+                  <Svg50 />
+                </div>
+                <div>
+                  <Svg51 />
+                </div>
+                <div>
+                  <Svg52 />
+                </div>
+                <div>
+                  <Svg53 />
+                </div>
+                <div>
+                  <Svg54 />
                 </div>
               </div>
               <p
@@ -351,177 +398,165 @@ export default function HomeContent({isMobile}: { isMobile: boolean }) {
                 </span>
               </h2>
               <div className={styles.clientList}>
-                <div className={styles.clientWrapper}>
-                  <div>
-                    <Image width="81"
-                      height="15"
-                      src={logopolitorno}
-                      alt="logo politorno"
-                    ></Image>
-                  </div>
-
-                  <div>
-                    <Image width="80"
-                      height="18"
-                      src={logokappesberg}
-                      alt="logo kappesberg"
-                    ></Image>
-                  </div>
-
-                  <div>
-                    <Svg1 />
-                  </div>
-
-                  <div>
-                    <Svg2 />
-                  </div>
-
-                  <div>
-                    <Svg3 />
-                  </div>
+                <div>
+                  <Svg55></Svg55>
                 </div>
-
-                <div className={styles.clientWrapper}>
-                  {/* Logo OU */}
-                  <div>
-                    <Svg4 />
-                  </div>
-
-                  {/* Logo LOTS */}
-                  <div>
-                    <Svg5 />
-                  </div>
-
-                  {/* Logo STIHL */}
-                  <div>
-                    <Svg6 />
-                  </div>
-
-                  {/* Logo RONYCHAVES */}
-                  <div>
-                    <Svg7 />
-                  </div>
-
-                  {/* Logo KEKO */}
-                  <div>
-                    <Svg8 />
-                  </div>
+                <div>
+                  <Image
+                    width="80"
+                    height="18"
+                    src={logokappesberg}
+                    alt="logo-kappesberg"
+                  ></Image>
                 </div>
-
-                <div className={styles.clientWrapper}>
-                  {/* Logo ANSELMI*/}
-                  <div>
-                    <Svg9 />
-                  </div>
-
-                  {/* Logo NIINI */}
-                  <div>
-                    <Svg10 />
-                  </div>
-
-                  {/* Logo BIBI*/}
-                  <div>
-                    <Svg11 />
-                  </div>
-
-                  {/* Logo BEBECÊ*/}
-                  <div>
-                    <Svg12 />
-                  </div>
-
-                  {/* Logo FIERO */}
-                  <div>
-                    <Svg13 />
-                  </div>
+                <div>
+                  <Svg1 />
                 </div>
-
-                <div className={styles.clientWrapper}>
-                  {/* Logo PITUCHINHUS */}
-                  <div>
-                    <Svg14 />
-                  </div>
-
-                  {/* Logo PERFUMARIA*/}
-                  <div>
-                    <Svg15 />
-                  </div>
-
-                  {/* Logo PICADDILY*/}
-                  <div>
-                    <Svg16 />
-                  </div>
-
-                  {/* Logo PETITE JOLIE */}
-                  <div>
-                    <Svg17 />
-                  </div>
-
-                  {/* Logo KATARZE */}
-                  <div>
-                    <Svg18 />
-                  </div>
+                <div>
+                  <Svg2 />
                 </div>
-
-                <div className={styles.clientWrapper}>
-                  {/* Logo FABIOLAMOLINA */}
-                  <div>
-                    <Svg19 />
-                  </div>
-
-                  {/* Logo JORGEBISCHOFF */}
-                  <div>
-                    <Svg20 />
-                  </div>
-
-                  {/* Logo KISS */}
-                  <div>
-                    <Svg21 />
-                  </div>
-
-                  {/* Logo 3TENTOS*/}
-                  <div>
-                    <Svg22 />
-                  </div>
-
-                  {/* Logo BELASLETRAS*/}
-                  <div>
-                    {/* <Svg23/> */}
-                  </div>
+                <div>
+                  <Svg3 />
                 </div>
-                {/* CSS inline feito para ajustar a disposição desses dois logos adicionais */}
-                <div className={styles.clientWrapper} style={{ justifyContent: "center" }}>
-
-                  <div style={{ width: "20%" }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="35" viewBox="0 0 61 35" fill="none">
-                      <path d="M4.23263 31.687H2.17205V29.6168H0.989746V34.9082H2.17205V32.8235H4.23263V34.9082H5.42217V29.6168H4.23263V31.687Z" fill="#353A42" />
-                      <path d="M10.7989 33.8271C9.93988 33.8271 9.26669 33.1612 9.26669 32.266C9.26669 31.3708 9.94711 30.6904 10.7989 30.6904C11.6506 30.6904 12.3238 31.3419 12.331 32.266C12.3383 33.1612 11.6651 33.8271 10.7989 33.8271ZM10.7989 29.525C9.23773 29.525 8.03613 30.7411 8.03613 32.2732C8.03613 33.8054 9.21119 34.9925 10.7916 34.9925C12.372 34.9925 13.5616 33.7813 13.5616 32.266C13.5616 30.7507 12.36 29.525 10.7989 29.525Z" fill="#353A42" />
-                      <path d="M18.1902 32.0152H17.353V30.705H18.2699C18.7066 30.705 18.9286 31.0066 18.9286 31.3492C18.9286 31.6919 18.7283 32.0152 18.1902 32.0152ZM20.1447 31.3275C20.1447 30.4179 19.5583 29.6168 18.2771 29.6168H16.1731V34.9058H17.3554V33.0599H17.9345L18.972 34.9058H20.3473L19.124 32.8935C19.8479 32.5918 20.1471 31.9549 20.1471 31.3251" fill="#353A42" />
-                      <path d="M22.3286 30.7557H23.8246V34.9082H25.0117V30.7557H26.5004V29.6168H22.3286V30.7557Z" fill="#353A42" />
-                      <path d="M30.1371 29.6168H28.95V34.9058H30.1371V29.6168Z" fill="#353A42" />
-                      <path d="M33.0452 34.9082H34.2251V32.8886H36.3797V31.7787H34.2251V30.734H36.6741V29.6168H33.0452V34.9082Z" fill="#353A42" />
-                      <path d="M41.2479 32.0152H40.4106V30.705H41.3275C41.7642 30.705 41.9862 31.0066 41.9862 31.3492C41.9862 31.6919 41.7859 32.0152 41.2479 32.0152ZM43.2023 31.3275C43.2023 30.4179 42.616 29.6168 41.3347 29.6168H39.2307V34.9058H40.4106V33.0599H40.9897L42.0272 34.9058H43.4025L42.1792 32.8935C42.9031 32.5918 43.2023 31.9549 43.2023 31.3251" fill="#353A42" />
-                      <path d="M48.9139 32.8669C48.9139 33.5401 48.5207 33.8538 47.9898 33.8538C47.459 33.8538 47.0585 33.5473 47.0585 32.8669V29.6168H45.8713V32.9176C45.8713 34.3918 46.8871 34.9999 47.9898 34.9999C49.0925 34.9999 50.1011 34.3918 50.1011 32.9176V29.6168H48.9139V32.8669Z" fill="#353A42" />
-                      <path d="M52.4915 30.7557H53.9874V34.9082H55.177V30.7557H56.6657V29.6168H52.4915V30.7557Z" fill="#353A42" />
-                      <path d="M60.2999 29.6168H59.1128V34.9058H60.2999V29.6168Z" fill="#353A42" />
-                      <path d="M53.5296 16.9447V18.1053C53.3101 19.6085 51.5125 20.7401 49.3361 20.7401C47.6423 20.7401 46.6313 19.9825 46.6313 18.7133C46.6313 17.794 46.9836 16.9447 49.5315 16.9447H53.5296ZM60.6693 23.3242L60.3025 21.0127C60.2157 20.5664 59.7934 20.2623 59.3398 20.3203L59.1878 20.3396C58.6425 20.3854 58.5267 20.3178 58.4157 19.4179C58.3964 19.2634 58.3964 19.0994 58.3964 18.928V17.6492C58.4012 17.6251 58.4036 17.601 58.4036 17.5769V12.826C58.3698 8.75071 55.5709 6.31616 50.9213 6.31616C47.7846 6.31616 45.8543 7.02795 43.579 8.25608C43.164 8.48047 43.0023 9.00165 43.2195 9.42148L44.2739 11.4386C44.3825 11.6461 44.5659 11.7981 44.7927 11.8657C45.0195 11.9332 45.2535 11.9091 45.461 11.7957C47.0391 10.9223 48.5616 10.4783 49.9851 10.4783C51.6018 10.4783 53.532 10.9705 53.532 13.3134V13.4002H48.8511C44.5104 13.434 41.9214 15.5163 41.9214 18.9739C41.9214 22.4315 44.5611 24.7092 48.3372 24.7092C50.8876 24.7092 52.8975 23.8961 54.1522 22.3591C54.5768 23.0781 55.2283 23.6355 56.0873 24.0143C57.5639 24.6658 58.6256 24.6296 59.9623 24.3497C59.9768 24.3473 59.9889 24.3425 60.0033 24.34L60.0757 24.3159C60.4956 24.176 60.7489 23.7513 60.6717 23.3291" fill="#353A42" />
-                      <path d="M34.7653 15.3474C34.7653 15.3474 34.7653 15.3547 34.7653 15.3571C34.7219 19.4999 31.3125 19.8232 30.2702 19.8232C29.486 19.8232 28.1565 19.6567 27.2131 19.3841V15.3619C27.2131 13.3279 28.4798 11.2673 30.9023 11.2673C32.0364 11.2673 33.0449 11.6678 33.7447 12.3965C34.4589 13.1397 34.8136 14.1603 34.7677 15.3474M32.2391 6.34755C30.0192 6.34755 28.3519 6.99901 27.1841 8.33089V0.8873C27.1841 0.607411 27.0562 0.354063 26.8318 0.187578C26.6074 0.0210922 26.3251 -0.0271652 26.0597 0.0548712L22.8916 1.02724C22.5225 1.14065 22.2764 1.47362 22.2764 1.85967V22.3591C22.2764 22.7138 22.4863 23.0299 22.812 23.165C25.1597 24.1326 27.5147 24.6392 29.8069 24.673C29.9155 24.673 30.0216 24.6754 30.1278 24.6754C33.0474 24.6754 35.4626 23.8334 37.1251 22.2288C38.802 20.6122 39.6779 18.2911 39.7237 15.3329C39.7744 12.3845 38.9806 9.99334 37.4315 8.41535C36.1213 7.08346 34.2779 6.34755 32.2391 6.34755Z" fill="#353A42" />
-                      <path d="M10.0404 20.4119C7.31866 20.4119 5.48971 18.4527 5.48971 15.538C5.48971 12.6233 7.31866 10.664 10.0404 10.664C12.7621 10.664 14.5259 12.6691 14.5259 15.538C14.5259 18.4068 12.68 20.4119 10.0404 20.4119ZM10.0404 6.33542C4.34361 6.33542 0.514404 10.0078 0.514404 15.4728C0.514404 20.9379 4.34119 24.673 10.0404 24.673C12.791 24.673 15.1532 23.7947 16.8687 22.1298C18.5891 20.4602 19.5012 18.1583 19.5012 15.4704C19.5012 12.7825 18.5915 10.512 16.8687 8.85442C15.1532 7.20404 12.7934 6.33301 10.0404 6.33301" fill="#353A42" />
-                      <path d="M7.67555 5.60924C6.93481 5.73712 6.20613 5.75401 5.48951 5.49584C4.86699 5.27145 4.36512 4.88056 3.98871 4.35215C3.60265 3.80927 3.26244 3.2326 2.91499 2.66317C2.55306 2.06479 2.2032 1.45675 1.68926 0.971773C1.47934 0.77392 1.23323 0.605022 0.991943 0.404757C1.21151 0.344436 1.43108 0.276875 1.641 0.226206C2.80882 -0.053683 3.97664 -0.116415 5.12999 0.284115C6.57529 0.785985 7.53802 1.79696 8.1147 3.19399C8.38011 3.83581 8.51764 4.50658 8.46214 5.2063C8.45732 5.27144 8.44526 5.33659 8.43319 5.43069C8.43319 5.43069 7.9289 5.56822 7.67555 5.61165" fill="#353A42" />
-                      <path d="M10.0266 5.38483C10.3885 5.38483 10.7456 5.39931 11.0955 5.42826C11.3006 3.80201 11.9593 2.5208 13.0065 1.71973C13.1874 1.57979 13.2453 1.33609 13.1416 1.14065L12.6928 0.247905C12.6349 0.139327 12.5384 0.0572903 12.4201 0.0210978C12.3043 -0.0150948 12.1789 -0.00303074 12.0727 0.0548773C10.4392 0.940388 9.29308 2.9165 8.93115 5.43067C9.29067 5.40172 9.65501 5.38724 10.0266 5.38724" fill="#353A42" />
-                    </svg>
-                  </div>
-                  <div style={{ width: "20%" }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="123" height="35" viewBox="0 0 123 35" fill="none">
-                      <path d="M8.55096 29.0643L9.92446 19.9254H7.17746L5.80396 29.0643H0.043457L3.40546 6.54199H9.16596L7.95646 14.598H10.7035L11.913 6.54199H17.6735L14.3115 29.0643H8.55096Z" fill="#353A42" />
-                      <path d="M26.5295 6.15222C32.372 6.15222 33.7455 12.3025 32.9255 17.8032C32.1055 23.3038 28.887 29.4541 23.0445 29.4541C17.202 29.4541 15.8285 23.3038 16.6485 17.8032C17.4685 12.3025 20.687 6.15222 26.5295 6.15222ZM23.9055 23.7802C26.0785 23.7802 26.8575 19.2108 27.0625 17.8032C27.2675 16.3955 27.862 11.8261 25.689 11.8261C23.516 11.8261 22.737 16.3955 22.532 17.8032C22.327 19.2108 21.7325 23.7802 23.9055 23.7802Z" fill="#353A42" />
-                      <path d="M37.0049 29.0643H31.9004L35.2624 6.54199H40.7359L43.3189 20.0987L43.3804 20.0337L45.1844 6.54199H50.2889L46.9269 29.0643H41.3919L39.0344 16.0707L38.9729 16.1356" fill="#353A42" />
-                      <path d="M51.5805 6.54199H62.302L61.5025 11.8477H56.562L56.07 14.9879H60.498L59.6985 20.2936H55.2705L54.758 23.7369H59.6985L58.899 29.0426H48.1775L51.5805 6.54199Z" fill="#353A42" />
-                      <path d="M63.9829 29.0644L65.4179 19.514L62.0969 6.56372H68.0829L69.0259 13.5153H69.0874L72.1419 6.56372H78.1074L71.1989 19.514L69.7639 29.0644H63.9829Z" fill="#353A42" />
-                      <path d="M89.444 6.54199H96.2295C99.612 6.54199 103.343 8.10123 102.626 12.9522C102.257 15.4859 100.391 17.4566 97.972 17.4566V17.5216C100.76 17.7598 101.99 19.6222 101.539 22.6324C101.129 25.4044 98.997 29.0426 93.8515 29.0426H86.1025L89.444 6.54199ZM93.052 24.1917C94.323 24.1917 95.553 23.542 95.7785 22.0044C96.004 20.4885 94.9995 19.8605 93.667 19.8605H93.216L92.56 24.1917H93.052ZM94.241 15.291C95.43 15.291 96.5985 14.7929 96.824 13.3203C97.029 11.9777 96.2295 11.4146 95.0405 11.4146H94.4665L93.8925 15.291H94.241Z" fill="#353A42" />
-                      <path d="M104.799 6.54199H115.52L114.721 11.8477H109.78L109.309 14.9879H113.737L112.937 20.2936H108.509L107.997 23.7369H112.937L112.138 29.0426H101.416L104.799 6.54199Z" fill="#353A42" />
-                      <path d="M117.898 34.5H79.1938L84.0524 0.5H122.756L117.898 34.5ZM79.9113 33.8503H117.365L122.039 1.14968H84.5854L79.9113 33.8503Z" fill="#353A42" />
-                    </svg>
-                  </div>
+                <div>
+                  <Svg4 />
+                </div>
+                <div>
+                  <Svg5 />
+                </div>
+                <div>
+                  <Svg6 />
+                </div>
+                <div>
+                  <Svg7 />
+                </div>
+                <div>
+                  <Svg8 />
+                </div>
+                <div>
+                  <Svg9 />
+                </div>
+                <div>
+                  <Svg10 />
+                </div>
+                <div>
+                  <Image
+                    width="65"
+                    height="25"
+                    src={logokissny}
+                    alt="logo-kiss-new-york"
+                  ></Image>
+                </div>
+                <div>
+                  <Svg11 />
+                </div>
+                <div>
+                  <Svg12 />
+                </div>
+                <div>
+                  <Svg13 />
+                </div>
+                <div>
+                  <Svg14 />
+                </div>
+                <div>
+                  <Svg15 />
+                </div>
+                <div>
+                  <Svg16 />
+                </div>
+                <div>
+                  <Svg17 />
+                </div>
+                <div>
+                  <Svg18 />
+                </div>
+                <div>
+                  <Svg19 />
+                </div>
+                <div>
+                  <Svg20 />
+                </div>
+                <div>
+                  <Svg21 />
+                </div>
+                <div>
+                  <Svg22 />
+                </div>
+                <div>
+                  <Svg23 />
+                </div>
+                <div>
+                  <Svg24 />
+                </div>
+                <div>
+                  <Svg32 />
+                </div>
+                <div>
+                  <Svg33 />
+                </div>
+                {/* <div>
+                  <Svg34 />
+                </div> */}
+                <div>
+                  <Svg35 />
+                </div>
+                <div>
+                  <Svg36 />
+                </div>
+                <div>
+                  <Svg37 />
+                </div>
+                <div>
+                  <Svg38 />
+                </div>
+                <div>
+                  <Svg39 />
+                </div>
+                <div>
+                  <Svg40 />
+                </div>
+                <div>
+                  <Svg41 />
+                </div>
+                <div>
+                  <Svg42 />
+                </div>
+                <div>
+                  <Svg43 />
+                </div>
+                <div>
+                  <Svg44 />
+                </div>
+                <div>
+                  <Svg45 />
+                </div>
+                <div>
+                  <Svg46 />
+                </div>
+                <div>
+                  <Svg47 />
+                </div>
+                <div>
+                  <Svg48 />
+                </div>
+                <div>
+                  <Svg49 />
+                </div>
+                <div>
+                  <Svg50 />
+                </div>
+                <div>
+                  <Svg51 />
+                </div>
+                <div>
+                  <Svg52 />
+                </div>
+                <div>
+                  <Svg53 />
+                </div>
+                <div>
+                  <Svg54 />
                 </div>
               </div>
 

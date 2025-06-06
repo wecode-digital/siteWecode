@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from "react";
-import "./sass/styles.css";
+import "./sass/styles.scss";
 // import { Link } from "react-router-dom";
 import homeStyles from "@/app/page.module.scss";
 

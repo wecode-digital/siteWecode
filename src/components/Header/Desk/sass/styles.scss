@@ -20,13 +20,15 @@
     padding-inline: 30px;
     border-radius: 10px;
     background: #fff;
-    width: 80vw;
+    min-width: 80vw;
     padding-block: 12px;
 
     margin: auto;
+    width: fit-content;
+    gap: 1.5rem;
 
     @media screen and (min-width: 1500px) {
-      width: 60vw;
+      min-width: 60vw;
     }
 
     svg {
@@ -54,12 +56,14 @@
     box-shadow: $boxShadow;
     border-radius: 10px;
     background: #fff;
-    width: 80vw;
+    min-width: 80vw;
     margin: auto;
     padding-block: 12px;
+    width: fit-content;
+    gap: 1.5rem;
 
     @media screen and (min-width: 1500px) {
-      width: 60vw;
+      min-width: 60vw;
     }
 
     svg {
@@ -94,6 +98,7 @@
   font-weight: 400;
   font-size: 1rem;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover {
     text-decoration: underline;
