@@ -6,6 +6,14 @@ import styles from "./page.module.scss";
 // import TestimonialSlider from "@/components/Depoimento-clientes/index";
 import imagehome from "../../public/assets/images/home-generic-images/image-home.png";
 import logopolitorno from "../../public/assets/images/client-logos/logo-politorno.png";
+import logoibbl from "../../public/assets/images/client-logos/ibbl.png";
+import logoandreazza from "../../public/assets/images/client-logos/andreazza.png";
+import logomadesa from "../../public/assets/images/client-logos/madesa.png";
+import logosantaclara from "../../public/assets/images/client-logos/santa-clara.png";
+import logoamitie from "../../public/assets/images/client-logos/amitie.png";
+import logochopeiraeltz from "../../public/assets/images/client-logos/chopeira-eltz.png";
+import logobischoffwines from "../../public/assets/images/client-logos/bischoff-wines.png";
+
 import logokappesberg from "../../public/assets/images/client-logos/logo-kappesberg.png";
 import logokissny from "../../public/assets/images/client-logos/logo-kissNY.png";
 import aboutUsImage from "../../public/assets/images/home-generic-images/about-us-image.png";
@@ -49,52 +57,42 @@ export default function HomeContent({ isMobile }: { isMobile: boolean }) {
               {" "}
               <h3 className={styles.tag}>NOSSOS CLIENTES</h3>
               <h2 className={styles.blockTitle}>
-                Quem <span className={styles.textHighlight}>confia</span> em nosso
-                trabalho e <span className={styles.textHighlight}>atesta</span>{" "}
-                nossa qualidade
+                <span> Quem </span> <span className={styles.textHighlight}>confia</span> <span> em nosso trabalho e </span>
+                <span className={styles.textHighlight}> atesta</span>{" "}
+                nossa qualidade.
               </h2>
               <div className={styles.clientList}>
+                {/*JORGE BISCHOFF*/}
                 <div>
-                  <Svg55></Svg55>
+                  <Svg22 />
                 </div>
-                <div>
-                  <Image
-                    width="80"
-                    height="18"
-                    src={logokappesberg}
-                    alt="logo-kappesberg"
-                  ></Image>
-                </div>
-                <div>
-                  <Svg1 />
-                </div>
-                <div>
-                  <Svg2 />
-                </div>
-                <div>
-                  <Svg3 />
-                </div>
-                <div>
-                  <Svg4 />
-                </div>
-                <div>
-                  <Svg5 />
-                </div>
+
+                {/*BIBI*/}
                 <div>
                   <Svg6 />
                 </div>
+
+                {/*PETITE JOLIE*/}
+                <div>
+                  <Svg19 />
+                </div>
+
+                {/*BEBECE*/}
                 <div>
                   <Svg7 />
                 </div>
-                <div>
-                  <Svg8 />
-                </div>
+
+                {/*ANSELMI*/}
                 <div>
                   <Svg9 />
                 </div>
+
+                {/*PICCADILLY*/}
                 <div>
-                  <Svg10 />
+                  <Svg8 />
                 </div>
+
+                {/*KISS*/}
                 <div>
                   <Image
                     width="65"
@@ -103,116 +101,55 @@ export default function HomeContent({ isMobile }: { isMobile: boolean }) {
                     alt="logo-kiss-new-york"
                   ></Image>
                 </div>
+
+                {/*OU*/}
                 <div>
-                  <Svg11 />
+                  <Svg4 />
                 </div>
-                <div>
-                  <Svg12 />
-                </div>
+
+                {/*STIHL*/}
                 <div>
                   <Svg13 />
                 </div>
+
+                {/*SOPRANO*/}
                 <div>
-                  <Svg14 />
+                  <Svg3 />
                 </div>
+
+                {/*CARRARO*/}
+                <div>
+                  <Svg1 />
+                </div>
+
+                {/*KEKO*/}
                 <div>
                   <Svg15 />
                 </div>
+
+                {/*IBBL*/}
                 <div>
-                  <Svg16 />
+                  <Image
+                    width="60"
+                    height="18"
+                    src={logoibbl}
+                    alt="logo-ibbl"
+                  ></Image>
                 </div>
-                <div>
-                  <Svg17 />
-                </div>
-                <div>
-                  <Svg18 />
-                </div>
-                <div>
-                  <Svg19 />
-                </div>
-                <div>
-                  <Svg20 />
-                </div>
-                <div>
-                  <Svg21 />
-                </div>
-                <div>
-                  <Svg22 />
-                </div>
+
+                {/*OBA*/}
                 <div>
                   <Svg23 />
                 </div>
+
+                {/*Andreazza*/}
                 <div>
-                  <Svg24 />
-                </div>
-                <div>
-                  <Svg32 />
-                </div>
-                <div>
-                  <Svg33 />
-                </div>
-                {/* <div>
-                  <Svg34 />
-                </div> */}
-                <div>
-                  <Svg35 />
-                </div>
-                <div>
-                  <Svg36 />
-                </div>
-                <div>
-                  <Svg37 />
-                </div>
-                <div>
-                  <Svg38 />
-                </div>
-                <div>
-                  <Svg39 />
-                </div>
-                <div>
-                  <Svg40 />
-                </div>
-                <div>
-                  <Svg41 />
-                </div>
-                <div>
-                  <Svg42 />
-                </div>
-                <div>
-                  <Svg43 />
-                </div>
-                <div>
-                  <Svg44 />
-                </div>
-                <div>
-                  <Svg45 />
-                </div>
-                <div>
-                  <Svg46 />
-                </div>
-                <div>
-                  <Svg47 />
-                </div>
-                <div>
-                  <Svg48 />
-                </div>
-                <div>
-                  <Svg49 />
-                </div>
-                <div>
-                  <Svg50 />
-                </div>
-                <div>
-                  <Svg51 />
-                </div>
-                <div>
-                  <Svg52 />
-                </div>
-                <div>
-                  <Svg53 />
-                </div>
-                <div>
-                  <Svg54 />
+                  <Image
+                    width="60"
+                    height="18"
+                    src={logoandreazza}
+                    alt="logo-andreazza"
+                  ></Image>
                 </div>
               </div>
               <p
@@ -388,19 +325,142 @@ export default function HomeContent({ isMobile }: { isMobile: boolean }) {
             <div className={styles.ourClientsContainer}>
               <h3 className={styles.tag}>NOSSOS CLIENTES</h3>
               <h2 className={styles.blockTitle}>
-                Fazemos parte de um grupo que oferece diferentes{" "}
-                <span className={styles.textHighlight}> soluções </span> para
-                diferentes
-                <span className={styles.textHighlight}> necessidades</span>,dentro
-                do ecossistema do mercado digital.
-                <span className={styles.textHighlight}>
-                  Conheça nossos clientes
-                </span>
+                <span> Quem </span> <span className={styles.textHighlight}>confia</span> <span> em nosso trabalho e </span>
+                <span className={styles.textHighlight}> atesta</span>{" "}
+                nossa qualidade.
               </h2>
               <div className={styles.clientList}>
+                {/*STIHL*/}
                 <div>
-                  <Svg55></Svg55>
+                  <Svg13 />
                 </div>
+
+                {/*RONI*/}
+                <div>
+                  <Svg14 />
+                </div>
+
+                {/*KEKO*/}
+                <div>
+                  <Svg15 />
+                </div>
+
+                {/*SCHEER*/}
+                <div>
+                  <Svg35 />
+                </div>
+
+                {/*SOPRANO*/}
+                <div>
+                  <Svg3 />
+                </div>
+
+                {/*CHOPEIRA ELTZ*/}
+                <div>
+                  <Image
+                    width="80"
+                    height="28"
+                    src={logochopeiraeltz}
+                    alt="logo-chopeira-eltz"
+                  ></Image>
+                </div>
+
+                {/*IBBL*/}
+                <div>
+                  <Image
+                    width="60"
+                    height="18"
+                    src={logoibbl}
+                    alt="logo-ibbl"
+                  ></Image>
+                </div>
+
+                {/*OU*/}
+                <div>
+                  <Svg4 />
+                </div>
+
+                {/*SANREMO*/}
+                <div>
+                  <Svg43 />
+                </div>
+
+                {/*BETTANIN*/}
+                <div>
+                  <Svg47 />
+                </div>
+
+                {/*JORGE BISCHOFF*/}
+                <div>
+                  <Svg22 />
+                </div>
+
+                {/*BIBI*/}
+                <div>
+                  <Svg6 />
+                </div>
+
+                {/*PETITE JOLIE*/}
+                <div>
+                  <Svg19 />
+                </div>
+
+                {/*BEBECE*/}
+                <div>
+                  <Svg7 />
+                </div>
+
+                {/*ANSELMI*/}
+                <div>
+                  <Svg9 />
+                </div>
+
+                {/*PICCADILLY*/}
+                <div>
+                  <Svg8 />
+                </div>
+
+                {/*FIERO*/}
+                <div>
+                  <Svg16 />
+                </div>
+
+                {/*SUGAR SHOES*/}
+                <div>
+                  <Svg39 />
+                </div>
+
+                {/*FABIOLA MOLINA*/}
+                <div>
+                  <Svg21 />
+                </div>
+
+                {/*PITUCHINHUS*/}
+                <div>
+                  <Svg17 />
+                </div>
+
+                {/*CARRARO*/}
+                <div>
+                  <Svg1 />
+                </div>
+
+                {/*MADESA*/}
+                <div>
+                  <Image
+                    width="80"
+                    height="18"
+                    src={logomadesa}
+                    alt="logo-madesa"
+                  ></Image>
+                </div>
+
+                {/*DJ MOVEIS*/}
+                <div>
+                  <Svg2 />
+                </div>
+
+                {/*KAPPESBERG*/}
                 <div>
                   <Image
                     width="80"
@@ -409,36 +469,23 @@ export default function HomeContent({ isMobile }: { isMobile: boolean }) {
                     alt="logo-kappesberg"
                   ></Image>
                 </div>
+
+                {/*RIMO*/}
                 <div>
-                  <Svg1 />
+                  <Svg33 />
                 </div>
+
+                {/*MX*/}
                 <div>
-                  <Svg2 />
+                  <Svg37 />
                 </div>
+
+                {/*PISANI*/}
                 <div>
-                  <Svg3 />
+                  <Svg50 />
                 </div>
-                <div>
-                  <Svg4 />
-                </div>
-                <div>
-                  <Svg5 />
-                </div>
-                <div>
-                  <Svg6 />
-                </div>
-                <div>
-                  <Svg7 />
-                </div>
-                <div>
-                  <Svg8 />
-                </div>
-                <div>
-                  <Svg9 />
-                </div>
-                <div>
-                  <Svg10 />
-                </div>
+
+                {/*KISS*/}
                 <div>
                   <Image
                     width="65"
@@ -447,114 +494,53 @@ export default function HomeContent({ isMobile }: { isMobile: boolean }) {
                     alt="logo-kiss-new-york"
                   ></Image>
                 </div>
+
+                {/*SANTA CLARA*/}
                 <div>
-                  <Svg11 />
+                  <Image
+                    width="65"
+                    height="25"
+                    src={logosantaclara}
+                    alt="logo-santa-clara"
+                  ></Image>
                 </div>
-                <div>
-                  <Svg12 />
-                </div>
-                <div>
-                  <Svg13 />
-                </div>
-                <div>
-                  <Svg14 />
-                </div>
-                <div>
-                  <Svg15 />
-                </div>
-                <div>
-                  <Svg16 />
-                </div>
-                <div>
-                  <Svg17 />
-                </div>
-                <div>
-                  <Svg18 />
-                </div>
-                <div>
-                  <Svg19 />
-                </div>
-                <div>
-                  <Svg20 />
-                </div>
-                <div>
-                  <Svg21 />
-                </div>
-                <div>
-                  <Svg22 />
-                </div>
+
+                {/*OBA*/}
                 <div>
                   <Svg23 />
                 </div>
+
+                {/*Andreazza*/}
                 <div>
-                  <Svg24 />
+                  <Svg23 />
                 </div>
+
+                {/*3tentos*/}
                 <div>
-                  <Svg32 />
+                  <Svg12 />
                 </div>
+
+                {/*Amitié*/}
                 <div>
-                  <Svg33 />
+                  <Image
+                    width="85"
+                    height="25"
+                    src={logoamitie}
+                    alt="logo-amitié"
+                  ></Image>
                 </div>
-                {/* <div>
-                  <Svg34 />
-                </div> */}
+
+                {/*Bischoff Wines*/}
                 <div>
-                  <Svg35 />
+                  <Image
+                    width="65"
+                    height="25"
+                    src={logobischoffwines}
+                    alt="logo-bischoff-wines"
+                  ></Image>
                 </div>
-                <div>
-                  <Svg36 />
-                </div>
-                <div>
-                  <Svg37 />
-                </div>
-                <div>
-                  <Svg38 />
-                </div>
-                <div>
-                  <Svg39 />
-                </div>
-                <div>
-                  <Svg40 />
-                </div>
-                <div>
-                  <Svg41 />
-                </div>
-                <div>
-                  <Svg42 />
-                </div>
-                <div>
-                  <Svg43 />
-                </div>
-                <div>
-                  <Svg44 />
-                </div>
-                <div>
-                  <Svg45 />
-                </div>
-                <div>
-                  <Svg46 />
-                </div>
-                <div>
-                  <Svg47 />
-                </div>
-                <div>
-                  <Svg48 />
-                </div>
-                <div>
-                  <Svg49 />
-                </div>
-                <div>
-                  <Svg50 />
-                </div>
-                <div>
-                  <Svg51 />
-                </div>
-                <div>
-                  <Svg52 />
-                </div>
-                <div>
-                  <Svg53 />
-                </div>
+
+                {/*Pro Chile*/}
                 <div>
                   <Svg54 />
                 </div>

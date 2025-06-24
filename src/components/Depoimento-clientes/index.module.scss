@@ -105,6 +105,7 @@
     }
 
     :global(.slick-active) {
+      //width: 374px;
       button::before {
         color: $light-main-color !important;
         opacity: 1;
@@ -125,7 +126,7 @@
     display: flex;
     flex-direction: column;
     background-color: $gray-main-color;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     gap: 1rem;
     margin-bottom: 0;
@@ -222,6 +223,7 @@
         cursor: pointer;
         font-size: .75rem;
         background: $light-main-color;
+        margin: 0;
         // width: 100% !important;
         display: flex;
         padding: 12px 40px;
@@ -647,6 +649,10 @@
     transition: all 0.3s ease;
     filter: blur(2px);
     height: 100% !important;
+
+    width: 374px;
+    height: 424px !important;
+    
     // display: flex !important;
 
     >div {

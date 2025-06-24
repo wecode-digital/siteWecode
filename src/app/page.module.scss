@@ -132,6 +132,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 0px;
     row-gap: 60px;
+    column-gap: 25px;
     width: 100%;
     max-width: 100%;
     padding: 20px;
@@ -569,7 +570,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-top: 20vh;
+      padding: 20vh 50px;
 
       .blockTitle {
         text-align: left;
@@ -598,7 +599,7 @@
         height: auto;
 
         @media screen and (min-width: 1500px) {
-          width: 515px;
+          width: 490px;
         }
       }
     }
@@ -620,6 +621,7 @@
       .blockTitle {
         margin-block: 0 2rem;
         text-align: center;
+        letter-spacing: 1px;
       }
 
       .tag {

@@ -85,7 +85,7 @@ const testimonials: Testimonial[] = [
   {
     type: 'double',
     logo: logoStihl,
-    testimonial: '&quotDe 22 pra 23, <span>a gente cresceu mais de 100%</span> e isso é muito fruto desse trabalho feito a quatro mãos junto com a Wecode.&quot',
+    testimonial: '&quotDe 22 pra 23, <span>a gente cresceu mais de 10</span> e isso é muito fruto desse trabalho feito a quatro mãos junto com a Wecode.&quot',
     people: [
       {
         id: 'sven',
@@ -96,7 +96,7 @@ const testimonials: Testimonial[] = [
       {
         id: 'vanessa',
         name: 'Vanessa Spall',
-        position: 'Analista de E-commerce',
+        position: 'Analista de E-commerce da STIHL',
         image: vanessaStihlPhoto,
       }
     ],
@@ -287,7 +287,6 @@ export const TestimonialSlider = () => {
     <div className={styles.testimonyMainContainer}>
       <div className={styles.testimonyTitlesContainer}>
         <h2 className={styles.testimonyTitle}>Depoimentos</h2>
-        <h3 className={styles.testimonySubtitle}>Quem confia no nosso trabalho e atesta nossa qualidade</h3>
       </div>
       <Slider ref={sliderRef} {...settings}>
         {testimonials.map((testimonial, index) => (
