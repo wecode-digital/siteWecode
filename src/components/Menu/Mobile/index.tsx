@@ -197,8 +197,8 @@ function MenuMob() {
             <div className={"menu-address"}>
               <h5>ENDEREÇO</h5>
               <p>
-                Rua Plácido de Castro, 1063 - Exposição, Caxias do Sul - RS,
-                sala 403, 95084-370
+                Rua Olavo Bilac, 503 - Sala 4 - Rio Branco,
+                Caxias do Sul - RS, 95010-080
               </p>
             </div>
 
