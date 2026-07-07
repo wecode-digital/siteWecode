@@ -10,7 +10,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Agora somos Norden",
+  title: "Wecode",
   description: "Wecode, Brava e Centric agora são Norden.",
   icons: {
     icon: "/favicon.svg",

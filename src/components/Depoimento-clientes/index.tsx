@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import Slider from "react-slick";
+import SliderImport from "react-slick";
+const Slider = SliderImport as unknown as React.ComponentType<any>;
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Modal from 'react-modal';
+import ModalImport from 'react-modal';
+const Modal = ModalImport as unknown as React.ComponentType<any>;
 import styles from './index.module.scss';
 import Image from "next/image";
 
