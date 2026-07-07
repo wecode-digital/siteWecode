@@ -1,8 +1,6 @@
 import { Raleway } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.scss";
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 // Fonte Raleway como variável CSS
 const raleway = Raleway({
@@ -12,8 +10,11 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Wecode Tecnologia para E-commerce",
-  description: "Valorizamos pessoas e impulsionamos negócios",
+  title: "Agora somos Norden",
+  description: "Wecode, Brava e Centric agora são Norden.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -39,9 +40,7 @@ export default function RootLayout({
         {/* End Google Tag Manager */}
       </head>
       <body>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

@@ -1,0 +1,162 @@
+.stage {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 24px;
+  overflow: hidden;
+  background: #ededf0;
+  font-family: var(--font-inter), sans-serif;
+
+  .mountains {
+    object-fit: cover;
+    object-position: bottom;
+    opacity: 0.28;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+
+    // A imagem é um painorama bem largo (12245x3539); em telas estreitas o
+    // "fill" em 100vh força um zoom enorme no centro. Limitamos a uma faixa
+    // baixa ancorada no rodapé para manter as montanhas inteiras visíveis.
+    @media (max-width: 640px) {
+      top: auto !important;
+      height: 38vh !important;
+    }
+  }
+
+  .glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(120% 80% at 50% -20%, rgba(125, 138, 214, 0.22), transparent 60%);
+    z-index: 1;
+  }
+
+  .topbar {
+    position: absolute;
+    left: clamp(24px, 5vw, 56px);
+    top: clamp(28px, 5vh, 48px);
+    z-index: 2;
+
+    img {
+      height: 26px;
+      width: auto;
+      display: block;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 820px;
+  }
+
+  .eyebrow {
+    font: 600 12px/1 var(--font-inter), sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #3a4296;
+    margin-bottom: 22px;
+  }
+
+  h1 {
+    font: 600 clamp(30px, 4.4vw, 46px) / 1.12 var(--font-rethink-sans), sans-serif;
+    letter-spacing: -0.015em;
+    color: #010028;
+    text-wrap: balance;
+    max-width: 760px;
+    margin: 0;
+  }
+
+  .lede {
+    margin-top: 24px;
+    max-width: 560px;
+    font: 400 clamp(15px, 1.5vw, 17px) / 1.6 var(--font-inter), sans-serif;
+    color: #3d4480;
+  }
+
+  .actions {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    border-radius: 6px;
+    background: #010028;
+    color: #fff;
+    font: 600 15px/1 var(--font-inter), sans-serif;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 24px rgba(1, 0, 40, 0.18);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(1, 0, 40, 0.28);
+    }
+
+    span {
+      font-size: 17px;
+    }
+  }
+
+  .count {
+    font: 400 14px/1 var(--font-inter), sans-serif;
+    color: rgba(1, 0, 40, 0.55);
+
+    b {
+      font-weight: 600;
+      color: #010028;
+    }
+  }
+
+  .bar {
+    margin-top: 24px;
+    width: 340px;
+    max-width: 80vw;
+    height: 3px;
+    background: rgba(1, 0, 40, 0.14);
+    border-radius: 2px;
+    overflow: hidden;
+
+    i {
+      display: block;
+      height: 100%;
+      background: #3a4296;
+      border-radius: 2px;
+      width: 0%;
+      transition: width 0.12s linear;
+    }
+  }
+
+  .fallback {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 40px;
+    z-index: 2;
+    text-align: center;
+    font: 400 13px/1.5 var(--font-inter), sans-serif;
+    color: rgba(1, 0, 40, 0.55);
+
+    a {
+      color: #3a4296;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  }
+}
