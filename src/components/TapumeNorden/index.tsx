@@ -17,6 +17,11 @@ export default function TapumeNorden() {
   const [secondsLeft, setSecondsLeft] = useState(SECONDS);
   const [progress, setProgress] = useState(0);
   const lastRef = useRef<number | null>(null);
+  // Fonte da verdade do tempo restante fora do React — o `tick` lê/escreve
+  // aqui em vez de usar a forma funcional de `setSecondsLeft` (chamar
+  // `setProgress` de dentro do callback de outro `setState` é frágil: em
+  // Strict Mode o React pode invocar esse callback mais de uma vez).
+  const remainingRef = useRef(SECONDS);
 
   useEffect(() => {
     let frameId: number;
@@ -26,15 +31,18 @@ export default function TapumeNorden() {
       const dt = (now - lastRef.current) / 1000;
       lastRef.current = now;
 
-      setSecondsLeft((prev) => {
-        const next = prev - dt;
-        if (next <= 0) {
-          window.location.href = DESTINO;
-          return 0;
-        }
-        setProgress(Math.min(1, 1 - next / SECONDS) * 100);
-        return next;
-      });
+      const next = remainingRef.current - dt;
+      if (next <= 0) {
+        remainingRef.current = 0;
+        setSecondsLeft(0);
+        setProgress(100);
+        window.location.href = DESTINO;
+        return;
+      }
+
+      remainingRef.current = next;
+      setSecondsLeft(next);
+      setProgress(Math.min(1, 1 - next / SECONDS) * 100);
 
       frameId = requestAnimationFrame(tick);
     }

@@ -10,11 +10,19 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Wecode",
-  description: "Wecode, Brava e Centric agora são Norden.",
+  title: "Wecode agora é Norden",
+  description: "Wecode, Brava e Centric se uniram e agora são Norden. Conheça o novo site: https://norden.ec",
   icons: {
     icon: "/favicon.svg",
   },
+};
+
+/** Sinaliza ao Google que a Wecode (nome antigo) é a mesma entidade da Norden. */
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Wecode",
+  sameAs: ["https://norden.ec"],
 };
 
 export default function RootLayout({
@@ -25,6 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={raleway.variable}>
       <head>
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
